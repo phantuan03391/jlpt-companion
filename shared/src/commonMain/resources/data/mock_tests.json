@@ -1,0 +1,274 @@
+[
+  {
+    "id": "test_n5_01",
+    "title": "Đề thi thử JLPT N5 - Đề số 1",
+    "description": "Đề thi thử chuẩn cấu trúc đề thi thật JLPT N5: Kiến thức ngôn ngữ (Chữ Hán, Từ vựng) và Ngữ pháp - Đọc hiểu.",
+    "durationMinutes": 45,
+    "passScore": 80,
+    "maxScore": 180,
+    "questions": [
+      {
+        "id": 1,
+        "section": "文字・語彙 (Chữ Hán - Từ vựng)",
+        "category": "Mondai 1: Cách đọc Kanji",
+        "question": "きのう [日本]へ 行きました。",
+        "options": [
+          "にほん",
+          "にっぽん",
+          "にぼん",
+          "にほんご"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chữ Hán [日本] (Nhật Bản) đọc là 「にほん」."
+      },
+      {
+        "id": 2,
+        "section": "文字・語彙 (Chữ Hán - Từ vựng)",
+        "category": "Mondai 1: Cách đọc Kanji",
+        "question": "この [本]は わたしのです。",
+        "options": [
+          "ほん",
+          "ぼん",
+          "ぽん",
+          "ほんご"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chữ Hán [本] (Bản - sách) đọc là 「ほん」."
+      },
+      {
+        "id": 3,
+        "section": "文字・語彙 (Chữ Hán - Từ vựng)",
+        "category": "Mondai 1: Cách đọc Kanji",
+        "question": "あした [友だち]と 会います。",
+        "options": [
+          "ともだち",
+          "ともたち",
+          "ゆうち",
+          "ゆうだち"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chữ Hán [友だち] (Hữu - bạn bè) đọc là 「ともだち」."
+      },
+      {
+        "id": 4,
+        "section": "文字・語彙 (Chữ Hán - Từ vựng)",
+        "category": "Mondai 1: Cách đọc Kanji",
+        "question": "まいにち [水]を 飲みます。",
+        "options": [
+          "みず",
+          "すい",
+          "おちゃ",
+          "ジュース"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chữ Hán [水] (Thủy - nước) đứng một mình đọc âm Kun là 「みず」."
+      },
+      {
+        "id": 5,
+        "section": "文字・語彙 (Chữ Hán - Từ vựng)",
+        "category": "Mondai 2: Tìm Kanji thích hợp",
+        "question": "えきの [まえ]で まちます。",
+        "options": [
+          "前",
+          "後",
+          "中",
+          "外"
+        ],
+        "correctIndex": 0,
+        "explanation": "まえ (phía trước) viết bằng Kanji là [前] (Tiền)."
+      },
+      {
+        "id": 6,
+        "section": "文字・語彙 (Chữ Hán - Từ vựng)",
+        "category": "Mondai 2: Tìm Kanji thích hợp",
+        "question": "あの [くるま]は あかいです。",
+        "options": [
+          "車",
+          "電車",
+          "自転車",
+          "東"
+        ],
+        "correctIndex": 0,
+        "explanation": "くるま (xe ô tô) viết bằng Kanji là [車] (Xa)."
+      },
+      {
+        "id": 7,
+        "section": "文字・語彙 (Chữ Hán - Từ vựng)",
+        "category": "Mondai 3: Điền từ vào câu",
+        "question": "あさごはんを たべて、( 　 )を みがきます。",
+        "options": [
+          "は",
+          "て",
+          "め",
+          "あし"
+        ],
+        "correctIndex": 0,
+        "explanation": "Cụm từ cố định: はを みがきます (đánh răng). は = răng."
+      },
+      {
+        "id": 8,
+        "section": "文字・語彙 (Chữ Hán - Từ vựng)",
+        "category": "Mondai 3: Điền từ vào câu",
+        "question": "あついですね。( 　 )を つけて ください。",
+        "options": [
+          "エアコン",
+          "テレビ",
+          "まど",
+          "ドア"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trời nóng (あつい) nên bật điều hòa (エアコンを つけて ください)."
+      },
+      {
+        "id": 9,
+        "section": "文法・読解 (Ngữ pháp - Đọc hiểu)",
+        "category": "Mondai 1: Ngữ pháp",
+        "question": "わたしは まいにち バス ( 　 ) がっこうへ いきます。",
+        "options": [
+          "で",
+          "に",
+          "へ",
+          "を"
+        ],
+        "correctIndex": 0,
+        "explanation": "Trợ từ で chỉ phương tiện đi lại: バスで (bằng xe buýt)."
+      },
+      {
+        "id": 10,
+        "section": "文法・読解 (Ngữ pháp - Đọc hiểu)",
+        "category": "Mondai 1: Ngữ pháp",
+        "question": "きのうの ばん、８じ ( 　 ) べんきょうしました。",
+        "options": [
+          "から",
+          "まで",
+          "に",
+          "へ"
+        ],
+        "correctIndex": 0,
+        "explanation": "8じから (từ 8 giờ) biểu thị mốc bắt đầu học bài."
+      },
+      {
+        "id": 11,
+        "section": "文法・読解 (Ngữ pháp - Đọc hiểu)",
+        "category": "Mondai 2: Sắp xếp dấu sao ★",
+        "question": "わたしは ＿＿ ＿＿ ★ ＿＿ 好きです。\n(1: が  2: すし  3: 日本の  4: いちばん)",
+        "options": [
+          "すし (2)",
+          "いちばん (4)",
+          "が (1)",
+          "日本の (3)"
+        ],
+        "correctIndex": 1,
+        "explanation": "Thứ tự câu đúng: わたしは [日本の] [すし] [★いちばん] [が] 好きです。Vị trí dấu sao là số 4: いちばん."
+      },
+      {
+        "id": 12,
+        "section": "文法・読解 (Ngữ pháp - Đọc hiểu)",
+        "category": "Mondai 3: Đọc hiểu ngắn",
+        "question": "【Đọc đoạn văn sau và trả lời câu hỏi】\nやまだ：「たなかさん、きのう どこかへ 行きましたか。」\nたなか：「ええ、京都へ 行きました。とても きれいでした。でも、人が 多かったです。」\n\n【Câu hỏi】たなかさんは きのう どうでしたか。",
+        "options": [
+          "京都へ 行って、人が 多かったです。",
+          "どこも 行きませんでした。",
+          "京都へ 行きませんでした。",
+          "人が 少なかったです。"
+        ],
+        "correctIndex": 0,
+        "explanation": "Anh Tanaka nói hôm qua đi Kyoto, phong cảnh rất đẹp nhưng đông người (人が 多かったです)."
+      }
+    ]
+  },
+  {
+    "id": "test_n5_02",
+    "title": "Đề thi thử JLPT N5 - Đề số 2",
+    "description": "Đề thi thử N5 tổng hợp số 2 giúp rèn luyện phản xạ tính giờ và kỹ năng làm bài trắc nghiệm.",
+    "durationMinutes": 45,
+    "passScore": 80,
+    "maxScore": 180,
+    "questions": [
+      {
+        "id": 1,
+        "section": "文字・語彙 (Chữ Hán - Từ vựng)",
+        "category": "Mondai 1: Cách đọc Kanji",
+        "question": "きょうは [何曜日]ですか。",
+        "options": [
+          "なんようび",
+          "なにようび",
+          "なんにち",
+          "なんがつ"
+        ],
+        "correctIndex": 0,
+        "explanation": "Chữ Hán [何曜日] đọc là 「なんようび」 (Thứ mấy trong tuần)."
+      },
+      {
+        "id": 2,
+        "section": "文字・語彙 (Chữ Hán - Từ vựng)",
+        "category": "Mondai 1: Cách đọc Kanji",
+        "question": "こうえんに [花]が あります。",
+        "options": [
+          "はな",
+          "き",
+          "みず",
+          "やま"
+        ],
+        "correctIndex": 0,
+        "explanation": "[花] (Hoa - bông hoa) đọc là 「はな」."
+      },
+      {
+        "id": 3,
+        "section": "文字・語彙 (Chữ Hán - Từ vựng)",
+        "category": "Mondai 2: Tìm Kanji thích hợp",
+        "question": "あした ともだちと [あいます]。",
+        "options": [
+          "会います",
+          "行きます",
+          "来ます",
+          "話します"
+        ],
+        "correctIndex": 0,
+        "explanation": "あいます (gặp) viết bằng Kanji là [会います] (Hội)."
+      },
+      {
+        "id": 4,
+        "section": "文法・読解 (Ngữ pháp - Đọc hiểu)",
+        "category": "Mondai 1: Ngữ pháp",
+        "question": "ここで しゃしんを ( 　 ) は いけません。",
+        "options": [
+          "とって",
+          "とる",
+          "とります",
+          "とった"
+        ],
+        "correctIndex": 0,
+        "explanation": "Mẫu câu cấm đoán: Vて + は いけません (Không được làm V). とります chuyển sang thể て là とって."
+      },
+      {
+        "id": 5,
+        "section": "文法・読解 (Ngữ pháp - Đọc hiểu)",
+        "category": "Mondai 1: Ngữ pháp",
+        "question": "わたしは にほんごを はなす こと ( 　 ) できます。",
+        "options": [
+          "が",
+          "を",
+          "に",
+          "で"
+        ],
+        "correctIndex": 0,
+        "explanation": "Mẫu câu diễn tả khả năng: Vる こと + が + できます."
+      },
+      {
+        "id": 6,
+        "section": "文法・読解 (Ngữ pháp - Đọc hiểu)",
+        "category": "Mondai 3: Đọc hiểu ngắn",
+        "question": "【Thông báo tại thư viện】\n「ほんは ひとり ３さつまで かりることが できます。２しゅうかん いないに かえして ください。」\n\n【Câu hỏi】ほんを 何さつ、いつまで かりることができますか。",
+        "options": [
+          "３さつまで、２しゅうかん いない",
+          "２さつまで、３しゅうかん いない",
+          "ひとり １さつ、２しゅうかん",
+          "何さつでも、２しゅうかん"
+        ],
+        "correctIndex": 0,
+        "explanation": "Thông báo ghi rõ: ひとり ３さつまで (tối đa 3 quyển), ２しゅうかん いないに (trong vòng 2 tuần)."
+      }
+    ]
+  }
+]
