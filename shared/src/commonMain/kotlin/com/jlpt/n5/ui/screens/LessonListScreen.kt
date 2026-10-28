@@ -5,12 +5,15 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -27,12 +30,13 @@ import com.jlpt.n5.ui.theme.*
 
 @Composable
 fun LessonListScreen(
+    listState: LazyListState = rememberLazyListState(),
     onNavigateToDetail: (Int) -> Unit,
     onNavigateToFlashcard: (Int) -> Unit
 ) {
     val focusManager = LocalFocusManager.current
-    var searchQuery by remember { mutableStateOf("") }
-    var selectedFilter by remember { mutableStateOf("ALL") } // ALL, COMPLETED, INCOMPLETE
+    var searchQuery by rememberSaveable { mutableStateOf("") }
+    var selectedFilter by rememberSaveable { mutableStateOf("ALL") } // ALL, COMPLETED, INCOMPLETE
 
     val filteredLessons = remember(searchQuery, selectedFilter) {
         JLPTRepository.lessons.filter { lesson ->
@@ -158,11 +162,15 @@ fun LessonListScreen(
 
         // Lesson List
         LazyColumn(
+            state = listState,
             modifier = Modifier.fillMaxSize(),
             contentPadding = PaddingValues(bottom = 24.dp),
             verticalArrangement = Arrangement.spacedBy(10.dp)
         ) {
-            items(filteredLessons) { lesson ->
+            items(
+                items = filteredLessons,
+                key = { it.lessonNumber }
+            ) { lesson ->
                 LessonFullCard(
                     lesson = lesson,
                     onOpenDetail = {

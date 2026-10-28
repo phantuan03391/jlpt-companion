@@ -5,7 +5,9 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
@@ -26,6 +28,7 @@ import kotlinx.coroutines.delay
 
 @Composable
 fun MockTestListScreen(
+    listState: LazyListState = rememberLazyListState(),
     onStartExam: (String) -> Unit
 ) {
     val tests = JLPTRepository.mockTests
@@ -121,10 +124,14 @@ fun MockTestListScreen(
         Spacer(modifier = Modifier.height(8.dp))
 
         LazyColumn(
+            state = listState,
             verticalArrangement = Arrangement.spacedBy(12.dp),
             contentPadding = PaddingValues(bottom = 24.dp)
         ) {
-            items(tests) { test ->
+            items(
+                items = tests,
+                key = { it.id }
+            ) { test ->
                 Card(
                     modifier = Modifier.fillMaxWidth(),
                     shape = RoundedCornerShape(16.dp),

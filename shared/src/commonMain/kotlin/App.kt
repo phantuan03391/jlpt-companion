@@ -1,5 +1,6 @@
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
@@ -42,6 +43,10 @@ fun App() {
         var currentTab by remember { mutableStateOf(AppTab.HOME) }
         var flashcardLessonTarget by remember { mutableStateOf<Int?>(null) }
         var flashcardKanjiOnly by remember { mutableStateOf(false) }
+
+        val homeListState = rememberLazyListState()
+        val lessonsListState = rememberLazyListState()
+        val mockTestListState = rememberLazyListState()
 
         Scaffold(
             bottomBar = {
@@ -111,6 +116,7 @@ fun App() {
                     is Screen.Main -> {
                         when (currentTab) {
                             AppTab.HOME -> HomeScreen(
+                                listState = homeListState,
                                 onNavigateToLessons = { currentTab = AppTab.LESSONS },
                                 onNavigateToLessonDetail = { lessonNum ->
                                     currentScreen = Screen.LessonDetail(lessonNum)
@@ -125,6 +131,7 @@ fun App() {
                             )
 
                             AppTab.LESSONS -> LessonListScreen(
+                                listState = lessonsListState,
                                 onNavigateToDetail = { lessonNum ->
                                     currentScreen = Screen.LessonDetail(lessonNum)
                                 },
@@ -150,6 +157,7 @@ fun App() {
                             )
 
                             AppTab.MOCK_TESTS -> MockTestListScreen(
+                                listState = mockTestListState,
                                 onStartExam = { testId ->
                                     currentScreen = Screen.Exam(testId)
                                 }

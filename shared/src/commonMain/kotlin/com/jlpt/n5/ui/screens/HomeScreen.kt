@@ -4,7 +4,9 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
@@ -24,6 +26,7 @@ import com.jlpt.n5.ui.theme.*
 
 @Composable
 fun HomeScreen(
+    listState: LazyListState = rememberLazyListState(),
     onNavigateToLessons: () -> Unit,
     onNavigateToLessonDetail: (Int) -> Unit,
     onNavigateToFlashcards: (lessonNum: Int?, kanjiOnly: Boolean) -> Unit,
@@ -51,6 +54,7 @@ fun HomeScreen(
     val darkMode = LocalDarkMode.current
 
     LazyColumn(
+        state = listState,
         modifier = Modifier
             .fillMaxSize()
             .background(MaterialTheme.colors.background)
@@ -359,7 +363,10 @@ fun HomeScreen(
         }
 
         // First 5 Lessons Preview
-        items(JLPTRepository.lessons.take(5)) { lesson ->
+        items(
+            items = JLPTRepository.lessons.take(5),
+            key = { it.lessonNumber }
+        ) { lesson ->
             LessonRoadmapItem(
                 lesson = lesson,
                 onClick = { onNavigateToLessonDetail(lesson.lessonNumber) }

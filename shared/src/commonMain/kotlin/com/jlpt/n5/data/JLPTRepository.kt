@@ -33,6 +33,16 @@ object JLPTRepository {
         }
     }
 
+    val kanjiStrokesMap: Map<String, List<String>> by lazy {
+        try {
+            json.decodeFromString<Map<String, List<String>>>(KanjiStrokesFixtures.STROKES_RAW_JSON)
+        } catch (e: Exception) {
+            emptyMap()
+        }
+    }
+
+    fun getKanjiStrokes(kanji: String): List<String> = kanjiStrokesMap[kanji] ?: emptyList()
+
     // In-memory persistent state across sessions
     val masteredVocabIds = mutableSetOf<Int>()
     val starredVocabIds = mutableSetOf<Int>()
