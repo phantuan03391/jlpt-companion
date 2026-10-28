@@ -194,7 +194,7 @@
         "hanViet": "Tuế",
         "type": "Lượng từ",
         "exampleSentence": "わたしは 20歳です。",
-        "exampleSentenceReading": "わたしは はたち／にじゅっさいです。",
+        "exampleSentenceReading": "わたしは はたちです。",
         "exampleSentenceMeaning": "Tôi 20 tuổi."
       },
       {
@@ -211,30 +211,6 @@
       },
       {
         "id": 118,
-        "word": "はい",
-        "reading": "はい",
-        "romaji": "hai",
-        "meaning": "Vâng / Đúng",
-        "hanViet": "",
-        "type": "Thán từ",
-        "exampleSentence": "はい、そうです。",
-        "exampleSentenceReading": "はい、そうです。",
-        "exampleSentenceMeaning": "Vâng, đúng vậy."
-      },
-      {
-        "id": 119,
-        "word": "いいえ",
-        "reading": "いいえ",
-        "romaji": "iie",
-        "meaning": "Không",
-        "hanViet": "",
-        "type": "Thán từ",
-        "exampleSentence": "いいえ、ちがいます。",
-        "exampleSentenceReading": "いいえ、ちがいます。",
-        "exampleSentenceMeaning": "Không, không phải."
-      },
-      {
-        "id": 120,
         "word": "初めまして",
         "reading": "はじめまして",
         "romaji": "hajimemashite",
@@ -246,7 +222,7 @@
         "exampleSentenceMeaning": "Rất vui được gặp bạn, tôi là Nam."
       },
       {
-        "id": 121,
+        "id": 119,
         "word": "どうぞよろしく",
         "reading": "どうぞよろしくおねがいします",
         "romaji": "douzo yoroshiku onegaishimasu",
@@ -297,11 +273,6 @@
             "japanese": "ミラーさんは アメリカ人ですか。ー はい、アメリカ人です。",
             "reading": "みらーさんは あめりかじんですか。ー はい、あめりかじんです。",
             "vietnamese": "Anh Miller có phải người Mỹ không? - Vâng, là người Mỹ."
-          },
-          {
-            "japanese": "ミラーさんは 先生ですか。ー いいえ、先生じゃありません。",
-            "reading": "みらーさんは せんせいですか。ー いいえ、せんせいじゃありません。",
-            "vietnamese": "Anh Miller là giáo viên à? - Không, không phải giáo viên."
           }
         ]
       },
@@ -326,11 +297,6 @@
             "japanese": "ミラーさんは IMCの 社員です。",
             "reading": "みらーさんは あいえむしーの しゃいんです。",
             "vietnamese": "Anh Miller là nhân viên của công ty IMC."
-          },
-          {
-            "japanese": "わたしの 本です。",
-            "reading": "わたしの ホンです。",
-            "vietnamese": "Là sách của tôi."
           }
         ]
       }
@@ -464,15 +430,15 @@
       },
       {
         "id": 211,
-        "word": "手帳",
-        "reading": "てちょう",
-        "romaji": "techou",
-        "meaning": "Sổ tay",
-        "hanViet": "Thủ Trướng",
+        "word": "ノート",
+        "reading": "のーと",
+        "romaji": "nooto",
+        "meaning": "Vở / Tập viết",
+        "hanViet": "",
         "type": "Danh từ",
-        "exampleSentence": "わたしの 手帳です。",
-        "exampleSentenceReading": "わたしの てちょうです。",
-        "exampleSentenceMeaning": "Là sổ tay của tôi."
+        "exampleSentence": "これは ノートです。",
+        "exampleSentenceReading": "これは のーとです。",
+        "exampleSentenceMeaning": "Đây là cuốn vở."
       },
       {
         "id": 212,
@@ -569,45 +535,23 @@
             "japanese": "これは 辞書です。",
             "reading": "これは じしょです。",
             "vietnamese": "Đây là từ điển."
-          },
-          {
-            "japanese": "あれは 病院です。",
-            "reading": "あれは びょういんです。",
-            "vietnamese": "Kia là bệnh viện."
           }
         ]
       },
       {
-        "title": "この N／その N／あの N は ... です",
+        "title": "この N／その N／あの N",
         "pattern": "この N／その N／あの N",
-        "explanation": "Bổ nghĩa trực tiếp cho danh từ đi liền sau nó. Phải có danh từ đi kèm: このほん (quyển sách này), あのひと (người kia).",
+        "explanation": "Bổ nghĩa trực tiếp cho danh từ đi liền sau nó. Phải có danh từ đi kèm: このほん, そのかさ.",
         "examples": [
           {
             "japanese": "この本は わたしのです。",
             "reading": "このほんは わたしのです。",
             "vietnamese": "Quyển sách này là của tôi."
-          },
-          {
-            "japanese": "その傘は だれの ですか。",
-            "reading": "そのかさは だれの ですか。",
-            "vietnamese": "Cái ô đó là của ai vậy?"
           }
         ]
       },
       {
-        "title": "そうです／そうじゃありません",
-        "pattern": "はい、そうです。／ いいえ、そうじゃありません。",
-        "explanation": "Dùng để xác nhận thông tin câu hỏi nghi vấn danh từ. 'Đúng vậy' hoặc 'Không phải vậy'.",
-        "examples": [
-          {
-            "japanese": "それは テレホンカードですか。ー はい、そうです。",
-            "reading": "それは てれほんかーどですか。ー はい、そうです。",
-            "vietnamese": "Đó là thẻ điện thoại phải không? - Vâng, đúng vậy."
-          }
-        ]
-      },
-      {
-        "title": "Câu hỏi lựa chọn: A ですか、B ですか",
+        "title": "A ですか、B ですか (Hỏi lựa chọn)",
         "pattern": "Câu 1 ですか、Câu 2 ですか",
         "explanation": "Hỏi người nghe chọn lựa giữa A hay B. Trả lời trực tiếp vào đáp án chọn, KHÔNG dùng はい hoặc いいえ.",
         "examples": [
@@ -792,7 +736,7 @@
         "type": "Danh từ",
         "exampleSentence": "お国は どちらですか。",
         "exampleSentenceReading": "おくには どちらですか。",
-        "exampleSentenceMeaning": "Đất nước của bạn ở đâu (bạn là người nước nào)?"
+        "exampleSentenceMeaning": "Bạn là người nước nào?"
       },
       {
         "id": 315,
@@ -829,52 +773,25 @@
             "japanese": "ここは 教室です。",
             "reading": "ここは きょうしつです。",
             "vietnamese": "Đây là phòng học."
-          },
-          {
-            "japanese": "あそこは 事務所です。",
-            "reading": "あそこは じむしょです。",
-            "vietnamese": "Kia là văn phòng."
           }
         ]
       },
       {
         "title": "N は N(địa điểm) です",
         "pattern": "N は Địa điểm です",
-        "explanation": "Chỉ vị trí của một vật, một người hoặc một địa điểm.",
+        "explanation": "Chỉ vị trí của một vật, một người hoặc một phòng ban.",
         "examples": [
           {
             "japanese": "お手洗いは あそこです。",
             "reading": "おてあらいは あそこです。",
             "vietnamese": "Nhà vệ sinh ở đằng kia."
-          },
-          {
-            "japanese": "ミラーさんは 事務所です。",
-            "reading": "みらーさんは じむしょです。",
-            "vietnamese": "Anh Miller đang ở văn phòng."
           }
         ]
       },
       {
-        "title": "どこ／どちら (Ở đâu / Hướng nào)",
-        "pattern": "N は どこ／どちら ですか",
-        "explanation": "どこ hỏi nơi chốn (ở đâu). どちら là cách nói lịch sự hơn của どこ hoặc dùng để hỏi phương hướng.",
-        "examples": [
-          {
-            "japanese": "電話は どこですか。ー ２階です。",
-            "reading": "でんわは どこですか。ー にかいです。",
-            "vietnamese": "Điện thoại ở đâu? - Ở tầng 2."
-          },
-          {
-            "japanese": "お国は どちらですか。ー ベトナムです。",
-            "reading": "おくには どちらですか。ー べとなむです。",
-            "vietnamese": "Đất nước bạn ở đâu? - Là Việt Nam."
-          }
-        ]
-      },
-      {
-        "title": "N は いくらですか (Hỏi giá tiền)",
+        "title": "N は いくらですか",
         "pattern": "N は いくらですか",
-        "explanation": "Hỏi giá tiền của món hàng N. Trả lời bằng Số tiền + えん (yên).",
+        "explanation": "Hỏi giá tiền của món hàng N. Trả lời bằng Số tiền + 円 (えん).",
         "examples": [
           {
             "japanese": "このネクタイは いくらですか。ー １５００円です。",
@@ -1025,18 +942,6 @@
       },
       {
         "id": 412,
-        "word": "何分",
-        "reading": "なんぷん",
-        "romaji": "nanpun",
-        "meaning": "Mấy phút",
-        "hanViet": "Hà Phân",
-        "type": "Từ để hỏi",
-        "exampleSentence": "今 何時何分ですか。",
-        "exampleSentenceReading": "いま なんじなんぷんですか。",
-        "exampleSentenceMeaning": "Bây giờ là mấy giờ mấy phút?"
-      },
-      {
-        "id": 413,
         "word": "午前",
         "reading": "ごぜん",
         "romaji": "gozen",
@@ -1048,7 +953,7 @@
         "exampleSentenceMeaning": "9 giờ sáng."
       },
       {
-        "id": 414,
+        "id": 413,
         "word": "午後",
         "reading": "ごご",
         "romaji": "gogo",
@@ -1060,7 +965,7 @@
         "exampleSentenceMeaning": "2 giờ chiều."
       },
       {
-        "id": 415,
+        "id": 414,
         "word": "朝",
         "reading": "あさ",
         "romaji": "asa",
@@ -1072,7 +977,7 @@
         "exampleSentenceMeaning": "Buổi sáng tôi ăn bánh mì."
       },
       {
-        "id": 416,
+        "id": 415,
         "word": "昼",
         "reading": "ひる",
         "romaji": "hiru",
@@ -1084,7 +989,7 @@
         "exampleSentenceMeaning": "Giờ nghỉ trưa tôi đi dạo."
       },
       {
-        "id": 417,
+        "id": 416,
         "word": "晩 / 夜",
         "reading": "ばん／よる",
         "romaji": "ban / yoru",
@@ -1098,7 +1003,7 @@
     ],
     "grammarPoints": [
       {
-        "title": "今 ～時～分 です (Nói giờ phút)",
+        "title": "今 ～時～分 です",
         "pattern": "今 [Số giờ]時 [Số phút]分 です",
         "explanation": "Dùng để biểu thị thời gian hiện tại. Chú ý các giờ đặc biệt: 4時 (よじ), 7時 (しちじ), 9時 (くじ).",
         "examples": [
@@ -1106,11 +1011,6 @@
             "japanese": "今 ４時５分です。",
             "reading": "いま よじごふんです。",
             "vietnamese": "Bây giờ là 4 giờ 5 phút."
-          },
-          {
-            "japanese": "ニューヨークは 今 午前４時です。",
-            "reading": "にゅーよーくは いま ごぜんよじです。",
-            "vietnamese": "Ở New York bây giờ là 4 giờ sáng."
           }
         ]
       },
@@ -1123,21 +1023,11 @@
             "japanese": "わたしは 毎日 勉強します。",
             "reading": "わたしは まいにち べんきょうします。",
             "vietnamese": "Mỗi ngày tôi đều học."
-          },
-          {
-            "japanese": "きのう 勉強しました。",
-            "reading": "きのう べんきょうしました。",
-            "vietnamese": "Hôm qua tôi đã học."
-          },
-          {
-            "japanese": "あしたは 働きません。",
-            "reading": "あしたは はたらきません。",
-            "vietnamese": "Ngày mai tôi không làm việc."
           }
         ]
       },
       {
-        "title": "N(thời gian) に V (Thời điểm xảy ra hành động)",
+        "title": "N(thời gian) に V",
         "pattern": "Thời gian (có con số) + に + V",
         "explanation": "Trợ từ に đi sau mốc thời gian có chứa con số cụ thể (giờ, ngày, tháng, năm) để biểu thị thời điểm thực hiện hành động.",
         "examples": [
@@ -1145,16 +1035,11 @@
             "japanese": "６時半に 起きます。",
             "reading": "ろくじはんに おきます。",
             "vietnamese": "Tôi thức dậy lúc 6 giờ rưỡi."
-          },
-          {
-            "japanese": "７月２日に 日本へ 来ました。",
-            "reading": "しちがつふつかに にほんへ きました。",
-            "vietnamese": "Tôi đã đến Nhật vào ngày 2 tháng 7."
           }
         ]
       },
       {
-        "title": "～から ～まで (Từ ~ đến ~)",
+        "title": "～から ～まで",
         "pattern": "N1 から N2 まで",
         "explanation": "から chỉ điểm bắt đầu (thời gian hoặc địa điểm), まで chỉ điểm kết thúc.",
         "examples": [
@@ -1162,11 +1047,6 @@
             "japanese": "９時から ５時まで 働きます。",
             "reading": "くじから ごじまで はたらきます。",
             "vietnamese": "Tôi làm việc từ 9 giờ đến 5 giờ."
-          },
-          {
-            "japanese": "銀行は ９時から ３時までです。",
-            "reading": "ぎんこうは くじから さんじまでです。",
-            "vietnamese": "Ngân hàng mở cửa từ 9h đến 3h."
           }
         ]
       }
@@ -1264,18 +1144,6 @@
       },
       {
         "id": 508,
-        "word": "船",
-        "reading": "ふね",
-        "romaji": "fune",
-        "meaning": "Tàu thủy / Thuyền",
-        "hanViet": "Thuyền",
-        "type": "Danh từ",
-        "exampleSentence": "船で 行きます。",
-        "exampleSentenceReading": "ふねで いきます。",
-        "exampleSentenceMeaning": "Đi bằng tàu thủy."
-      },
-      {
-        "id": 509,
         "word": "電車",
         "reading": "でんしゃ",
         "romaji": "densha",
@@ -1287,7 +1155,7 @@
         "exampleSentenceMeaning": "Đi bằng tàu điện."
       },
       {
-        "id": 510,
+        "id": 509,
         "word": "地下鉄",
         "reading": "ちかてつ",
         "romaji": "chikatetsu",
@@ -1299,11 +1167,11 @@
         "exampleSentenceMeaning": "Lên tàu điện ngầm."
       },
       {
-        "id": 511,
+        "id": 510,
         "word": "新幹線",
         "reading": "しんかんせん",
         "romaji": "shinkansen",
-        "meaning": "Tàu siêu tốc Shinkansen",
+        "meaning": "Tàu Shinkansen",
         "hanViet": "Tân Can Tuyến",
         "type": "Danh từ",
         "exampleSentence": "新幹線は 速いです。",
@@ -1311,7 +1179,7 @@
         "exampleSentenceMeaning": "Tàu Shinkansen chạy rất nhanh."
       },
       {
-        "id": 512,
+        "id": 511,
         "word": "バス",
         "reading": "ばす",
         "romaji": "basu",
@@ -1323,19 +1191,7 @@
         "exampleSentenceMeaning": "Đến trường bằng xe buýt."
       },
       {
-        "id": 513,
-        "word": "タクシー",
-        "reading": "たくしー",
-        "romaji": "takushii",
-        "meaning": "Xe taxi",
-        "hanViet": "",
-        "type": "Danh từ",
-        "exampleSentence": "タクシーを 呼びます。",
-        "exampleSentenceReading": "たくしーを よびます。",
-        "exampleSentenceMeaning": "Gọi xe taxi."
-      },
-      {
-        "id": 514,
+        "id": 512,
         "word": "自転車",
         "reading": "じてんしゃ",
         "romaji": "jitensha",
@@ -1347,7 +1203,7 @@
         "exampleSentenceMeaning": "Đi bằng xe đạp."
       },
       {
-        "id": 515,
+        "id": 513,
         "word": "歩いて",
         "reading": "あるいて",
         "romaji": "aruite",
@@ -1359,7 +1215,7 @@
         "exampleSentenceMeaning": "Từ ga tôi đi bộ về nhà."
       },
       {
-        "id": 516,
+        "id": 514,
         "word": "友達",
         "reading": "ともだち",
         "romaji": "tomodachi",
@@ -1371,7 +1227,7 @@
         "exampleSentenceMeaning": "Gặp bạn bè."
       },
       {
-        "id": 517,
+        "id": 515,
         "word": "一人で",
         "reading": "ひとりで",
         "romaji": "hitoride",
@@ -1386,25 +1242,20 @@
     "grammarPoints": [
       {
         "title": "N(địa điểm) へ 行きます／来ます／帰ります",
-        "pattern": "Địa điểm + へ + 行きます／来ます／帰ります",
+        "pattern": "Địa điểm + へ + Hành động di chuyển",
         "explanation": "Trợ từ へ (phát âm là 'e') biểu thị hướng đi tới đích đến.",
         "examples": [
           {
             "japanese": "わたしは 京都へ 行きます。",
             "reading": "わたしは きょうとへ いきます。",
             "vietnamese": "Tôi đi đến Kyoto."
-          },
-          {
-            "japanese": "来週 日本へ 来ます。",
-            "reading": "らいしゅう にほんへ きます。",
-            "vietnamese": "Tuần sau tôi đến Nhật."
           }
         ]
       },
       {
-        "title": "どこ [へ] も 行きません (Phủ định hoàn toàn)",
-        "pattern": "どこ [へ] も 行きません／行きませんでした",
-        "explanation": "Từ để hỏi + も + thể phủ định để phủ định hoàn toàn (Không đi đâu cả).",
+        "title": "どこ [へ] も 行きません",
+        "pattern": "Từ để hỏi + も + Thể phủ định",
+        "explanation": "Phủ định hoàn toàn (Không đi đâu cả, không ăn gì cả).",
         "examples": [
           {
             "japanese": "日曜日は どこも 行きませんでした。",
@@ -1414,36 +1265,14 @@
         ]
       },
       {
-        "title": "N(phương tiện) で 行きます (Phương tiện di chuyển)",
-        "pattern": "Phương tiện + で + 行きます",
-        "explanation": "Trợ từ で chỉ phương tiện hoặc cách thức di chuyển (bằng xe bus, tàu điện...). Chú ý: đi bộ dùng 歩いて (aruite), không thêm で.",
+        "title": "N(phương tiện) で 行きます",
+        "pattern": "Phương tiện + で + Đi/Đến/Về",
+        "explanation": "Trợ từ で chỉ phương tiện di chuyển. Riêng đi bộ dùng 歩いて (aruite), không thêm で.",
         "examples": [
           {
             "japanese": "電車で 行きます。",
             "reading": "でんしゃで いきます。",
             "vietnamese": "Tôi đi bằng tàu điện."
-          },
-          {
-            "japanese": "駅から 歩いて 帰りました。",
-            "reading": "えきから あるいて かえりました。",
-            "vietnamese": "Từ nhà ga tôi đã đi bộ về."
-          }
-        ]
-      },
-      {
-        "title": "N(người) と V (Cùng với ai)",
-        "pattern": "Người + と + V",
-        "explanation": "Trợ từ と mang nghĩa 'cùng với'. Nếu làm một mình dùng 一人で (hitori de), không dùng と.",
-        "examples": [
-          {
-            "japanese": "家族と 日本へ 来ました。",
-            "reading": "かぞくと にほんへ きました。",
-            "vietnamese": "Tôi đã đến Nhật cùng với gia đình."
-          },
-          {
-            "japanese": "一人で 東京へ 行きます。",
-            "reading": "ひとりで とうきょうへ いきます。",
-            "vietnamese": "Tôi đi Tokyo một mình."
           }
         ]
       }
@@ -1451,33 +1280,283 @@
   },
   {
     "lessonNumber": 6,
-    "title": "Bài 6: Thức ăn & Hành động hàng ngày",
+    "title": "Bài 6: Thức ăn & Hành động thường ngày",
     "japaneseTitle": "第６課：何をしますか",
-    "description": "Trợ từ を (o) chỉ đối tượng tác động, で chỉ địa điểm diễn ra hành động, rủ rê Vませんか / Vましょう.",
+    "description": "Trợ từ を (o) chỉ đối tượng tác động, で chỉ địa điểm hành động diễn ra, rủ rê Vませんか / Vましょう.",
     "vocabularies": [
       {
         "id": 601,
-        "word": "言葉 6",
-        "reading": "ことば",
-        "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 6",
-        "hanViet": "Ngôn Diệp",
+        "word": "食べます",
+        "reading": "たべます",
+        "romaji": "tabemasu",
+        "meaning": "Ăn",
+        "hanViet": "Thực",
+        "type": "Động từ",
+        "exampleSentence": "ご飯を 食べます。",
+        "exampleSentenceReading": "ごはんを たべます。",
+        "exampleSentenceMeaning": "Tôi ăn cơm."
+      },
+      {
+        "id": 602,
+        "word": "飲みます",
+        "reading": "のみます",
+        "romaji": "nomimasu",
+        "meaning": "Uống",
+        "hanViet": "Ẩm",
+        "type": "Động từ",
+        "exampleSentence": "水を 飲みます。",
+        "exampleSentenceReading": "みずを のみます。",
+        "exampleSentenceMeaning": "Uống nước."
+      },
+      {
+        "id": 603,
+        "word": "吸います",
+        "reading": "すいます",
+        "romaji": "suimasu",
+        "meaning": "Hút (thuốc)",
+        "hanViet": "Hấp",
+        "type": "Động từ",
+        "exampleSentence": "たばこを 吸います。",
+        "exampleSentenceReading": "たばこを すいます。",
+        "exampleSentenceMeaning": "Hút thuốc lá."
+      },
+      {
+        "id": 604,
+        "word": "見ます",
+        "reading": "みます",
+        "romaji": "mimasu",
+        "meaning": "Xem / Nhìn",
+        "hanViet": "Kiến",
+        "type": "Động từ",
+        "exampleSentence": "テレビを 見ます。",
+        "exampleSentenceReading": "てれびを みます。",
+        "exampleSentenceMeaning": "Xem tivi."
+      },
+      {
+        "id": 605,
+        "word": "聞きます",
+        "reading": "ききます",
+        "romaji": "kikimasu",
+        "meaning": "Nghe",
+        "hanViet": "Văn",
+        "type": "Động từ",
+        "exampleSentence": "音楽を 聞きます。",
+        "exampleSentenceReading": "おんがくを ききます。",
+        "exampleSentenceMeaning": "Nghe nhạc."
+      },
+      {
+        "id": 606,
+        "word": "読みます",
+        "reading": "よみます",
+        "romaji": "yomimasu",
+        "meaning": "Đọc",
+        "hanViet": "Độc",
+        "type": "Động từ",
+        "exampleSentence": "本を 読みます。",
+        "exampleSentenceReading": "ほんを よみます。",
+        "exampleSentenceMeaning": "Đọc sách."
+      },
+      {
+        "id": 607,
+        "word": "書きます",
+        "reading": "かきます",
+        "romaji": "kakimasu",
+        "meaning": "Viết / Vẽ",
+        "hanViet": "Thư",
+        "type": "Động từ",
+        "exampleSentence": "手紙を 書きます。",
+        "exampleSentenceReading": "てがみを かきます。",
+        "exampleSentenceMeaning": "Viết thư."
+      },
+      {
+        "id": 608,
+        "word": "買います",
+        "reading": "かいます",
+        "romaji": "kaimasu",
+        "meaning": "Mua",
+        "hanViet": "Mãi",
+        "type": "Động từ",
+        "exampleSentence": "パンを 買います。",
+        "exampleSentenceReading": "ぱんを かいます。",
+        "exampleSentenceMeaning": "Mua bánh mì."
+      },
+      {
+        "id": 609,
+        "word": "撮ります",
+        "reading": "とります",
+        "romaji": "torimasu",
+        "meaning": "Chụp (ảnh)",
+        "hanViet": "Toát",
+        "type": "Động từ",
+        "exampleSentence": "写真を 撮ります。",
+        "exampleSentenceReading": "しゃしんを とります。",
+        "exampleSentenceMeaning": "Chụp ảnh."
+      },
+      {
+        "id": 610,
+        "word": "します",
+        "reading": "します",
+        "romaji": "shimasu",
+        "meaning": "Làm / Chơi",
+        "hanViet": "",
+        "type": "Động từ",
+        "exampleSentence": "サッカーを します。",
+        "exampleSentenceReading": "さっかーを します。",
+        "exampleSentenceMeaning": "Chơi bóng đá."
+      },
+      {
+        "id": 611,
+        "word": "会います",
+        "reading": "あいます",
+        "romaji": "aimasu",
+        "meaning": "Gặp gỡ",
+        "hanViet": "Hội",
+        "type": "Động từ",
+        "exampleSentence": "友達に 会います。",
+        "exampleSentenceReading": "ともだちに あいます。",
+        "exampleSentenceMeaning": "Gặp bạn bè."
+      },
+      {
+        "id": 612,
+        "word": "ご飯",
+        "reading": "ごはん",
+        "romaji": "gohan",
+        "meaning": "Cơm / Bữa ăn",
+        "hanViet": "Phạn",
         "type": "Danh từ",
-        "exampleSentence": "第6課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい6かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 6."
+        "exampleSentence": "朝ご飯を 食べましたか。",
+        "exampleSentenceReading": "あさごはんを たべましたか。",
+        "exampleSentenceMeaning": "Bạn đã ăn sáng chưa?"
+      },
+      {
+        "id": 613,
+        "word": "パン",
+        "reading": "ぱん",
+        "romaji": "pan",
+        "meaning": "Bánh mì",
+        "hanViet": "",
+        "type": "Danh từ",
+        "exampleSentence": "パンと 卵を 食べます。",
+        "exampleSentenceReading": "ぱんと たまごを たべます。",
+        "exampleSentenceMeaning": "Ăn bánh mì và trứng."
+      },
+      {
+        "id": 614,
+        "word": "肉",
+        "reading": "にく",
+        "romaji": "niku",
+        "meaning": "Thịt",
+        "hanViet": "Nhục",
+        "type": "Danh từ",
+        "exampleSentence": "牛肉を 買いました。",
+        "exampleSentenceReading": "ぎゅうにくを かいました。",
+        "exampleSentenceMeaning": "Tôi đã mua thịt bò."
+      },
+      {
+        "id": 615,
+        "word": "魚",
+        "reading": "さかな",
+        "romaji": "sakana",
+        "meaning": "Cá",
+        "hanViet": "Ngư",
+        "type": "Danh từ",
+        "exampleSentence": "魚が 好きです。",
+        "exampleSentenceReading": "さかなが すきです。",
+        "exampleSentenceMeaning": "Tôi thích cá."
+      },
+      {
+        "id": 616,
+        "word": "野菜",
+        "reading": "やさい",
+        "romaji": "yasai",
+        "meaning": "Rau",
+        "hanViet": "Dã Thái",
+        "type": "Danh từ",
+        "exampleSentence": "野菜を たくさん 食べます。",
+        "exampleSentenceReading": "やさいを たくさん たべます。",
+        "exampleSentenceMeaning": "Tôi ăn nhiều rau."
+      },
+      {
+        "id": 617,
+        "word": "果物",
+        "reading": "くだもの",
+        "romaji": "kudamono",
+        "meaning": "Hoa quả / Trái cây",
+        "hanViet": "Quả Vật",
+        "type": "Danh từ",
+        "exampleSentence": "果物を 買いに行きます。",
+        "exampleSentenceReading": "くだものを かいにいきます。",
+        "exampleSentenceMeaning": "Đi mua hoa quả."
+      },
+      {
+        "id": 618,
+        "word": "お茶",
+        "reading": "おちゃ",
+        "romaji": "ocha",
+        "meaning": "Trà xanh",
+        "hanViet": "Trà",
+        "type": "Danh từ",
+        "exampleSentence": "お茶を どうぞ。",
+        "exampleSentenceReading": "おちゃを どうぞ。",
+        "exampleSentenceMeaning": "Xin mời dùng trà."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 6",
-        "pattern": "Trợ từ を (o) chỉ đối tượng tác động, で chỉ địa điểm diễn ra hành động, rủ rê Vませんか / Vましょう",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 6: Thức ăn & Hành động hàng ngày.",
+        "title": "N を V (Tác động lên đối tượng)",
+        "pattern": "Danh từ + を + Động từ",
+        "explanation": "Trợ từ を (phát âm là 'o') đứng sau danh từ chỉ tân ngữ chịu tác động trực tiếp của ngoại động từ.",
         "examples": [
           {
-            "japanese": "これは 第6課の 例文です。",
-            "reading": "これは だい6かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 6."
+            "japanese": "ジュースを 飲みます。",
+            "reading": "じゅーすを のみます。",
+            "vietnamese": "Tôi uống nước hoa quả."
+          },
+          {
+            "japanese": "本を 読みます。",
+            "reading": "ほんを よみます。",
+            "vietnamese": "Tôi đọc sách."
+          }
+        ]
+      },
+      {
+        "title": "N(địa điểm) で V (Địa điểm xảy ra hành động)",
+        "pattern": "Địa điểm + で + Hành động",
+        "explanation": "Trợ từ で chỉ nơi chốn xảy ra hành động (khác với に chỉ nơi tồn tại).",
+        "examples": [
+          {
+            "japanese": "図書館で 勉強します。",
+            "reading": "としょかんで べんきょうします。",
+            "vietnamese": "Học bài ở thư viện."
+          },
+          {
+            "japanese": "レストランで ご飯を 食べました。",
+            "reading": "れすとらんで ごはんを たべました。",
+            "vietnamese": "Tôi đã ăn cơm ở nhà hàng."
+          }
+        ]
+      },
+      {
+        "title": "Vませんか (Mời mọc / Rủ rê)",
+        "pattern": "Vます(bỏ ます) + ませんか",
+        "explanation": "Dùng để rủ rê, mời mọc đối phương cùng làm một việc gì đó với thái độ tôn trọng ý kiến của người nghe.",
+        "examples": [
+          {
+            "japanese": "いっしょに 京都へ 行きませんか。ー ええ、行きましょう。",
+            "reading": "いっしょに きょうとへ いきませんか。ー ええ、いきましょう。",
+            "vietnamese": "Cùng đi Kyoto với tôi không? - Vâng, cùng đi nào!"
+          }
+        ]
+      },
+      {
+        "title": "Vましょう (Cùng làm nhé / Đề nghị làm)",
+        "pattern": "Vます(bỏ ます) + ましょう",
+        "explanation": "Dùng khi người nói chủ động đề xuất cùng làm gì đó hoặc đồng ý lời mời.",
+        "examples": [
+          {
+            "japanese": "ちょっと 休みましょう。",
+            "reading": "ちょっと やすみましょう。",
+            "vietnamese": "Chúng ta cùng nghỉ một chút nào."
           }
         ]
       }
@@ -1487,31 +1566,281 @@
     "lessonNumber": 7,
     "title": "Bài 7: Công cụ, Phương tiện & Cho/Nhận",
     "japaneseTitle": "第７課：あげます・もらいます",
-    "description": "Trợ từ で chỉ công cụ dụng cụ, hành động cho あげます và nhận もらいます, もう Vました.",
+    "description": "Trợ từ で chỉ phương tiện công cụ, hành động cho あげます và nhận もらいます, trạng thái đã làm xong もう Vました.",
     "vocabularies": [
       {
         "id": 701,
-        "word": "言葉 7",
-        "reading": "ことば",
-        "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 7",
-        "hanViet": "Ngôn Diệp",
+        "word": "切ります",
+        "reading": "きります",
+        "romaji": "kirimasu",
+        "meaning": "Cắt",
+        "hanViet": "Thiết",
+        "type": "Động từ",
+        "exampleSentence": "はさみで 紙を 切ります。",
+        "exampleSentenceReading": "はさみで かみを きります。",
+        "exampleSentenceMeaning": "Cắt giấy bằng kéo."
+      },
+      {
+        "id": 702,
+        "word": "送ります",
+        "reading": "おくります",
+        "romaji": "okurimasu",
+        "meaning": "Gửi (hàng, thư)",
+        "hanViet": "Tống",
+        "type": "Động từ",
+        "exampleSentence": "荷物を 送ります。",
+        "exampleSentenceReading": "にもつを おくります。",
+        "exampleSentenceMeaning": "Gửi hành lý."
+      },
+      {
+        "id": 703,
+        "word": "あげます",
+        "reading": "あげます",
+        "romaji": "agemasu",
+        "meaning": "Tặng / Cho",
+        "hanViet": "",
+        "type": "Động từ",
+        "exampleSentence": "母に 花を あげます。",
+        "exampleSentenceReading": "ははに はなを あげます。",
+        "exampleSentenceMeaning": "Tặng hoa cho mẹ."
+      },
+      {
+        "id": 704,
+        "word": "もらいます",
+        "reading": "もらいます",
+        "romaji": "moraimasu",
+        "meaning": "Nhận",
+        "hanViet": "",
+        "type": "Động từ",
+        "exampleSentence": "先生に 本を もらいました。",
+        "exampleSentenceReading": "せんせいに ほんを もらいました。",
+        "exampleSentenceMeaning": "Nhận sách từ thầy giáo."
+      },
+      {
+        "id": 705,
+        "word": "貸します",
+        "reading": "かします",
+        "romaji": "kashimasu",
+        "meaning": "Cho vay / Cho mượn",
+        "hanViet": "Thải",
+        "type": "Động từ",
+        "exampleSentence": "友達に お金を 貸します。",
+        "exampleSentenceReading": "ともだちに おかねを かします。",
+        "exampleSentenceMeaning": "Cho bạn bè mượn tiền."
+      },
+      {
+        "id": 706,
+        "word": "借ります",
+        "reading": "かります",
+        "romaji": "karimasu",
+        "meaning": "Vay / Mượn",
+        "hanViet": "Tá",
+        "type": "Động từ",
+        "exampleSentence": "本を 借ります。",
+        "exampleSentenceReading": "ほんを かります。",
+        "exampleSentenceMeaning": "Mượn sách."
+      },
+      {
+        "id": 707,
+        "word": "教えます",
+        "reading": "おしえます",
+        "romaji": "oshiemasu",
+        "meaning": "Dạy / Chỉ bảo",
+        "hanViet": "Giáo",
+        "type": "Động từ",
+        "exampleSentence": "日本語を 教えます。",
+        "exampleSentenceReading": "にほんごを おしえます。",
+        "exampleSentenceMeaning": "Dạy tiếng Nhật."
+      },
+      {
+        "id": 708,
+        "word": "習います",
+        "reading": "ならいます",
+        "romaji": "naraimasu",
+        "meaning": "Học (từ ai đó)",
+        "hanViet": "Tập",
+        "type": "Động từ",
+        "exampleSentence": "料理を 習います。",
+        "exampleSentenceReading": "りょうりを ならいます。",
+        "exampleSentenceMeaning": "Học nấu ăn."
+      },
+      {
+        "id": 709,
+        "word": "電話をかけます",
+        "reading": "でんわをかけます",
+        "romaji": "denwa o kakemasu",
+        "meaning": "Gọi điện thoại",
+        "hanViet": "Điện Thoại",
+        "type": "Cụm động từ",
+        "exampleSentence": "家族に 電話を かけます。",
+        "exampleSentenceReading": "かぞくに でんわを かけます。",
+        "exampleSentenceMeaning": "Gọi điện thoại cho gia đình."
+      },
+      {
+        "id": 710,
+        "word": "手",
+        "reading": "て",
+        "romaji": "te",
+        "meaning": "Bàn tay",
+        "hanViet": "Thủ",
         "type": "Danh từ",
-        "exampleSentence": "第7課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい7かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 7."
+        "exampleSentence": "手で 食べます。",
+        "exampleSentenceReading": "てで たべます。",
+        "exampleSentenceMeaning": "Ăn bằng tay."
+      },
+      {
+        "id": 711,
+        "word": "箸",
+        "reading": "はし",
+        "romaji": "hashi",
+        "meaning": "Đũa",
+        "hanViet": "Trợ",
+        "type": "Danh từ",
+        "exampleSentence": "箸で ご飯を 食べます。",
+        "exampleSentenceReading": "はしで ごはんを たべます。",
+        "exampleSentenceMeaning": "Ăn cơm bằng đũa."
+      },
+      {
+        "id": 712,
+        "word": "スプーン",
+        "reading": "すぷーん",
+        "romaji": "supuun",
+        "meaning": "Cái thìa / Muỗng",
+        "hanViet": "",
+        "type": "Danh từ",
+        "exampleSentence": "スプーンを 使います。",
+        "exampleSentenceReading": "すぷーんを つかいます。",
+        "exampleSentenceMeaning": "Sử dụng muỗng."
+      },
+      {
+        "id": 713,
+        "word": "ナイフ",
+        "reading": "ないふ",
+        "romaji": "naifu",
+        "meaning": "Con dao",
+        "hanViet": "",
+        "type": "Danh từ",
+        "exampleSentence": "ナイフで 切ります。",
+        "exampleSentenceReading": "ないふで きります。",
+        "exampleSentenceMeaning": "Cắt bằng dao."
+      },
+      {
+        "id": 714,
+        "word": "フォーク",
+        "reading": "ふぉーく",
+        "romaji": "fooku",
+        "meaning": "Cái dĩa / Nĩa",
+        "hanViet": "",
+        "type": "Danh từ",
+        "exampleSentence": "フォークで 食べます。",
+        "exampleSentenceReading": "ふぉーくで たべます。",
+        "exampleSentenceMeaning": "Ăn bằng nĩa."
+      },
+      {
+        "id": 715,
+        "word": "はさみ",
+        "reading": "はさみ",
+        "romaji": "hasami",
+        "meaning": "Cái kéo",
+        "hanViet": "",
+        "type": "Danh từ",
+        "exampleSentence": "はさみを 貸してください。",
+        "exampleSentenceReading": "はさみを かしてください。",
+        "exampleSentenceMeaning": "Xin cho tôi mượn kéo."
+      },
+      {
+        "id": 716,
+        "word": "荷物",
+        "reading": "にもつ",
+        "romaji": "nimotsu",
+        "meaning": "Hành lý / Kiện hàng",
+        "hanViet": "Hà Vật",
+        "type": "Danh từ",
+        "exampleSentence": "荷物を 持ちます。",
+        "exampleSentenceReading": "にもつを もちます。",
+        "exampleSentenceMeaning": "Mang hành lý."
+      },
+      {
+        "id": 717,
+        "word": "切符",
+        "reading": "きっぷ",
+        "romaji": "kippu",
+        "meaning": "Vé (tàu, xe)",
+        "hanViet": "Thiết Phù",
+        "type": "Danh từ",
+        "exampleSentence": "切符を 買いました。",
+        "exampleSentenceReading": "きっぷを かいました。",
+        "exampleSentenceMeaning": "Đã mua vé tàu."
+      },
+      {
+        "id": 718,
+        "word": "プレゼント",
+        "reading": "ぷれぜんと",
+        "romaji": "purezento",
+        "meaning": "Quà tặng",
+        "hanViet": "",
+        "type": "Danh từ",
+        "exampleSentence": "すてきな プレゼントです。",
+        "exampleSentenceReading": "すてきな ぷれぜんとです。",
+        "exampleSentenceMeaning": "Món quà thật tuyệt vời."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 7",
-        "pattern": "Trợ từ で chỉ công cụ dụng cụ, hành động cho あげます và nhận もらいます, もう Vました",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 7: Công cụ, Phương tiện & Cho/Nhận.",
+        "title": "N(công cụ/phương tiện) で V",
+        "pattern": "Công cụ + で + Hành động",
+        "explanation": "Trợ từ で chỉ phương tiện, công cụ hoặc ngôn ngữ dùng để thực hiện hành động.",
         "examples": [
           {
-            "japanese": "これは 第7課の 例文です。",
-            "reading": "これは だい7かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 7."
+            "japanese": "日本語で レポートを 書きます。",
+            "reading": "にほんごで れぽーとを かきます。",
+            "vietnamese": "Tôi viết báo cáo bằng tiếng Nhật."
+          },
+          {
+            "japanese": "はさみで 切ります。",
+            "reading": "はさみで きります。",
+            "vietnamese": "Cắt bằng kéo."
+          }
+        ]
+      },
+      {
+        "title": "N(người) に あげます (Tặng cho ai)",
+        "pattern": "Người nhận + に + N + を + あげます",
+        "explanation": "Người nói tặng đồ vật cho người khác (hoặc người khác tặng cho người thứ 3). Không dùng cho việc người khác tặng cho bản thân mình.",
+        "examples": [
+          {
+            "japanese": "わたしは 木村さんに 花を あげました。",
+            "reading": "わたしは きむらさんに はなを あげました。",
+            "vietnamese": "Tôi đã tặng hoa cho chị Kimura."
+          }
+        ]
+      },
+      {
+        "title": "N(người) に もらいます (Nhận từ ai)",
+        "pattern": "Người cho + に／から + N + を + もらいます",
+        "explanation": "Người nói nhận được món đồ hoặc sự giúp đỡ từ người khác.",
+        "examples": [
+          {
+            "japanese": "わたしは 山田さんに 辞書を もらいました。",
+            "reading": "わたしは やまださんに じしょを もらいました。",
+            "vietnamese": "Tôi đã nhận cuốn từ điển từ anh Yamada."
+          }
+        ]
+      },
+      {
+        "title": "もう Vました (Đã làm xong rồi)",
+        "pattern": "もう + Vました",
+        "explanation": "Diễn tả hành động đã hoàn tất tại thời điểm nói. Nếu chưa xong, trả lời bằng: いいえ、まだです (Chưa, vẫn chưa).",
+        "examples": [
+          {
+            "japanese": "もう 荷物を 送りましたか。ー はい、もう 送りました。",
+            "reading": "もう にもつを おくりましたか。ー はい、もう おくりました。",
+            "vietnamese": "Bạn đã gửi hành lý chưa? - Vâng, tôi đã gửi rồi."
+          },
+          {
+            "japanese": "もう 昼ご飯を 食べましたか。ー いいえ、まだです。",
+            "reading": "もう ひるごはんを たべましたか。ー いいえ、まだです。",
+            "vietnamese": "Bạn đã ăn trưa chưa? - Chưa, tôi chưa ăn."
           }
         ]
       }
@@ -1521,31 +1850,310 @@
     "lessonNumber": 8,
     "title": "Bài 8: Tính từ đuôi な và い",
     "japaneseTitle": "第８課：形容詞",
-    "description": "Tính từ trong tiếng Nhật (đuôi い và な), cách bổ nghĩa cho danh từ, câu hỏi どんな N.",
+    "description": "Tính từ trong tiếng Nhật (đuôi い và な), cách bổ nghĩa danh từ, phó từ とても / あまり, câu hỏi どんな N.",
     "vocabularies": [
       {
         "id": 801,
-        "word": "言葉 8",
-        "reading": "ことば",
-        "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 8",
-        "hanViet": "Ngôn Diệp",
-        "type": "Danh từ",
-        "exampleSentence": "第8課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい8かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 8."
+        "word": "ハンサム[な]",
+        "reading": "はんさむ",
+        "romaji": "hansamu",
+        "meaning": "Đẹp trai",
+        "hanViet": "",
+        "type": "Tính từ -na",
+        "exampleSentence": "ミラーさんは ハンサムです。",
+        "exampleSentenceReading": "みらーさんは はんさむです。",
+        "exampleSentenceMeaning": "Anh Miller rất đẹp trai."
+      },
+      {
+        "id": 802,
+        "word": "きれい[な]",
+        "reading": "きれい",
+        "romaji": "kirei",
+        "meaning": "Đẹp / Sạch sẽ",
+        "hanViet": "Khởi Lệ",
+        "type": "Tính từ -na",
+        "exampleSentence": "桜が きれいです。",
+        "exampleSentenceReading": "さくらが きれいです。",
+        "exampleSentenceMeaning": "Hoa anh đào đẹp quá."
+      },
+      {
+        "id": 803,
+        "word": "静か[な]",
+        "reading": "しずか",
+        "romaji": "shizuka",
+        "meaning": "Yên tĩnh",
+        "hanViet": "Tĩnh",
+        "type": "Tính từ -na",
+        "exampleSentence": "静かな 部屋です。",
+        "exampleSentenceReading": "しずかな へやです。",
+        "exampleSentenceMeaning": "Căn phòng yên tĩnh."
+      },
+      {
+        "id": 804,
+        "word": "にぎやか[な]",
+        "reading": "にぎやか",
+        "romaji": "nigiyaka",
+        "meaning": "Náo nhiệt / Nhộn nhịp",
+        "hanViet": "",
+        "type": "Tính từ -na",
+        "exampleSentence": "東京は にぎやかです。",
+        "exampleSentenceReading": "とうきょうは にぎやかです。",
+        "exampleSentenceMeaning": "Tokyo rất nhộn nhịp."
+      },
+      {
+        "id": 805,
+        "word": "有名[な]",
+        "reading": "ゆうめい",
+        "romaji": "yuumei",
+        "meaning": "Nổi tiếng",
+        "hanViet": "Hữu Danh",
+        "type": "Tính từ -na",
+        "exampleSentence": "富士山は 有名です。",
+        "exampleSentenceReading": "ふじさんは ゆうめいです。",
+        "exampleSentenceMeaning": "Núi Phú Sĩ rất nổi tiếng."
+      },
+      {
+        "id": 806,
+        "word": "親切[な]",
+        "reading": "しんせつ",
+        "romaji": "shinsetsu",
+        "meaning": "Thân thiện / Tốt bụng",
+        "hanViet": "Thân Thiết",
+        "type": "Tính từ -na",
+        "exampleSentence": "先生は 親切です。",
+        "exampleSentenceReading": "せんせいは しんせつです。",
+        "exampleSentenceMeaning": "Thầy giáo rất tốt bụng."
+      },
+      {
+        "id": 807,
+        "word": "元気[な]",
+        "reading": "げんき",
+        "romaji": "genki",
+        "meaning": "Khỏe mạnh",
+        "hanViet": "Nguyên Khí",
+        "type": "Tính từ -na",
+        "exampleSentence": "お元気ですか。ー はい、元気です。",
+        "exampleSentenceReading": "おげんきですか。ー はい、げんきです。",
+        "exampleSentenceMeaning": "Bạn có khỏe không? - Vâng, tôi khỏe."
+      },
+      {
+        "id": 808,
+        "word": "暇[な]",
+        "reading": "ひま",
+        "romaji": "hima",
+        "meaning": "Rảnh rỗi",
+        "hanViet": "Hạ",
+        "type": "Tính từ -na",
+        "exampleSentence": "あした 暇ですか。",
+        "exampleSentenceReading": "あした ひまですか。",
+        "exampleSentenceMeaning": "Ngày mai bạn có rảnh không?"
+      },
+      {
+        "id": 809,
+        "word": "便利[な]",
+        "reading": "べんり",
+        "romaji": "benri",
+        "meaning": "Tiện lợi",
+        "hanViet": "Tiện Lợi",
+        "type": "Tính từ -na",
+        "exampleSentence": "地下鉄は 便利です。",
+        "exampleSentenceReading": "ちかてつは べんりです。",
+        "exampleSentenceMeaning": "Tàu điện ngầm rất tiện lợi."
+      },
+      {
+        "id": 810,
+        "word": "大きい",
+        "reading": "おおきい",
+        "romaji": "ookii",
+        "meaning": "To lớn",
+        "hanViet": "Đại",
+        "type": "Tính từ -i",
+        "exampleSentence": "大きい 車です。",
+        "exampleSentenceReading": "おおきい くるまです。",
+        "exampleSentenceMeaning": "Là chiếc xe ô tô lớn."
+      },
+      {
+        "id": 811,
+        "word": "小さい",
+        "reading": "ちいさい",
+        "romaji": "chiisai",
+        "meaning": "Nhỏ bé",
+        "hanViet": "Tiểu",
+        "type": "Tính từ -i",
+        "exampleSentence": "部屋は 小さいです。",
+        "exampleSentenceReading": "へやは ちいさいです。",
+        "exampleSentenceMeaning": "Căn phòng nhỏ bé."
+      },
+      {
+        "id": 812,
+        "word": "新しい",
+        "reading": "あたらしい",
+        "romaji": "atarashii",
+        "meaning": "Mới",
+        "hanViet": "Tân",
+        "type": "Tính từ -i",
+        "exampleSentence": "新しい 靴です。",
+        "exampleSentenceReading": "あたらしい くつです。",
+        "exampleSentenceMeaning": "Đôi giày mới."
+      },
+      {
+        "id": 813,
+        "word": "古い",
+        "reading": "ふるい",
+        "romaji": "furui",
+        "meaning": "Cũ / Cổ",
+        "hanViet": "Cổ",
+        "type": "Tính từ -i",
+        "exampleSentence": "古い 本です。",
+        "exampleSentenceReading": "ふるい ほんです。",
+        "exampleSentenceMeaning": "Quyển sách cũ."
+      },
+      {
+        "id": 814,
+        "word": "いい (よい)",
+        "reading": "いい",
+        "romaji": "ii",
+        "meaning": "Tốt / Hay",
+        "hanViet": "Lương",
+        "type": "Tính từ -i",
+        "exampleSentence": "天気が いいです。",
+        "exampleSentenceReading": "てんきが いいです。",
+        "exampleSentenceMeaning": "Thời tiết đẹp."
+      },
+      {
+        "id": 815,
+        "word": "悪い",
+        "reading": "わるい",
+        "romaji": "warui",
+        "meaning": "Xấu / Tồi tệ",
+        "hanViet": "Ác",
+        "type": "Tính từ -i",
+        "exampleSentence": "天気が 悪いです。",
+        "exampleSentenceReading": "てんきが わるいです。",
+        "exampleSentenceMeaning": "Thời tiết xấu."
+      },
+      {
+        "id": 816,
+        "word": "暑い / 熱い",
+        "reading": "あつい",
+        "romaji": "atsui",
+        "meaning": "Nóng (thời tiết / nước)",
+        "hanViet": "Thử / Nhiệt",
+        "type": "Tính từ -i",
+        "exampleSentence": "今日は 暑いです。",
+        "exampleSentenceReading": "きょうは あついです。",
+        "exampleSentenceMeaning": "Hôm nay trời nóng."
+      },
+      {
+        "id": 817,
+        "word": "寒い",
+        "reading": "さむい",
+        "romaji": "samui",
+        "meaning": "Lạnh (thời tiết)",
+        "hanViet": "Hàn",
+        "type": "Tính từ -i",
+        "exampleSentence": "冬は 寒いです。",
+        "exampleSentenceReading": "ふゆは さむいです。",
+        "exampleSentenceMeaning": "Mùa đông lạnh."
+      },
+      {
+        "id": 818,
+        "word": "冷たい",
+        "reading": "つめたい",
+        "romaji": "tsumetai",
+        "meaning": "Lạnh (đồ uống / cảm giác)",
+        "hanViet": "Lãnh",
+        "type": "Tính từ -i",
+        "exampleSentence": "冷たい ジュースを ください。",
+        "exampleSentenceReading": "つめたい じゅーすを ください。",
+        "exampleSentenceMeaning": "Cho tôi nước ép hoa quả lạnh."
+      },
+      {
+        "id": 819,
+        "word": "難しい",
+        "reading": "むずかしい",
+        "romaji": "muzukashii",
+        "meaning": "Khó",
+        "hanViet": "Nan",
+        "type": "Tính từ -i",
+        "exampleSentence": "日本語は 難しいですが、おもしろいです。",
+        "exampleSentenceReading": "にほんごは むずかしいですが、おもしろいです。",
+        "exampleSentenceMeaning": "Tiếng Nhật khó nhưng thú vị."
+      },
+      {
+        "id": 820,
+        "word": "易しい",
+        "reading": "やさしい",
+        "romaji": "yasashii",
+        "meaning": "Dễ",
+        "hanViet": "Dịch",
+        "type": "Tính từ -i",
+        "exampleSentence": "テストは 易しかったです。",
+        "exampleSentenceReading": "てすとは やさしかったです。",
+        "exampleSentenceMeaning": "Bài kiểm tra đã khá dễ."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 8",
-        "pattern": "Tính từ trong tiếng Nhật (đuôi い và な), cách bổ nghĩa cho danh từ, câu hỏi どんな N",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 8: Tính từ đuôi な và い.",
+        "title": "Khẳng định & Phủ định tính từ",
+        "pattern": "Tính từ -na: N じゃありません | Tính từ -i: Bỏ い + くないです",
+        "explanation": "Tính từ đuôi な phủ định giống danh từ (じゃありません). Tính từ đuôi い phủ định bằng cách bỏ đuôi い thêm くないです.",
         "examples": [
           {
-            "japanese": "これは 第8課の 例文です。",
-            "reading": "これは だい8かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 8."
+            "japanese": "この町は にぎやかじゃありません。",
+            "reading": "このまちは にぎやかじゃありません。",
+            "vietnamese": "Thành phố này không nhộn nhịp."
+          },
+          {
+            "japanese": "この本は おもしろくないです。",
+            "reading": "このほんは おもしろくないです。",
+            "vietnamese": "Quyển sách này không thú vị."
+          }
+        ]
+      },
+      {
+        "title": "Tính từ bổ nghĩa cho Danh từ",
+        "pattern": "[Tính từ -na] + な + N | [Tính từ -i] + N",
+        "explanation": "Tính từ đuôi な phải giữ nguyên chữ な khi đứng trước danh từ. Tính từ đuôi い đi trực tiếp với danh từ.",
+        "examples": [
+          {
+            "japanese": "富士山は 高い 山です。",
+            "reading": "ふじさんは たかい やまです。",
+            "vietnamese": "Núi Phú Sĩ là một ngọn núi cao."
+          },
+          {
+            "japanese": "親切な 人です。",
+            "reading": "しんせつな ひとです。",
+            "vietnamese": "Là một người thân thiện."
+          }
+        ]
+      },
+      {
+        "title": "とても (Rất) & あまり (Không... lắm)",
+        "pattern": "とても + Khẳng định | あまり + Phủ định",
+        "explanation": "とても mang nghĩa 'rất' đi với câu khẳng định. あまり đi với câu phủ định nghĩa là 'không... lắm'.",
+        "examples": [
+          {
+            "japanese": "日本の食べ物は とても おいしいです。",
+            "reading": "にほんのたべものは とても おいしいです。",
+            "vietnamese": "Đồ ăn Nhật rất ngon."
+          },
+          {
+            "japanese": "英語は あまり 難しくないです。",
+            "reading": "えいごは あまり むずかしくないです。",
+            "vietnamese": "Tiếng Anh không khó lắm."
+          }
+        ]
+      },
+      {
+        "title": "N1 は どんな N2 ですか (N1 là N2 như thế nào?)",
+        "pattern": "N1 は どんな N2 ですか",
+        "explanation": "Dùng để hỏi về tính chất, đặc điểm hoặc trạng thái của N1 trong nhóm N2.",
+        "examples": [
+          {
+            "japanese": "ハノイは どんな 町ですか。ー にぎやかな 町です。",
+            "reading": "はのいは どんな まちですか。ー にぎやかな まちです。",
+            "vietnamese": "Hà Nội là thành phố như thế nào? - Là một thành phố nhộn nhịp."
           }
         ]
       }
@@ -1559,27 +2167,270 @@
     "vocabularies": [
       {
         "id": 901,
-        "word": "言葉 9",
-        "reading": "ことば",
-        "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 9",
-        "hanViet": "Ngôn Diệp",
+        "word": "好き[な]",
+        "reading": "すき",
+        "romaji": "suki",
+        "meaning": "Thích",
+        "hanViet": "Hảo",
+        "type": "Tính từ -na",
+        "exampleSentence": "日本料理が 好きです。",
+        "exampleSentenceReading": "にほんりょうりが すきです。",
+        "exampleSentenceMeaning": "Tôi thích món ăn Nhật."
+      },
+      {
+        "id": 902,
+        "word": "嫌い[な]",
+        "reading": "きらい",
+        "romaji": "kirai",
+        "meaning": "Ghét / Không thích",
+        "hanViet": "Hiềm",
+        "type": "Tính từ -na",
+        "exampleSentence": "納豆が 嫌いです。",
+        "exampleSentenceReading": "なっとうが きらいです。",
+        "exampleSentenceMeaning": "Tôi ghét món đậu lên men Natto."
+      },
+      {
+        "id": 903,
+        "word": "上手[な]",
+        "reading": "じょうず",
+        "romaji": "jouzu",
+        "meaning": "Giỏi / Khéo léo",
+        "hanViet": "Thượng Thủ",
+        "type": "Tính từ -na",
+        "exampleSentence": "ミラーさんは テニスが 上手です。",
+        "exampleSentenceReading": "みらーさんは てにすが じょうずです。",
+        "exampleSentenceMeaning": "Anh Miller chơi quần vợt giỏi."
+      },
+      {
+        "id": 904,
+        "word": "下手[な]",
+        "reading": "へた",
+        "romaji": "heta",
+        "meaning": "Kém / Dở",
+        "hanViet": "Hạ Thủ",
+        "type": "Tính từ -na",
+        "exampleSentence": "わたしは 歌が 下手です。",
+        "exampleSentenceReading": "わたしは うたが へたです。",
+        "exampleSentenceMeaning": "Tôi hát dở lắm."
+      },
+      {
+        "id": 905,
+        "word": "わかります",
+        "reading": "わかります",
+        "romaji": "wakarimasu",
+        "meaning": "Hiểu / Biết",
+        "hanViet": "Phân",
+        "type": "Động từ",
+        "exampleSentence": "日本語が わかります。",
+        "exampleSentenceReading": "にほんごが わかります。",
+        "exampleSentenceMeaning": "Tôi hiểu tiếng Nhật."
+      },
+      {
+        "id": 906,
+        "word": "あります",
+        "reading": "あります",
+        "romaji": "arimasu",
+        "meaning": "Có (sở hữu đồ vật / thời gian)",
+        "hanViet": "",
+        "type": "Động từ",
+        "exampleSentence": "お金が ありません。",
+        "exampleSentenceReading": "おかねが ありません。",
+        "exampleSentenceMeaning": "Tôi không có tiền."
+      },
+      {
+        "id": 907,
+        "word": "料理",
+        "reading": "りょうり",
+        "romaji": "ryouri",
+        "meaning": "Món ăn / Nấu ăn",
+        "hanViet": "Liệu Lý",
         "type": "Danh từ",
-        "exampleSentence": "第9課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい9かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 9."
+        "exampleSentence": "ベトナム料理は おいしいです。",
+        "exampleSentenceReading": "べとなむりょうりは おいしいです。",
+        "exampleSentenceMeaning": "Món ăn Việt Nam rất ngon."
+      },
+      {
+        "id": 908,
+        "word": "飲み物",
+        "reading": "のみもの",
+        "romaji": "nomimono",
+        "meaning": "Đồ uống",
+        "hanViet": "Ẩm Vật",
+        "type": "Danh từ",
+        "exampleSentence": "冷たい 飲み物が 好きです。",
+        "exampleSentenceReading": "つめたい のみものが すきです。",
+        "exampleSentenceMeaning": "Tôi thích đồ uống lạnh."
+      },
+      {
+        "id": 909,
+        "word": "スポーツ",
+        "reading": "すぽーつ",
+        "romaji": "supootsu",
+        "meaning": "Thể thao",
+        "hanViet": "",
+        "type": "Danh từ",
+        "exampleSentence": "どんな スポーツが 好きですか。",
+        "exampleSentenceReading": "どんな すぽーつが すきですか。",
+        "exampleSentenceMeaning": "Bạn thích môn thể thao nào?"
+      },
+      {
+        "id": 910,
+        "word": "野球",
+        "reading": "やきゅう",
+        "romaji": "yakyuu",
+        "meaning": "Bóng chày",
+        "hanViet": "Dã Cầu",
+        "type": "Danh từ",
+        "exampleSentence": "日本で 野球は 人気があります。",
+        "exampleSentenceReading": "にほんで やきゅうは にんきがあります。",
+        "exampleSentenceMeaning": "Ở Nhật bóng chày rất được ưa chuộng."
+      },
+      {
+        "id": 911,
+        "word": "音楽",
+        "reading": "おんがく",
+        "romaji": "ongaku",
+        "meaning": "Âm nhạc",
+        "hanViet": "Âm Nhạc",
+        "type": "Danh từ",
+        "exampleSentence": "クラシック音楽を 聞きます。",
+        "exampleSentenceReading": "くらしっくおんがくを ききます。",
+        "exampleSentenceMeaning": "Tôi nghe nhạc cổ điển."
+      },
+      {
+        "id": 912,
+        "word": "歌",
+        "reading": "うた",
+        "romaji": "uta",
+        "meaning": "Bài hát",
+        "hanViet": "Ca",
+        "type": "Danh từ",
+        "exampleSentence": "日本の 歌を 歌います。",
+        "exampleSentenceReading": "にほんの うたを うたいます。",
+        "exampleSentenceMeaning": "Tôi hát bài hát tiếng Nhật."
+      },
+      {
+        "id": 913,
+        "word": "絵",
+        "reading": "え",
+        "romaji": "e",
+        "meaning": "Bức tranh",
+        "hanViet": "Hội",
+        "type": "Danh từ",
+        "exampleSentence": "絵を かくことが 好きです。",
+        "exampleSentenceReading": "えを かくことが すきです。",
+        "exampleSentenceMeaning": "Tôi thích vẽ tranh."
+      },
+      {
+        "id": 914,
+        "word": "字",
+        "reading": "じ",
+        "romaji": "ji",
+        "meaning": "Chữ viết",
+        "hanViet": "Tự",
+        "type": "Danh từ",
+        "exampleSentence": "きれいな 字ですね。",
+        "exampleSentenceReading": "きれいな じですね。",
+        "exampleSentenceMeaning": "Chữ viết đẹp ghê nhỉ."
+      },
+      {
+        "id": 915,
+        "word": "漢字",
+        "reading": "かんじ",
+        "romaji": "kanji",
+        "meaning": "Chữ Hán (Kanji)",
+        "hanViet": "Hán Tự",
+        "type": "Danh từ",
+        "exampleSentence": "漢字は 難しいです。",
+        "exampleSentenceReading": "かんじは むずかしいです。",
+        "exampleSentenceMeaning": "Chữ Hán rất khó."
+      },
+      {
+        "id": 916,
+        "word": "細かいお金",
+        "reading": "こまかいおかね",
+        "romaji": "komakai okane",
+        "meaning": "Tiền lẻ",
+        "hanViet": "Tế Kim",
+        "type": "Danh từ",
+        "exampleSentence": "細かいお金が ありますか。",
+        "exampleSentenceReading": "こまかいおかねが ありますか。",
+        "exampleSentenceMeaning": "Bạn có tiền lẻ không?"
+      },
+      {
+        "id": 917,
+        "word": "時間",
+        "reading": "じかん",
+        "romaji": "jikan",
+        "meaning": "Thời gian",
+        "hanViet": "Thời Gian",
+        "type": "Danh từ",
+        "exampleSentence": "時間が ありません。",
+        "exampleSentenceReading": "じかんが ありません。",
+        "exampleSentenceMeaning": "Tôi không có thời gian."
+      },
+      {
+        "id": 918,
+        "word": "用事",
+        "reading": "ようじ",
+        "romaji": "youji",
+        "meaning": "Việc bận",
+        "hanViet": "Dụng Sự",
+        "type": "Danh từ",
+        "exampleSentence": "今日 用事が あります。",
+        "exampleSentenceReading": "きょう ようじが あります。",
+        "exampleSentenceMeaning": "Hôm nay tôi có việc bận."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 9",
-        "pattern": "Trợ từ が với tính từ 好き/嫌い/上手/下手, động từ わかります/あります, liên từ chỉ nguyên nhân から",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 9: Sở thích, Năng lực & Lí do.",
+        "title": "N が 好き／嫌い／上手／下手 です",
+        "pattern": "N + が + 好き／嫌い／上手／下手 です",
+        "explanation": "Đối tượng của sở thích, ghét bỏ, năng lực đi với trợ từ が chứ không dùng を.",
         "examples": [
           {
-            "japanese": "これは 第9課の 例文です。",
-            "reading": "これは だい9かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 9."
+            "japanese": "わたしは イタリア料理が 好きです。",
+            "reading": "わたしは いたりありょうりが すきです。",
+            "vietnamese": "Tôi thích món ăn Ý."
+          },
+          {
+            "japanese": "マリアさんは 歌が 上手です。",
+            "reading": "まりあさんは うたが じょうずです。",
+            "vietnamese": "Chị Maria hát rất giỏi."
+          }
+        ]
+      },
+      {
+        "title": "N が わかります／あります",
+        "pattern": "N + が + わかります／あります",
+        "explanation": "Đi với động từ chỉ tri thức/khả năng (わかります) hoặc sự sở hữu (あります) thì đối tượng nhận trợ từ が.",
+        "examples": [
+          {
+            "japanese": "英語が わかりますか。ー はい、少し わかります。",
+            "reading": "えいごが わかりますか。ー はい、すこし わかります。",
+            "vietnamese": "Bạn có hiểu tiếng Anh không? - Vâng, tôi hiểu một chút."
+          },
+          {
+            "japanese": "車が あります。",
+            "reading": "くるまが あります。",
+            "vietnamese": "Tôi có xe ô tô."
+          }
+        ]
+      },
+      {
+        "title": "Câu 1 から、Câu 2 (Vì... nên...)",
+        "pattern": "[Nguyên nhân] から、[Kết quả]",
+        "explanation": "から đứng sau mệnh đề chỉ nguyên nhân, lý do. Câu hỏi lý do dùng どうして (Tại sao).",
+        "examples": [
+          {
+            "japanese": "時間が ありませんから、タクシーで 行きます。",
+            "reading": "じかんが ありませんから、たくしーで いきます。",
+            "vietnamese": "Vì không có thời gian nên tôi đi bằng taxi."
+          },
+          {
+            "japanese": "どうして きのう 早く 帰りましたか。ー 用事が ありましたから。",
+            "reading": "どうして きのう はやく かえりましたか。ー ようじが ありましたから。",
+            "vietnamese": "Tại sao hôm qua bạn về sớm thế? - Vì tôi có việc bận."
           }
         ]
       }
@@ -1593,27 +2444,301 @@
     "vocabularies": [
       {
         "id": 1001,
-        "word": "言葉 10",
-        "reading": "ことば",
-        "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 10",
-        "hanViet": "Ngôn Diệp",
+        "word": "あります",
+        "reading": "あります",
+        "romaji": "arimasu",
+        "meaning": "Có (vật vô tri vô giác, cây cối)",
+        "hanViet": "",
+        "type": "Động từ",
+        "exampleSentence": "あそこに 机が あります。",
+        "exampleSentenceReading": "あそこに つくえが あります。",
+        "exampleSentenceMeaning": "Ở đằng kia có cái bàn."
+      },
+      {
+        "id": 1002,
+        "word": "います",
+        "reading": "います",
+        "romaji": "imasu",
+        "meaning": "Có / Ở (người, động vật)",
+        "hanViet": "",
+        "type": "Động từ",
+        "exampleSentence": "公園に 犬が います。",
+        "exampleSentenceReading": "こうえんに いぬが います。",
+        "exampleSentenceMeaning": "Trong công viên có con chó."
+      },
+      {
+        "id": 1003,
+        "word": "いろいろ[な]",
+        "reading": "いろいろ",
+        "romaji": "iroiro",
+        "meaning": "Nhiều loại / Đa dạng",
+        "hanViet": "Sắc",
+        "type": "Tính từ -na",
+        "exampleSentence": "いろいろな 店が あります。",
+        "exampleSentenceReading": "いろいろな みせが あります。",
+        "exampleSentenceMeaning": "Có rất nhiều cửa hàng khác nhau."
+      },
+      {
+        "id": 1004,
+        "word": "男の人",
+        "reading": "おとこのひと",
+        "romaji": "otoko no hito",
+        "meaning": "Người đàn ông",
+        "hanViet": "Nam Nhân",
         "type": "Danh từ",
-        "exampleSentence": "第10課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい10かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 10."
+        "exampleSentence": "あの 男の人は だれですか。",
+        "exampleSentenceReading": "あの おとこのひとは だれですか。",
+        "exampleSentenceMeaning": "Người đàn ông kia là ai vậy?"
+      },
+      {
+        "id": 1005,
+        "word": "女の人",
+        "reading": "おんなのひと",
+        "romaji": "onna no hito",
+        "meaning": "Người phụ nữ",
+        "hanViet": "Nữ Nhân",
+        "type": "Danh từ",
+        "exampleSentence": "あそこに 女の人が います。",
+        "exampleSentenceReading": "あそこに おんなのひとが います。",
+        "exampleSentenceMeaning": "Ở đằng kia có một người phụ nữ."
+      },
+      {
+        "id": 1006,
+        "word": "男の子",
+        "reading": "おとこのこ",
+        "romaji": "otoko no ko",
+        "meaning": "Bé trai",
+        "hanViet": "Nam Tử",
+        "type": "Danh từ",
+        "exampleSentence": "男の子が 遊んでいます。",
+        "exampleSentenceReading": "おとこのこが あそんでいます。",
+        "exampleSentenceMeaning": "Bé trai đang chơi."
+      },
+      {
+        "id": 1007,
+        "word": "女の子",
+        "reading": "おんなのこ",
+        "romaji": "onna no ko",
+        "meaning": "Bé gái",
+        "hanViet": "Nữ Tử",
+        "type": "Danh từ",
+        "exampleSentence": "かわいい 女の子です。",
+        "exampleSentenceReading": "かわいい おんなのこです。",
+        "exampleSentenceMeaning": "Là một bé gái dễ thương."
+      },
+      {
+        "id": 1008,
+        "word": "犬",
+        "reading": "いぬ",
+        "romaji": "inu",
+        "meaning": "Con chó",
+        "hanViet": "Khuyển",
+        "type": "Danh từ",
+        "exampleSentence": "庭に 白い 犬が います。",
+        "exampleSentenceReading": "にわに しろい いぬが います。",
+        "exampleSentenceMeaning": "Ngoài sân có một con chó trắng."
+      },
+      {
+        "id": 1009,
+        "word": "猫",
+        "reading": "ねこ",
+        "romaji": "neko",
+        "meaning": "Con mèo",
+        "hanViet": "Miêu",
+        "type": "Danh từ",
+        "exampleSentence": "部屋に 猫が います。",
+        "exampleSentenceReading": "へやに ねこが います。",
+        "exampleSentenceMeaning": "Trong phòng có con mèo."
+      },
+      {
+        "id": 1010,
+        "word": "木",
+        "reading": "き",
+        "romaji": "ki",
+        "meaning": "Cái cây / Gỗ",
+        "hanViet": "Mộc",
+        "type": "Danh từ",
+        "exampleSentence": "庭に 大きい 木が あります。",
+        "exampleSentenceReading": "にわに おおきい きが あります。",
+        "exampleSentenceMeaning": "Trong vườn có một cái cây lớn."
+      },
+      {
+        "id": 1011,
+        "word": "物",
+        "reading": "もの",
+        "romaji": "mono",
+        "meaning": "Đồ vật / Vật phẩm",
+        "hanViet": "Vật",
+        "type": "Danh từ",
+        "exampleSentence": "これは たいせつな 物です。",
+        "exampleSentenceReading": "これは たいせつな ものです。",
+        "exampleSentenceMeaning": "Đây là món đồ quan trọng."
+      },
+      {
+        "id": 1012,
+        "word": "箱",
+        "reading": "はこ",
+        "romaji": "hako",
+        "meaning": "Cái hộp",
+        "hanViet": "Tương",
+        "type": "Danh từ",
+        "exampleSentence": "箱の 中に 手紙が あります。",
+        "exampleSentenceReading": "はこの なかに てがみが あります。",
+        "exampleSentenceMeaning": "Trong hộp có lá thư."
+      },
+      {
+        "id": 1013,
+        "word": "机",
+        "reading": "つくえ",
+        "romaji": "tsukue",
+        "meaning": "Cái bàn làm việc",
+        "hanViet": "Kỷ",
+        "type": "Danh từ",
+        "exampleSentence": "机の 上に 本が あります。",
+        "exampleSentenceReading": "つくえの うえに ほんが あります。",
+        "exampleSentenceMeaning": "Trên bàn có quyển sách."
+      },
+      {
+        "id": 1014,
+        "word": "椅子",
+        "reading": "いす",
+        "romaji": "isu",
+        "meaning": "Cái ghế",
+        "hanViet": "Y Tử",
+        "type": "Danh từ",
+        "exampleSentence": "椅子に 座ります。",
+        "exampleSentenceReading": "いすに すわります。",
+        "exampleSentenceMeaning": "Ngồi vào ghế."
+      },
+      {
+        "id": 1015,
+        "word": "上",
+        "reading": "うえ",
+        "romaji": "ue",
+        "meaning": "Trên",
+        "hanViet": "Thượng",
+        "type": "Danh từ",
+        "exampleSentence": "机の 上です。",
+        "exampleSentenceReading": "つくえの うえです。",
+        "exampleSentenceMeaning": "Ở phía trên bàn."
+      },
+      {
+        "id": 1016,
+        "word": "下",
+        "reading": "した",
+        "romaji": "shita",
+        "meaning": "Dưới",
+        "hanViet": "Hạ",
+        "type": "Danh từ",
+        "exampleSentence": "机の 下に 猫が います。",
+        "exampleSentenceReading": "つくえの したに ねこが います。",
+        "exampleSentenceMeaning": "Dưới gầm bàn có con mèo."
+      },
+      {
+        "id": 1017,
+        "word": "前",
+        "reading": "まえ",
+        "romaji": "mae",
+        "meaning": "Trước",
+        "hanViet": "Tiền",
+        "type": "Danh từ",
+        "exampleSentence": "駅の 前で 待ちます。",
+        "exampleSentenceReading": "えきの まえで まちます。",
+        "exampleSentenceMeaning": "Chờ trước cửa nhà ga."
+      },
+      {
+        "id": 1018,
+        "word": "後ろ",
+        "reading": "うしろ",
+        "romaji": "ushiro",
+        "meaning": "Sau",
+        "hanViet": "Hậu",
+        "type": "Danh từ",
+        "exampleSentence": "後ろを 見て ください。",
+        "exampleSentenceReading": "うしろを みて ください。",
+        "exampleSentenceMeaning": "Xin hãy nhìn về phía sau."
+      },
+      {
+        "id": 1019,
+        "word": "中",
+        "reading": "なか",
+        "romaji": "naka",
+        "meaning": "Trong / Bên trong",
+        "hanViet": "Trung",
+        "type": "Danh từ",
+        "exampleSentence": "かばんの 中に 鍵が あります。",
+        "exampleSentenceReading": "かばんの なかに かぎが あります。",
+        "exampleSentenceMeaning": "Trong cặp có chìa khóa."
+      },
+      {
+        "id": 1020,
+        "word": "外",
+        "reading": "そと",
+        "romaji": "soto",
+        "meaning": "Ngoài / Bên ngoài",
+        "hanViet": "Ngoại",
+        "type": "Danh từ",
+        "exampleSentence": "外は 雨が 降っています。",
+        "exampleSentenceReading": "そとは あめが ふっています。",
+        "exampleSentenceMeaning": "Bên ngoài trời đang mưa."
+      },
+      {
+        "id": 1021,
+        "word": "隣",
+        "reading": "となり",
+        "romaji": "tonari",
+        "meaning": "Bên cạnh (cùng loại)",
+        "hanViet": "Lân",
+        "type": "Danh từ",
+        "exampleSentence": "銀行の 隣に 郵便局が あります。",
+        "exampleSentenceReading": "ぎんこうの となりに ゆうびんきょくが あります。",
+        "exampleSentenceMeaning": "Bên cạnh ngân hàng có bưu điện."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 10",
-        "pattern": "Sự tồn tại của người/động vật (います) và đồ vật/cây cối (あります), từ chỉ vị trí (trên, dưới, trong, ngoài",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 10: Tồn tại & Vị trí.",
+        "title": "N(địa điểm) に N が あります／います",
+        "pattern": "Địa điểm + に + Vật/Người + が + あります／います",
+        "explanation": "Diễn tả sự hiện hữu của đồ vật (あります) hoặc người/động vật (います) tại một địa điểm cụ thể.",
         "examples": [
           {
-            "japanese": "これは 第10課の 例文です。",
-            "reading": "これは だい10かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 10."
+            "japanese": "庭に 犬が います。",
+            "reading": "にわに いぬが います。",
+            "vietnamese": "Trong vườn có con chó."
+          },
+          {
+            "japanese": "部屋に テレビが あります。",
+            "reading": "へやに てれびが あります。",
+            "vietnamese": "Trong phòng có ti vi."
+          }
+        ]
+      },
+      {
+        "title": "N1 は N2(địa điểm) に あります／います",
+        "pattern": "N1 は + Địa điểm + に + あります／います",
+        "explanation": "Dùng để nhấn mạnh N1 đang ở đâu (vị trí của chủ đề N1).",
+        "examples": [
+          {
+            "japanese": "ミラーさんは 事務所に います。",
+            "reading": "みらーさんは じむしょに います。",
+            "vietnamese": "Anh Miller đang ở văn phòng."
+          },
+          {
+            "japanese": "東京ディズニーランドは 千葉県に あります。",
+            "reading": "とうきょうでぃずにーらんどは ちばけんに あります。",
+            "vietnamese": "Tokyo Disneyland ở tỉnh Chiba."
+          }
+        ]
+      },
+      {
+        "title": "N1(vật/người) の N2(vị trí)",
+        "pattern": "N1 の 上／下／前／後ろ／中／外／隣／近く",
+        "explanation": "Chỉ vị trí tương đối: trên bàn (つくえの上), trong túi (かばんの中), cạnh ga (えきの隣).",
+        "examples": [
+          {
+            "japanese": "机の 上に 写真が あります。",
+            "reading": "つくえの うえに しゃしんが あります。",
+            "vietnamese": "Trên bàn có bức ảnh."
           }
         ]
       }
@@ -1623,31 +2748,235 @@
     "lessonNumber": 11,
     "title": "Bài 11: Số lượng từ & Tần suất",
     "japaneseTitle": "第１１課：数量詞",
-    "description": "Cách đếm đồ vật (ひとつ, ふたつ), người (ひとり, ふたり), tần suất làm việc 1 tuần mấy lần.",
+    "description": "Cách đếm đồ vật (ひとつ..とお), người (ひとり, ふたり), tần suất thời gian (1 tuần mấy lần) và lượng từ.",
     "vocabularies": [
       {
         "id": 1101,
-        "word": "言葉 11",
-        "reading": "ことば",
-        "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 11",
-        "hanViet": "Ngôn Diệp",
-        "type": "Danh từ",
-        "exampleSentence": "第11課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい11かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 11."
+        "word": "ひとつ",
+        "reading": "ひとつ",
+        "romaji": "hitotsu",
+        "meaning": "1 cái (vật chung)",
+        "hanViet": "",
+        "type": "Lượng từ",
+        "exampleSentence": "りんごを ひとつ ください。",
+        "exampleSentenceReading": "りんごを ひとつ ください。",
+        "exampleSentenceMeaning": "Cho tôi một quả táo."
+      },
+      {
+        "id": 1102,
+        "word": "ふたつ",
+        "reading": "ふたつ",
+        "romaji": "futatsu",
+        "meaning": "2 cái",
+        "hanViet": "",
+        "type": "Lượng từ",
+        "exampleSentence": "みかんを ふたつ 食べました。",
+        "exampleSentenceReading": "みかんを ふたつ たべました。",
+        "exampleSentenceMeaning": "Tôi đã ăn 2 quả quýt."
+      },
+      {
+        "id": 1103,
+        "word": "みっつ",
+        "reading": "みっつ",
+        "romaji": "mittsu",
+        "meaning": "3 cái",
+        "hanViet": "",
+        "type": "Lượng từ",
+        "exampleSentence": "箱が みっつ あります。",
+        "exampleSentenceReading": "はこが みっつ あります。",
+        "exampleSentenceMeaning": "Có 3 cái hộp."
+      },
+      {
+        "id": 1104,
+        "word": "よっつ",
+        "reading": "よっつ",
+        "romaji": "yottsu",
+        "meaning": "4 cái",
+        "hanViet": "",
+        "type": "Lượng từ",
+        "exampleSentence": "いすが よっつ あります。",
+        "exampleSentenceReading": "いすが よっつ あります。",
+        "exampleSentenceMeaning": "Có 4 cái ghế."
+      },
+      {
+        "id": 1105,
+        "word": "いつつ",
+        "reading": "いつつ",
+        "romaji": "itsutsu",
+        "meaning": "5 cái",
+        "hanViet": "",
+        "type": "Lượng từ",
+        "exampleSentence": "たまごを いつつ 買いました。",
+        "exampleSentenceReading": "たまごを いつつ かいました。",
+        "exampleSentenceMeaning": "Mua 5 quả trứng."
+      },
+      {
+        "id": 1106,
+        "word": "むっつ",
+        "reading": "むっつ",
+        "romaji": "muttsu",
+        "meaning": "6 cái",
+        "hanViet": "",
+        "type": "Lượng từ",
+        "exampleSentence": "ビールを むっつ ください。",
+        "exampleSentenceReading": "びーるを むっつ ください。",
+        "exampleSentenceMeaning": "Cho tôi 6 chai bia."
+      },
+      {
+        "id": 1107,
+        "word": "ななつ",
+        "reading": "ななつ",
+        "romaji": "nanatsu",
+        "meaning": "7 cái",
+        "hanViet": "",
+        "type": "Lượng từ",
+        "exampleSentence": "パンが ななつ あります。",
+        "exampleSentenceReading": "ぱんが ななつ あります。",
+        "exampleSentenceMeaning": "Có 7 cái bánh mì."
+      },
+      {
+        "id": 1108,
+        "word": "やっつ",
+        "reading": "やっつ",
+        "romaji": "yattsu",
+        "meaning": "8 cái",
+        "hanViet": "",
+        "type": "Lượng từ",
+        "exampleSentence": "やっつ あります。",
+        "exampleSentenceReading": "やっつ あります。",
+        "exampleSentenceMeaning": "Có 8 cái."
+      },
+      {
+        "id": 1109,
+        "word": "ここのつ",
+        "reading": "ここのつ",
+        "romaji": "kokonotsu",
+        "meaning": "9 cái",
+        "hanViet": "",
+        "type": "Lượng từ",
+        "exampleSentence": "ここのつ 買いました。",
+        "exampleSentenceReading": "ここのつ かいました。",
+        "exampleSentenceMeaning": "Mua 9 cái."
+      },
+      {
+        "id": 1110,
+        "word": "とお",
+        "reading": "とお",
+        "romaji": "too",
+        "meaning": "10 cái",
+        "hanViet": "",
+        "type": "Lượng từ",
+        "exampleSentence": "りんごを とお ください。",
+        "exampleSentenceReading": "りんごを とお ください。",
+        "exampleSentenceMeaning": "Cho tôi 10 quả táo."
+      },
+      {
+        "id": 1111,
+        "word": "いくつ",
+        "reading": "いくつ",
+        "romaji": "ikutsu",
+        "meaning": "Mấy cái / Bao nhiêu cái",
+        "hanViet": "",
+        "type": "Từ để hỏi",
+        "exampleSentence": "みかんが いくつ ありますか。",
+        "exampleSentenceReading": "みかんが いくつ ありますか。",
+        "exampleSentenceMeaning": "Có bao nhiêu quả quýt?"
+      },
+      {
+        "id": 1112,
+        "word": "一人",
+        "reading": "ひとり",
+        "romaji": "hitori",
+        "meaning": "1 người",
+        "hanViet": "Nhất Nhân",
+        "type": "Lượng từ",
+        "exampleSentence": "一人で 行きます。",
+        "exampleSentenceReading": "ひとりで いきます。",
+        "exampleSentenceMeaning": "Đi một mình."
+      },
+      {
+        "id": 1113,
+        "word": "二人",
+        "reading": "ふたり",
+        "romaji": "futari",
+        "meaning": "2 người",
+        "hanViet": "Nhị Nhân",
+        "type": "Lượng từ",
+        "exampleSentence": "二人で 映画を 見ました。",
+        "exampleSentenceReading": "ふたりで えいがを みました。",
+        "exampleSentenceMeaning": "Hai người xem phim cùng nhau."
+      },
+      {
+        "id": 1114,
+        "word": "～枚",
+        "reading": "～まい",
+        "romaji": "-mai",
+        "meaning": "～ tờ / tấm (vật mỏng, phẳng)",
+        "hanViet": "Mai",
+        "type": "Hậu tố",
+        "exampleSentence": "切手を ５枚 買います。",
+        "exampleSentenceReading": "きってを ごまい かいます。",
+        "exampleSentenceMeaning": "Mua 5 con tem."
+      },
+      {
+        "id": 1115,
+        "word": "～台",
+        "reading": "～だい",
+        "romaji": "-dai",
+        "meaning": "～ chiếc (máy móc, xe cộ)",
+        "hanViet": "Đài",
+        "type": "Hậu tố",
+        "exampleSentence": "車が ２台 あります。",
+        "exampleSentenceReading": "くるまが にだい あります。",
+        "exampleSentenceMeaning": "Có 2 chiếc xe ô tô."
+      },
+      {
+        "id": 1116,
+        "word": "～回",
+        "reading": "～かい",
+        "romaji": "-kai",
+        "meaning": "～ lần (tần suất)",
+        "hanViet": "Hồi",
+        "type": "Hậu tố",
+        "exampleSentence": "１週間に ２回 テニスを します。",
+        "exampleSentenceReading": "いっしゅうかんに にかい てにすを します。",
+        "exampleSentenceMeaning": "Chơi tennis 2 lần 1 tuần."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 11",
-        "pattern": "Cách đếm đồ vật (ひとつ, ふたつ), người (ひとり, ふたり), tần suất làm việc 1 tuần mấy lần",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 11: Số lượng từ & Tần suất.",
+        "title": "Cách dùng số lượng từ trong câu",
+        "pattern": "N + を + [Số lượng từ] + V",
+        "explanation": "Số lượng từ thường đứng ngay trước động từ mà nó bổ nghĩa, không đi kèm trợ từ.",
         "examples": [
           {
-            "japanese": "これは 第11課の 例文です。",
-            "reading": "これは だい11かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 11."
+            "japanese": "りんごを ４つ 買いました。",
+            "reading": "りんごを よっつ かいました。",
+            "vietnamese": "Tôi đã mua 4 quả táo."
+          }
+        ]
+      },
+      {
+        "title": "Khoảng thời gian + に ～回 V (Tần suất)",
+        "pattern": "[Khoảng thời gian] に [Số lần]回 + V",
+        "explanation": "Diễn tả tần suất thực hiện một hành động trong một khoảng thời gian nhất định.",
+        "examples": [
+          {
+            "japanese": "１か月に ２回 映画を 見ます。",
+            "reading": "いっかげつに にかい えいがを みます。",
+            "vietnamese": "Một tháng tôi xem phim 2 lần."
+          }
+        ]
+      },
+      {
+        "title": "Lượng từ + だけ (Chỉ)",
+        "pattern": "Số lượng + だけ",
+        "explanation": "だけ mang nghĩa 'chỉ', biểu thị giới hạn số lượng duy nhất.",
+        "examples": [
+          {
+            "japanese": "休みは 日曜日だけです。",
+            "reading": "やすみは にちようびだけです。",
+            "vietnamese": "Ngày nghỉ chỉ có mỗi ngày chủ nhật."
           }
         ]
       }
@@ -1657,31 +2986,276 @@
     "lessonNumber": 12,
     "title": "Bài 12: Thì quá khứ & So sánh",
     "japaneseTitle": "第１２課：比較（より・一番）",
-    "description": "Quá khứ của tính từ/danh từ, so sánh hơn A は B より, so sánh nhất 一番.",
+    "description": "Thì quá khứ của danh từ và tính từ, so sánh hơn A は B より, so sánh nhất 一番, chọn lựa どちら.",
     "vocabularies": [
       {
         "id": 1201,
-        "word": "言葉 12",
-        "reading": "ことば",
-        "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 12",
-        "hanViet": "Ngôn Diệp",
+        "word": "簡単[な]",
+        "reading": "かんたん",
+        "romaji": "kantan",
+        "meaning": "Đơn giản / Dễ",
+        "hanViet": "Giản Đơn",
+        "type": "Tính từ -na",
+        "exampleSentence": "テストは 簡単でした。",
+        "exampleSentenceReading": "てすとは かんたんでした。",
+        "exampleSentenceMeaning": "Bài kiểm tra đã rất đơn giản."
+      },
+      {
+        "id": 1202,
+        "word": "近い",
+        "reading": "ちかい",
+        "romaji": "chikai",
+        "meaning": "Gần",
+        "hanViet": "Cận",
+        "type": "Tính từ -i",
+        "exampleSentence": "うちは 駅から 近いです。",
+        "exampleSentenceReading": "うちは えきから ちかいです。",
+        "exampleSentenceMeaning": "Nhà tôi gần ga."
+      },
+      {
+        "id": 1203,
+        "word": "遠い",
+        "reading": "とおい",
+        "romaji": "tooi",
+        "meaning": "Xa",
+        "hanViet": "Viễn",
+        "type": "Tính từ -i",
+        "exampleSentence": "学校は 遠いです。",
+        "exampleSentenceReading": "がっこうは とおいです。",
+        "exampleSentenceMeaning": "Trường học ở xa."
+      },
+      {
+        "id": 1204,
+        "word": "速い / 早い",
+        "reading": "はやい",
+        "romaji": "hayai",
+        "meaning": "Nhanh / Sớm",
+        "hanViet": "Tốc / Tảo",
+        "type": "Tính từ -i",
+        "exampleSentence": "新幹線は 速いです。",
+        "exampleSentenceReading": "しんかんせんは はやいです。",
+        "exampleSentenceMeaning": "Tàu Shinkansen chạy rất nhanh."
+      },
+      {
+        "id": 1205,
+        "word": "遅い",
+        "reading": "おそい",
+        "romaji": "osoi",
+        "meaning": "Chậm / Muộn",
+        "hanViet": "Trì",
+        "type": "Tính từ -i",
+        "exampleSentence": "足が 遅いです。",
+        "exampleSentenceReading": "あしが おそいです。",
+        "exampleSentenceMeaning": "Chạy chậm."
+      },
+      {
+        "id": 1206,
+        "word": "多い",
+        "reading": "おおい",
+        "romaji": "ooi",
+        "meaning": "Nhiều (người, xe)",
+        "hanViet": "Đa",
+        "type": "Tính từ -i",
+        "exampleSentence": "人が 多いです。",
+        "exampleSentenceReading": "ひとが おおいです。",
+        "exampleSentenceMeaning": "Đông người."
+      },
+      {
+        "id": 1207,
+        "word": "少ない",
+        "reading": "すくない",
+        "romaji": "sukunai",
+        "meaning": "Ít (người, xe)",
+        "hanViet": "Thiểu",
+        "type": "Tính từ -i",
+        "exampleSentence": "雨が 少ないです。",
+        "exampleSentenceReading": "あめが すくないです。",
+        "exampleSentenceMeaning": "Ít mưa."
+      },
+      {
+        "id": 1208,
+        "word": "暖かい / 温かい",
+        "reading": "あたたかい",
+        "romaji": "atatakai",
+        "meaning": "Ấm áp",
+        "hanViet": "Noãn / Ôn",
+        "type": "Tính từ -i",
+        "exampleSentence": "春は 暖かいです。",
+        "exampleSentenceReading": "はるは あたたかいです。",
+        "exampleSentenceMeaning": "Mùa xuân ấm áp."
+      },
+      {
+        "id": 1209,
+        "word": "涼しい",
+        "reading": "すずしい",
+        "romaji": "suzushii",
+        "meaning": "Mát mẻ",
+        "hanViet": "Lương",
+        "type": "Tính từ -i",
+        "exampleSentence": "秋は 涼しいです。",
+        "exampleSentenceReading": "あきは すずしいです。",
+        "exampleSentenceMeaning": "Mùa thu mát mẻ."
+      },
+      {
+        "id": 1210,
+        "word": "甘い",
+        "reading": "あまい",
+        "romaji": "amai",
+        "meaning": "Ngọt",
+        "hanViet": "Cam",
+        "type": "Tính từ -i",
+        "exampleSentence": "このケーキは 甘いです。",
+        "exampleSentenceReading": "このけーきは あまいです。",
+        "exampleSentenceMeaning": "Cái bánh ngọt này ngọt."
+      },
+      {
+        "id": 1211,
+        "word": "辛い",
+        "reading": "からい",
+        "romaji": "karai",
+        "meaning": "Cay",
+        "hanViet": "Tân",
+        "type": "Tính từ -i",
+        "exampleSentence": "カレーは 辛いです。",
+        "exampleSentenceReading": "かれーは からいです。",
+        "exampleSentenceMeaning": "Món cà ri cay."
+      },
+      {
+        "id": 1212,
+        "word": "重い",
+        "reading": "おもい",
+        "romaji": "omoi",
+        "meaning": "Nặng",
+        "hanViet": "Trọng",
+        "type": "Tính từ -i",
+        "exampleSentence": "荷物が 重いです。",
+        "exampleSentenceReading": "にもつが おもいです。",
+        "exampleSentenceMeaning": "Hành lý nặng."
+      },
+      {
+        "id": 1213,
+        "word": "軽い",
+        "reading": "かるい",
+        "romaji": "karui",
+        "meaning": "Nhẹ",
+        "hanViet": "Khinh",
+        "type": "Tính từ -i",
+        "exampleSentence": "このかばんは 軽いです。",
+        "exampleSentenceReading": "このかばんは かるいです。",
+        "exampleSentenceMeaning": "Cái túi này nhẹ."
+      },
+      {
+        "id": 1214,
+        "word": "季節",
+        "reading": "きせつ",
+        "romaji": "kisetsu",
+        "meaning": "Mùa trong năm",
+        "hanViet": "Quý Tiết",
         "type": "Danh từ",
-        "exampleSentence": "第12課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい12かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 12."
+        "exampleSentence": "どの 季節が いちばん 好きですか。",
+        "exampleSentenceReading": "どの きせつが いちばん すきですか。",
+        "exampleSentenceMeaning": "Bạn thích mùa nào nhất?"
+      },
+      {
+        "id": 1215,
+        "word": "春",
+        "reading": "はる",
+        "romaji": "haru",
+        "meaning": "Mùa xuân",
+        "hanViet": "Xuân",
+        "type": "Danh từ",
+        "exampleSentence": "春に 桜が 咲きます。",
+        "exampleSentenceReading": "はるに さくらが さきます。",
+        "exampleSentenceMeaning": "Mùa xuân hoa anh đào nở."
+      },
+      {
+        "id": 1216,
+        "word": "夏",
+        "reading": "なつ",
+        "romaji": "natsu",
+        "meaning": "Mùa hè",
+        "hanViet": "Hạ",
+        "type": "Danh từ",
+        "exampleSentence": "夏休みは 海へ 行きます。",
+        "exampleSentenceReading": "なつやすみは うみへ いきます。",
+        "exampleSentenceMeaning": "Kỳ nghỉ hè tôi đi biển."
+      },
+      {
+        "id": 1217,
+        "word": "秋",
+        "reading": "あき",
+        "romaji": "aki",
+        "meaning": "Mùa thu",
+        "hanViet": "Thu",
+        "type": "Danh từ",
+        "exampleSentence": "秋の 紅葉は きれいです。",
+        "exampleSentenceReading": "あきの こうようは きれいです。",
+        "exampleSentenceMeaning": "Lá đỏ mùa thu rất đẹp."
+      },
+      {
+        "id": 1218,
+        "word": "冬",
+        "reading": "ふゆ",
+        "romaji": "fuyu",
+        "meaning": "Mùa đông",
+        "hanViet": "Đông",
+        "type": "Danh từ",
+        "exampleSentence": "冬は 雪が 降ります。",
+        "exampleSentenceReading": "ふゆは ゆきが ふります。",
+        "exampleSentenceMeaning": "Mùa đông có tuyết rơi."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 12",
-        "pattern": "Quá khứ của tính từ/danh từ, so sánh hơn A は B より, so sánh nhất 一番",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 12: Thì quá khứ & So sánh.",
+        "title": "Quá khứ của tính từ và danh từ",
+        "pattern": "Tính từ -i: かった | Tính từ -na/Danh từ: でした",
+        "explanation": "Tính từ đuôi い bỏ い thêm かったです (quá khứ phủ định: くなかったです). Tính từ đuôi な và danh từ thêm でした (quá khứ phủ định: じゃありませんでした).",
         "examples": [
           {
-            "japanese": "これは 第12課の 例文です。",
-            "reading": "これは だい12かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 12."
+            "japanese": "きのうは 暑かったです。",
+            "reading": "きのうは あつかったです。",
+            "vietnamese": "Hôm qua trời đã rất nóng."
+          },
+          {
+            "japanese": "きのうの パーティーは にぎやかでした。",
+            "reading": "きのうの ぱーてぃーは にぎやかでした。",
+            "vietnamese": "Bữa tiệc hôm qua đã rất nhộn nhịp."
+          }
+        ]
+      },
+      {
+        "title": "A は B より [Tính từ] です (So sánh hơn)",
+        "pattern": "A は B より [Tính từ] です",
+        "explanation": "Biểu thị đối tượng A có tính chất hơn đối tượng B (A hơn B).",
+        "examples": [
+          {
+            "japanese": "新幹線は 飛行機より 安いです。",
+            "reading": "しんかんせんは ひこうきより やすいです。",
+            "vietnamese": "Tàu Shinkansen rẻ hơn máy bay."
+          }
+        ]
+      },
+      {
+        "title": "A と B と どちらが [Tính từ] ですか (So sánh 2 vật)",
+        "pattern": "A と B と どちらが [Tính từ] ですか",
+        "explanation": "Dùng để hỏi giữa A và B cái nào hơn. Trả lời: A の ほうが [Tính từ] です.",
+        "examples": [
+          {
+            "japanese": "サッカーと 野球と どちらが おもしろいですか。ー サッカーの ほうが おもしろいです。",
+            "reading": "さっかーと やきゅうと どちらが おもしろいですか。ー さっかーの ほうが おもしろいです。",
+            "vietnamese": "Bóng đá và bóng chày môn nào thú vị hơn? - Bóng đá thú vị hơn."
+          }
+        ]
+      },
+      {
+        "title": "N の 中で [Từ để hỏi] が いちばん [Tính từ] ですか (So sánh nhất)",
+        "pattern": "[Nhóm N] の 中で 何/どこ/だれ/いつ が いちばん [Tính từ] ですか",
+        "explanation": "So sánh nhất trong một phạm vi hoặc một nhóm đối tượng.",
+        "examples": [
+          {
+            "japanese": "１年の 中で いつが いちばん 暑いですか。ー ８月が いちばん 暑いです。",
+            "reading": "いちねんの なかで いつが いちばん あついですか。ー はちがつが いちばん あついです。",
+            "vietnamese": "Trong một năm khi nào nóng nhất? - Tháng 8 nóng nhất."
           }
         ]
       }
@@ -1691,31 +3265,221 @@
     "lessonNumber": 13,
     "title": "Bài 13: Mong muốn (ほしい・たい)",
     "japaneseTitle": "第１３課：～たい・～ほしい",
-    "description": "Thể hiện mong muốn sở hữu N が ほしい, muốn làm V-stem + たいです, mục đích di chuyển V-stem に 行きます.",
+    "description": "Bày tỏ mong muốn sở hữu N が ほしい, mong muốn thực hiện hành động V-stem + たい, mục đích di chuyển V-stem に 行きます.",
     "vocabularies": [
       {
         "id": 1301,
-        "word": "言葉 13",
-        "reading": "ことば",
-        "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 13",
-        "hanViet": "Ngôn Diệp",
-        "type": "Danh từ",
-        "exampleSentence": "第13課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい13かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 13."
+        "word": "遊びます",
+        "reading": "あそびます",
+        "romaji": "asobimasu",
+        "meaning": "Chơi",
+        "hanViet": "Du",
+        "type": "Động từ",
+        "exampleSentence": "友達と 遊びます。",
+        "exampleSentenceReading": "ともだちと あそびます。",
+        "exampleSentenceMeaning": "Đi chơi cùng bạn bè."
+      },
+      {
+        "id": 1302,
+        "word": "泳ぎます",
+        "reading": "およぎます",
+        "romaji": "oyogimasu",
+        "meaning": "Bơi",
+        "hanViet": "Vịnh",
+        "type": "Động từ",
+        "exampleSentence": "海で 泳ぎます。",
+        "exampleSentenceReading": "うみで およぎます。",
+        "exampleSentenceMeaning": "Bơi ở biển."
+      },
+      {
+        "id": 1303,
+        "word": "迎えます",
+        "reading": "むかえます",
+        "romaji": "mukaemasu",
+        "meaning": "Đón",
+        "hanViet": "Nghênh",
+        "type": "Động từ",
+        "exampleSentence": "駅へ 友達を 迎えに 行きます。",
+        "exampleSentenceReading": "えきへ ともだちを むかえに いきます。",
+        "exampleSentenceMeaning": "Ra ga đón bạn bè."
+      },
+      {
+        "id": 1304,
+        "word": "疲れます",
+        "reading": "つかれます",
+        "romaji": "tsukaremasu",
+        "meaning": "Mệt mỏi",
+        "hanViet": "Bì",
+        "type": "Động từ",
+        "exampleSentence": "仕事で 疲れました。",
+        "exampleSentenceReading": "しごとで つかれました。",
+        "exampleSentenceMeaning": "Mệt vì công việc."
+      },
+      {
+        "id": 1305,
+        "word": "出します",
+        "reading": "だします",
+        "romaji": "dashimasu",
+        "meaning": "Gửi (thư) / Nộp",
+        "hanViet": "Xuất",
+        "type": "Động từ",
+        "exampleSentence": "手紙を 出します。",
+        "exampleSentenceReading": "てがみを だします。",
+        "exampleSentenceMeaning": "Gửi thư."
+      },
+      {
+        "id": 1306,
+        "word": "入ります",
+        "reading": "はいります",
+        "romaji": "hairimasu",
+        "meaning": "Vào",
+        "hanViet": "Nhập",
+        "type": "Động từ",
+        "exampleSentence": "喫茶店に 入ります。",
+        "exampleSentenceReading": "きっさてんに はいります。",
+        "exampleSentenceMeaning": "Vào quán cà phê."
+      },
+      {
+        "id": 1307,
+        "word": "出ます",
+        "reading": "でます",
+        "romaji": "demasu",
+        "meaning": "Rời khỏi / Ra",
+        "hanViet": "Xuất",
+        "type": "Động từ",
+        "exampleSentence": "部屋を 出ます。",
+        "exampleSentenceReading": "へやを でます。",
+        "exampleSentenceMeaning": "Ra khỏi phòng."
+      },
+      {
+        "id": 1308,
+        "word": "結婚します",
+        "reading": "けっこんします",
+        "romaji": "kekkonshimasu",
+        "meaning": "Kết hôn",
+        "hanViet": "Kết Hôn",
+        "type": "Động từ",
+        "exampleSentence": "来年 結婚します。",
+        "exampleSentenceReading": "らいねん けっこんします。",
+        "exampleSentenceMeaning": "Năm sau tôi kết hôn."
+      },
+      {
+        "id": 1309,
+        "word": "買い物します",
+        "reading": "かいものします",
+        "romaji": "kaimonoshimasu",
+        "meaning": "Mua sắm",
+        "hanViet": "Mãi Vật",
+        "type": "Động từ",
+        "exampleSentence": "デパートで 買い物します。",
+        "exampleSentenceReading": "でぱーとで かいものします。",
+        "exampleSentenceMeaning": "Mua sắm ở trung tâm thương mại."
+      },
+      {
+        "id": 1310,
+        "word": "散歩します",
+        "reading": "さんぽします",
+        "romaji": "sanposhimasu",
+        "meaning": "Đi dạo",
+        "hanViet": "Tản Bộ",
+        "type": "Động từ",
+        "exampleSentence": "公園を 散歩します。",
+        "exampleSentenceReading": "こうえんを さんぽします。",
+        "exampleSentenceMeaning": "Đi dạo trong công viên."
+      },
+      {
+        "id": 1311,
+        "word": "欲しい",
+        "reading": "ほしい",
+        "romaji": "hoshii",
+        "meaning": "Muốn có (sở hữu đồ vật)",
+        "hanViet": "Dục",
+        "type": "Tính từ -i",
+        "exampleSentence": "新しい 車が 欲しいです。",
+        "exampleSentenceReading": "あたらしい くるまが ほしいです。",
+        "exampleSentenceMeaning": "Tôi muốn có chiếc xe mới."
+      },
+      {
+        "id": 1312,
+        "word": "寂しい",
+        "reading": "さびしい",
+        "romaji": "sabishii",
+        "meaning": "Buồn / Cô đơn",
+        "hanViet": "Tịch",
+        "type": "Tính từ -i",
+        "exampleSentence": "一人は 寂しいです。",
+        "exampleSentenceReading": "ひとりは さびしいです。",
+        "exampleSentenceMeaning": "Ở một mình buồn lắm."
+      },
+      {
+        "id": 1313,
+        "word": "広い",
+        "reading": "ひろい",
+        "romaji": "hiroi",
+        "meaning": "Rộng rãi",
+        "hanViet": "Quảng",
+        "type": "Tính từ -i",
+        "exampleSentence": "広い 部屋です。",
+        "exampleSentenceReading": "ひろい へやです。",
+        "exampleSentenceMeaning": "Căn phòng rộng rãi."
+      },
+      {
+        "id": 1314,
+        "word": "狭い",
+        "reading": "せまい",
+        "romaji": "semai",
+        "meaning": "Chật hẹp",
+        "hanViet": "Hiệp",
+        "type": "Tính từ -i",
+        "exampleSentence": "狭い 道です。",
+        "exampleSentenceReading": "せまい みちです。",
+        "exampleSentenceMeaning": "Con đường chật hẹp."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 13",
-        "pattern": "Thể hiện mong muốn sở hữu N が ほしい, muốn làm V-stem + たいです, mục đích di chuyển V-stem に 行きます",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 13: Mong muốn (ほしい・たい).",
+        "title": "N が 欲しいです (Muốn có N)",
+        "pattern": "N + が + 欲しいです",
+        "explanation": "Biểu thị mong muốn sở hữu một đồ vật nào đó của người nói. Phủ định là 欲しくないです. Chú ý: Không dùng hỏi người bề trên.",
         "examples": [
           {
-            "japanese": "これは 第13課の 例文です。",
-            "reading": "これは だい13かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 13."
+            "japanese": "わたしは パソコンが 欲しいです。",
+            "reading": "わたしは ぱそこんが ほしいです。",
+            "vietnamese": "Tôi muốn có một chiếc máy tính."
+          }
+        ]
+      },
+      {
+        "title": "V-stem + たいです (Muốn làm V)",
+        "pattern": "Vます(bỏ ます) + たいです",
+        "explanation": "Biểu thị mong muốn thực hiện hành động. Tân ngữ có thể dùng trợ từ を hoặc が.",
+        "examples": [
+          {
+            "japanese": "日本へ 行きたいです。",
+            "reading": "にほんへ いきたいです。",
+            "vietnamese": "Tôi muốn đi Nhật Bản."
+          },
+          {
+            "japanese": "お茶が 飲みたいです。",
+            "reading": "おちゃが のみたいです。",
+            "vietnamese": "Tôi muốn uống trà."
+          }
+        ]
+      },
+      {
+        "title": "Địa điểm + へ + V-stem / N + に + 行きます／来ます／帰ります",
+        "pattern": "Địa điểm + へ + V-stem/Danh từ + に + 行きます",
+        "explanation": "Mục đích di chuyển (Đi đâu để làm gì). Động từ bỏ ます thêm に.",
+        "examples": [
+          {
+            "japanese": "デパートへ 買い物に 行きます。",
+            "reading": "でぱーとへ かいものに いきます。",
+            "vietnamese": "Tôi đi trung tâm thương mại để mua sắm."
+          },
+          {
+            "japanese": "日本へ 経済の 勉強に 来ました。",
+            "reading": "にほんへ けいざいの べんきょうに きました。",
+            "vietnamese": "Tôi đến Nhật để học kinh tế."
           }
         ]
       }
@@ -1725,31 +3489,228 @@
     "lessonNumber": 14,
     "title": "Bài 14: Thể て (Te-form) & Yêu cầu",
     "japaneseTitle": "第１４課：て形・～てください",
-    "description": "Chia động từ nhóm 1, 2, 3 sang thể て, mẫu câu sai khiến lịch sự Vてください, hành động đang diễn ra Vています.",
+    "description": "Quy tắc chia động từ sang thể て nhóm 1, 2, 3, mẫu câu yêu cầu lịch sự Vてください, hành động đang diễn ra Vています, đề nghị Vましょうか.",
     "vocabularies": [
       {
         "id": 1401,
-        "word": "言葉 14",
-        "reading": "ことば",
-        "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 14",
-        "hanViet": "Ngôn Diệp",
-        "type": "Danh từ",
-        "exampleSentence": "第14課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい14かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 14."
+        "word": "つけます",
+        "reading": "つけます",
+        "romaji": "tsukemasu",
+        "meaning": "Bật (điện, máy)",
+        "hanViet": "",
+        "type": "Động từ",
+        "exampleSentence": "エアコンを つけます。",
+        "exampleSentenceReading": "えあこんを つけます。",
+        "exampleSentenceMeaning": "Bật máy điều hòa."
+      },
+      {
+        "id": 1402,
+        "word": "消します",
+        "reading": "けします",
+        "romaji": "keshimasu",
+        "meaning": "Tắt (điện)",
+        "hanViet": "Tiêu",
+        "type": "Động từ",
+        "exampleSentence": "電気を 消します。",
+        "exampleSentenceReading": "でんきを けします。",
+        "exampleSentenceMeaning": "Tắt điện."
+      },
+      {
+        "id": 1403,
+        "word": "開けます",
+        "reading": "あけます",
+        "romaji": "akemasu",
+        "meaning": "Mở (cửa)",
+        "hanViet": "Khai",
+        "type": "Động từ",
+        "exampleSentence": "窓を 開けます。",
+        "exampleSentenceReading": "まどを あけます。",
+        "exampleSentenceMeaning": "Mở cửa sổ."
+      },
+      {
+        "id": 1404,
+        "word": "閉めます",
+        "reading": "しめます",
+        "romaji": "shimemasu",
+        "meaning": "Đóng (cửa)",
+        "hanViet": "Bế",
+        "type": "Động từ",
+        "exampleSentence": "ドアを 閉めます。",
+        "exampleSentenceReading": "どあを しめます。",
+        "exampleSentenceMeaning": "Đóng cửa ra vào."
+      },
+      {
+        "id": 1405,
+        "word": "急ぎます",
+        "reading": "いそぎます",
+        "romaji": "isogimasu",
+        "meaning": "Vội vã / Gấp",
+        "hanViet": "Cấp",
+        "type": "Động từ",
+        "exampleSentence": "急ぎましょう。",
+        "exampleSentenceReading": "いそぎましょう。",
+        "exampleSentenceMeaning": "Hãy nhanh lên nào."
+      },
+      {
+        "id": 1406,
+        "word": "待ちます",
+        "reading": "まちます",
+        "romaji": "machimasu",
+        "meaning": "Đợi / Chờ",
+        "hanViet": "Đãi",
+        "type": "Động từ",
+        "exampleSentence": "ちょっと 待ってください。",
+        "exampleSentenceReading": "ちょっと まってください。",
+        "exampleSentenceMeaning": "Xin hãy đợi một chút."
+      },
+      {
+        "id": 1407,
+        "word": "止めます",
+        "reading": "とめます",
+        "romaji": "tomemasu",
+        "meaning": "Dừng (xe)",
+        "hanViet": "Chỉ",
+        "type": "Động từ",
+        "exampleSentence": "ここに 車を 止めます。",
+        "exampleSentenceReading": "ここに くるまを とめます。",
+        "exampleSentenceMeaning": "Đỗ xe ở đây."
+      },
+      {
+        "id": 1408,
+        "word": "見せます",
+        "reading": "みせます",
+        "romaji": "misemasu",
+        "meaning": "Cho xem",
+        "hanViet": "Kiến",
+        "type": "Động từ",
+        "exampleSentence": "パスポートを 見せて ください。",
+        "exampleSentenceReading": "ぱすぽーとを みせて ください。",
+        "exampleSentenceMeaning": "Xin vui lòng cho xem hộ chiếu."
+      },
+      {
+        "id": 1409,
+        "word": "教えます",
+        "reading": "おしえます",
+        "romaji": "oshiemasu",
+        "meaning": "Nói cho biết / Chỉ",
+        "hanViet": "Giáo",
+        "type": "Động từ",
+        "exampleSentence": "住所を 教えて ください。",
+        "exampleSentenceReading": "じゅうしょを おしえて ください。",
+        "exampleSentenceMeaning": "Hãy cho tôi biết địa chỉ."
+      },
+      {
+        "id": 1410,
+        "word": "座ります",
+        "reading": "すわります",
+        "romaji": "suwarimasu",
+        "meaning": "Ngồi",
+        "hanViet": "Tọa",
+        "type": "Động từ",
+        "exampleSentence": "ここに 座ってください。",
+        "exampleSentenceReading": "ここに すわってください。",
+        "exampleSentenceMeaning": "Xin mời ngồi vào đây."
+      },
+      {
+        "id": 1411,
+        "word": "立ちます",
+        "reading": "たちます",
+        "romaji": "tachimasu",
+        "meaning": "Đứng",
+        "hanViet": "Lập",
+        "type": "Động từ",
+        "exampleSentence": "立ってください。",
+        "exampleSentenceReading": "たってください。",
+        "exampleSentenceMeaning": "Xin hãy đứng dậy."
+      },
+      {
+        "id": 1412,
+        "word": "手伝います",
+        "reading": "てつだいます",
+        "romaji": "tetsudaimasu",
+        "meaning": "Giúp đỡ",
+        "hanViet": "Thủ Truyền",
+        "type": "Động từ",
+        "exampleSentence": "仕事を 手伝います。",
+        "exampleSentenceReading": "しごとを てつだいます。",
+        "exampleSentenceMeaning": "Giúp đỡ công việc."
+      },
+      {
+        "id": 1413,
+        "word": "呼びます",
+        "reading": "よびます",
+        "romaji": "yobimasu",
+        "meaning": "Gọi (taxi, tên)",
+        "hanViet": "Hô",
+        "type": "Động từ",
+        "exampleSentence": "タクシーを 呼びます。",
+        "exampleSentenceReading": "たくしーを よびます。",
+        "exampleSentenceMeaning": "Gọi xe taxi."
+      },
+      {
+        "id": 1414,
+        "word": "話します",
+        "reading": "はなします",
+        "romaji": "hanashimasu",
+        "meaning": "Nói chuyện",
+        "hanViet": "Thoại",
+        "type": "Động từ",
+        "exampleSentence": "ゆっくり 話してください。",
+        "exampleSentenceReading": "ゆっくり はなしてください。",
+        "exampleSentenceMeaning": "Xin hãy nói chậm lại."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 14",
-        "pattern": "Chia động từ nhóm 1, 2, 3 sang thể て, mẫu câu sai khiến lịch sự Vてください, hành động đang diễn ra Vています",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 14: Thể て (Te-form) & Yêu cầu.",
+        "title": "Quy tắc chia thể て (Te-form)",
+        "pattern": "Nhóm 1: い・ち・り->って | み・び・に->んで | き->いて | ぎ->いで | し->して",
+        "explanation": "Động từ nhóm 2: bỏ ます + て. Nhóm 3: します->して, きます->きて.",
         "examples": [
           {
-            "japanese": "これは 第14課の 例文です。",
-            "reading": "これは だい14かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 14."
+            "japanese": "かきます → かいて",
+            "reading": "かきます → かいて",
+            "vietnamese": "Viết → Thể te: Kaite"
+          },
+          {
+            "japanese": "たべます → たべて",
+            "reading": "たべます → たべて",
+            "vietnamese": "Ăn → Thể te: Tabete"
+          }
+        ]
+      },
+      {
+        "title": "Vてください (Xin hãy làm V)",
+        "pattern": "Vて + ください",
+        "explanation": "Mẫu câu nhờ vả, sai khiến hoặc yêu cầu ai đó làm việc gì một cách lịch sự.",
+        "examples": [
+          {
+            "japanese": "ここに お名前を 書いて ください。",
+            "reading": "ここに おなまえを かいて ください。",
+            "vietnamese": "Xin hãy viết tên bạn vào đây."
+          }
+        ]
+      },
+      {
+        "title": "Vています (Hành động đang diễn ra)",
+        "pattern": "Vて + います",
+        "explanation": "Biểu thị hành động đang diễn ra ngay tại thời điểm nói (thì hiện tại tiếp diễn).",
+        "examples": [
+          {
+            "japanese": "今 雨が 降っています。",
+            "reading": "いま あめが ふっています。",
+            "vietnamese": "Bây giờ trời đang mưa."
+          }
+        ]
+      },
+      {
+        "title": "Vましょうか (Để tôi làm giúp nhé?)",
+        "pattern": "Vます(bỏ ます) + ましょうか",
+        "explanation": "Đề nghị giúp đỡ người nghe một cách chủ động.",
+        "examples": [
+          {
+            "japanese": "荷物を 持ちましょうか。ー ええ、お願いします。",
+            "reading": "にもつを もちましょうか。ー ええ、おねがいします。",
+            "vietnamese": "Để tôi xách hành lý giúp bạn nhé? - Vâng, nhờ bạn."
           }
         ]
       }
@@ -1759,31 +3720,204 @@
     "lessonNumber": 15,
     "title": "Bài 15: Xin phép & Trạng thái",
     "japaneseTitle": "第１５課：～てもいいですか",
-    "description": "Mẫu câu xin phép Vてもいいですか, cấm đoán Vてはいけません, trạng thái kết quả Vています.",
+    "description": "Mẫu câu xin phép Vてもいいですか, cấm đoán Vてはいけません, trạng thái kết quả lâu dài Vています (kết hôn, nơi ở, nghề nghiệp).",
     "vocabularies": [
       {
         "id": 1501,
-        "word": "言葉 15",
-        "reading": "ことば",
-        "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 15",
-        "hanViet": "Ngôn Diệp",
+        "word": "置きます",
+        "reading": "おきます",
+        "romaji": "okimasu",
+        "meaning": "Đặt / Để",
+        "hanViet": "Trí",
+        "type": "Động từ",
+        "exampleSentence": "荷物を ここに 置きます。",
+        "exampleSentenceReading": "にもつを ここに おきます。",
+        "exampleSentenceMeaning": "Đặt hành lý ở đây."
+      },
+      {
+        "id": 1502,
+        "word": "作ります",
+        "reading": "つくります",
+        "romaji": "tsukurimasu",
+        "meaning": "Làm / Chế tạo",
+        "hanViet": "Tác",
+        "type": "Động từ",
+        "exampleSentence": "料理を 作ります。",
+        "exampleSentenceReading": "りょうりを つくります。",
+        "exampleSentenceMeaning": "Nấu món ăn."
+      },
+      {
+        "id": 1503,
+        "word": "売ります",
+        "reading": "うります",
+        "romaji": "urimasu",
+        "meaning": "Bán",
+        "hanViet": "Mại",
+        "type": "Động từ",
+        "exampleSentence": "店で パンを 売ります。",
+        "exampleSentenceReading": "みせで ぱんを うります。",
+        "exampleSentenceMeaning": "Bán bánh mì ở tiệm."
+      },
+      {
+        "id": 1504,
+        "word": "知ります",
+        "reading": "しります",
+        "romaji": "shirimasu",
+        "meaning": "Biết",
+        "hanViet": "Tri",
+        "type": "Động từ",
+        "exampleSentence": "あの人を 知っていますか。",
+        "exampleSentenceReading": "あのひとを しっていますか。",
+        "exampleSentenceMeaning": "Bạn có biết người đó không?"
+      },
+      {
+        "id": 1505,
+        "word": "住みます",
+        "reading": "すみます",
+        "romaji": "sumimasu",
+        "meaning": "Sống / Cư trú",
+        "hanViet": "Trú",
+        "type": "Động từ",
+        "exampleSentence": "ハノイに 住んでいます。",
+        "exampleSentenceReading": "はのいに すんでいます。",
+        "exampleSentenceMeaning": "Tôi đang sống ở Hà Nội."
+      },
+      {
+        "id": 1506,
+        "word": "研究します",
+        "reading": "けんきゅうします",
+        "romaji": "kenkyuushimasu",
+        "meaning": "Nghiên cứu",
+        "hanViet": "Nghiên Cứu",
+        "type": "Động từ",
+        "exampleSentence": "日本語を 研究します。",
+        "exampleSentenceReading": "にほんごを けんきゅうします。",
+        "exampleSentenceMeaning": "Nghiên cứu tiếng Nhật."
+      },
+      {
+        "id": 1507,
+        "word": "資料",
+        "reading": "しりょう",
+        "romaji": "shiryou",
+        "meaning": "Tài liệu",
+        "hanViet": "Tư Liệu",
         "type": "Danh từ",
-        "exampleSentence": "第15課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい15かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 15."
+        "exampleSentence": "資料を 見ます。",
+        "exampleSentenceReading": "しりょうを みます。",
+        "exampleSentenceMeaning": "Xem tài liệu."
+      },
+      {
+        "id": 1508,
+        "word": "カタログ",
+        "reading": "かたろぐ",
+        "romaji": "katarogu",
+        "meaning": "Catalogue",
+        "hanViet": "",
+        "type": "Danh từ",
+        "exampleSentence": "カタログを もらいます。",
+        "exampleSentenceReading": "かたろぐを もらいます。",
+        "exampleSentenceMeaning": "Nhận cuốn catalogue."
+      },
+      {
+        "id": 1509,
+        "word": "時刻表",
+        "reading": "じこくひょう",
+        "romaji": "jikokuhyou",
+        "meaning": "Bảng giờ tàu xe",
+        "hanViet": "Thời Khắc Biểu",
+        "type": "Danh từ",
+        "exampleSentence": "時刻表を 見て ください。",
+        "exampleSentenceReading": "じこくひょうを みて ください。",
+        "exampleSentenceMeaning": "Xin hãy xem bảng giờ tàu."
+      },
+      {
+        "id": 1510,
+        "word": "服",
+        "reading": "ふく",
+        "romaji": "fuku",
+        "meaning": "Quần áo",
+        "hanViet": "Phục",
+        "type": "Danh từ",
+        "exampleSentence": "新しい 服を 買いました。",
+        "exampleSentenceReading": "あたらしい ふくを かいました。",
+        "exampleSentenceMeaning": "Đã mua bộ quần áo mới."
+      },
+      {
+        "id": 1511,
+        "word": "製品",
+        "reading": "せいひん",
+        "romaji": "seihin",
+        "meaning": "Sản phẩm",
+        "hanViet": "Chế Phẩm",
+        "type": "Danh từ",
+        "exampleSentence": "日本の 製品は 質が いいです。",
+        "exampleSentenceReading": "にほんの せいひんは しつが いいです。",
+        "exampleSentenceMeaning": "Sản phẩm của Nhật chất lượng rất tốt."
+      },
+      {
+        "id": 1512,
+        "word": "専門",
+        "reading": "せんもん",
+        "romaji": "senmon",
+        "meaning": "Chuyên môn",
+        "hanViet": "Chuyên Môn",
+        "type": "Danh từ",
+        "exampleSentence": "専門は 経済です。",
+        "exampleSentenceReading": "せんもんは けいざいです。",
+        "exampleSentenceMeaning": "Chuyên môn của tôi là kinh tế."
+      },
+      {
+        "id": 1513,
+        "word": "歯医者",
+        "reading": "はいしゃ",
+        "romaji": "haisha",
+        "meaning": "Nha sĩ",
+        "hanViet": "Xỉ Y Giả",
+        "type": "Danh từ",
+        "exampleSentence": "歯医者へ 行きます。",
+        "exampleSentenceReading": "はいしゃへ いきます。",
+        "exampleSentenceMeaning": "Đi đến nha sĩ."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 15",
-        "pattern": "Mẫu câu xin phép Vてもいいですか, cấm đoán Vてはいけません, trạng thái kết quả Vています",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 15: Xin phép & Trạng thái.",
+        "title": "Vても いいですか (Làm V có được không?)",
+        "pattern": "Vて + も いいですか",
+        "explanation": "Mẫu câu dùng để xin phép đối phương làm việc gì đó. Trả lời: ええ、いいですよ hoặc すみません、ちょっと...",
         "examples": [
           {
-            "japanese": "これは 第15課の 例文です。",
-            "reading": "これは だい15かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 15."
+            "japanese": "ここで 写真を 撮っても いいですか。ー ええ、いいですよ。",
+            "reading": "ここで しゃしんを とっても いいですか。ー ええ、いいですよ。",
+            "vietnamese": "Tôi chụp ảnh ở đây có được không? - Vâng, được chứ."
+          }
+        ]
+      },
+      {
+        "title": "Vては いけません (Không được làm V)",
+        "pattern": "Vて + は いけません",
+        "explanation": "Mẫu câu cấm đoán hoặc nhắc nhở không được phép thực hiện hành động.",
+        "examples": [
+          {
+            "japanese": "ここで たばこを 吸っては いけません。",
+            "reading": "ここで たばこを すっては いけません。",
+            "vietnamese": "Không được hút thuốc ở đây."
+          }
+        ]
+      },
+      {
+        "title": "Vています (Biểu thị trạng thái kết quả lâu dài)",
+        "pattern": "Vて + います",
+        "explanation": "Dùng cho các động từ diễn tả trạng thái còn lưu lại kết quả: kết hôn (けっこんしています), biết (しっています), sống tại đâu (すんでいます).",
+        "examples": [
+          {
+            "japanese": "わたしは 鈴木さんを 知っています。",
+            "reading": "わたしは すずきさんを しっています。",
+            "vietnamese": "Tôi biết anh Suzuki."
+          },
+          {
+            "japanese": "ミラーさんは 大阪に 住んでいます。",
+            "reading": "みらーさんは おおさかに すんでいます。",
+            "vietnamese": "Anh Miller đang sống ở Osaka."
           }
         ]
       }
@@ -1793,31 +3927,240 @@
     "lessonNumber": 16,
     "title": "Bài 16: Nối câu & Trình tự hành động",
     "japaneseTitle": "第１６課：てから・ nối tính từ",
-    "description": "Nối chuỗi hành động Vて, thứ tự trước sau Vてから, nối tính từ (くて, で), miêu tả đặc điểm.",
+    "description": "Nối các hành động liên tiếp Vて, thứ tự trước sau Vてから, nối tính từ (くて, で), miêu tả đặc điểm N1 は N2 が A.",
     "vocabularies": [
       {
         "id": 1601,
-        "word": "言葉 16",
-        "reading": "ことば",
-        "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 16",
-        "hanViet": "Ngôn Diệp",
-        "type": "Danh từ",
-        "exampleSentence": "第16課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい16かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 16."
+        "word": "乗ります",
+        "reading": "のります",
+        "romaji": "norimasu",
+        "meaning": "Lên (tàu xe)",
+        "hanViet": "Thừa",
+        "type": "Động từ",
+        "exampleSentence": "電車に 乗ります。",
+        "exampleSentenceReading": "でんしゃに のります。",
+        "exampleSentenceMeaning": "Lên tàu điện."
+      },
+      {
+        "id": 1602,
+        "word": "降ります",
+        "reading": "おります",
+        "romaji": "orimasu",
+        "meaning": "Xuống (tàu xe)",
+        "hanViet": "Hàng",
+        "type": "Động từ",
+        "exampleSentence": "バスを 降ります。",
+        "exampleSentenceReading": "ばすを おります。",
+        "exampleSentenceMeaning": "Xuống xe buýt."
+      },
+      {
+        "id": 1603,
+        "word": "乗り換えます",
+        "reading": "のりかえます",
+        "romaji": "norikaemasu",
+        "meaning": "Chuyển tàu xe",
+        "hanViet": "Thừa Hoán",
+        "type": "Động từ",
+        "exampleSentence": "新宿駅で 乗り換えます。",
+        "exampleSentenceReading": "しんじゅくえきで のりかえます。",
+        "exampleSentenceMeaning": "Đổi tàu ở ga Shinjuku."
+      },
+      {
+        "id": 1604,
+        "word": "浴びます",
+        "reading": "あびます",
+        "romaji": "abimasu",
+        "meaning": "Tắm (vòi sen)",
+        "hanViet": "Dục",
+        "type": "Động từ",
+        "exampleSentence": "シャワーを 浴びます。",
+        "exampleSentenceReading": "しゃわーを あびます。",
+        "exampleSentenceMeaning": "Tắm vòi hoa sen."
+      },
+      {
+        "id": 1605,
+        "word": "入れます",
+        "reading": "いれます",
+        "romaji": "iremasu",
+        "meaning": "Cho vào / Đút vào",
+        "hanViet": "Nhập",
+        "type": "Động từ",
+        "exampleSentence": "財布に お金を 入れます。",
+        "exampleSentenceReading": "さいふに おかねを いれます。",
+        "exampleSentenceMeaning": "Bỏ tiền vào ví."
+      },
+      {
+        "id": 1606,
+        "word": "出します",
+        "reading": "だします",
+        "romaji": "dashimasu",
+        "meaning": "Lấy ra / Rút (tiền)",
+        "hanViet": "Xuất",
+        "type": "Động từ",
+        "exampleSentence": "銀行で お金を 出します。",
+        "exampleSentenceReading": "ぎんこうで おかねを だします。",
+        "exampleSentenceMeaning": "Rút tiền ở ngân hàng."
+      },
+      {
+        "id": 1607,
+        "word": "入ります",
+        "reading": "はいります",
+        "romaji": "hairimasu",
+        "meaning": "Vào (đại học)",
+        "hanViet": "Nhập",
+        "type": "Động từ",
+        "exampleSentence": "大学に 入ります。",
+        "exampleSentenceReading": "だいがくに はいります。",
+        "exampleSentenceMeaning": "Vào học đại học."
+      },
+      {
+        "id": 1608,
+        "word": "出ます",
+        "reading": "でます",
+        "romaji": "demasu",
+        "meaning": "Tốt nghiệp (đại học)",
+        "hanViet": "Xuất",
+        "type": "Động từ",
+        "exampleSentence": "大学を 出ます。",
+        "exampleSentenceReading": "だいがくを でます。",
+        "exampleSentenceMeaning": "Tốt nghiệp đại học."
+      },
+      {
+        "id": 1609,
+        "word": "やめます",
+        "reading": "やめます",
+        "romaji": "yamemasu",
+        "meaning": "Bỏ / Thôi (việc)",
+        "hanViet": "",
+        "type": "Động từ",
+        "exampleSentence": "会社を やめます。",
+        "exampleSentenceReading": "かいしゃを やめます。",
+        "exampleSentenceMeaning": "Nghỉ việc công ty."
+      },
+      {
+        "id": 1610,
+        "word": "押します",
+        "reading": "おします",
+        "romaji": "oshimasu",
+        "meaning": "Bấm / Ấn nút",
+        "hanViet": "Áp",
+        "type": "Động từ",
+        "exampleSentence": "ボタンを 押します。",
+        "exampleSentenceReading": "ぼたんを おします。",
+        "exampleSentenceMeaning": "Bấm nút."
+      },
+      {
+        "id": 1611,
+        "word": "若い",
+        "reading": "わかい",
+        "romaji": "wakai",
+        "meaning": "Trẻ tuổi",
+        "hanViet": "Nhược",
+        "type": "Tính từ -i",
+        "exampleSentence": "若い 先生です。",
+        "exampleSentenceReading": "わかい せんせいです。",
+        "exampleSentenceMeaning": "Là giáo viên trẻ."
+      },
+      {
+        "id": 1612,
+        "word": "長い",
+        "reading": "ながい",
+        "romaji": "nagai",
+        "meaning": "Dài",
+        "hanViet": "Trường",
+        "type": "Tính từ -i",
+        "exampleSentence": "髪が 長いです。",
+        "exampleSentenceReading": "かみが ながいです。",
+        "exampleSentenceMeaning": "Tóc dài."
+      },
+      {
+        "id": 1613,
+        "word": "短い",
+        "reading": "みじかい",
+        "romaji": "mijikai",
+        "meaning": "Ngắn",
+        "hanViet": "Đoản",
+        "type": "Tính từ -i",
+        "exampleSentence": "足が 短いです。",
+        "exampleSentenceReading": "あしが みじかいです。",
+        "exampleSentenceMeaning": "Chân ngắn."
+      },
+      {
+        "id": 1614,
+        "word": "明るい",
+        "reading": "あかるい",
+        "romaji": "akarui",
+        "meaning": "Sáng sủa",
+        "hanViet": "Minh",
+        "type": "Tính từ -i",
+        "exampleSentence": "明るい 部屋です。",
+        "exampleSentenceReading": "あかるい へやです。",
+        "exampleSentenceMeaning": "Căn phòng sáng sủa."
+      },
+      {
+        "id": 1615,
+        "word": "暗い",
+        "reading": "くらい",
+        "romaji": "kurai",
+        "meaning": "Tối tăm",
+        "hanViet": "Ám",
+        "type": "Tính từ -i",
+        "exampleSentence": "夜は 暗いです。",
+        "exampleSentenceReading": "よるは くらいです。",
+        "exampleSentenceMeaning": "Ban đêm trời tối."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 16",
-        "pattern": "Nối chuỗi hành động Vて, thứ tự trước sau Vてから, nối tính từ (くて, で), miêu tả đặc điểm",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 16: Nối câu & Trình tự hành động.",
+        "title": "V1て、V2て、... V (Nối chuỗi hành động)",
+        "pattern": "V1て、V2て、[Hành động cuối]",
+        "explanation": "Dùng thể て để liệt kê các hành động xảy ra theo trình tự thời gian liên tiếp nhau.",
         "examples": [
           {
-            "japanese": "これは 第16課の 例文です。",
-            "reading": "これは だい16かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 16."
+            "japanese": "朝 起きて、顔を 洗って、ご飯を 食べます。",
+            "reading": "あさ おきて、かおを あらって、ごはんを たべます。",
+            "vietnamese": "Buổi sáng thức dậy, rửa mặt rồi ăn cơm."
+          }
+        ]
+      },
+      {
+        "title": "V1てから、V2 (Sau khi làm V1 thì làm V2)",
+        "pattern": "V1て + から + V2",
+        "explanation": "Nhấn mạnh hành động V2 chỉ được tiến hành sau khi đã hoàn tất xong hành động V1.",
+        "examples": [
+          {
+            "japanese": "国へ 帰ってから、父の 会社で 働きます。",
+            "reading": "くにへ かえってから、ちちの かいしゃで はたらきます。",
+            "vietnamese": "Sau khi về nước tôi sẽ làm việc ở công ty của bố."
+          }
+        ]
+      },
+      {
+        "title": "Cách nối tính từ",
+        "pattern": "Tính từ -i: Bỏ い + くて | Tính từ -na: + で",
+        "explanation": "Nối các tính từ cùng loại hoặc bổ sung đặc điểm cho nhau. Tính từ -i đổi い thành くて, tính từ -na thêm で.",
+        "examples": [
+          {
+            "japanese": "ミラーさんは 若くて、元気です。",
+            "reading": "みらーさんは わかくて、げんきです。",
+            "vietnamese": "Anh Miller trẻ và khỏe mạnh."
+          },
+          {
+            "japanese": "この部屋は 静かで、きれいです。",
+            "reading": "このへやは しずかで、きれいです。",
+            "vietnamese": "Căn phòng này yên tĩnh và đẹp."
+          }
+        ]
+      },
+      {
+        "title": "N1 は N2 が [Tính từ] (Đặc điểm bộ phận)",
+        "pattern": "N1 は N2 が + Tính từ",
+        "explanation": "Miêu tả thuộc tính, đặc điểm của một bộ phận N2 thuộc chủ thể N1.",
+        "examples": [
+          {
+            "japanese": "マリアさんは 髪が 長いです。",
+            "reading": "まりあさんは かみが ながいです。",
+            "vietnamese": "Chị Maria có mái tóc dài."
           }
         ]
       }
@@ -1831,27 +4174,224 @@
     "vocabularies": [
       {
         "id": 1701,
-        "word": "言葉 17",
-        "reading": "ことば",
-        "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 17",
-        "hanViet": "Ngôn Diệp",
-        "type": "Danh từ",
-        "exampleSentence": "第17課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい17かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 17."
+        "word": "覚えます",
+        "reading": "おぼえます",
+        "romaji": "oboemasu",
+        "meaning": "Ghi nhớ",
+        "hanViet": "Giác",
+        "type": "Động từ",
+        "exampleSentence": "単語を 覚えます。",
+        "exampleSentenceReading": "たんごを おぼえます。",
+        "exampleSentenceMeaning": "Ghi nhớ từ vựng."
+      },
+      {
+        "id": 1702,
+        "word": "忘れます",
+        "reading": "わすれます",
+        "romaji": "wasuremasu",
+        "meaning": "Quên",
+        "hanViet": "Vong",
+        "type": "Động từ",
+        "exampleSentence": "傘を 忘れました。",
+        "exampleSentenceReading": "かさを わすれました。",
+        "exampleSentenceMeaning": "Tôi đã để quên cái ô."
+      },
+      {
+        "id": 1703,
+        "word": "なくします",
+        "reading": "なくします",
+        "romaji": "nakushimasu",
+        "meaning": "Làm mất",
+        "hanViet": "",
+        "type": "Động từ",
+        "exampleSentence": "財布を なくしました。",
+        "exampleSentenceReading": "さいふを なくしました。",
+        "exampleSentenceMeaning": "Tôi đã làm mất ví tiền."
+      },
+      {
+        "id": 1704,
+        "word": "払います",
+        "reading": "はらいます",
+        "romaji": "haraimasu",
+        "meaning": "Trả tiền / Thanh toán",
+        "hanViet": "Phất",
+        "type": "Động từ",
+        "exampleSentence": "お金を 払います。",
+        "exampleSentenceReading": "おかねを はらいます。",
+        "exampleSentenceMeaning": "Trả tiền."
+      },
+      {
+        "id": 1705,
+        "word": "返します",
+        "reading": "かえします",
+        "romaji": "kaeshimasu",
+        "meaning": "Trả lại",
+        "hanViet": "Phản",
+        "type": "Động từ",
+        "exampleSentence": "本を 返します。",
+        "exampleSentenceReading": "ほんを かえします。",
+        "exampleSentenceMeaning": "Trả lại sách."
+      },
+      {
+        "id": 1706,
+        "word": "出かけます",
+        "reading": "でかけます",
+        "romaji": "dekakemasu",
+        "meaning": "Đi ra ngoài",
+        "hanViet": "Xuất",
+        "type": "Động từ",
+        "exampleSentence": "午後 出かけます。",
+        "exampleSentenceReading": "ごご でかけます。",
+        "exampleSentenceMeaning": "Buổi chiều tôi đi ra ngoài."
+      },
+      {
+        "id": 1707,
+        "word": "脱ぎます",
+        "reading": "ぬぎます",
+        "romaji": "nugimasu",
+        "meaning": "Cởi (quần áo, giày)",
+        "hanViet": "Thoát",
+        "type": "Động từ",
+        "exampleSentence": "靴を 脱いで ください。",
+        "exampleSentenceReading": "くつを ぬいで ください。",
+        "exampleSentenceMeaning": "Xin vui lòng cởi giày ra."
+      },
+      {
+        "id": 1708,
+        "word": "持って行きます",
+        "reading": "もっていきます",
+        "romaji": "motte ikimasu",
+        "meaning": "Mang theo / Cầm đi",
+        "hanViet": "Trì Hành",
+        "type": "Động từ",
+        "exampleSentence": "傘を 持って 行きます。",
+        "exampleSentenceReading": "かさを もって いきます。",
+        "exampleSentenceMeaning": "Mang ô đi."
+      },
+      {
+        "id": 1709,
+        "word": "持って来ます",
+        "reading": "もってきます",
+        "romaji": "motte kimasu",
+        "meaning": "Mang đến",
+        "hanViet": "Trì Lai",
+        "type": "Động từ",
+        "exampleSentence": "パスポートを 持って 来てください。",
+        "exampleSentenceReading": "ぱすぽーとを もって きてください。",
+        "exampleSentenceMeaning": "Xin hãy mang hộ chiếu đến."
+      },
+      {
+        "id": 1710,
+        "word": "心配します",
+        "reading": "しんぱいします",
+        "romaji": "shinpaishimasu",
+        "meaning": "Lo lắng",
+        "hanViet": "Tâm Phối",
+        "type": "Động từ",
+        "exampleSentence": "心配しないで ください。",
+        "exampleSentenceReading": "しんぱいしないで ください。",
+        "exampleSentenceMeaning": "Xin đừng lo lắng."
+      },
+      {
+        "id": 1711,
+        "word": "残業します",
+        "reading": "ざんぎょうします",
+        "romaji": "zangyoushimasu",
+        "meaning": "Làm thêm giờ",
+        "hanViet": "Tàn Nghiệp",
+        "type": "Động từ",
+        "exampleSentence": "今日は 残業します。",
+        "exampleSentenceReading": "きょうは ざんぎょうします。",
+        "exampleSentenceMeaning": "Hôm nay tôi tăng ca."
+      },
+      {
+        "id": 1712,
+        "word": "出張します",
+        "reading": "しゅっちょうします",
+        "romaji": "shucchoushimasu",
+        "meaning": "Đi công tác",
+        "hanViet": "Xuất Trương",
+        "type": "Động từ",
+        "exampleSentence": "大阪へ 出張します。",
+        "exampleSentenceReading": "おおさかへ しゅっちょうします。",
+        "exampleSentenceMeaning": "Đi công tác Osaka."
+      },
+      {
+        "id": 1713,
+        "word": "薬を飲みます",
+        "reading": "くすりをのみます",
+        "romaji": "kusuri o nomimasu",
+        "meaning": "Uống thuốc",
+        "hanViet": "Dược",
+        "type": "Động từ",
+        "exampleSentence": "風邪の 薬を 飲みます。",
+        "exampleSentenceReading": "かぜの くすりを のみます。",
+        "exampleSentenceMeaning": "Uống thuốc cảm cúm."
+      },
+      {
+        "id": 1714,
+        "word": "危ない",
+        "reading": "あぶない",
+        "romaji": "abunai",
+        "meaning": "Nguy hiểm",
+        "hanViet": "Nguy",
+        "type": "Tính từ -i",
+        "exampleSentence": "そこは 危ないです。",
+        "exampleSentenceReading": "そこは あぶないです。",
+        "exampleSentenceMeaning": "Chỗ đó nguy hiểm."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 17",
-        "pattern": "Chia thể ない, yêu cầu đừng làm Vないでください, bắt buộc phải làm Vなければなりません, không cần làm Vなくてもいいです",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 17: Thể ない (Nai-form).",
+        "title": "Quy tắc chia thể ない (Nai-form)",
+        "pattern": "Nhóm 1: âm い chuyển sang âm あ + ない | Nhóm 2: Bỏ ます + ない | Nhóm 3: しない, こない",
+        "explanation": "Chia thể phủ định ngắn (Nai-form). Chú ý いきます -> いかない, あります -> ない.",
         "examples": [
           {
-            "japanese": "これは 第17課の 例文です。",
-            "reading": "これは だい17かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 17."
+            "japanese": "かきます → かかない",
+            "reading": "かきます → かかない",
+            "vietnamese": "Viết → Không viết"
+          },
+          {
+            "japanese": "たべます → たべない",
+            "reading": "たべます → たべない",
+            "vietnamese": "Ăn → Không ăn"
+          }
+        ]
+      },
+      {
+        "title": "Vないで ください (Xin đừng làm V)",
+        "pattern": "Vない + で ください",
+        "explanation": "Mẫu câu khuyên can, yêu cầu đối phương không thực hiện một hành động nào đó.",
+        "examples": [
+          {
+            "japanese": "ここで 写真を 撮らないで ください。",
+            "reading": "ここで しゃしんを とらないで ください。",
+            "vietnamese": "Xin đừng chụp ảnh ở đây."
+          }
+        ]
+      },
+      {
+        "title": "Vなければ なりません (Phải làm V)",
+        "pattern": "Vない(bỏ い) + ければ なりません",
+        "explanation": "Diễn tả nghĩa vụ hoặc điều bắt buộc phải thực hiện theo quy tắc hay thực tế.",
+        "examples": [
+          {
+            "japanese": "薬を 飲まなければ なりません。",
+            "reading": "くすりを のまなければ なりません。",
+            "vietnamese": "Tôi phải uống thuốc."
+          }
+        ]
+      },
+      {
+        "title": "Vなくても いいです (Không cần làm V cũng được)",
+        "pattern": "Vない(bỏ い) + くても いいです",
+        "explanation": "Diễn tả việc không cần thiết phải làm, không có tính bắt buộc.",
+        "examples": [
+          {
+            "japanese": "あしたは 来なくても いいです。",
+            "reading": "あしたは こなくても いいです。",
+            "vietnamese": "Ngày mai bạn không cần đến cũng được."
           }
         ]
       }
@@ -1861,31 +4401,204 @@
     "lessonNumber": 18,
     "title": "Bài 18: Thể từ điển (Jisho-form)",
     "japaneseTitle": "第１８課：辞書形・～ことができます",
-    "description": "Chia thể nguyên mẫu (thể từ điển), khả năng làm được gì Vことができます, sở thích, mốc thời gian Vる前に.",
+    "description": "Chia thể nguyên mẫu (Jisho-kei), mẫu câu biểu thị khả năng Vことができます, sở thích 趣味は Vことです, mốc thời gian Vる前に.",
     "vocabularies": [
       {
         "id": 1801,
-        "word": "言葉 18",
-        "reading": "ことば",
-        "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 18",
-        "hanViet": "Ngôn Diệp",
+        "word": "できます",
+        "reading": "できます",
+        "romaji": "dekimasu",
+        "meaning": "Có thể / Làm được",
+        "hanViet": "",
+        "type": "Động từ",
+        "exampleSentence": "スキーが できます。",
+        "exampleSentenceReading": "すきーが できます。",
+        "exampleSentenceMeaning": "Tôi có thể trượt tuyết."
+      },
+      {
+        "id": 1802,
+        "word": "洗います",
+        "reading": "あらいます",
+        "romaji": "araimasu",
+        "meaning": "Rửa / Giặt",
+        "hanViet": "Tẩy",
+        "type": "Động từ",
+        "exampleSentence": "手を 洗います。",
+        "exampleSentenceReading": "てを あらいます。",
+        "exampleSentenceMeaning": "Rửa tay."
+      },
+      {
+        "id": 1803,
+        "word": "弾きます",
+        "reading": "ひきます",
+        "romaji": "hikimasu",
+        "meaning": "Chơi (đàn)",
+        "hanViet": "Đạn",
+        "type": "Động từ",
+        "exampleSentence": "ピアノを 弾きます。",
+        "exampleSentenceReading": "ぴあのを ひきます。",
+        "exampleSentenceMeaning": "Chơi đàn piano."
+      },
+      {
+        "id": 1804,
+        "word": "歌います",
+        "reading": "うたいます",
+        "romaji": "utaimasu",
+        "meaning": "Hát",
+        "hanViet": "Ca",
+        "type": "Động từ",
+        "exampleSentence": "歌を 歌います。",
+        "exampleSentenceReading": "うたを うたいます。",
+        "exampleSentenceMeaning": "Hát một bài hát."
+      },
+      {
+        "id": 1805,
+        "word": "集めます",
+        "reading": "あつめます",
+        "romaji": "atsumemasu",
+        "meaning": "Thu thập / Sưu tầm",
+        "hanViet": "Tập",
+        "type": "Động từ",
+        "exampleSentence": "切手を 集めています。",
+        "exampleSentenceReading": "きってを あつめています。",
+        "exampleSentenceMeaning": "Tôi đang sưu tầm tem."
+      },
+      {
+        "id": 1806,
+        "word": "捨てます",
+        "reading": "すてます",
+        "romaji": "sutemasu",
+        "meaning": "Vứt bỏ",
+        "hanViet": "Xả",
+        "type": "Động từ",
+        "exampleSentence": "ごみを 捨てます。",
+        "exampleSentenceReading": "ごみを すてます。",
+        "exampleSentenceMeaning": "Vứt rác."
+      },
+      {
+        "id": 1807,
+        "word": "換えます",
+        "reading": "かえます",
+        "romaji": "kaemasu",
+        "meaning": "Đổi / Thay thế",
+        "hanViet": "Hoán",
+        "type": "Động từ",
+        "exampleSentence": "お金を 換えます。",
+        "exampleSentenceReading": "おかねを かえます。",
+        "exampleSentenceMeaning": "Đổi tiền."
+      },
+      {
+        "id": 1808,
+        "word": "運転します",
+        "reading": "うんてんします",
+        "romaji": "untenshimasu",
+        "meaning": "Lái xe",
+        "hanViet": "Vận Chuyển",
+        "type": "Động từ",
+        "exampleSentence": "車を 運転します。",
+        "exampleSentenceReading": "くるまを うんてんします。",
+        "exampleSentenceMeaning": "Lái xe ô tô."
+      },
+      {
+        "id": 1809,
+        "word": "予約します",
+        "reading": "よやくします",
+        "romaji": "yoyakushimasu",
+        "meaning": "Đặt trước",
+        "hanViet": "Dự Ước",
+        "type": "Động từ",
+        "exampleSentence": "ホテルを 予約します。",
+        "exampleSentenceReading": "ほてるを よやくします。",
+        "exampleSentenceMeaning": "Đặt phòng khách sạn."
+      },
+      {
+        "id": 1810,
+        "word": "趣味",
+        "reading": "しゅみ",
+        "romaji": "shumi",
+        "meaning": "Sở thích",
+        "hanViet": "Thú Vị",
         "type": "Danh từ",
-        "exampleSentence": "第18課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい18かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 18."
+        "exampleSentence": "わたしの 趣味は 読書です。",
+        "exampleSentenceReading": "わたしの しゅみは どくしょです。",
+        "exampleSentenceMeaning": "Sở thích của tôi là đọc sách."
+      },
+      {
+        "id": 1811,
+        "word": "日記",
+        "reading": "にっき",
+        "romaji": "nikki",
+        "meaning": "Nhật ký",
+        "hanViet": "Nhật Ký",
+        "type": "Danh từ",
+        "exampleSentence": "毎日 日記を 書きます。",
+        "exampleSentenceReading": "まいにち にっきを かきます。",
+        "exampleSentenceMeaning": "Mỗi ngày tôi viết nhật ký."
+      },
+      {
+        "id": 1812,
+        "word": "お祈り",
+        "reading": "おいのり",
+        "romaji": "oinori",
+        "meaning": "Cầu nguyện",
+        "hanViet": "Kỳ",
+        "type": "Danh từ",
+        "exampleSentence": "お祈りを します。",
+        "exampleSentenceReading": "おいのりを します。",
+        "exampleSentenceMeaning": "Cầu nguyện."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 18",
-        "pattern": "Chia thể nguyên mẫu (thể từ điển), khả năng làm được gì Vことができます, sở thích, mốc thời gian Vる前に",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 18: Thể từ điển (Jisho-form).",
+        "title": "Quy tắc chia thể từ điển (Jisho-form)",
+        "pattern": "Nhóm 1: âm い chuyển sang âm う | Nhóm 2: Bỏ ます + る | Nhóm 3: する, くる",
+        "explanation": "Thể nguyên mẫu xuất hiện trong từ điển. Kaku, Iku, Nomu, Taberu, Miru, Suru, Kuru.",
         "examples": [
           {
-            "japanese": "これは 第18課の 例文です。",
-            "reading": "これは だい18かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 18."
+            "japanese": "かきます → かく",
+            "reading": "かきます → かく",
+            "vietnamese": "Viết (thể từ điển)"
+          },
+          {
+            "japanese": "たべます → たべる",
+            "reading": "たべます → たべる",
+            "vietnamese": "Ăn (thể từ điển)"
+          }
+        ]
+      },
+      {
+        "title": "V(thể từ điển) ことが できます (Có thể làm V)",
+        "pattern": "V(Jisho) + ことが できます",
+        "explanation": "Biểu thị khả năng, năng lực của bản thân hoặc sự cho phép trong hoàn cảnh.",
+        "examples": [
+          {
+            "japanese": "ミラーさんは 日本語を 話す ことが できます。",
+            "reading": "みらーさんは にほんごを はなす ことが できます。",
+            "vietnamese": "Anh Miller có thể nói tiếng Nhật."
+          }
+        ]
+      },
+      {
+        "title": "趣味は V(thể từ điển) ことです (Sở thích là...)",
+        "pattern": "趣味は + V(Jisho) + ことです",
+        "explanation": "Danh từ hóa động từ bằng こと để diễn tả sở thích là làm một việc gì đó.",
+        "examples": [
+          {
+            "japanese": "わたしの 趣味は 写真を 撮る ことです。",
+            "reading": "わたしの しゅみは しゃしんを とる ことです。",
+            "vietnamese": "Sở thích của tôi là chụp ảnh."
+          }
+        ]
+      },
+      {
+        "title": "V1(thể từ điển) 前に、V2 (Trước khi làm V1 thì làm V2)",
+        "pattern": "V(Jisho) / Danh từ の + 前に、V2",
+        "explanation": "Diễn tả hành động V2 xảy ra trước hành động V1.",
+        "examples": [
+          {
+            "japanese": "ご飯を 食べる 前に、手を 洗います。",
+            "reading": "ごはんを たべる まえに、てを あらいます。",
+            "vietnamese": "Trước khi ăn cơm tôi rửa tay."
           }
         ]
       }
@@ -1895,31 +4608,197 @@
     "lessonNumber": 19,
     "title": "Bài 19: Thể た (Ta-form) & Kinh nghiệm",
     "japaneseTitle": "第１９課：た形・～たことがあります",
-    "description": "Chia thể quá khứ ngắn (thể た), kinh nghiệm từng làm gì Vたことがあります, liệt kê hành động VたりVたりします.",
+    "description": "Chia thể quá khứ ngắn (thể た), kinh nghiệm từng làm gì Vたことがあります, liệt kê hành động Vたり Vたり します, biến đổi に/く なります.",
     "vocabularies": [
       {
         "id": 1901,
-        "word": "言葉 19",
-        "reading": "ことば",
-        "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 19",
-        "hanViet": "Ngôn Diệp",
+        "word": "登ります",
+        "reading": "のぼります",
+        "romaji": "noborimasu",
+        "meaning": "Leo (núi)",
+        "hanViet": "Đăng",
+        "type": "Động từ",
+        "exampleSentence": "山に 登ります。",
+        "exampleSentenceReading": "やまに のぼります。",
+        "exampleSentenceMeaning": "Leo núi."
+      },
+      {
+        "id": 1902,
+        "word": "泊まります",
+        "reading": "とまります",
+        "romaji": "tomarimasu",
+        "meaning": "Trọ lại / Ở lại",
+        "hanViet": "Bạc",
+        "type": "Động từ",
+        "exampleSentence": "ホテルに 泊まります。",
+        "exampleSentenceReading": "ほてるに とまります。",
+        "exampleSentenceMeaning": "Trọ lại khách sạn."
+      },
+      {
+        "id": 1903,
+        "word": "掃除します",
+        "reading": "そうじします",
+        "romaji": "soujishimasu",
+        "meaning": "Dọn dẹp vệ sinh",
+        "hanViet": "Tảo Trừ",
+        "type": "Động từ",
+        "exampleSentence": "部屋を 掃除します。",
+        "exampleSentenceReading": "へやを そうじします。",
+        "exampleSentenceMeaning": "Dọn dẹp phòng."
+      },
+      {
+        "id": 1904,
+        "word": "洗濯します",
+        "reading": "せんたくします",
+        "romaji": "sentakushimasu",
+        "meaning": "Giặt giũ",
+        "hanViet": "Tiển Trạc",
+        "type": "Động từ",
+        "exampleSentence": "服を 洗濯します。",
+        "exampleSentenceReading": "ふくを せんたくします。",
+        "exampleSentenceMeaning": "Giặt quần áo."
+      },
+      {
+        "id": 1905,
+        "word": "練習します",
+        "reading": "れんしゅうします",
+        "romaji": "renshuushimasu",
+        "meaning": "Luyện tập",
+        "hanViet": "Luyện Tập",
+        "type": "Động từ",
+        "exampleSentence": "ピアノを 練習します。",
+        "exampleSentenceReading": "ぴあのを れんしゅうします。",
+        "exampleSentenceMeaning": "Luyện tập đàn piano."
+      },
+      {
+        "id": 1906,
+        "word": "なります",
+        "reading": "なります",
+        "romaji": "narimasu",
+        "meaning": "Trở thành / Trở nên",
+        "hanViet": "",
+        "type": "Động từ",
+        "exampleSentence": "医者に なります。",
+        "exampleSentenceReading": "いしゃに なります。",
+        "exampleSentenceMeaning": "Trở thành bác sĩ."
+      },
+      {
+        "id": 1907,
+        "word": "眠い",
+        "reading": "ねむい",
+        "romaji": "nemui",
+        "meaning": "Buồn ngủ",
+        "hanViet": "Miên",
+        "type": "Tính từ -i",
+        "exampleSentence": "とても 眠いです。",
+        "exampleSentenceReading": "とても ねむいです。",
+        "exampleSentenceMeaning": "Tôi rất buồn ngủ."
+      },
+      {
+        "id": 1908,
+        "word": "強い",
+        "reading": "つよい",
+        "romaji": "tsuyoi",
+        "meaning": "Mạnh mẽ",
+        "hanViet": "Cường",
+        "type": "Tính từ -i",
+        "exampleSentence": "体が 強いです。",
+        "exampleSentenceReading": "からだが つよいです。",
+        "exampleSentenceMeaning": "Cơ thể khỏe mạnh."
+      },
+      {
+        "id": 1909,
+        "word": "弱い",
+        "reading": "よわい",
+        "romaji": "yowai",
+        "meaning": "Yếu ớt",
+        "hanViet": "Nhược",
+        "type": "Tính từ -i",
+        "exampleSentence": "体が 弱いです。",
+        "exampleSentenceReading": "からだが よわいです。",
+        "exampleSentenceMeaning": "Cơ thể yếu ớt."
+      },
+      {
+        "id": 1910,
+        "word": "調子",
+        "reading": "ちょうし",
+        "romaji": "choushi",
+        "meaning": "Tình trạng sức khỏe / máy",
+        "hanViet": "Điệu Tử",
         "type": "Danh từ",
-        "exampleSentence": "第19課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい19かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 19."
+        "exampleSentence": "体の 調子が いいです。",
+        "exampleSentenceReading": "からだの ちょうしが いいです。",
+        "exampleSentenceMeaning": "Tình trạng sức khỏe tốt."
+      },
+      {
+        "id": 1911,
+        "word": "一度",
+        "reading": "いちど",
+        "romaji": "ichido",
+        "meaning": "Một lần",
+        "hanViet": "Nhất Độ",
+        "type": "Phó từ",
+        "exampleSentence": "一度も 日本へ 行ったことが ありません。",
+        "exampleSentenceReading": "いちども にほんへ いったことが ありません。",
+        "exampleSentenceMeaning": "Chưa từng đi Nhật lần nào cả."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 19",
-        "pattern": "Chia thể quá khứ ngắn (thể た), kinh nghiệm từng làm gì Vたことがあります, liệt kê hành động VたりVたりします",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 19: Thể た (Ta-form) & Kinh nghiệm.",
+        "title": "Quy tắc chia thể た (Ta-form)",
+        "pattern": "Cách chia hoàn toàn giống thể て, chỉ thay て bằng た, で bằng だ",
+        "explanation": "Chia thể quá khứ ngắn (Ta-form). Viết: かいた, Ăn: たべた, Đi: いった, Làm: した.",
         "examples": [
           {
-            "japanese": "これは 第19課の 例文です。",
-            "reading": "これは だい19かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 19."
+            "japanese": "いきました → いった",
+            "reading": "いきました → いった",
+            "vietnamese": "Đã đi (thể ta)"
+          },
+          {
+            "japanese": "のみました → のんだ",
+            "reading": "のみました → のんだ",
+            "vietnamese": "Đã uống (thể ta)"
+          }
+        ]
+      },
+      {
+        "title": "Vた ことが あります (Đã từng làm V - Kinh nghiệm)",
+        "pattern": "Vた + ことが あります",
+        "explanation": "Diễn tả kinh nghiệm đã từng trải qua trong quá khứ.",
+        "examples": [
+          {
+            "japanese": "富士山に 登った ことが あります。",
+            "reading": "ふじさんに のぼった ことが あります。",
+            "vietnamese": "Tôi đã từng leo núi Phú Sĩ."
+          }
+        ]
+      },
+      {
+        "title": "V1たり、V2たり します (Liệt kê hành động tiêu biểu)",
+        "pattern": "V1たり、V2たり します",
+        "explanation": "Liệt kê một vài hành động tiêu biểu trong số nhiều hành động, không nhất thiết theo thứ tự thời gian.",
+        "examples": [
+          {
+            "japanese": "日曜日は 掃除したり、洗濯したり します。",
+            "reading": "にちようびは そうじしたり、せんたくしたり します。",
+            "vietnamese": "Chủ nhật tôi dọn dẹp, rồi giặt giũ..."
+          }
+        ]
+      },
+      {
+        "title": "Tính từ / Danh từ + に／く なります (Trở nên / Trở thành)",
+        "pattern": "Tính từ -i: Bỏ い + くなる | Tính từ -na/Danh từ: + になる",
+        "explanation": "Biểu thị sự biến đổi trạng thái theo thời gian.",
+        "examples": [
+          {
+            "japanese": "だんだん 寒く なります。",
+            "reading": "だんだん さむく なります。",
+            "vietnamese": "Trời dần trở nên lạnh."
+          },
+          {
+            "japanese": "春に なりました。",
+            "reading": "はるに なりました。",
+            "vietnamese": "Đã sang mùa xuân rồi."
           }
         ]
       }
@@ -1933,27 +4812,159 @@
     "vocabularies": [
       {
         "id": 2001,
-        "word": "言葉 20",
+        "word": "要ります",
+        "reading": "いります",
+        "romaji": "irimasu",
+        "meaning": "Cần",
+        "hanViet": "Yếu",
+        "type": "Động từ",
+        "exampleSentence": "ビザが 要ります。",
+        "exampleSentenceReading": "びざが いります。",
+        "exampleSentenceMeaning": "Cần có visa."
+      },
+      {
+        "id": 2002,
+        "word": "調べます",
+        "reading": "しらべます",
+        "romaji": "shirabemasu",
+        "meaning": "Tra cứu / Kiểm tra",
+        "hanViet": "Điều",
+        "type": "Động từ",
+        "exampleSentence": "辞書で 調べます。",
+        "exampleSentenceReading": "じしょで しらべます。",
+        "exampleSentenceMeaning": "Tra trong từ điển."
+      },
+      {
+        "id": 2003,
+        "word": "直します",
+        "reading": "なおします",
+        "romaji": "naoshimasu",
+        "meaning": "Sửa chữa",
+        "hanViet": "Trực",
+        "type": "Động từ",
+        "exampleSentence": "時計を 直します。",
+        "exampleSentenceReading": "とけいを なおします。",
+        "exampleSentenceMeaning": "Sửa đồng hồ."
+      },
+      {
+        "id": 2004,
+        "word": "修理します",
+        "reading": "しゅうりします",
+        "romaji": "shuurishimasu",
+        "meaning": "Sửa chữa (máy móc)",
+        "hanViet": "Tu Lý",
+        "type": "Động từ",
+        "exampleSentence": "車を 修理します。",
+        "exampleSentenceReading": "くるまを しゅうりします。",
+        "exampleSentenceMeaning": "Sửa xe ô tô."
+      },
+      {
+        "id": 2005,
+        "word": "電話します",
+        "reading": "でんわします",
+        "romaji": "denwashimasu",
+        "meaning": "Gọi điện thoại",
+        "hanViet": "Điện Thoại",
+        "type": "Động từ",
+        "exampleSentence": "あとで 電話するよ。",
+        "exampleSentenceReading": "あとで でんわするよ。",
+        "exampleSentenceMeaning": "Lát nữa tôi sẽ gọi điện nhé."
+      },
+      {
+        "id": 2006,
+        "word": "僕",
+        "reading": "ぼく",
+        "romaji": "boku",
+        "meaning": "Tôi (nam giới dùng thân mật)",
+        "hanViet": "Phó",
+        "type": "Đại từ",
+        "exampleSentence": "僕も 行くよ。",
+        "exampleSentenceReading": "ぼくも いくよ。",
+        "exampleSentenceMeaning": "Tôi cũng đi đấy."
+      },
+      {
+        "id": 2007,
+        "word": "君",
+        "reading": "きみ",
+        "romaji": "kimi",
+        "meaning": "Cậu / Mày (thân mật)",
+        "hanViet": "Quân",
+        "type": "Đại từ",
+        "exampleSentence": "君は どうする？",
+        "exampleSentenceReading": "きみは どうする？",
+        "exampleSentenceMeaning": "Cậu định thế nào?"
+      },
+      {
+        "id": 2008,
+        "word": "うん / ううん",
+        "reading": "うん／ううん",
+        "romaji": "un / uun",
+        "meaning": "Ừ / Không (thân mật của はい/いいえ)",
+        "hanViet": "",
+        "type": "Thán từ",
+        "exampleSentence": "うん、行くよ。",
+        "exampleSentenceReading": "うん、いくよ。",
+        "exampleSentenceMeaning": "Ừ, đi chứ."
+      },
+      {
+        "id": 2009,
+        "word": "サラリーマン",
+        "reading": "さらりーまん",
+        "romaji": "sarariiman",
+        "meaning": "Người làm công ăn lương",
+        "hanViet": "",
+        "type": "Danh từ",
+        "exampleSentence": "彼は サラリーマンだ。",
+        "exampleSentenceReading": "かれは さらりーまんだ。",
+        "exampleSentenceMeaning": "Anh ấy là nhân viên làm công."
+      },
+      {
+        "id": 2010,
+        "word": "言葉",
         "reading": "ことば",
         "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 20",
+        "meaning": "Từ ngữ / Tiếng nói",
         "hanViet": "Ngôn Diệp",
         "type": "Danh từ",
-        "exampleSentence": "第20課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい20かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 20."
+        "exampleSentence": "新しい 言葉を 覚える。",
+        "exampleSentenceReading": "あたらしい ことばを おぼえる。",
+        "exampleSentenceMeaning": "Ghi nhớ từ ngữ mới."
+      },
+      {
+        "id": 2011,
+        "word": "物価",
+        "reading": "ぶっか",
+        "romaji": "bukka",
+        "meaning": "Vật giá",
+        "hanViet": "Vật Giá",
+        "type": "Danh từ",
+        "exampleSentence": "日本の 物価は 高い。",
+        "exampleSentenceReading": "にほんの ぶっかは たかい。",
+        "exampleSentenceMeaning": "Vật giá ở Nhật đắt đỏ."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 20",
-        "pattern": "Phân biệt thể lịch sự (丁寧形) và thể thông thường (普通形), giao tiếp thân mật giữa bạn bè, người thân",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 20: Thể thông thường (Futsuu-kei).",
+        "title": "Thể thông thường (Futsuu-kei) của Động từ",
+        "pattern": "Vます->Vる | Vません->Vない | Vました->Vた | Vませんでした->Vなかった",
+        "explanation": "Dùng khi trò chuyện với bạn bè, người thân, hoặc làm mệnh đề phụ trong câu phức.",
         "examples": [
           {
-            "japanese": "これは 第20課の 例文です。",
-            "reading": "これは だい20かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 20."
+            "japanese": "ご飯を 食べる？ ー うん、食べる。",
+            "reading": "ごはんを たべる？ ー うん、たべる。",
+            "vietnamese": "Ăn cơm không? - Ừ, ăn chứ."
+          }
+        ]
+      },
+      {
+        "title": "Thể thông thường của Danh từ và Tính từ đuôi な",
+        "pattern": "です->だ | じゃありません->じゃない | でした->だった",
+        "explanation": "Khẳng định dùng だ (nhưng trong câu hỏi bỏ だ), phủ định dùng じゃない.",
+        "examples": [
+          {
+            "japanese": "あしたは 暇？ ー うん、暇だよ。",
+            "reading": "あしたは ひま？ ー うん、ひまだよ。",
+            "vietnamese": "Mai rảnh không? - Ừ, rảnh chứ."
           }
         ]
       }
@@ -1967,27 +4978,147 @@
     "vocabularies": [
       {
         "id": 2101,
-        "word": "言葉 21",
-        "reading": "ことば",
-        "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 21",
-        "hanViet": "Ngôn Diệp",
+        "word": "思います",
+        "reading": "おもいます",
+        "romaji": "omoimasu",
+        "meaning": "Nghĩ rằng",
+        "hanViet": "Tư",
+        "type": "Động từ",
+        "exampleSentence": "そう 思います。",
+        "exampleSentenceReading": "そう おもいます。",
+        "exampleSentenceMeaning": "Tôi nghĩ như vậy."
+      },
+      {
+        "id": 2102,
+        "word": "言います",
+        "reading": "いいます",
+        "romaji": "iimasu",
+        "meaning": "Nói",
+        "hanViet": "Ngôn",
+        "type": "Động từ",
+        "exampleSentence": "先生は 何と 言いましたか。",
+        "exampleSentenceReading": "せんせいは なんと いいましたか。",
+        "exampleSentenceMeaning": "Thầy giáo đã nói gì vậy?"
+      },
+      {
+        "id": 2103,
+        "word": "勝ちます",
+        "reading": "かちます",
+        "romaji": "kachimasu",
+        "meaning": "Thắng",
+        "hanViet": "Thắng",
+        "type": "Động từ",
+        "exampleSentence": "日本が 勝つと 思います。",
+        "exampleSentenceReading": "にほんが かつと おもいます。",
+        "exampleSentenceMeaning": "Tôi nghĩ Nhật Bản sẽ thắng."
+      },
+      {
+        "id": 2104,
+        "word": "負けます",
+        "reading": "まけます",
+        "romaji": "makemasu",
+        "meaning": "Thua",
+        "hanViet": "Phụ",
+        "type": "Động từ",
+        "exampleSentence": "試合に 負けました。",
+        "exampleSentenceReading": "しあいに まけました。",
+        "exampleSentenceMeaning": "Đã thua trận đấu."
+      },
+      {
+        "id": 2105,
+        "word": "役に立ちます",
+        "reading": "やくにたちます",
+        "romaji": "yaku ni tachimasu",
+        "meaning": "Có ích / Hữu dụng",
+        "hanViet": "Dịch Lập",
+        "type": "Động từ",
+        "exampleSentence": "この本は 役に立ちます。",
+        "exampleSentenceReading": "このほんは やくにたちます。",
+        "exampleSentenceMeaning": "Quyển sách này rất hữu ích."
+      },
+      {
+        "id": 2106,
+        "word": "動きます",
+        "reading": "うごきます",
+        "romaji": "ugokimasu",
+        "meaning": "Chuyển động / Chạy (máy)",
+        "hanViet": "Động",
+        "type": "Động từ",
+        "exampleSentence": "時計が 動いていません。",
+        "exampleSentenceReading": "とけいが うごいていません。",
+        "exampleSentenceMeaning": "Đồng hồ không chạy."
+      },
+      {
+        "id": 2107,
+        "word": "嘘",
+        "reading": "うそ",
+        "romaji": "uso",
+        "meaning": "Lời nói dối",
+        "hanViet": "Hư",
         "type": "Danh từ",
-        "exampleSentence": "第21課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい21かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 21."
+        "exampleSentence": "嘘を ついては いけません。",
+        "exampleSentenceReading": "うそを ついては いけません。",
+        "exampleSentenceMeaning": "Không được nói dối."
+      },
+      {
+        "id": 2108,
+        "word": "意見",
+        "reading": "いけん",
+        "romaji": "iken",
+        "meaning": "Ý kiến",
+        "hanViet": "Ý Kiến",
+        "type": "Danh từ",
+        "exampleSentence": "意見を 言って ください。",
+        "exampleSentenceReading": "いけんを いって ください。",
+        "exampleSentenceMeaning": "Xin hãy nêu ý kiến."
+      },
+      {
+        "id": 2109,
+        "word": "試合",
+        "reading": "しあい",
+        "romaji": "shiai",
+        "meaning": "Trận thi đấu",
+        "hanViet": "Thí Hợp",
+        "type": "Danh từ",
+        "exampleSentence": "サッカーの 試合を 見ます。",
+        "exampleSentenceReading": "さっかーの しあいを みます。",
+        "exampleSentenceMeaning": "Xem trận bóng đá."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 21",
-        "pattern": "Bày tỏ suy nghĩ cá nhân [Thể thông thường] と思います, trích dẫn lời nói と言いました, xác nhận でしょう",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 21: Ý kiến & Trích dẫn.",
+        "title": "[Thể thông thường] と 思います (Tôi nghĩ rằng...)",
+        "pattern": "[Thể ngắn] + と 思います",
+        "explanation": "Dùng để bày tỏ ý kiến, phỏng đoán hoặc quan điểm cá nhân của người nói.",
         "examples": [
           {
-            "japanese": "これは 第21課の 例文です。",
-            "reading": "これは だい21かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 21."
+            "japanese": "あしたは 雨が 降ると 思います。",
+            "reading": "あしたは あめが ふると おもいます。",
+            "vietnamese": "Tôi nghĩ là ngày mai trời sẽ mưa."
+          }
+        ]
+      },
+      {
+        "title": "[Câu nói / Thể thông thường] と 言いました (Ai đó đã nói rằng...)",
+        "pattern": "Câu / [Thể ngắn] + と 言いました",
+        "explanation": "Dùng để trích dẫn trực tiếp hoặc gián tiếp lời phát biểu của người khác.",
+        "examples": [
+          {
+            "japanese": "田中さんは 「来週 休む」と 言いました。",
+            "reading": "たなかさんは 「らいしゅう やすむ」と いいました。",
+            "vietnamese": "Anh Tanaka đã nói là 'Tuần sau tôi nghỉ'."
+          }
+        ]
+      },
+      {
+        "title": "[Thể thông thường] でしょう？ (Phải không?)",
+        "pattern": "[Thể ngắn] + でしょう？",
+        "explanation": "Dùng khi người nói kỳ vọng người nghe sẽ đồng tình với nhận định của mình.",
+        "examples": [
+          {
+            "japanese": "あしたの パーティーに 行くでしょう？ ー ええ、行きますよ。",
+            "reading": "あしたの ぱーてぃーに いくでしょう？ ー ええ、いきますよ。",
+            "vietnamese": "Mai cậu sẽ đi tiệc chứ? - Ừ, đi chứ."
           }
         ]
       }
@@ -1997,31 +5128,144 @@
     "lessonNumber": 22,
     "title": "Bài 22: Mệnh đề bổ ngữ cho danh từ",
     "japaneseTitle": "第２２課：連体修飾",
-    "description": "Cách dùng mệnh đề động từ thể ngắn để bổ nghĩa cho danh từ đứng sau (Định ngữ trong tiếng Nhật).",
+    "description": "Mệnh đề định ngữ: Dùng mệnh đề động từ thể ngắn để bổ nghĩa cho danh từ đứng sau.",
     "vocabularies": [
       {
         "id": 2201,
-        "word": "言葉 22",
-        "reading": "ことば",
-        "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 22",
-        "hanViet": "Ngôn Diệp",
+        "word": "着ます",
+        "reading": "きます",
+        "romaji": "kimasu",
+        "meaning": "Mặc (áo, âu phục)",
+        "hanViet": "Trước",
+        "type": "Động từ",
+        "exampleSentence": "シャツを 着ます。",
+        "exampleSentenceReading": "しゃつを きます。",
+        "exampleSentenceMeaning": "Mặc áo sơ mi."
+      },
+      {
+        "id": 2202,
+        "word": "履きます",
+        "reading": "はきます",
+        "romaji": "hakimasu",
+        "meaning": "Đi / Mặc (giày, quần)",
+        "hanViet": "Lý",
+        "type": "Động từ",
+        "exampleSentence": "靴を 履きます。",
+        "exampleSentenceReading": "くつを はきます。",
+        "exampleSentenceMeaning": "Đi giày."
+      },
+      {
+        "id": 2203,
+        "word": "かぶります",
+        "reading": "かぶります",
+        "romaji": "kaburimasu",
+        "meaning": "Đội (mũ)",
+        "hanViet": "",
+        "type": "Động từ",
+        "exampleSentence": "帽子を かぶります。",
+        "exampleSentenceReading": "ぼうしを かぶります。",
+        "exampleSentenceMeaning": "Đội mũ."
+      },
+      {
+        "id": 2204,
+        "word": "かけます",
+        "reading": "かけます",
+        "romaji": "kakemasu",
+        "meaning": "Đeo (kính)",
+        "hanViet": "",
+        "type": "Động từ",
+        "exampleSentence": "眼鏡を かけます。",
+        "exampleSentenceReading": "めがねを かけます。",
+        "exampleSentenceMeaning": "Đeo kính."
+      },
+      {
+        "id": 2205,
+        "word": "生まれます",
+        "reading": "うまれます",
+        "romaji": "umaremasu",
+        "meaning": "Sinh ra",
+        "hanViet": "Sinh",
+        "type": "Động từ",
+        "exampleSentence": "日本で 生まれました。",
+        "exampleSentenceReading": "にほんで うまれました。",
+        "exampleSentenceMeaning": "Tôi sinh ra ở Nhật."
+      },
+      {
+        "id": 2206,
+        "word": "コート",
+        "reading": "こーと",
+        "romaji": "kooto",
+        "meaning": "Áo khoác",
+        "hanViet": "",
         "type": "Danh từ",
-        "exampleSentence": "第22課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい22かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 22."
+        "exampleSentence": "暖かい コートを 着ます。",
+        "exampleSentenceReading": "あたたかい こーとを きます。",
+        "exampleSentenceMeaning": "Mặc áo khoác ấm."
+      },
+      {
+        "id": 2207,
+        "word": "スーツ",
+        "reading": "すーつ",
+        "romaji": "suutsu",
+        "meaning": "Bộ com-lê",
+        "hanViet": "",
+        "type": "Danh từ",
+        "exampleSentence": "スーツを 買いました。",
+        "exampleSentenceReading": "すーつを かいました。",
+        "exampleSentenceMeaning": "Đã mua bộ com-lê."
+      },
+      {
+        "id": 2208,
+        "word": "セーター",
+        "reading": "せーたー",
+        "romaji": "seetaa",
+        "meaning": "Áo len",
+        "hanViet": "",
+        "type": "Danh từ",
+        "exampleSentence": "母が 編んだ セーターです。",
+        "exampleSentenceReading": "ははが あんだ せーたーです。",
+        "exampleSentenceMeaning": "Chiếc áo len do mẹ đan."
+      },
+      {
+        "id": 2209,
+        "word": "帽子",
+        "reading": "ぼうし",
+        "romaji": "boushi",
+        "meaning": "Mũ",
+        "hanViet": "Mạo Tử",
+        "type": "Danh từ",
+        "exampleSentence": "青い 帽子です。",
+        "exampleSentenceReading": "あおい ぼうしです。",
+        "exampleSentenceMeaning": "Chiếc mũ màu xanh."
+      },
+      {
+        "id": 2210,
+        "word": "眼鏡",
+        "reading": "めがね",
+        "romaji": "megane",
+        "meaning": "Kính mắt",
+        "hanViet": "Nhãn Kính",
+        "type": "Danh từ",
+        "exampleSentence": "眼鏡を かけている 人です。",
+        "exampleSentenceReading": "めがねを かけている ひとです。",
+        "exampleSentenceMeaning": "Người đang đeo kính."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 22",
-        "pattern": "Cách dùng mệnh đề động từ thể ngắn để bổ nghĩa cho danh từ đứng sau (Định ngữ trong tiếng Nhật)",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 22: Mệnh đề bổ ngữ cho danh từ.",
+        "title": "Mệnh đề bổ nghĩa cho danh từ (Định ngữ)",
+        "pattern": "[Mệnh đề động từ thể ngắn] + Danh từ",
+        "explanation": "Trong tiếng Nhật, mệnh đề bổ nghĩa luôn luôn đứng TRƯỚC danh từ được bổ nghĩa.",
         "examples": [
           {
-            "japanese": "これは 第22課の 例文です。",
-            "reading": "これは だい22かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 22."
+            "japanese": "これは ミラーさんが 住んでいる 家です。",
+            "reading": "これは みらーさんが すんでいる いえです。",
+            "vietnamese": "Đây là ngôi nhà mà anh Miller đang ở."
+          },
+          {
+            "japanese": "あそこで 本を 読んでいる 人は だれですか。",
+            "reading": "あそこで ほんを よんでいる ひとは だれですか。",
+            "vietnamese": "Người đang đọc sách ở đằng kia là ai thế?"
           }
         ]
       }
@@ -2031,31 +5275,149 @@
     "lessonNumber": 23,
     "title": "Bài 23: Khi nào (とき) & Hễ mà (と)",
     "japaneseTitle": "第２３課：～とき・～と",
-    "description": "Diễn tả thời điểm hành động xảy ra với とき (khi), điều kiện tất yếu, chỉ đường với と (hễ mà).",
+    "description": "Diễn tả thời điểm hành động xảy ra với とき (khi), điều kiện tự nhiên, chỉ đường với と (hễ mà).",
     "vocabularies": [
       {
         "id": 2301,
-        "word": "言葉 23",
-        "reading": "ことば",
-        "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 23",
-        "hanViet": "Ngôn Diệp",
+        "word": "聞きます",
+        "reading": "ききます",
+        "romaji": "kikimasu",
+        "meaning": "Hỏi",
+        "hanViet": "Văn",
+        "type": "Động từ",
+        "exampleSentence": "先生に 聞きます。",
+        "exampleSentenceReading": "せんせいに ききます。",
+        "exampleSentenceMeaning": "Hỏi thầy giáo."
+      },
+      {
+        "id": 2302,
+        "word": "回します",
+        "reading": "まわします",
+        "romaji": "mawashimasu",
+        "meaning": "Vặn / Xoay",
+        "hanViet": "Hồi",
+        "type": "Động từ",
+        "exampleSentence": "これを 右へ 回します。",
+        "exampleSentenceReading": "これを みぎへ まわします。",
+        "exampleSentenceMeaning": "Vặn cái này sang phải."
+      },
+      {
+        "id": 2303,
+        "word": "引きます",
+        "reading": "ひきます",
+        "romaji": "hikimasu",
+        "meaning": "Kéo",
+        "hanViet": "Dẫn",
+        "type": "Động từ",
+        "exampleSentence": "ドアを 引いて ください。",
+        "exampleSentenceReading": "どあを ひいて ください。",
+        "exampleSentenceMeaning": "Xin hãy kéo cửa ra."
+      },
+      {
+        "id": 2304,
+        "word": "変えます",
+        "reading": "かえます",
+        "romaji": "kaemasu",
+        "meaning": "Thay đổi",
+        "hanViet": "Biến",
+        "type": "Động từ",
+        "exampleSentence": "予定を 変えます。",
+        "exampleSentenceReading": "よていを かえます。",
+        "exampleSentenceMeaning": "Thay đổi kế hoạch."
+      },
+      {
+        "id": 2305,
+        "word": "触ります",
+        "reading": "さわります",
+        "romaji": "sawarimasu",
+        "meaning": "Sờ / Chạm vào",
+        "hanViet": "Xúc",
+        "type": "Động từ",
+        "exampleSentence": "機械に 触らないで ください。",
+        "exampleSentenceReading": "きかいに さわらないで ください。",
+        "exampleSentenceMeaning": "Xin đừng chạm vào máy móc."
+      },
+      {
+        "id": 2306,
+        "word": "渡ります",
+        "reading": "わたります",
+        "romaji": "watarimasu",
+        "meaning": "Băng qua (đường, cầu)",
+        "hanViet": "Độ",
+        "type": "Động từ",
+        "exampleSentence": "道を 渡ります。",
+        "exampleSentenceReading": "みちを わtarimasu。",
+        "exampleSentenceMeaning": "Băng qua đường."
+      },
+      {
+        "id": 2307,
+        "word": "曲がります",
+        "reading": "まがります",
+        "romaji": "magarimasu",
+        "meaning": "Rẽ (phải, trái)",
+        "hanViet": "Khúc",
+        "type": "Động từ",
+        "exampleSentence": "右へ 曲がります。",
+        "exampleSentenceReading": "みぎへ まがります。",
+        "exampleSentenceMeaning": "Rẽ sang phải."
+      },
+      {
+        "id": 2308,
+        "word": "交差点",
+        "reading": "こうさてん",
+        "romaji": "kousaten",
+        "meaning": "Ngã tư",
+        "hanViet": "Giao Sai Điểm",
         "type": "Danh từ",
-        "exampleSentence": "第23課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい23かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 23."
+        "exampleSentence": "交差点を 渡ります。",
+        "exampleSentenceReading": "こうさてんを わtarimasu。",
+        "exampleSentenceMeaning": "Đi qua ngã tư."
+      },
+      {
+        "id": 2309,
+        "word": "信号",
+        "reading": "しんごう",
+        "romaji": "shingou",
+        "meaning": "Đèn giao thông",
+        "hanViet": "Tín Hiệu",
+        "type": "Danh từ",
+        "exampleSentence": "信号を 右へ 曲がります。",
+        "exampleSentenceReading": "しんごうを みぎへ まがります。",
+        "exampleSentenceMeaning": "Đến đèn giao thông thì rẽ phải."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 23",
-        "pattern": "Diễn tả thời điểm hành động xảy ra với とき (khi), điều kiện tất yếu, chỉ đường với と (hễ mà)",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 23: Khi nào (とき) & Hễ mà (と).",
+        "title": "Vる／Vない／Aい／Aな／Nの + とき (Khi...)",
+        "pattern": "[Thể điều kiện] + とき",
+        "explanation": "Biểu thị thời điểm một sự việc xảy ra.",
         "examples": [
           {
-            "japanese": "これは 第23課の 例文です。",
-            "reading": "これは だい23かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 23."
+            "japanese": "新聞を 読む とき、眼鏡を かけます。",
+            "reading": "しんぶんを よむ とき、めがねを かけます。",
+            "vietnamese": "Khi đọc báo, tôi đeo kính."
+          },
+          {
+            "japanese": "暇な とき、音楽を 聞きます。",
+            "reading": "ひまな とき、おんがくを ききます。",
+            "vietnamese": "Khi rảnh rỗi, tôi nghe nhạc."
+          }
+        ]
+      },
+      {
+        "title": "Vる + と (Hễ mà... thì...)",
+        "pattern": "V(thể từ điển) + と、[Kết quả tất yếu]",
+        "explanation": "Dùng để chỉ đường hoặc kết quả tự nhiên tất yếu khi một hành động diễn ra.",
+        "examples": [
+          {
+            "japanese": "このボタンを 押す と、お釣りが 出ます。",
+            "reading": "このぼたんを おす と、おつりが でます。",
+            "vietnamese": "Hễ bấm nút này thì tiền thừa sẽ chạy ra."
+          },
+          {
+            "japanese": "右へ 曲がる と、銀行が あります。",
+            "reading": "みぎへ まがる と、ぎんこうが あります。",
+            "vietnamese": "Hễ rẽ phải là thấy ngân hàng."
           }
         ]
       }
@@ -2065,31 +5427,139 @@
     "lessonNumber": 24,
     "title": "Bài 24: Cho và nhận hành động (Cho/Nhận giúp đỡ)",
     "japaneseTitle": "第２４課：～てくれます・～てあげます",
-    "description": "Giúp đỡ ai đó Vてあげます, được ai giúp Vてもらいます, ai đó giúp mình Vてくれます.",
+    "description": "Làm giúp ai Vてあげます, được ai làm giúp Vてもらいます, ai đó làm giúp mình Vてくれます.",
     "vocabularies": [
       {
         "id": 2401,
-        "word": "言葉 24",
-        "reading": "ことば",
-        "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 24",
-        "hanViet": "Ngôn Diệp",
-        "type": "Danh từ",
-        "exampleSentence": "第24課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい24かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 24."
+        "word": "くれます",
+        "reading": "くれます",
+        "romaji": "kuremasu",
+        "meaning": "Cho / Tặng (cho tôi)",
+        "hanViet": "",
+        "type": "Động từ",
+        "exampleSentence": "友達が お土産を くれました。",
+        "exampleSentenceReading": "ともだちが おみやげを くれました。",
+        "exampleSentenceMeaning": "Bạn đã tặng quà lưu niệm cho tôi."
+      },
+      {
+        "id": 2402,
+        "word": "直します",
+        "reading": "なおします",
+        "romaji": "naoshimasu",
+        "meaning": "Sửa chữa",
+        "hanViet": "Trực",
+        "type": "Động từ",
+        "exampleSentence": "自転車を 直して くれました。",
+        "exampleSentenceReading": "じてんしゃを なおして くれました。",
+        "exampleSentenceMeaning": "Anh ấy đã sửa xe đạp giúp tôi."
+      },
+      {
+        "id": 2403,
+        "word": "連れて行きます",
+        "reading": "つれていきます",
+        "romaji": "tsurete ikimasu",
+        "meaning": "Dẫn đi",
+        "hanViet": "Liên Hành",
+        "type": "Động từ",
+        "exampleSentence": "病院へ 連れて 行きます。",
+        "exampleSentenceReading": "びょういんへ つれて いきます。",
+        "exampleSentenceMeaning": "Dẫn đến bệnh viện."
+      },
+      {
+        "id": 2404,
+        "word": "連れて来ます",
+        "reading": "つれてきます",
+        "romaji": "tsurete kimasu",
+        "meaning": "Dẫn đến",
+        "hanViet": "Liên Lai",
+        "type": "Động từ",
+        "exampleSentence": "友達を うちへ 連れて 来ました。",
+        "exampleSentenceReading": "ともだちを うちへ つれて きました。",
+        "exampleSentenceMeaning": "Dẫn bạn về nhà chơi."
+      },
+      {
+        "id": 2405,
+        "word": "送ります",
+        "reading": "おくります",
+        "romaji": "okurimasu",
+        "meaning": "Tiễn (ai đó)",
+        "hanViet": "Tống",
+        "type": "Động từ",
+        "exampleSentence": "駅まで 送ります。",
+        "exampleSentenceReading": "えきまで おくります。",
+        "exampleSentenceMeaning": "Tiễn ra tận nhà ga."
+      },
+      {
+        "id": 2406,
+        "word": "紹介します",
+        "reading": "しょうかいします",
+        "romaji": "shoukaishimasu",
+        "meaning": "Giới thiệu",
+        "hanViet": "Thiệu Giới",
+        "type": "Động từ",
+        "exampleSentence": "友達を 紹介します。",
+        "exampleSentenceReading": "ともだちを しょうかいします。",
+        "exampleSentenceMeaning": "Giới thiệu bạn bè."
+      },
+      {
+        "id": 2407,
+        "word": "案内します",
+        "reading": "あんないします",
+        "romaji": "annaishimasu",
+        "meaning": "Hướng dẫn / Dẫn đường",
+        "hanViet": "Án Nội",
+        "type": "Động từ",
+        "exampleSentence": "町を 案内します。",
+        "exampleSentenceReading": "まちを あんないします。",
+        "exampleSentenceMeaning": "Dẫn đi tham quan thành phố."
+      },
+      {
+        "id": 2408,
+        "word": "説明します",
+        "reading": "せつめいします",
+        "romaji": "setsumeishimasu",
+        "meaning": "Giải thích",
+        "hanViet": "Thuyết Minh",
+        "type": "Động từ",
+        "exampleSentence": "使い方を 説明します。",
+        "exampleSentenceReading": "つかいかたを せつめいします。",
+        "exampleSentenceMeaning": "Giải thích cách sử dụng."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 24",
-        "pattern": "Giúp đỡ ai đó Vてあげます, được ai giúp Vてもらいます, ai đó giúp mình Vてくれます",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 24: Cho và nhận hành động (Cho/Nhận giúp đỡ).",
+        "title": "Vて あげます (Làm việc gì giúp cho ai)",
+        "pattern": "Người nhận + に + Vて + あげます",
+        "explanation": "Người nói làm một hành động có lợi cho người khác.",
         "examples": [
           {
-            "japanese": "これは 第24課の 例文です。",
-            "reading": "これは だい24かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 24."
+            "japanese": "わたしは 木村さんに 傘を 貸して あげました。",
+            "reading": "わたしは きむらさんに かさを かして あげました。",
+            "vietnamese": "Tôi đã cho chị Kimura mượn ô."
+          }
+        ]
+      },
+      {
+        "title": "Vて もらいます (Được ai làm giúp cho việc gì)",
+        "pattern": "Người làm + に + Vて + もらいます",
+        "explanation": "Người nói nhận được sự giúp đỡ từ người khác.",
+        "examples": [
+          {
+            "japanese": "わたしは 鈴木さんに 日本語を 教えて もらいました。",
+            "reading": "わたしは すずきさんに にほんごを おしえて もらいました。",
+            "vietnamese": "Tôi đã được anh Suzuki dạy tiếng Nhật."
+          }
+        ]
+      },
+      {
+        "title": "Vて くれます (Ai đó làm giúp việc gì cho tôi)",
+        "pattern": "Người làm + が + [わたしに] + Vて + くれます",
+        "explanation": "Ai đó chủ động thực hiện hành động giúp đỡ người nói (hoặc người nhà của người nói).",
+        "examples": [
+          {
+            "japanese": "友達が 引っ越しを 手伝って くれました。",
+            "reading": "ともだちが ひっこしを てつだって くれました。",
+            "vietnamese": "Bạn bè đã giúp tôi chuyển nhà."
           }
         ]
       }
@@ -2099,31 +5569,149 @@
     "lessonNumber": 25,
     "title": "Bài 25: Điều kiện (たら・ても)",
     "japaneseTitle": "第２５課：～たら・～ても",
-    "description": "Câu điều kiện giả định / sau khi hoàn thành Vたら (nếu/sau khi), câu điều kiện tương phản Vても (dù... nhưng).",
+    "description": "Câu điều kiện giả định / sau khi Vたら (nếu/sau khi), câu điều kiện tương phản dù... nhưng Vても.",
     "vocabularies": [
       {
         "id": 2501,
-        "word": "言葉 25",
-        "reading": "ことば",
-        "romaji": "kotoba",
-        "meaning": "Từ vựng tiêu biểu bài 25",
-        "hanViet": "Ngôn Diệp",
+        "word": "考えます",
+        "reading": "かんがえます",
+        "romaji": "kangaemasu",
+        "meaning": "Suy nghĩ",
+        "hanViet": "Khảo",
+        "type": "Động từ",
+        "exampleSentence": "よく 考えて ください。",
+        "exampleSentenceReading": "よく かんがえて ください。",
+        "exampleSentenceMeaning": "Xin hãy suy nghĩ kỹ."
+      },
+      {
+        "id": 2502,
+        "word": "着きます",
+        "reading": "つきます",
+        "romaji": "tsukimasu",
+        "meaning": "Đến nơi",
+        "hanViet": "Trước",
+        "type": "Động từ",
+        "exampleSentence": "駅に 着きました。",
+        "exampleSentenceReading": "えきに つきました。",
+        "exampleSentenceMeaning": "Đã đến nhà ga."
+      },
+      {
+        "id": 2503,
+        "word": "留学します",
+        "reading": "りゅうがくします",
+        "romaji": "ryuugakushimasu",
+        "meaning": "Du học",
+        "hanViet": "Lưu Học",
+        "type": "Động từ",
+        "exampleSentence": "日本へ 留学します。",
+        "exampleSentenceReading": "にほんへ りゅうがくします。",
+        "exampleSentenceMeaning": "Đi du học Nhật Bản."
+      },
+      {
+        "id": 2504,
+        "word": "年を取ります",
+        "reading": "としをとります",
+        "romaji": "toshi o torimasu",
+        "meaning": "Có tuổi / Già đi",
+        "hanViet": "Niên Thủ",
+        "type": "Động từ",
+        "exampleSentence": "年を 取ったら、田舎に 住みたいです。",
+        "exampleSentenceReading": "としを とったら、いなかに すみたいです。",
+        "exampleSentenceMeaning": "Khi về già tôi muốn sống ở quê."
+      },
+      {
+        "id": 2505,
+        "word": "田舎",
+        "reading": "いなか",
+        "romaji": "inaka",
+        "meaning": "Quê hương / Nông thôn",
+        "hanViet": "Điền Xá",
         "type": "Danh từ",
-        "exampleSentence": "第25課の 言葉を 覚えます。",
-        "exampleSentenceReading": "だい25かの ことばを おぼえます。",
-        "exampleSentenceMeaning": "Ghi nhớ từ vựng của bài số 25."
+        "exampleSentence": "田舎は 静かです。",
+        "exampleSentenceReading": "いなかは しずかです。",
+        "exampleSentenceMeaning": "Quê hương rất yên bình."
+      },
+      {
+        "id": 2506,
+        "word": "チャンス",
+        "reading": "ちゃんす",
+        "romaji": "chansu",
+        "meaning": "Cơ hội",
+        "hanViet": "",
+        "type": "Danh từ",
+        "exampleSentence": "チャンスが あったら、行きたいです。",
+        "exampleSentenceReading": "ちゃんすが あったら、いきたいです。",
+        "exampleSentenceMeaning": "Nếu có cơ hội tôi muốn đi."
+      },
+      {
+        "id": 2507,
+        "word": "億",
+        "reading": "おく",
+        "romaji": "oku",
+        "meaning": "Trăm triệu",
+        "hanViet": "Ức",
+        "type": "Lượng từ",
+        "exampleSentence": "１億円 あったら、家を 買います。",
+        "exampleSentenceReading": "いちおくえん あったら、いえを かいます。",
+        "exampleSentenceMeaning": "Nếu có 100 triệu yên tôi sẽ mua nhà."
+      },
+      {
+        "id": 2508,
+        "word": "もし",
+        "reading": "もし",
+        "romaji": "moshi",
+        "meaning": "Nếu (nhấn mạnh giả định)",
+        "hanViet": "",
+        "type": "Phó từ",
+        "exampleSentence": "もし 雨が 降ったら、行きません。",
+        "exampleSentenceReading": "もし あめが ふったら、いきません。",
+        "exampleSentenceMeaning": "Nếu mà trời mưa thì tôi không đi."
+      },
+      {
+        "id": 2509,
+        "word": "いくら",
+        "reading": "いくら",
+        "romaji": "ikura",
+        "meaning": "Cho dù... đến mấy",
+        "hanViet": "",
+        "type": "Phó từ",
+        "exampleSentence": "いくら 考えても、わかりません。",
+        "exampleSentenceReading": "いくら かんがえても、わかりません。",
+        "exampleSentenceMeaning": "Dù có suy nghĩ thế nào cũng không hiểu."
       }
     ],
     "grammarPoints": [
       {
-        "title": "Ngữ pháp trọng tâm Bài 25",
-        "pattern": "Câu điều kiện giả định / sau khi hoàn thành Vたら (nếu/sau khi), câu điều kiện tương phản Vても (dù",
-        "explanation": "Toàn bộ cấu trúc ngữ pháp và cách vận dụng thực tế của Bài 25: Điều kiện (たら・ても).",
+        "title": "～たら (Nếu / Sau khi... thì...)",
+        "pattern": "[Thể Ta] + ら、[Hành động]",
+        "explanation": "Diễn tả điều kiện giả định 'Nếu...' hoặc mốc thời gian 'Sau khi hoàn thành... thì sẽ làm...'.",
         "examples": [
           {
-            "japanese": "これは 第25課の 例文です。",
-            "reading": "これは だい25かの れいぶんです。",
-            "vietnamese": "Đây là câu ví dụ mẫu của bài 25."
+            "japanese": "お金が あったら、旅行します。",
+            "reading": "おかねが あったら、りょこうします。",
+            "vietnamese": "Nếu có tiền tôi sẽ đi du lịch."
+          },
+          {
+            "japanese": "１０時に なったら、出かけましょう。",
+            "reading": "じゅうじに なったら、でかけましょう。",
+            "vietnamese": "Đến 10 giờ thì chúng ta xuất phát nhé."
+          }
+        ]
+      },
+      {
+        "title": "～ても (Dù... nhưng...)",
+        "pattern": "[Thể Te] + も、[Hành động]",
+        "explanation": "Diễn tả điều kiện tương phản 'Cho dù... nhưng vẫn...'. Tính từ -i: くて + も, tính từ -na / danh từ: で + も.",
+        "examples": [
+          {
+            "japanese": "雨が 降っても、サッカーを します。",
+            "reading": "あめが ふっても、さっかーを します。",
+            "vietnamese": "Cho dù trời mưa chúng tôi vẫn chơi bóng đá."
+          },
+          {
+            "japanese": "高くても、このパソコンを 買いたいです。",
+            "reading": "たかくても、このぱそこんを かいたいです。",
+            "vietnamese": "Dù đắt tôi vẫn muốn mua chiếc máy tính này."
           }
         ]
       }

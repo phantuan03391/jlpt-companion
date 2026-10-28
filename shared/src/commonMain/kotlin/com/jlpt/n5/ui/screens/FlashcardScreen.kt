@@ -31,6 +31,7 @@ fun FlashcardScreen(
     var isKanjiMode by remember { mutableStateOf(initialKanjiOnly) }
     var selectedLessonNumber by remember { mutableStateOf(initialLessonNumber) }
     var filterStarredOnly by remember { mutableStateOf(false) }
+    var showReadingHint by remember { mutableStateOf(true) }
 
     var cardList by remember(isKanjiMode, selectedLessonNumber, filterStarredOnly) {
         val base = JLPTRepository.getAllFlashcards(
@@ -66,11 +67,16 @@ fun FlashcardScreen(
                         modifier = Modifier
                             .size(36.dp)
                             .clip(CircleShape)
-                            .background(Slate100)
+                            .background(MaterialTheme.colors.surfaceContainer)
                             .clickable { onBack() },
                         contentAlignment = Alignment.Center
                     ) {
-                        Text(text = "←", fontSize = 18.sp, fontWeight = FontWeight.Bold)
+                        Text(
+                            text = "←",
+                            fontSize = 18.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colors.textPrimary
+                        )
                     }
                     Spacer(modifier = Modifier.width(10.dp))
                 }
@@ -78,28 +84,31 @@ fun FlashcardScreen(
                 Column {
                     Text(
                         text = "FLASHCARDS",
-                        fontSize = 12.sp,
+                        fontSize = 11.sp,
                         fontWeight = FontWeight.Bold,
-                        color = SakuraPink
+                        color = MaterialTheme.colors.toriiAccent,
+                        letterSpacing = 1.sp
                     )
                     Text(
-                        text = if (isKanjiMode) "Ôn tập 104 Kanji N5" else "Ôn từ vựng Minna",
+                        text = if (isKanjiMode) "104 Hán Tự Kanji N5" else "Từ vựng Minna",
                         fontSize = 18.sp,
                         fontWeight = FontWeight.Bold,
-                        color = MaterialTheme.colors.onBackground
+                        color = MaterialTheme.colors.textPrimary
                     )
                 }
             }
 
-            // Shuffle Button
-            IconButton(
-                onClick = {
-                    cardList = cardList.shuffled()
-                    currentIndex = 0
-                    isFlipped = false
+            // Shuffle Button & Star Filter Button
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                IconButton(
+                    onClick = {
+                        cardList = cardList.shuffled()
+                        currentIndex = 0
+                        isFlipped = false
+                    }
+                ) {
+                    Text(text = "🔀", fontSize = 18.sp)
                 }
-            ) {
-                Text(text = "🔀", fontSize = 20.sp)
             }
         }
 
@@ -110,7 +119,7 @@ fun FlashcardScreen(
             modifier = Modifier
                 .fillMaxWidth()
                 .clip(RoundedCornerShape(12.dp))
-                .background(MaterialTheme.colors.surface)
+                .background(MaterialTheme.colors.surfaceContainer)
                 .padding(4.dp),
             horizontalArrangement = Arrangement.SpaceEvenly
         ) {
@@ -140,7 +149,7 @@ fun FlashcardScreen(
 
         Spacer(modifier = Modifier.height(10.dp))
 
-        // Progress counter
+        // Progress counter & Hint toggle
         if (totalCount > 0) {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -151,18 +160,34 @@ fun FlashcardScreen(
                     text = "Thẻ ${currentIndex + 1} / $totalCount",
                     fontSize = 13.sp,
                     fontWeight = FontWeight.Bold,
-                    color = Slate600
+                    color = MaterialTheme.colors.textSecondary
                 )
 
-                Text(
-                    text = "${((currentIndex + 1).toFloat() / totalCount * 100).toInt()}% hoàn thành",
-                    fontSize = 12.sp,
-                    color = IndigoPrimary,
-                    fontWeight = FontWeight.SemiBold
-                )
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    TextButton(
+                        onClick = { showReadingHint = !showReadingHint },
+                        contentPadding = PaddingValues(horizontal = 6.dp, vertical = 2.dp)
+                    ) {
+                        Text(
+                            text = if (showReadingHint) "👁️ Ẩn cách đọc" else "👁️ Hiện cách đọc",
+                            fontSize = 11.sp,
+                            fontWeight = FontWeight.SemiBold,
+                            color = MaterialTheme.colors.toriiAccent
+                        )
+                    }
+
+                    Spacer(modifier = Modifier.width(6.dp))
+
+                    Text(
+                        text = "${((currentIndex + 1).toFloat() / totalCount * 100).toInt()}%",
+                        fontSize = 12.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colors.toriiAccent
+                    )
+                }
             }
 
-            Spacer(modifier = Modifier.height(6.dp))
+            Spacer(modifier = Modifier.height(4.dp))
 
             LinearProgressIndicator(
                 progress = (currentIndex + 1).toFloat() / totalCount,
@@ -170,12 +195,12 @@ fun FlashcardScreen(
                     .fillMaxWidth()
                     .height(6.dp)
                     .clip(RoundedCornerShape(3.dp)),
-                color = SakuraPink,
-                backgroundColor = Slate200
+                color = MaterialTheme.colors.toriiAccent,
+                backgroundColor = MaterialTheme.colors.surfaceContainer
             )
         }
 
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(14.dp))
 
         // Main Flashcard View
         if (currentCard != null) {
@@ -187,27 +212,27 @@ fun FlashcardScreen(
                     .weight(1f)
                     .clip(RoundedCornerShape(24.dp)),
                 front = {
-                    FlashcardFront(card = currentCard)
+                    FlashcardFront(card = currentCard, showReadingHint = showReadingHint)
                 },
                 back = {
                     FlashcardBack(card = currentCard)
                 }
             )
 
-            Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(14.dp))
 
-            // Control Buttons Row
+            // Control Buttons Row (3-tier SRS: Chưa nhớ, Đang nhớ, Đã thuộc + Star + Navigation)
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceEvenly,
+                horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 // Previous button
                 ActionButton(
                     icon = "⬅️",
                     label = "Trước",
-                    bgColor = Slate100,
-                    textColor = Slate700,
+                    bgColor = MaterialTheme.colors.surfaceContainer,
+                    textColor = MaterialTheme.colors.textPrimary,
                     enabled = currentIndex > 0,
                     onClick = {
                         if (currentIndex > 0) {
@@ -217,12 +242,12 @@ fun FlashcardScreen(
                     }
                 )
 
-                // Need Review (Not Mastered)
+                // ❌ Chưa nhớ
                 ActionButton(
                     icon = "❌",
-                    label = "Cần ôn lại",
-                    bgColor = SakuraPinkLight,
-                    textColor = SakuraPink,
+                    label = "Chưa nhớ",
+                    bgColor = MaterialTheme.colors.toriiBg,
+                    textColor = MaterialTheme.colors.toriiAccent,
                     onClick = {
                         if (currentIndex < totalCount - 1) {
                             currentIndex++
@@ -231,14 +256,13 @@ fun FlashcardScreen(
                     }
                 )
 
-                // Star Favorite Toggle
+                // ⭐ Favorite toggle
                 ActionButton(
                     icon = if (currentCard.isStarred) "⭐" else "☆",
                     label = "Yêu thích",
-                    bgColor = AmberLight,
-                    textColor = AmberWarning,
+                    bgColor = MaterialTheme.colors.amberBg,
+                    textColor = OchreAmber,
                     onClick = {
-                        // Toggle star
                         if (currentCard.id.startsWith("vocab_")) {
                             val id = currentCard.id.removePrefix("vocab_").toIntOrNull()
                             if (id != null) JLPTRepository.toggleStarredVocab(id)
@@ -249,12 +273,12 @@ fun FlashcardScreen(
                     }
                 )
 
-                // Mastered Button
+                // ✅ Đã thuộc (Mastered)
                 ActionButton(
                     icon = "✅",
                     label = "Đã thuộc",
-                    bgColor = MatchaGreenLight,
-                    textColor = MatchaGreen,
+                    bgColor = MaterialTheme.colors.matchaBg,
+                    textColor = MaterialTheme.colors.matchaAccent,
                     onClick = {
                         if (currentCard.id.startsWith("vocab_")) {
                             val id = currentCard.id.removePrefix("vocab_").toIntOrNull()
@@ -263,6 +287,21 @@ fun FlashcardScreen(
                             val id = currentCard.id.removePrefix("kanji_").toIntOrNull()
                             if (id != null) JLPTRepository.masteredKanjiIds.add(id)
                         }
+                        if (currentIndex < totalCount - 1) {
+                            currentIndex++
+                            isFlipped = false
+                        }
+                    }
+                )
+
+                // Next button
+                ActionButton(
+                    icon = "➡️",
+                    label = "Tiếp",
+                    bgColor = MaterialTheme.colors.surfaceContainer,
+                    textColor = MaterialTheme.colors.textPrimary,
+                    enabled = currentIndex < totalCount - 1,
+                    onClick = {
                         if (currentIndex < totalCount - 1) {
                             currentIndex++
                             isFlipped = false
@@ -285,12 +324,12 @@ fun FlashcardScreen(
                         text = "Không có thẻ nào để hiển thị",
                         fontSize = 16.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Slate700
+                        color = MaterialTheme.colors.textPrimary
                     )
                     Text(
                         text = "Hãy chọn bài học khác hoặc chuyển sang chế độ Kanji",
                         fontSize = 13.sp,
-                        color = Slate500
+                        color = MaterialTheme.colors.textSecondary
                     )
                 }
             }
@@ -299,128 +338,145 @@ fun FlashcardScreen(
 }
 
 @Composable
-fun FlashcardFront(card: FlashcardItem) {
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(SurfaceWhite)
-            .padding(24.dp),
-        contentAlignment = Alignment.Center
+fun FlashcardFront(
+    card: FlashcardItem,
+    showReadingHint: Boolean
+) {
+    Card(
+        modifier = Modifier.fillMaxSize(),
+        shape = RoundedCornerShape(24.dp),
+        backgroundColor = MaterialTheme.colors.cardBackground,
+        elevation = 3.dp
     ) {
-        Column(
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.Center
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(24.dp),
+            contentAlignment = Alignment.Center
         ) {
-            JapaneseBadge(
-                text = if (card.type == com.jlpt.n5.model.FlashcardType.KANJI) "KANJI N5" else "TỪ VỰNG",
-                backgroundColor = IndigoSubtle,
-                textColor = IndigoPrimary
-            )
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
+                JapaneseBadge(
+                    text = if (card.type == com.jlpt.n5.model.FlashcardType.KANJI) "KANJI N5" else "TỪ VỰNG MINNA",
+                    backgroundColor = MaterialTheme.colors.surfaceContainer,
+                    textColor = MaterialTheme.colors.toriiAccent
+                )
 
-            Spacer(modifier = Modifier.height(24.dp))
+                Spacer(modifier = Modifier.height(28.dp))
 
-            Text(
-                text = card.frontMain,
-                fontSize = if (card.frontMain.length <= 4) 48.sp else 32.sp,
-                fontWeight = FontWeight.Black,
-                color = Slate900,
-                textAlign = TextAlign.Center
-            )
-
-            if (card.frontSub.isNotEmpty()) {
-                Spacer(modifier = Modifier.height(10.dp))
                 Text(
-                    text = card.frontSub,
-                    fontSize = 16.sp,
-                    color = Slate500,
+                    text = card.frontMain,
+                    fontSize = if (card.frontMain.length <= 3) 54.sp else if (card.frontMain.length <= 6) 38.sp else 28.sp,
+                    fontWeight = FontWeight.Black,
+                    color = MaterialTheme.colors.textPrimary,
                     textAlign = TextAlign.Center
                 )
+
+                if (showReadingHint && card.frontSub.isNotEmpty()) {
+                    Spacer(modifier = Modifier.height(12.dp))
+                    Text(
+                        text = card.frontSub,
+                        fontSize = 17.sp,
+                        fontWeight = FontWeight.Medium,
+                        color = MaterialTheme.colors.toriiAccent,
+                        textAlign = TextAlign.Center
+                    )
+                }
+
+                Spacer(modifier = Modifier.height(36.dp))
+
+                Text(
+                    text = "🔄 Chạm vào thẻ để lật xem nghĩa",
+                    fontSize = 12.sp,
+                    color = MaterialTheme.colors.textMuted,
+                    fontWeight = FontWeight.Medium
+                )
             }
-
-            Spacer(modifier = Modifier.height(36.dp))
-
-            Text(
-                text = "🔄 Chạm vào thẻ để lật xem nghĩa",
-                fontSize = 12.sp,
-                color = Slate400,
-                fontWeight = FontWeight.Medium
-            )
         }
     }
 }
 
 @Composable
 fun FlashcardBack(card: FlashcardItem) {
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(IndigoSubtle)
-            .padding(24.dp),
-        contentAlignment = Alignment.Center
+    Card(
+        modifier = Modifier.fillMaxSize(),
+        shape = RoundedCornerShape(24.dp),
+        backgroundColor = MaterialTheme.colors.cardBackground,
+        elevation = 3.dp
     ) {
-        Column(
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.Center
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(MaterialTheme.colors.surfaceContainerLow)
+                .padding(24.dp),
+            contentAlignment = Alignment.Center
         ) {
-            JapaneseBadge(
-                text = "Ý NGHĨA & VÍ DỤ",
-                backgroundColor = SakuraPinkLight,
-                textColor = SakuraPink
-            )
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
+                JapaneseBadge(
+                    text = "Ý NGHĨA & VÍ DỤ",
+                    backgroundColor = MaterialTheme.colors.toriiBg,
+                    textColor = MaterialTheme.colors.toriiAccent
+                )
 
-            Spacer(modifier = Modifier.height(16.dp))
+                Spacer(modifier = Modifier.height(20.dp))
 
-            Text(
-                text = card.backMeaning,
-                fontSize = 24.sp,
-                fontWeight = FontWeight.ExtraBold,
-                color = IndigoDark,
-                textAlign = TextAlign.Center
-            )
-
-            if (card.backDetails.isNotEmpty()) {
-                Spacer(modifier = Modifier.height(8.dp))
                 Text(
-                    text = card.backDetails,
-                    fontSize = 13.sp,
-                    color = Slate600,
+                    text = card.backMeaning,
+                    fontSize = 24.sp,
+                    fontWeight = FontWeight.ExtraBold,
+                    color = MaterialTheme.colors.toriiAccent,
                     textAlign = TextAlign.Center
                 )
-            }
 
-            if (card.example.isNotEmpty()) {
-                Spacer(modifier = Modifier.height(16.dp))
-                Card(
-                    modifier = Modifier.fillMaxWidth(),
-                    shape = RoundedCornerShape(12.dp),
-                    backgroundColor = SurfaceWhite,
-                    elevation = 1.dp
-                ) {
-                    Column(modifier = Modifier.padding(12.dp)) {
-                        Text(
-                            text = "Ví dụ mẫu:",
-                            fontSize = 11.sp,
-                            fontWeight = FontWeight.Bold,
-                            color = Slate500
-                        )
-                        Spacer(modifier = Modifier.height(4.dp))
-                        Text(
-                            text = card.example,
-                            fontSize = 13.sp,
-                            color = Slate800,
-                            lineHeight = 18.sp
-                        )
+                if (card.backDetails.isNotEmpty()) {
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Text(
+                        text = card.backDetails,
+                        fontSize = 14.sp,
+                        color = MaterialTheme.colors.textSecondary,
+                        textAlign = TextAlign.Center
+                    )
+                }
+
+                if (card.example.isNotEmpty()) {
+                    Spacer(modifier = Modifier.height(16.dp))
+                    Card(
+                        modifier = Modifier.fillMaxWidth(),
+                        shape = RoundedCornerShape(12.dp),
+                        backgroundColor = MaterialTheme.colors.cardBackground,
+                        elevation = 1.dp
+                    ) {
+                        Column(modifier = Modifier.padding(14.dp)) {
+                            Text(
+                                text = "Ví dụ mẫu:",
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = MaterialTheme.colors.textMuted
+                            )
+                            Spacer(modifier = Modifier.height(4.dp))
+                            Text(
+                                text = card.example,
+                                fontSize = 13.sp,
+                                color = MaterialTheme.colors.textPrimary,
+                                lineHeight = 18.sp
+                            )
+                        }
                     }
                 }
+
+                Spacer(modifier = Modifier.height(22.dp))
+
+                Text(
+                    text = "🔄 Chạm để lật lại mặt trước",
+                    fontSize = 12.sp,
+                    color = MaterialTheme.colors.textMuted
+                )
             }
-
-            Spacer(modifier = Modifier.height(20.dp))
-
-            Text(
-                text = "🔄 Chạm để lật lại mặt trước",
-                fontSize = 12.sp,
-                color = Slate400
-            )
         }
     }
 }
@@ -435,7 +491,7 @@ fun ModeSelectButton(
     Box(
         modifier = modifier
             .clip(RoundedCornerShape(10.dp))
-            .background(if (isSelected) IndigoPrimary else Color.Transparent)
+            .background(if (isSelected) MaterialTheme.colors.toriiAccent else Color.Transparent)
             .clickable { onClick() }
             .padding(vertical = 8.dp),
         contentAlignment = Alignment.Center
@@ -444,7 +500,7 @@ fun ModeSelectButton(
             text = text,
             fontSize = 13.sp,
             fontWeight = FontWeight.Bold,
-            color = if (isSelected) SurfaceWhite else Slate600
+            color = if (isSelected) Color.White else MaterialTheme.colors.textSecondary
         )
     }
 }
@@ -464,9 +520,9 @@ fun ActionButton(
     ) {
         Box(
             modifier = Modifier
-                .size(54.dp)
+                .size(50.dp)
                 .clip(CircleShape)
-                .background(if (enabled) bgColor else Slate100),
+                .background(if (enabled) bgColor else MaterialTheme.colors.surfaceContainer),
             contentAlignment = Alignment.Center
         ) {
             Text(text = icon, fontSize = 20.sp)
@@ -478,7 +534,7 @@ fun ActionButton(
             text = label,
             fontSize = 11.sp,
             fontWeight = FontWeight.SemiBold,
-            color = if (enabled) textColor else Slate400
+            color = if (enabled) textColor else MaterialTheme.colors.textMuted
         )
     }
 }

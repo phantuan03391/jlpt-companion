@@ -10,9 +10,7 @@ import androidx.compose.ui.unit.sp
 import com.jlpt.n5.data.JLPTRepository
 import com.jlpt.n5.model.ExamResult
 import com.jlpt.n5.ui.screens.*
-import com.jlpt.n5.ui.theme.JLPTAppTheme
-import com.jlpt.n5.ui.theme.IndigoPrimary
-import com.jlpt.n5.ui.theme.Slate400
+import com.jlpt.n5.ui.theme.*
 
 enum class AppTab {
     HOME,
@@ -56,8 +54,8 @@ fun App() {
                             icon = { Text(text = "🏠", fontSize = 18.sp) },
                             label = { Text("Trang chủ", fontSize = 10.sp, fontWeight = FontWeight.Bold) },
                             selected = currentTab == AppTab.HOME,
-                            selectedContentColor = IndigoPrimary,
-                            unselectedContentColor = Slate400,
+                            selectedContentColor = MaterialTheme.colors.toriiAccent,
+                            unselectedContentColor = MaterialTheme.colors.textMuted,
                             onClick = { currentTab = AppTab.HOME }
                         )
 
@@ -65,8 +63,8 @@ fun App() {
                             icon = { Text(text = "📖", fontSize = 18.sp) },
                             label = { Text("25 Bài Minna", fontSize = 10.sp, fontWeight = FontWeight.Bold) },
                             selected = currentTab == AppTab.LESSONS,
-                            selectedContentColor = IndigoPrimary,
-                            unselectedContentColor = Slate400,
+                            selectedContentColor = MaterialTheme.colors.toriiAccent,
+                            unselectedContentColor = MaterialTheme.colors.textMuted,
                             onClick = { currentTab = AppTab.LESSONS }
                         )
 
@@ -74,8 +72,8 @@ fun App() {
                             icon = { Text(text = "🗂️", fontSize = 18.sp) },
                             label = { Text("Flashcards", fontSize = 10.sp, fontWeight = FontWeight.Bold) },
                             selected = currentTab == AppTab.FLASHCARDS,
-                            selectedContentColor = IndigoPrimary,
-                            unselectedContentColor = Slate400,
+                            selectedContentColor = MaterialTheme.colors.toriiAccent,
+                            unselectedContentColor = MaterialTheme.colors.textMuted,
                             onClick = {
                                 flashcardLessonTarget = null
                                 flashcardKanjiOnly = false
@@ -87,8 +85,8 @@ fun App() {
                             icon = { Text(text = "🈲", fontSize = 18.sp) },
                             label = { Text("Kanji N5", fontSize = 10.sp, fontWeight = FontWeight.Bold) },
                             selected = currentTab == AppTab.KANJI,
-                            selectedContentColor = IndigoPrimary,
-                            unselectedContentColor = Slate400,
+                            selectedContentColor = MaterialTheme.colors.toriiAccent,
+                            unselectedContentColor = MaterialTheme.colors.textMuted,
                             onClick = { currentTab = AppTab.KANJI }
                         )
 
@@ -96,8 +94,8 @@ fun App() {
                             icon = { Text(text = "📝", fontSize = 18.sp) },
                             label = { Text("Thi thử", fontSize = 10.sp, fontWeight = FontWeight.Bold) },
                             selected = currentTab == AppTab.MOCK_TESTS,
-                            selectedContentColor = IndigoPrimary,
-                            unselectedContentColor = Slate400,
+                            selectedContentColor = MaterialTheme.colors.toriiAccent,
+                            unselectedContentColor = MaterialTheme.colors.textMuted,
                             onClick = { currentTab = AppTab.MOCK_TESTS }
                         )
                     }

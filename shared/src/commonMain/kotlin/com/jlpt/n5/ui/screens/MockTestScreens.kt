@@ -5,9 +5,6 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.grid.itemsIndexed
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -18,7 +15,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.jlpt.n5.data.JLPTRepository
@@ -45,12 +41,12 @@ fun MockTestListScreen(
             text = "Luyện thi thử JLPT N5",
             fontSize = 22.sp,
             fontWeight = FontWeight.Bold,
-            color = MaterialTheme.colors.onBackground
+            color = MaterialTheme.colors.textPrimary
         )
         Text(
             text = "Bộ đề thi chuẩn cấu trúc đề thi chính thức N5 (45 phút, 180 điểm)",
             fontSize = 13.sp,
-            color = Slate500
+            color = MaterialTheme.colors.textSecondary
         )
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -61,7 +57,7 @@ fun MockTestListScreen(
                 text = "Lịch sử thi gần nhất",
                 fontSize = 15.sp,
                 fontWeight = FontWeight.Bold,
-                color = MaterialTheme.colors.onSurface
+                color = MaterialTheme.colors.textPrimary
             )
             Spacer(modifier = Modifier.height(8.dp))
 
@@ -71,6 +67,7 @@ fun MockTestListScreen(
                         .fillMaxWidth()
                         .padding(bottom = 8.dp),
                     shape = RoundedCornerShape(12.dp),
+                    backgroundColor = MaterialTheme.colors.cardBackground,
                     elevation = 1.dp
                 ) {
                     Row(
@@ -84,26 +81,27 @@ fun MockTestListScreen(
                             Text(
                                 text = res.testTitle,
                                 fontSize = 13.sp,
-                                fontWeight = FontWeight.SemiBold
+                                fontWeight = FontWeight.SemiBold,
+                                color = MaterialTheme.colors.textPrimary
                             )
                             Text(
                                 text = "Đúng: ${res.correctCount}/${res.totalQuestions} câu",
                                 fontSize = 11.sp,
-                                color = Slate500
+                                color = MaterialTheme.colors.textMuted
                             )
                         }
 
                         Box(
                             modifier = Modifier
                                 .clip(RoundedCornerShape(8.dp))
-                                .background(if (res.passed) MatchaGreenLight else SakuraPinkLight)
+                                .background(if (res.passed) MaterialTheme.colors.matchaBg else MaterialTheme.colors.toriiBg)
                                 .padding(horizontal = 10.dp, vertical = 4.dp)
                         ) {
                             Text(
                                 text = "${res.score}/180 (${if (res.passed) "ĐỖ" else "TRƯỢT"})",
                                 fontSize = 12.sp,
                                 fontWeight = FontWeight.Bold,
-                                color = if (res.passed) MatchaGreen else SakuraPink
+                                color = if (res.passed) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.toriiAccent
                             )
                         }
                     }
@@ -117,19 +115,21 @@ fun MockTestListScreen(
             text = "Danh sách đề thi",
             fontSize = 15.sp,
             fontWeight = FontWeight.Bold,
-            color = MaterialTheme.colors.onSurface
+            color = MaterialTheme.colors.textPrimary
         )
 
         Spacer(modifier = Modifier.height(8.dp))
 
         LazyColumn(
-            verticalArrangement = Arrangement.spacedBy(12.dp)
+            verticalArrangement = Arrangement.spacedBy(12.dp),
+            contentPadding = PaddingValues(bottom = 24.dp)
         ) {
             items(tests) { test ->
                 Card(
                     modifier = Modifier.fillMaxWidth(),
                     shape = RoundedCornerShape(16.dp),
-                    elevation = 2.dp
+                    backgroundColor = MaterialTheme.colors.cardBackground,
+                    elevation = 1.dp
                 ) {
                     Column(modifier = Modifier.padding(16.dp)) {
                         Row(
@@ -141,13 +141,13 @@ fun MockTestListScreen(
                                 text = test.title,
                                 fontSize = 16.sp,
                                 fontWeight = FontWeight.Bold,
-                                color = IndigoPrimary
+                                color = MaterialTheme.colors.toriiAccent
                             )
 
                             JapaneseBadge(
                                 text = "${test.durationMinutes} PHÚT",
-                                backgroundColor = AmberLight,
-                                textColor = AmberWarning
+                                backgroundColor = MaterialTheme.colors.amberBg,
+                                textColor = OchreAmber
                             )
                         }
 
@@ -156,7 +156,7 @@ fun MockTestListScreen(
                         Text(
                             text = test.description,
                             fontSize = 13.sp,
-                            color = Slate600
+                            color = MaterialTheme.colors.textSecondary
                         )
 
                         Spacer(modifier = Modifier.height(12.dp))
@@ -169,20 +169,20 @@ fun MockTestListScreen(
                             Text(
                                 text = "${test.questions.size} câu hỏi • Điểm đỗ: ${test.passScore}/180",
                                 fontSize = 12.sp,
-                                color = Slate500
+                                color = MaterialTheme.colors.textMuted
                             )
 
                             Button(
                                 onClick = { onStartExam(test.id) },
                                 shape = RoundedCornerShape(10.dp),
-                                colors = ButtonDefaults.buttonColors(backgroundColor = IndigoPrimary),
+                                colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.toriiAccent),
                                 contentPadding = PaddingValues(horizontal = 16.dp, vertical = 6.dp)
                             ) {
                                 Text(
                                     text = "Bắt đầu thi",
                                     fontSize = 13.sp,
                                     fontWeight = FontWeight.Bold,
-                                    color = SurfaceWhite
+                                    color = Color.White
                                 )
                             }
                         }
@@ -202,8 +202,13 @@ fun MockTestExamScreen(
     val test = remember(testId) { JLPTRepository.getMockTest(testId) }
 
     if (test == null) {
-        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            Text("Không tìm thấy đề thi!")
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(MaterialTheme.colors.background),
+            contentAlignment = Alignment.Center
+        ) {
+            Text("Không tìm thấy đề thi!", color = MaterialTheme.colors.textPrimary)
         }
         return
     }
@@ -241,7 +246,7 @@ fun MockTestExamScreen(
         // Sticky Header with Timer & Submit
         Surface(
             modifier = Modifier.fillMaxWidth(),
-            elevation = 3.dp,
+            elevation = 2.dp,
             color = MaterialTheme.colors.surface
         ) {
             Row(
@@ -256,11 +261,16 @@ fun MockTestExamScreen(
                         modifier = Modifier
                             .size(32.dp)
                             .clip(CircleShape)
-                            .background(Slate100)
+                            .background(MaterialTheme.colors.surfaceContainer)
                             .clickable { onBack() },
                         contentAlignment = Alignment.Center
                     ) {
-                        Text(text = "✕", fontSize = 14.sp, fontWeight = FontWeight.Bold)
+                        Text(
+                            text = "✕",
+                            fontSize = 14.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colors.textPrimary
+                        )
                     }
 
                     Spacer(modifier = Modifier.width(10.dp))
@@ -268,7 +278,8 @@ fun MockTestExamScreen(
                     Text(
                         text = "Câu ${currentQuestionIndex + 1}/${test.questions.size}",
                         fontSize = 14.sp,
-                        fontWeight = FontWeight.Bold
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colors.textPrimary
                     )
                 }
 
@@ -276,27 +287,29 @@ fun MockTestExamScreen(
                 val minutes = secondsLeft / 60
                 val seconds = secondsLeft % 60
                 val timeFormatted = "${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}"
+                val isUrgent = secondsLeft < 300
+
                 Box(
                     modifier = Modifier
                         .clip(RoundedCornerShape(14.dp))
-                        .background(if (secondsLeft < 300) SakuraPinkLight else IndigoSubtle)
+                        .background(if (isUrgent) MaterialTheme.colors.toriiBg else MaterialTheme.colors.surfaceContainer)
                         .padding(horizontal = 12.dp, vertical = 6.dp)
                 ) {
                     Text(
                         text = "⏱️ $timeFormatted",
                         fontSize = 14.sp,
                         fontWeight = FontWeight.Bold,
-                        color = if (secondsLeft < 300) SakuraPink else IndigoPrimary
+                        color = if (isUrgent) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textPrimary
                     )
                 }
 
                 Button(
                     onClick = { showSubmitConfirm = true },
-                    colors = ButtonDefaults.buttonColors(backgroundColor = MatchaGreen),
+                    colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.matchaAccent),
                     shape = RoundedCornerShape(10.dp),
                     contentPadding = PaddingValues(horizontal = 12.dp, vertical = 4.dp)
                 ) {
-                    Text(text = "Nộp bài", fontSize = 12.sp, fontWeight = FontWeight.Bold, color = SurfaceWhite)
+                    Text(text = "Nộp bài", fontSize = 12.sp, fontWeight = FontWeight.Bold, color = Color.White)
                 }
             }
         }
@@ -312,8 +325,16 @@ fun MockTestExamScreen(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
-                    JapaneseBadge(text = currentQ.section, backgroundColor = IndigoSubtle, textColor = IndigoPrimary)
-                    Text(text = currentQ.category, fontSize = 12.sp, color = Slate500)
+                    JapaneseBadge(
+                        text = currentQ.section,
+                        backgroundColor = MaterialTheme.colors.surfaceContainer,
+                        textColor = MaterialTheme.colors.toriiAccent
+                    )
+                    Text(
+                        text = currentQ.category,
+                        fontSize = 12.sp,
+                        color = MaterialTheme.colors.textMuted
+                    )
                 }
 
                 Spacer(modifier = Modifier.height(14.dp))
@@ -322,13 +343,14 @@ fun MockTestExamScreen(
                 Card(
                     modifier = Modifier.fillMaxWidth(),
                     shape = RoundedCornerShape(16.dp),
-                    elevation = 2.dp
+                    backgroundColor = MaterialTheme.colors.cardBackground,
+                    elevation = 1.dp
                 ) {
                     Text(
                         text = currentQ.question,
                         fontSize = 16.sp,
                         fontWeight = FontWeight.Bold,
-                        color = MaterialTheme.colors.onSurface,
+                        color = MaterialTheme.colors.textPrimary,
                         modifier = Modifier.padding(16.dp),
                         lineHeight = 24.sp
                     )
@@ -347,11 +369,11 @@ fun MockTestExamScreen(
                             .clip(RoundedCornerShape(12.dp))
                             .border(
                                 width = if (isSelected) 2.dp else 1.dp,
-                                color = if (isSelected) IndigoPrimary else Slate200,
+                                color = if (isSelected) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.outlineBorder,
                                 shape = RoundedCornerShape(12.dp)
                             )
                             .clickable { userAnswers[currentQ.id] = optIndex },
-                        backgroundColor = if (isSelected) IndigoSubtle else SurfaceWhite,
+                        backgroundColor = if (isSelected) MaterialTheme.colors.toriiBg else MaterialTheme.colors.cardBackground,
                         elevation = 0.dp
                     ) {
                         Row(
@@ -364,14 +386,14 @@ fun MockTestExamScreen(
                                 modifier = Modifier
                                     .size(24.dp)
                                     .clip(CircleShape)
-                                    .background(if (isSelected) IndigoPrimary else Slate100),
+                                    .background(if (isSelected) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.surfaceContainer),
                                 contentAlignment = Alignment.Center
                             ) {
                                 Text(
                                     text = "${('1' + optIndex)}",
                                     fontSize = 12.sp,
                                     fontWeight = FontWeight.Bold,
-                                    color = if (isSelected) SurfaceWhite else Slate600
+                                    color = if (isSelected) Color.White else MaterialTheme.colors.textSecondary
                                 )
                             }
 
@@ -381,7 +403,7 @@ fun MockTestExamScreen(
                                 text = optionText,
                                 fontSize = 15.sp,
                                 fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
-                                color = MaterialTheme.colors.onSurface
+                                color = MaterialTheme.colors.textPrimary
                             )
                         }
                     }
@@ -397,26 +419,32 @@ fun MockTestExamScreen(
                     OutlinedButton(
                         onClick = { if (currentQuestionIndex > 0) currentQuestionIndex-- },
                         enabled = currentQuestionIndex > 0,
-                        shape = RoundedCornerShape(10.dp)
+                        shape = RoundedCornerShape(10.dp),
+                        colors = ButtonDefaults.outlinedButtonColors(
+                            backgroundColor = MaterialTheme.colors.cardBackground
+                        )
                     ) {
-                        Text("← Câu trước")
+                        Text(
+                            "← Câu trước",
+                            color = if (currentQuestionIndex > 0) MaterialTheme.colors.textPrimary else MaterialTheme.colors.textMuted
+                        )
                     }
 
                     if (currentQuestionIndex < test.questions.size - 1) {
                         Button(
                             onClick = { currentQuestionIndex++ },
                             shape = RoundedCornerShape(10.dp),
-                            colors = ButtonDefaults.buttonColors(backgroundColor = IndigoPrimary)
+                            colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.toriiAccent)
                         ) {
-                            Text("Câu sau →", color = SurfaceWhite)
+                            Text("Câu sau →", color = Color.White)
                         }
                     } else {
                         Button(
                             onClick = { showSubmitConfirm = true },
                             shape = RoundedCornerShape(10.dp),
-                            colors = ButtonDefaults.buttonColors(backgroundColor = MatchaGreen)
+                            colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.matchaAccent)
                         ) {
-                            Text("Nộp bài thi ✓", color = SurfaceWhite, fontWeight = FontWeight.Bold)
+                            Text("Nộp bài thi ✓", color = Color.White, fontWeight = FontWeight.Bold)
                         }
                     }
                 }
@@ -427,10 +455,14 @@ fun MockTestExamScreen(
     if (showSubmitConfirm) {
         AlertDialog(
             onDismissRequest = { showSubmitConfirm = false },
-            title = { Text("Nộp bài thi?") },
+            backgroundColor = MaterialTheme.colors.cardBackground,
+            title = { Text("Nộp bài thi?", color = MaterialTheme.colors.textPrimary, fontWeight = FontWeight.Bold) },
             text = {
                 val answeredCount = userAnswers.size
-                Text("Bạn đã làm $answeredCount / ${test.questions.size} câu. Bạn có chắc chắn muốn nộp bài ngay bây giờ?")
+                Text(
+                    "Bạn đã làm $answeredCount / ${test.questions.size} câu. Bạn có chắc chắn muốn nộp bài ngay bây giờ?",
+                    color = MaterialTheme.colors.textSecondary
+                )
             },
             confirmButton = {
                 Button(
@@ -445,14 +477,14 @@ fun MockTestExamScreen(
                         } else 0
                         onFinish(calculatedScore, 180, calculatedScore >= test.passScore, correct, test.questions.size, userAnswers.toMap())
                     },
-                    colors = ButtonDefaults.buttonColors(backgroundColor = IndigoPrimary)
+                    colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.toriiAccent)
                 ) {
-                    Text("Nộp bài", color = SurfaceWhite)
+                    Text("Nộp bài", color = Color.White)
                 }
             },
             dismissButton = {
                 TextButton(onClick = { showSubmitConfirm = false }) {
-                    Text("Làm tiếp")
+                    Text("Làm tiếp", color = MaterialTheme.colors.textSecondary)
                 }
             }
         )
@@ -485,13 +517,13 @@ fun MockTestResultScreen(
             Card(
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(20.dp),
-                elevation = 4.dp
+                elevation = 3.dp
             ) {
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
                         .background(
-                            if (passed) MatchaGreen else SakuraPink
+                            if (passed) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.toriiAccent
                         )
                         .padding(24.dp),
                     contentAlignment = Alignment.Center
@@ -501,7 +533,7 @@ fun MockTestResultScreen(
                             text = if (passed) "🎉 合格 (ĐỖ N5)" else "💪 CẦN CỐ GẮNG THÊM",
                             fontSize = 24.sp,
                             fontWeight = FontWeight.Black,
-                            color = SurfaceWhite
+                            color = Color.White
                         )
 
                         Spacer(modifier = Modifier.height(10.dp))
@@ -510,7 +542,7 @@ fun MockTestResultScreen(
                             text = "$score / $maxScore Điểm",
                             fontSize = 36.sp,
                             fontWeight = FontWeight.Bold,
-                            color = SurfaceWhite
+                            color = Color.White
                         )
 
                         Spacer(modifier = Modifier.height(4.dp))
@@ -518,7 +550,7 @@ fun MockTestResultScreen(
                         Text(
                             text = "Đúng $correctCount / $totalQuestions câu (${((correctCount.toFloat() / totalQuestions) * 100).toInt()}%)",
                             fontSize = 14.sp,
-                            color = SurfaceWhite.copy(alpha = 0.9f)
+                            color = Color.White.copy(alpha = 0.9f)
                         )
                     }
                 }
@@ -531,9 +563,9 @@ fun MockTestResultScreen(
                 onClick = onBackToList,
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(12.dp),
-                colors = ButtonDefaults.buttonColors(backgroundColor = IndigoPrimary)
+                colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.toriiAccent)
             ) {
-                Text("Quay lại danh sách đề thi", color = SurfaceWhite, fontWeight = FontWeight.Bold)
+                Text("Quay lại danh sách đề thi", color = Color.White, fontWeight = FontWeight.Bold)
             }
         }
 
@@ -542,7 +574,7 @@ fun MockTestResultScreen(
                 text = "Xem lại chi tiết từng câu & Giải thích",
                 fontSize = 18.sp,
                 fontWeight = FontWeight.Bold,
-                color = MaterialTheme.colors.onSurface
+                color = MaterialTheme.colors.textPrimary
             )
         }
 
@@ -555,6 +587,7 @@ fun MockTestResultScreen(
                 Card(
                     modifier = Modifier.fillMaxWidth(),
                     shape = RoundedCornerShape(14.dp),
+                    backgroundColor = MaterialTheme.colors.cardBackground,
                     elevation = 1.dp
                 ) {
                     Column(modifier = Modifier.padding(14.dp)) {
@@ -567,20 +600,20 @@ fun MockTestResultScreen(
                                 text = "Câu ${q.id}: ${q.category}",
                                 fontSize = 12.sp,
                                 fontWeight = FontWeight.Bold,
-                                color = IndigoPrimary
+                                color = MaterialTheme.colors.toriiAccent
                             )
 
                             Box(
                                 modifier = Modifier
                                     .clip(RoundedCornerShape(6.dp))
-                                    .background(if (isCorrect) MatchaGreenLight else SakuraPinkLight)
+                                    .background(if (isCorrect) MaterialTheme.colors.matchaBg else MaterialTheme.colors.toriiBg)
                                     .padding(horizontal = 8.dp, vertical = 2.dp)
                             ) {
                                 Text(
                                     text = if (isCorrect) "ĐÚNG" else "SAI",
                                     fontSize = 11.sp,
                                     fontWeight = FontWeight.Bold,
-                                    color = if (isCorrect) MatchaGreen else SakuraPink
+                                    color = if (isCorrect) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.toriiAccent
                                 )
                             }
                         }
@@ -591,7 +624,7 @@ fun MockTestResultScreen(
                             text = q.question,
                             fontSize = 14.sp,
                             fontWeight = FontWeight.SemiBold,
-                            color = MaterialTheme.colors.onSurface
+                            color = MaterialTheme.colors.textPrimary
                         )
 
                         Spacer(modifier = Modifier.height(8.dp))
@@ -601,8 +634,8 @@ fun MockTestResultScreen(
                             val isCorrectAnswer = idx == q.correctIndex
 
                             val optBg = when {
-                                isCorrectAnswer -> MatchaGreenLight
-                                isUserPick -> SakuraPinkLight
+                                isCorrectAnswer -> MaterialTheme.colors.matchaBg
+                                isUserPick -> MaterialTheme.colors.toriiBg
                                 else -> Color.Transparent
                             }
 
@@ -617,7 +650,7 @@ fun MockTestResultScreen(
                                     text = "${('1' + idx)}. $optText ${if (isCorrectAnswer) "✓" else if (isUserPick) "✗" else ""}",
                                     fontSize = 13.sp,
                                     fontWeight = if (isCorrectAnswer || isUserPick) FontWeight.Bold else FontWeight.Normal,
-                                    color = if (isCorrectAnswer) MatchaGreen else if (isUserPick) SakuraPink else Slate700
+                                    color = if (isCorrectAnswer) MaterialTheme.colors.matchaAccent else if (isUserPick) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textSecondary
                                 )
                             }
                         }
@@ -628,7 +661,7 @@ fun MockTestResultScreen(
                         Box(
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .background(IndigoSubtle, RoundedCornerShape(8.dp))
+                                .background(MaterialTheme.colors.surfaceContainer, RoundedCornerShape(8.dp))
                                 .padding(10.dp)
                         ) {
                             Column {
@@ -636,13 +669,13 @@ fun MockTestResultScreen(
                                     text = "💡 Giải thích chi tiết:",
                                     fontSize = 12.sp,
                                     fontWeight = FontWeight.Bold,
-                                    color = IndigoDark
+                                    color = MaterialTheme.colors.toriiAccent
                                 )
                                 Spacer(modifier = Modifier.height(2.dp))
                                 Text(
                                     text = q.explanation,
                                     fontSize = 12.sp,
-                                    color = Slate700,
+                                    color = MaterialTheme.colors.textPrimary,
                                     lineHeight = 16.sp
                                 )
                             }

@@ -48,6 +48,8 @@ fun HomeScreen(
         JLPTRepository.lessons.firstOrNull()?.vocabularies?.firstOrNull()
     }
 
+    val darkMode = LocalDarkMode.current
+
     LazyColumn(
         modifier = Modifier
             .fillMaxSize()
@@ -56,7 +58,7 @@ fun HomeScreen(
         contentPadding = PaddingValues(top = 16.dp, bottom = 32.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
-        // App Header & Greeting
+        // App Header & Greeting & Theme Toggle
         item {
             Row(
                 modifier = Modifier.fillMaxWidth(),
@@ -65,53 +67,71 @@ fun HomeScreen(
             ) {
                 Column {
                     Text(
-                        text = "JLPT N5 MASTER",
-                        fontSize = 13.sp,
+                        text = "JLPT N5 ZEN MASTER",
+                        fontSize = 12.sp,
                         fontWeight = FontWeight.Bold,
-                        color = IndigoPrimary,
+                        color = MaterialTheme.colors.toriiAccent,
                         letterSpacing = 1.sp
                     )
                     Text(
                         text = "こんにちは！ Chào bạn",
                         fontSize = 22.sp,
                         fontWeight = FontWeight.ExtraBold,
-                        color = MaterialTheme.colors.onBackground
+                        color = MaterialTheme.colors.textPrimary
                     )
                 }
 
-                // Streak Badge
-                Box(
-                    modifier = Modifier
-                        .clip(RoundedCornerShape(20.dp))
-                        .background(AmberLight)
-                        .padding(horizontal = 12.dp, vertical = 6.dp)
-                ) {
-                    Row(verticalAlignment = Alignment.CenterVertically) {
-                        Text(text = "🔥 ", fontSize = 14.sp)
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    // Dark / Light Theme Toggle Button
+                    IconButton(
+                        onClick = { darkMode.value = !darkMode.value },
+                        modifier = Modifier
+                            .clip(CircleShape)
+                            .background(MaterialTheme.colors.surfaceContainer)
+                            .size(38.dp)
+                    ) {
                         Text(
-                            text = "3 ngày liên tục",
-                            fontSize = 12.sp,
-                            fontWeight = FontWeight.Bold,
-                            color = AmberWarning
+                            text = if (darkMode.value) "☀️" else "🌙",
+                            fontSize = 18.sp
                         )
+                    }
+
+                    Spacer(modifier = Modifier.width(8.dp))
+
+                    // Streak Badge
+                    Box(
+                        modifier = Modifier
+                            .clip(RoundedCornerShape(20.dp))
+                            .background(MaterialTheme.colors.amberBg)
+                            .padding(horizontal = 10.dp, vertical = 6.dp)
+                    ) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Text(text = "🔥 ", fontSize = 13.sp)
+                            Text(
+                                text = "3 ngày",
+                                fontSize = 12.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = OchreAmber
+                            )
+                        }
                     }
                 }
             }
         }
 
-        // Overall Readiness Card
+        // Overall Readiness Card (Torii Crimson gradient)
         item {
             Card(
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(20.dp),
-                elevation = 4.dp
+                elevation = 3.dp
             ) {
                 Box(
                     modifier = Modifier
                         .fillMaxWidth()
                         .background(
                             Brush.linearGradient(
-                                colors = listOf(IndigoPrimary, Color(0xFF1D4ED8))
+                                colors = listOf(ToriiCrimsonDark, ToriiCrimson)
                             )
                         )
                         .padding(20.dp)
@@ -131,7 +151,7 @@ fun HomeScreen(
                                 Text(
                                     text = "$readinessPercent%",
                                     color = Color.White,
-                                    fontSize = 32.sp,
+                                    fontSize = 34.sp,
                                     fontWeight = FontWeight.Black
                                 )
                             }
@@ -160,7 +180,7 @@ fun HomeScreen(
                                 .fillMaxWidth()
                                 .height(8.dp)
                                 .clip(RoundedCornerShape(4.dp)),
-                            color = SakuraPink,
+                            color = Color.White,
                             backgroundColor = Color.White.copy(alpha = 0.3f)
                         )
 
@@ -186,7 +206,7 @@ fun HomeScreen(
                 text = "Hành động nhanh",
                 fontSize = 18.sp,
                 fontWeight = FontWeight.Bold,
-                color = MaterialTheme.colors.onBackground
+                color = MaterialTheme.colors.textPrimary
             )
 
             Spacer(modifier = Modifier.height(8.dp))
@@ -199,8 +219,8 @@ fun HomeScreen(
                     icon = "🗂️",
                     title = "Flashcards",
                     subtitle = "Lật thẻ từ vựng",
-                    color = SakuraPink,
-                    bgColor = SakuraPinkLight,
+                    color = MaterialTheme.colors.toriiAccent,
+                    bgColor = MaterialTheme.colors.toriiBg,
                     modifier = Modifier.weight(1f),
                     onClick = { onNavigateToFlashcards(null, false) }
                 )
@@ -209,8 +229,8 @@ fun HomeScreen(
                     icon = "🈲",
                     title = "Kanji N5",
                     subtitle = "104 Chữ Hán",
-                    color = MatchaGreen,
-                    bgColor = MatchaGreenLight,
+                    color = MaterialTheme.colors.matchaAccent,
+                    bgColor = MaterialTheme.colors.matchaBg,
                     modifier = Modifier.weight(1f),
                     onClick = onNavigateToKanji
                 )
@@ -226,8 +246,8 @@ fun HomeScreen(
                     icon = "📖",
                     title = "25 Bài Minna",
                     subtitle = "Từ vựng & Ngữ pháp",
-                    color = IndigoPrimary,
-                    bgColor = IndigoSubtle,
+                    color = MaterialTheme.colors.toriiAccent,
+                    bgColor = MaterialTheme.colors.surfaceContainer,
                     modifier = Modifier.weight(1f),
                     onClick = onNavigateToLessons
                 )
@@ -236,8 +256,8 @@ fun HomeScreen(
                     icon = "📝",
                     title = "Thi thử N5",
                     subtitle = "Bấm giờ tính điểm",
-                    color = AmberWarning,
-                    bgColor = AmberLight,
+                    color = OchreAmber,
+                    bgColor = MaterialTheme.colors.amberBg,
                     modifier = Modifier.weight(1f),
                     onClick = onNavigateToMockTests
                 )
@@ -251,7 +271,7 @@ fun HomeScreen(
                     text = "Từ vựng tâm điểm hôm nay",
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold,
-                    color = MaterialTheme.colors.onBackground
+                    color = MaterialTheme.colors.textPrimary
                 )
 
                 Spacer(modifier = Modifier.height(8.dp))
@@ -261,7 +281,8 @@ fun HomeScreen(
                         .fillMaxWidth()
                         .clickable { onNavigateToLessonDetail(1) },
                     shape = RoundedCornerShape(16.dp),
-                    elevation = 2.dp
+                    backgroundColor = MaterialTheme.colors.cardBackground,
+                    elevation = 1.dp
                 ) {
                     Column(modifier = Modifier.padding(16.dp)) {
                         Row(
@@ -273,7 +294,7 @@ fun HomeScreen(
                                 text = dailyVocab.word,
                                 fontSize = 28.sp,
                                 fontWeight = FontWeight.Bold,
-                                color = IndigoPrimary
+                                color = MaterialTheme.colors.toriiAccent
                             )
                             JapaneseBadge(text = dailyVocab.type)
                         }
@@ -281,7 +302,7 @@ fun HomeScreen(
                         Text(
                             text = "${dailyVocab.reading} (${dailyVocab.romaji})",
                             fontSize = 14.sp,
-                            color = Slate500
+                            color = MaterialTheme.colors.textMuted
                         )
 
                         Spacer(modifier = Modifier.height(6.dp))
@@ -290,22 +311,22 @@ fun HomeScreen(
                             text = dailyVocab.meaning,
                             fontSize = 16.sp,
                             fontWeight = FontWeight.SemiBold,
-                            color = MaterialTheme.colors.onSurface
+                            color = MaterialTheme.colors.textPrimary
                         )
 
                         if (dailyVocab.exampleSentence.isNotEmpty()) {
                             Spacer(modifier = Modifier.height(8.dp))
-                            Divider(color = Slate200)
+                            Divider(color = MaterialTheme.colors.outlineBorder)
                             Spacer(modifier = Modifier.height(8.dp))
                             Text(
                                 text = "Ví dụ: ${dailyVocab.exampleSentence}",
                                 fontSize = 13.sp,
-                                color = Slate700
+                                color = MaterialTheme.colors.textSecondary
                             )
                             Text(
                                 text = dailyVocab.exampleSentenceMeaning,
                                 fontSize = 12.sp,
-                                color = Slate500
+                                color = MaterialTheme.colors.textMuted
                             )
                         }
                     }
@@ -324,14 +345,14 @@ fun HomeScreen(
                     text = "Lộ trình Minna no Nihongo (Bài 1 - 25)",
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold,
-                    color = MaterialTheme.colors.onBackground
+                    color = MaterialTheme.colors.textPrimary
                 )
 
                 Text(
                     text = "Xem tất cả",
                     fontSize = 13.sp,
                     fontWeight = FontWeight.SemiBold,
-                    color = IndigoPrimary,
+                    color = MaterialTheme.colors.toriiAccent,
                     modifier = Modifier.clickable { onNavigateToLessons() }
                 )
             }
@@ -377,7 +398,8 @@ fun QuickActionButton(
     Card(
         modifier = modifier.clickable { onClick() },
         shape = RoundedCornerShape(16.dp),
-        elevation = 2.dp
+        backgroundColor = MaterialTheme.colors.cardBackground,
+        elevation = 1.dp
     ) {
         Column(
             modifier = Modifier
@@ -388,7 +410,7 @@ fun QuickActionButton(
                 modifier = Modifier
                     .size(36.dp)
                     .clip(CircleShape)
-                    .background(Color.White.copy(alpha = 0.8f)),
+                    .background(Color.White.copy(alpha = 0.85f)),
                 contentAlignment = Alignment.Center
             ) {
                 Text(text = icon, fontSize = 18.sp)
@@ -406,7 +428,7 @@ fun QuickActionButton(
             Text(
                 text = subtitle,
                 fontSize = 11.sp,
-                color = Slate600
+                color = MaterialTheme.colors.textSecondary
             )
         }
     }
@@ -424,6 +446,7 @@ fun LessonRoadmapItem(
             .fillMaxWidth()
             .clickable { onClick() },
         shape = RoundedCornerShape(14.dp),
+        backgroundColor = MaterialTheme.colors.cardBackground,
         elevation = 1.dp
     ) {
         Row(
@@ -436,14 +459,14 @@ fun LessonRoadmapItem(
                 modifier = Modifier
                     .size(42.dp)
                     .clip(RoundedCornerShape(10.dp))
-                    .background(if (isCompleted) MatchaGreenLight else IndigoSubtle),
+                    .background(if (isCompleted) MaterialTheme.colors.matchaBg else MaterialTheme.colors.surfaceContainer),
                 contentAlignment = Alignment.Center
             ) {
                 Text(
                     text = "${lesson.lessonNumber}",
                     fontSize = 16.sp,
                     fontWeight = FontWeight.Bold,
-                    color = if (isCompleted) MatchaGreen else IndigoPrimary
+                    color = if (isCompleted) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.toriiAccent
                 )
             }
 
@@ -454,12 +477,12 @@ fun LessonRoadmapItem(
                     text = lesson.title,
                     fontSize = 14.sp,
                     fontWeight = FontWeight.SemiBold,
-                    color = MaterialTheme.colors.onSurface
+                    color = MaterialTheme.colors.textPrimary
                 )
                 Text(
-                    text = "${lesson.vocabularies.size} từ vựng • ${lesson.grammarPoints.size} mẫu ngữ pháp",
+                    text = "${lesson.vocabularies.size} từ vựng • ${lesson.grammarPoints.size} ngữ pháp",
                     fontSize = 12.sp,
-                    color = Slate500
+                    color = MaterialTheme.colors.textMuted
                 )
             }
 
@@ -470,7 +493,7 @@ fun LessonRoadmapItem(
                     text = "Học →",
                     fontSize = 12.sp,
                     fontWeight = FontWeight.SemiBold,
-                    color = IndigoPrimary
+                    color = MaterialTheme.colors.toriiAccent
                 )
             }
         }

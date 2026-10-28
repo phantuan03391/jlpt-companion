@@ -2,16 +2,22 @@ package com.jlpt.n5.ui.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.jlpt.n5.data.JLPTRepository
@@ -24,6 +30,7 @@ fun LessonListScreen(
     onNavigateToDetail: (Int) -> Unit,
     onNavigateToFlashcard: (Int) -> Unit
 ) {
+    val focusManager = LocalFocusManager.current
     var searchQuery by remember { mutableStateOf("") }
     var selectedFilter by remember { mutableStateOf("ALL") } // ALL, COMPLETED, INCOMPLETE
 
@@ -49,6 +56,12 @@ fun LessonListScreen(
         modifier = Modifier
             .fillMaxSize()
             .background(MaterialTheme.colors.background)
+            .clickable(
+                interactionSource = remember { MutableInteractionSource() },
+                indication = null
+            ) {
+                focusManager.clearFocus()
+            }
             .padding(horizontal = 16.dp)
     ) {
         Spacer(modifier = Modifier.height(16.dp))
@@ -58,28 +71,53 @@ fun LessonListScreen(
             text = "Giáo trình Minna no Nihongo",
             fontSize = 22.sp,
             fontWeight = FontWeight.Bold,
-            color = MaterialTheme.colors.onBackground
+            color = MaterialTheme.colors.textPrimary
         )
         Text(
             text = "25 bài học trọng tâm chuẩn cấu trúc JLPT N5",
             fontSize = 13.sp,
-            color = Slate500
+            color = MaterialTheme.colors.textSecondary
         )
 
         Spacer(modifier = Modifier.height(12.dp))
 
-        // Search Input
+        // Search Input with dismiss support
         OutlinedTextField(
             value = searchQuery,
             onValueChange = { searchQuery = it },
             modifier = Modifier.fillMaxWidth(),
-            placeholder = { Text("Tìm kiếm bài học, chủ đề...") },
+            placeholder = {
+                Text(
+                    "Tìm kiếm bài học, chủ đề ngữ pháp...",
+                    color = MaterialTheme.colors.textMuted,
+                    fontSize = 13.sp
+                )
+            },
             shape = RoundedCornerShape(12.dp),
             singleLine = true,
+            trailingIcon = {
+                if (searchQuery.isNotEmpty()) {
+                    IconButton(onClick = {
+                        searchQuery = ""
+                        focusManager.clearFocus()
+                    }) {
+                        Text(
+                            text = "✕",
+                            fontSize = 16.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colors.textMuted
+                        )
+                    }
+                }
+            },
+            keyboardOptions = KeyboardOptions(imeAction = ImeAction.Search),
+            keyboardActions = KeyboardActions(onSearch = { focusManager.clearFocus() }),
             colors = TextFieldDefaults.outlinedTextFieldColors(
                 backgroundColor = MaterialTheme.colors.surface,
-                focusedBorderColor = IndigoPrimary,
-                unfocusedBorderColor = Slate300
+                textColor = MaterialTheme.colors.textPrimary,
+                cursorColor = MaterialTheme.colors.primary,
+                focusedBorderColor = MaterialTheme.colors.primary,
+                unfocusedBorderColor = MaterialTheme.colors.outlineBorder
             )
         )
 
@@ -91,19 +129,28 @@ fun LessonListScreen(
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             FilterChip(
-                text = "Tất cả (25)",
+                text = "Tất cả (${JLPTRepository.lessons.size})",
                 isSelected = selectedFilter == "ALL",
-                onClick = { selectedFilter = "ALL" }
+                onClick = {
+                    focusManager.clearFocus()
+                    selectedFilter = "ALL"
+                }
             )
             FilterChip(
                 text = "Đã học (${JLPTRepository.completedLessonNumbers.size})",
                 isSelected = selectedFilter == "COMPLETED",
-                onClick = { selectedFilter = "COMPLETED" }
+                onClick = {
+                    focusManager.clearFocus()
+                    selectedFilter = "COMPLETED"
+                }
             )
             FilterChip(
-                text = "Chưa học (${25 - JLPTRepository.completedLessonNumbers.size})",
+                text = "Chưa học (${JLPTRepository.lessons.size - JLPTRepository.completedLessonNumbers.size})",
                 isSelected = selectedFilter == "INCOMPLETE",
-                onClick = { selectedFilter = "INCOMPLETE" }
+                onClick = {
+                    focusManager.clearFocus()
+                    selectedFilter = "INCOMPLETE"
+                }
             )
         }
 
@@ -118,8 +165,14 @@ fun LessonListScreen(
             items(filteredLessons) { lesson ->
                 LessonFullCard(
                     lesson = lesson,
-                    onOpenDetail = { onNavigateToDetail(lesson.lessonNumber) },
-                    onOpenFlashcards = { onNavigateToFlashcard(lesson.lessonNumber) }
+                    onOpenDetail = {
+                        focusManager.clearFocus()
+                        onNavigateToDetail(lesson.lessonNumber)
+                    },
+                    onOpenFlashcards = {
+                        focusManager.clearFocus()
+                        onNavigateToFlashcard(lesson.lessonNumber)
+                    }
                 )
             }
         }
@@ -135,7 +188,7 @@ fun FilterChip(
     Box(
         modifier = Modifier
             .clip(RoundedCornerShape(20.dp))
-            .background(if (isSelected) IndigoPrimary else MaterialTheme.colors.surface)
+            .background(if (isSelected) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.surfaceContainer)
             .clickable { onClick() }
             .padding(horizontal = 14.dp, vertical = 6.dp)
     ) {
@@ -143,7 +196,7 @@ fun FilterChip(
             text = text,
             fontSize = 12.sp,
             fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Medium,
-            color = if (isSelected) SurfaceWhite else Slate600
+            color = if (isSelected) Color.White else MaterialTheme.colors.textSecondary
         )
     }
 }
@@ -161,7 +214,8 @@ fun LessonFullCard(
             .fillMaxWidth()
             .clickable { onOpenDetail() },
         shape = RoundedCornerShape(16.dp),
-        elevation = 2.dp
+        backgroundColor = MaterialTheme.colors.cardBackground,
+        elevation = 1.dp
     ) {
         Column(modifier = Modifier.padding(16.dp)) {
             Row(
@@ -174,14 +228,14 @@ fun LessonFullCard(
                         modifier = Modifier
                             .size(36.dp)
                             .clip(RoundedCornerShape(8.dp))
-                            .background(if (isCompleted) MatchaGreenLight else IndigoSubtle),
+                            .background(if (isCompleted) MaterialTheme.colors.matchaBg else MaterialTheme.colors.surfaceContainer),
                         contentAlignment = Alignment.Center
                     ) {
                         Text(
                             text = "${lesson.lessonNumber}",
                             fontSize = 15.sp,
                             fontWeight = FontWeight.Bold,
-                            color = if (isCompleted) MatchaGreen else IndigoPrimary
+                            color = if (isCompleted) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.toriiAccent
                         )
                     }
 
@@ -191,12 +245,16 @@ fun LessonFullCard(
                         text = lesson.japaneseTitle,
                         fontSize = 14.sp,
                         fontWeight = FontWeight.Bold,
-                        color = IndigoDark
+                        color = MaterialTheme.colors.toriiAccent
                     )
                 }
 
                 if (isCompleted) {
-                    JapaneseBadge(text = "ĐÃ HOÀN THÀNH", backgroundColor = MatchaGreenLight, textColor = MatchaGreen)
+                    JapaneseBadge(
+                        text = "ĐÃ HOÀN THÀNH",
+                        backgroundColor = MaterialTheme.colors.matchaBg,
+                        textColor = MaterialTheme.colors.matchaAccent
+                    )
                 }
             }
 
@@ -206,19 +264,19 @@ fun LessonFullCard(
                 text = lesson.title,
                 fontSize = 16.sp,
                 fontWeight = FontWeight.Bold,
-                color = MaterialTheme.colors.onSurface
+                color = MaterialTheme.colors.textPrimary
             )
 
             Text(
                 text = lesson.description,
                 fontSize = 13.sp,
-                color = Slate600,
+                color = MaterialTheme.colors.textSecondary,
                 maxLines = 2
             )
 
             Spacer(modifier = Modifier.height(12.dp))
 
-            Divider(color = Slate200)
+            Divider(color = MaterialTheme.colors.outlineBorder)
 
             Spacer(modifier = Modifier.height(8.dp))
 
@@ -230,7 +288,7 @@ fun LessonFullCard(
                 Text(
                     text = "${lesson.vocabularies.size} từ • ${lesson.grammarPoints.size} ngữ pháp",
                     fontSize = 12.sp,
-                    color = Slate500
+                    color = MaterialTheme.colors.textMuted
                 )
 
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -241,7 +299,7 @@ fun LessonFullCard(
                         Text(
                             text = "🗂️ Flashcard",
                             fontSize = 12.sp,
-                            color = SakuraPink,
+                            color = MaterialTheme.colors.toriiAccent,
                             fontWeight = FontWeight.SemiBold
                         )
                     }
@@ -249,13 +307,13 @@ fun LessonFullCard(
                     Button(
                         onClick = onOpenDetail,
                         shape = RoundedCornerShape(8.dp),
-                        colors = ButtonDefaults.buttonColors(backgroundColor = IndigoPrimary),
+                        colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.toriiAccent),
                         contentPadding = PaddingValues(horizontal = 14.dp, vertical = 4.dp)
                     ) {
                         Text(
                             text = "Học bài",
                             fontSize = 12.sp,
-                            color = SurfaceWhite,
+                            color = Color.White,
                             fontWeight = FontWeight.Bold
                         )
                     }
