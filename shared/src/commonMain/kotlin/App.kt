@@ -12,6 +12,7 @@ import com.jlpt.n5.data.JLPTRepository
 import com.jlpt.n5.model.ExamResult
 import com.jlpt.n5.ui.screens.*
 import com.jlpt.n5.ui.theme.*
+import com.jlpt.n5.viewmodel.*
 
 enum class AppTab {
     HOME,
@@ -47,6 +48,12 @@ fun App() {
         val homeListState = rememberLazyListState()
         val lessonsListState = rememberLazyListState()
         val mockTestListState = rememberLazyListState()
+
+        val homeViewModel = remember { HomeViewModel() }
+        val lessonListViewModel = remember { LessonListViewModel() }
+        val mockTestViewModel = remember { MockTestViewModel() }
+        val flashcardViewModel = remember { FlashcardViewModel() }
+        val kanjiViewModel = remember { KanjiViewModel() }
 
         Scaffold(
             bottomBar = {
@@ -116,6 +123,7 @@ fun App() {
                     is Screen.Main -> {
                         when (currentTab) {
                             AppTab.HOME -> HomeScreen(
+                                viewModel = homeViewModel,
                                 listState = homeListState,
                                 onNavigateToLessons = { currentTab = AppTab.LESSONS },
                                 onNavigateToLessonDetail = { lessonNum ->
@@ -131,6 +139,7 @@ fun App() {
                             )
 
                             AppTab.LESSONS -> LessonListScreen(
+                                viewModel = lessonListViewModel,
                                 listState = lessonsListState,
                                 onNavigateToDetail = { lessonNum ->
                                     currentScreen = Screen.LessonDetail(lessonNum)
@@ -143,12 +152,14 @@ fun App() {
                             )
 
                             AppTab.FLASHCARDS -> FlashcardScreen(
+                                viewModel = flashcardViewModel,
                                 initialLessonNumber = flashcardLessonTarget,
                                 initialKanjiOnly = flashcardKanjiOnly,
                                 onBack = { currentTab = AppTab.HOME }
                             )
 
                             AppTab.KANJI -> KanjiExplorerScreen(
+                                viewModel = kanjiViewModel,
                                 onOpenFlashcardKanji = {
                                     flashcardLessonTarget = null
                                     flashcardKanjiOnly = true
@@ -157,6 +168,7 @@ fun App() {
                             )
 
                             AppTab.MOCK_TESTS -> MockTestListScreen(
+                                viewModel = mockTestViewModel,
                                 listState = mockTestListState,
                                 onStartExam = { testId ->
                                     currentScreen = Screen.Exam(testId)
@@ -178,6 +190,7 @@ fun App() {
 
                     is Screen.Exam -> MockTestExamScreen(
                         testId = screen.testId,
+                        viewModel = mockTestViewModel,
                         onBack = { currentScreen = Screen.Main },
                         onFinish = { score, maxScore, passed, correctCount, totalQuestions, answers ->
                             JLPTRepository.addExamResult(
