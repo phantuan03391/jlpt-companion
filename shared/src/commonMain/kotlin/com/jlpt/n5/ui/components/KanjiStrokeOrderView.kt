@@ -12,10 +12,12 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.graphics.*
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.drawscope.withTransform
@@ -33,7 +35,7 @@ import kotlin.math.min
 private data class DrawnStroke(
     val path: Path,
     val color: Color,
-    val strokeWidth: Float = 14f
+    val strokeWidth: Float = 12f
 )
 
 @Composable
@@ -75,7 +77,6 @@ fun KanjiStrokeOrderView(
     val toriiInk = if (isDarkTheme) ToriiCrimsonVibrant else ToriiCrimson
     var selectedInkColor by remember(kanjiItem.id, isDarkTheme) { mutableStateOf(toriiInk) }
     val userStrokes = remember(kanjiItem.id) { mutableStateListOf<DrawnStroke>() }
-    var currentDrawingPath by remember(kanjiItem.id) { mutableStateOf<Path?>(null) }
 
     // Auto stroke animation player loop
     LaunchedEffect(isPlayingAnimation, kanjiItem.id, totalStrokes) {
@@ -131,9 +132,7 @@ fun KanjiStrokeOrderView(
                         .weight(1f)
                         .clip(RoundedCornerShape(9.dp))
                         .background(if (!isPracticeMode) MaterialTheme.colors.cardBackground else Color.Transparent)
-                        .clickable {
-                            isPracticeMode = false
-                        }
+                        .clickable { isPracticeMode = false }
                         .padding(vertical = 7.dp),
                     contentAlignment = Alignment.Center
                 ) {
@@ -184,7 +183,6 @@ fun KanjiStrokeOrderView(
                         color = MaterialTheme.colors.textPrimary
                     )
 
-                    // Play Animation Toggle Button
                     Button(
                         onClick = { isPlayingAnimation = !isPlayingAnimation },
                         colors = ButtonDefaults.buttonColors(
@@ -205,7 +203,7 @@ fun KanjiStrokeOrderView(
 
                 Spacer(modifier = Modifier.height(12.dp))
 
-                // Traditional Grid Canvas Box (Genko Yoshi style)
+                // Traditional Grid Canvas Box
                 Box(
                     modifier = Modifier
                         .size(185.dp)
@@ -219,7 +217,6 @@ fun KanjiStrokeOrderView(
                         val h = size.height
                         val dashEffect = PathEffect.dashPathEffect(floatArrayOf(6f, 6f), 0f)
 
-                        // Vertical & Horizontal center dashed line
                         drawLine(gridColor, Offset(w / 2, 0f), Offset(w / 2, h), 1.2f, pathEffect = dashEffect)
                         drawLine(gridColor, Offset(0f, h / 2), Offset(w, h / 2), 1.2f, pathEffect = dashEffect)
                         drawLine(gridColor.copy(alpha = 0.5f), Offset(0f, 0f), Offset(w, h), 0.8f, pathEffect = dashEffect)
@@ -228,39 +225,31 @@ fun KanjiStrokeOrderView(
                         if (parsedPaths.isNotEmpty()) {
                             val scaleFactor = min(w, h) / 109f
 
-                            // 1. Ghost guides for future strokes
-                            for (i in currentStep until parsedPaths.size) {
-                                withTransform({
-                                    scale(scaleFactor, scaleFactor, Offset.Zero)
-                                }) {
+                            withTransform({
+                                scale(scaleFactor, scaleFactor, Offset.Zero)
+                            }) {
+                                // 1. Ghost guides for future strokes
+                                for (i in currentStep until parsedPaths.size) {
                                     drawPath(
                                         path = parsedPaths[i],
                                         color = ghostGuideColor,
                                         style = Stroke(width = 3.2f, cap = StrokeCap.Round, join = StrokeJoin.Round)
                                     )
                                 }
-                            }
 
-                            // 2. Previously completed strokes
-                            val completedEnd = (currentStep - 1).coerceAtMost(parsedPaths.size)
-                            for (i in 0 until completedEnd) {
-                                withTransform({
-                                    scale(scaleFactor, scaleFactor, Offset.Zero)
-                                }) {
+                                // 2. Previously completed strokes
+                                val completedEnd = (currentStep - 1).coerceAtMost(parsedPaths.size)
+                                for (i in 0 until completedEnd) {
                                     drawPath(
                                         path = parsedPaths[i],
                                         color = completedStrokeColor,
                                         style = Stroke(width = 4.2f, cap = StrokeCap.Round, join = StrokeJoin.Round)
                                     )
                                 }
-                            }
 
-                            // 3. Current active stroke
-                            val activeIdx = currentStep - 1
-                            if (activeIdx in parsedPaths.indices) {
-                                withTransform({
-                                    scale(scaleFactor, scaleFactor, Offset.Zero)
-                                }) {
+                                // 3. Current active stroke
+                                val activeIdx = currentStep - 1
+                                if (activeIdx in parsedPaths.indices) {
                                     drawPath(
                                         path = parsedPaths[activeIdx],
                                         color = activeStrokeColor,
@@ -271,7 +260,6 @@ fun KanjiStrokeOrderView(
                         }
                     }
 
-                    // Fallback if no vector paths available
                     if (parsedPaths.isEmpty()) {
                         Text(
                             text = kanjiItem.kanji,
@@ -281,7 +269,6 @@ fun KanjiStrokeOrderView(
                         )
                     }
 
-                    // Step overlay badge
                     Box(
                         modifier = Modifier
                             .align(Alignment.BottomEnd)
@@ -301,7 +288,6 @@ fun KanjiStrokeOrderView(
 
                 Spacer(modifier = Modifier.height(10.dp))
 
-                // Stroke rule explanation
                 Text(
                     text = strokeRule,
                     fontSize = 12.sp,
@@ -318,7 +304,6 @@ fun KanjiStrokeOrderView(
                     strokeListState.animateScrollToItem((currentStep - 1).coerceAtLeast(0))
                 }
 
-                // Prev / Badge / Next row
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween,
@@ -432,7 +417,7 @@ fun KanjiStrokeOrderView(
 
             } else {
                 // ==========================================
-                // MODE 2: INTERACTIVE PRACTICE DRAWING CANVAS
+                // MODE 2: HIGH PERFORMANCE DRAWING CANVAS
                 // ==========================================
                 Row(
                     modifier = Modifier.fillMaxWidth(),
@@ -483,94 +468,20 @@ fun KanjiStrokeOrderView(
 
                 Spacer(modifier = Modifier.height(10.dp))
 
-                // Interactive Drawing Canvas (Genko Yoshi Style)
-                Box(
+                // High Performance Isolated Drawing Canvas
+                KanjiPracticeDrawingCanvas(
                     modifier = Modifier
                         .size(220.dp)
                         .clip(RoundedCornerShape(18.dp))
                         .background(boxBgColor)
-                        .border(2.dp, boxBorderColor, RoundedCornerShape(18.dp))
-                        .pointerInput(selectedInkColor) {
-                            detectDragGestures(
-                                onDragStart = { offset ->
-                                    val p = Path().apply { moveTo(offset.x, offset.y) }
-                                    currentDrawingPath = p
-                                },
-                                onDrag = { change, _ ->
-                                    change.consume()
-                                    currentDrawingPath?.lineTo(change.position.x, change.position.y)
-                                },
-                                onDragEnd = {
-                                    currentDrawingPath?.let {
-                                        userStrokes.add(DrawnStroke(it, selectedInkColor, 12f))
-                                    }
-                                    currentDrawingPath = null
-                                },
-                                onDragCancel = {
-                                    currentDrawingPath = null
-                                }
-                            )
-                        },
-                    contentAlignment = Alignment.Center
-                ) {
-                    Canvas(modifier = Modifier.fillMaxSize().padding(14.dp)) {
-                        val w = size.width
-                        val h = size.height
-                        val dashEffect = PathEffect.dashPathEffect(floatArrayOf(6f, 6f), 0f)
-
-                        // Traditional grid lines
-                        drawLine(gridColor, Offset(w / 2, 0f), Offset(w / 2, h), 1.2f, pathEffect = dashEffect)
-                        drawLine(gridColor, Offset(0f, h / 2), Offset(w, h / 2), 1.2f, pathEffect = dashEffect)
-                        drawLine(gridColor.copy(alpha = 0.5f), Offset(0f, 0f), Offset(w, h), 0.8f, pathEffect = dashEffect)
-                        drawLine(gridColor.copy(alpha = 0.5f), Offset(w, 0f), Offset(0f, h), 0.8f, pathEffect = dashEffect)
-
-                        // Draw ghost guide if enabled
-                        if (showGhostGuide && parsedPaths.isNotEmpty()) {
-                            val scaleFactor = min(w, h) / 109f
-                            for (path in parsedPaths) {
-                                withTransform({
-                                    scale(scaleFactor, scaleFactor, Offset.Zero)
-                                }) {
-                                    drawPath(
-                                        path = path,
-                                        color = ghostGuideColor.copy(alpha = 0.45f),
-                                        style = Stroke(
-                                            width = 12f,
-                                            cap = StrokeCap.Round,
-                                            join = StrokeJoin.Round
-                                        )
-                                    )
-                                }
-                            }
-                        }
-
-                        // Draw user's completed strokes
-                        userStrokes.forEach { stroke ->
-                            drawPath(
-                                path = stroke.path,
-                                color = stroke.color,
-                                style = Stroke(
-                                    width = stroke.strokeWidth,
-                                    cap = StrokeCap.Round,
-                                    join = StrokeJoin.Round
-                                )
-                            )
-                        }
-
-                        // Draw user's active dragging stroke
-                        currentDrawingPath?.let {
-                            drawPath(
-                                path = it,
-                                color = selectedInkColor,
-                                style = Stroke(
-                                    width = 12f,
-                                    cap = StrokeCap.Round,
-                                    join = StrokeJoin.Round
-                                )
-                            )
-                        }
-                    }
-                }
+                        .border(2.dp, boxBorderColor, RoundedCornerShape(18.dp)),
+                    parsedPaths = parsedPaths,
+                    showGhostGuide = showGhostGuide,
+                    selectedInkColor = selectedInkColor,
+                    userStrokes = userStrokes,
+                    gridColor = gridColor,
+                    ghostGuideColor = ghostGuideColor
+                )
 
                 Spacer(modifier = Modifier.height(12.dp))
 
@@ -580,7 +491,6 @@ fun KanjiStrokeOrderView(
                     horizontalArrangement = Arrangement.SpaceBetween,
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    // Undo button
                     OutlinedButton(
                         onClick = {
                             if (userStrokes.isNotEmpty()) {
@@ -603,7 +513,6 @@ fun KanjiStrokeOrderView(
                         )
                     }
 
-                    // Clear button
                     OutlinedButton(
                         onClick = { userStrokes.clear() },
                         enabled = userStrokes.isNotEmpty(),
@@ -622,7 +531,6 @@ fun KanjiStrokeOrderView(
                         )
                     }
 
-                    // Ghost guide toggle
                     Button(
                         onClick = { showGhostGuide = !showGhostGuide },
                         colors = ButtonDefaults.buttonColors(
@@ -641,7 +549,6 @@ fun KanjiStrokeOrderView(
                         )
                     }
 
-                    // Ink Color Switcher
                     Box(
                         modifier = Modifier
                             .size(32.dp)
@@ -657,6 +564,123 @@ fun KanjiStrokeOrderView(
                     }
                 }
             }
+        }
+    }
+}
+
+/**
+ * High-performance, isolated drawing canvas.
+ * Handles drag gestures using direct GPU segment drawing without recomposing outer UI.
+ */
+@Composable
+private fun KanjiPracticeDrawingCanvas(
+    modifier: Modifier = Modifier,
+    parsedPaths: List<Path>,
+    showGhostGuide: Boolean,
+    selectedInkColor: Color,
+    userStrokes: SnapshotStateList<DrawnStroke>,
+    gridColor: Color,
+    ghostGuideColor: Color
+) {
+    val livePoints = remember { mutableStateListOf<Offset>() }
+
+    Canvas(
+        modifier = modifier
+            .padding(14.dp)
+            .pointerInput(selectedInkColor) {
+                detectDragGestures(
+                    onDragStart = { offset ->
+                        livePoints.clear()
+                        livePoints.add(offset)
+                    },
+                    onDrag = { change, _ ->
+                        change.consume()
+                        livePoints.add(change.position)
+                    },
+                    onDragEnd = {
+                        if (livePoints.size > 1) {
+                            val p = Path()
+                            p.moveTo(livePoints[0].x, livePoints[0].y)
+                            for (i in 1 until livePoints.size) {
+                                val p0 = livePoints[i - 1]
+                                val p1 = livePoints[i]
+                                p.quadraticBezierTo(p0.x, p0.y, (p0.x + p1.x) / 2f, (p0.y + p1.y) / 2f)
+                            }
+                            p.lineTo(livePoints.last().x, livePoints.last().y)
+                            userStrokes.add(DrawnStroke(p, selectedInkColor, 12f))
+                        } else if (livePoints.size == 1) {
+                            val p = Path()
+                            p.addOval(Rect(livePoints[0].x - 6f, livePoints[0].y - 6f, livePoints[0].x + 6f, livePoints[0].y + 6f))
+                            userStrokes.add(DrawnStroke(p, selectedInkColor, 12f))
+                        }
+                        livePoints.clear()
+                    },
+                    onDragCancel = {
+                        livePoints.clear()
+                    }
+                )
+            }
+    ) {
+        val w = size.width
+        val h = size.height
+        val dashEffect = PathEffect.dashPathEffect(floatArrayOf(6f, 6f), 0f)
+
+        // Traditional Genko Yoshi grid
+        drawLine(gridColor, Offset(w / 2, 0f), Offset(w / 2, h), 1.2f, pathEffect = dashEffect)
+        drawLine(gridColor, Offset(0f, h / 2), Offset(w, h / 2), 1.2f, pathEffect = dashEffect)
+        drawLine(gridColor.copy(alpha = 0.5f), Offset(0f, 0f), Offset(w, h), 0.8f, pathEffect = dashEffect)
+        drawLine(gridColor.copy(alpha = 0.5f), Offset(w, 0f), Offset(0f, h), 0.8f, pathEffect = dashEffect)
+
+        // Draw ghost guide if enabled (scaled in one transformation)
+        if (showGhostGuide && parsedPaths.isNotEmpty()) {
+            val scaleFactor = min(w, h) / 109f
+            withTransform({
+                scale(scaleFactor, scaleFactor, Offset.Zero)
+            }) {
+                for (path in parsedPaths) {
+                    drawPath(
+                        path = path,
+                        color = ghostGuideColor.copy(alpha = 0.35f),
+                        style = Stroke(
+                            width = 11f,
+                            cap = StrokeCap.Round,
+                            join = StrokeJoin.Round
+                        )
+                    )
+                }
+            }
+        }
+
+        // Draw finished user strokes
+        for (stroke in userStrokes) {
+            drawPath(
+                path = stroke.path,
+                color = stroke.color,
+                style = Stroke(
+                    width = stroke.strokeWidth,
+                    cap = StrokeCap.Round,
+                    join = StrokeJoin.Round
+                )
+            )
+        }
+
+        // Draw live active stroke (immediate GPU lines, zero latency)
+        if (livePoints.size > 1) {
+            for (i in 1 until livePoints.size) {
+                drawLine(
+                    color = selectedInkColor,
+                    start = livePoints[i - 1],
+                    end = livePoints[i],
+                    strokeWidth = 12f,
+                    cap = StrokeCap.Round
+                )
+            }
+        } else if (livePoints.size == 1) {
+            drawCircle(
+                color = selectedInkColor,
+                radius = 6f,
+                center = livePoints[0]
+            )
         }
     }
 }
