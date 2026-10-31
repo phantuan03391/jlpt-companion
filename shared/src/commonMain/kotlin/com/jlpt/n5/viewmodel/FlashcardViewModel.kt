@@ -117,9 +117,9 @@ class FlashcardViewModel(
         val card = _uiState.value.currentCard ?: return
         val rawId = card.id.removePrefix("vocab_").removePrefix("kanji_").toIntOrNull() ?: return
         if (card.type == FlashcardType.KANJI) {
-            repository.masteredKanjiIds.add(rawId)
+            repository.markKanjiMastered(rawId)
         } else {
-            repository.masteredVocabIds.add(rawId)
+            repository.markVocabMastered(rawId)
         }
         reloadCards()
         nextCard()

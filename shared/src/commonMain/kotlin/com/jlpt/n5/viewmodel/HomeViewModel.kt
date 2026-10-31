@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.update
 
 data class HomeUiState(
     val readinessPercent: Int = 0,
-    val streakDays: Int = 3,
+    val streakDays: Int = 1,
     val dailyVocab: Vocabulary? = null,
     val masteredVocabCount: Int = 0,
     val totalVocabCount: Int = 0,
@@ -47,6 +47,7 @@ class HomeViewModel(
         _uiState.update {
             it.copy(
                 readinessPercent = readiness,
+                streakDays = repository.streakDays,
                 dailyVocab = repository.lessons.firstOrNull()?.vocabularies?.firstOrNull(),
                 masteredVocabCount = masteredVocab,
                 totalVocabCount = totalVocab,

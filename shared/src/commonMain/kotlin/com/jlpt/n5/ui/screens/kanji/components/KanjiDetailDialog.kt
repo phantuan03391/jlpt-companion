@@ -1,19 +1,23 @@
 package com.jlpt.n5.ui.screens.kanji.components
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.jlpt.n5.model.KanjiItem
+import com.jlpt.n5.tts.LocalTTS
 import com.jlpt.n5.ui.components.HanVietBadge
 import com.jlpt.n5.ui.components.JapaneseBadge
 import com.jlpt.n5.ui.components.KanjiStrokeOrderView
@@ -26,6 +30,8 @@ fun KanjiDetailDialog(
     onToggleMastered: () -> Unit,
     onDismiss: () -> Unit
 ) {
+    val tts = LocalTTS.current
+
     AlertDialog(
         onDismissRequest = onDismiss,
         backgroundColor = MaterialTheme.colors.cardBackground,
@@ -38,43 +44,75 @@ fun KanjiDetailDialog(
                     .verticalScroll(rememberScrollState())
                     .padding(18.dp)
             ) {
-                // Header Row
+                // Header Row with Kanji, Mastered button, and Close '✕' button
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween,
-                    verticalAlignment = Alignment.Top
+                    verticalAlignment = Alignment.CenterVertically
                 ) {
-                    Column {
-                        Row(verticalAlignment = Alignment.CenterVertically) {
-                            Text(
-                                text = item.kanji,
-                                fontSize = 44.sp,
-                                fontWeight = FontWeight.Black,
-                                color = MaterialTheme.colors.toriiAccent
-                            )
-                            Spacer(modifier = Modifier.width(10.dp))
-                            Column {
-                                HanVietBadge(hanViet = item.hanViet)
-                                Spacer(modifier = Modifier.height(4.dp))
-                                JapaneseBadge(text = "${item.strokes} nét vẽ")
-                            }
+                    Row(
+                        modifier = Modifier.weight(1f),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text(
+                            text = item.kanji,
+                            fontSize = 44.sp,
+                            fontWeight = FontWeight.Black,
+                            color = MaterialTheme.colors.toriiAccent
+                        )
+                        IconButton(
+                            onClick = {
+                                val readingToSpeak = item.kunyomi.firstOrNull() ?: item.onyomi.firstOrNull() ?: item.kanji
+                                tts.speak(readingToSpeak)
+                            },
+                            modifier = Modifier.size(34.dp)
+                        ) {
+                            Text(text = "🔊", fontSize = 17.sp)
+                        }
+                        Spacer(modifier = Modifier.width(4.dp))
+                        Column {
+                            HanVietBadge(hanViet = item.hanViet)
+                            Spacer(modifier = Modifier.height(3.dp))
+                            JapaneseBadge(text = "${item.strokes} nét")
                         }
                     }
 
-                    Button(
-                        onClick = onToggleMastered,
-                        colors = ButtonDefaults.buttonColors(
-                            backgroundColor = if (isMastered) MaterialTheme.colors.matchaBg else MaterialTheme.colors.surfaceContainer
-                        ),
-                        shape = RoundedCornerShape(10.dp),
-                        elevation = ButtonDefaults.elevation(0.dp)
-                    ) {
-                        Text(
-                            text = if (isMastered) "✅ Đã thuộc" else "Chưa thuộc",
-                            fontSize = 12.sp,
-                            fontWeight = FontWeight.Bold,
-                            color = if (isMastered) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.textSecondary
-                        )
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Button(
+                            onClick = onToggleMastered,
+                            colors = ButtonDefaults.buttonColors(
+                                backgroundColor = if (isMastered) MaterialTheme.colors.matchaBg else MaterialTheme.colors.surfaceContainer
+                            ),
+                            shape = RoundedCornerShape(10.dp),
+                            elevation = ButtonDefaults.elevation(0.dp),
+                            contentPadding = PaddingValues(horizontal = 10.dp, vertical = 6.dp)
+                        ) {
+                            Text(
+                                text = if (isMastered) "✓ Thuộc" else "Chưa thuộc",
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = if (isMastered) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.textSecondary
+                            )
+                        }
+
+                        Spacer(modifier = Modifier.width(8.dp))
+
+                        // Close '✕' button at top-right
+                        Box(
+                            modifier = Modifier
+                                .size(32.dp)
+                                .clip(CircleShape)
+                                .background(MaterialTheme.colors.surfaceContainer)
+                                .clickable { onDismiss() },
+                            contentAlignment = Alignment.Center
+                        ) {
+                            Text(
+                                text = "✕",
+                                fontSize = 14.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = MaterialTheme.colors.textSecondary
+                            )
+                        }
                     }
                 }
 
@@ -141,7 +179,7 @@ fun KanjiDetailDialog(
                                 horizontalArrangement = Arrangement.SpaceBetween,
                                 verticalAlignment = Alignment.CenterVertically
                             ) {
-                                Column {
+                                Column(modifier = Modifier.weight(1f)) {
                                     Text(
                                         text = "${ex.word} (${ex.reading})",
                                         fontSize = 13.sp,
@@ -153,6 +191,12 @@ fun KanjiDetailDialog(
                                         fontSize = 12.sp,
                                         color = MaterialTheme.colors.textSecondary
                                     )
+                                }
+                                IconButton(
+                                    onClick = { tts.speak(if (ex.word.isNotEmpty()) ex.word else ex.reading) },
+                                    modifier = Modifier.size(28.dp)
+                                ) {
+                                    Text(text = "🔊", fontSize = 14.sp)
                                 }
                             }
                         }

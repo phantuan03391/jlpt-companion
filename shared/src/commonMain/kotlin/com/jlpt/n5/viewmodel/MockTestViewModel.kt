@@ -105,7 +105,7 @@ class MockTestViewModel(
             score = score,
             maxScore = test.maxScore,
             passed = passed,
-            timestamp = 1700000000L,
+            timestamp = com.jlpt.n5.data.PlatformStorage.currentTimeMillis(),
             correctCount = correctCount,
             totalQuestions = totalQuestions
         )

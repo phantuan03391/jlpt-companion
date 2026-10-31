@@ -5,6 +5,8 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
@@ -272,10 +274,17 @@ fun KanjiStrokeOrderView(
 
             Spacer(modifier = Modifier.height(10.dp))
 
-            // Step Navigation Bar (Previous stroke, Stroke dots, Next stroke)
+            // Step Navigation Controls
+            val strokeListState = rememberLazyListState()
+
+            LaunchedEffect(currentStep) {
+                strokeListState.animateScrollToItem((currentStep - 1).coerceAtLeast(0))
+            }
+
+            // Top control row: Prev button, Badge, Next button
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.Center,
+                horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 OutlinedButton(
@@ -299,45 +308,22 @@ fun KanjiStrokeOrderView(
                     )
                 }
 
-                Spacer(modifier = Modifier.width(10.dp))
-
-                // Dots for each stroke
-                Row(
-                    horizontalArrangement = Arrangement.spacedBy(4.dp),
-                    verticalAlignment = Alignment.CenterVertically
+                Surface(
+                    shape = RoundedCornerShape(12.dp),
+                    color = MaterialTheme.colors.toriiBg,
+                    modifier = Modifier.clickable {
+                        isPlayingAnimation = false
+                        currentStep = totalStrokes
+                    }
                 ) {
-                    val maxDots = totalStrokes.coerceAtMost(10)
-                    for (i in 1..maxDots) {
-                        val isSelected = i == currentStep
-                        val isDrawn = i <= currentStep
-                        Box(
-                            modifier = Modifier
-                                .size(if (isSelected) 10.dp else 6.dp)
-                                .clip(CircleShape)
-                                .background(
-                                    when {
-                                        isSelected -> activeStrokeColor
-                                        isDrawn -> completedStrokeColor.copy(alpha = 0.7f)
-                                        else -> MaterialTheme.colors.outlineBorder
-                                    }
-                                )
-                                .clickable {
-                                    isPlayingAnimation = false
-                                    currentStep = i
-                                }
-                        )
-                    }
-                    if (totalStrokes > 10) {
-                        Text(
-                            text = "+${totalStrokes - 10}",
-                            fontSize = 10.sp,
-                            fontWeight = FontWeight.Bold,
-                            color = MaterialTheme.colors.textSecondary
-                        )
-                    }
+                    Text(
+                        text = "Nét $currentStep / $totalStrokes",
+                        fontSize = 12.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colors.toriiAccent,
+                        modifier = Modifier.padding(horizontal = 12.dp, vertical = 6.dp)
+                    )
                 }
-
-                Spacer(modifier = Modifier.width(10.dp))
 
                 OutlinedButton(
                     onClick = {
@@ -358,6 +344,52 @@ fun KanjiStrokeOrderView(
                         fontWeight = FontWeight.SemiBold,
                         color = if (currentStep < totalStrokes) MaterialTheme.colors.textPrimary else MaterialTheme.colors.textMuted
                     )
+                }
+            }
+
+            Spacer(modifier = Modifier.height(8.dp))
+
+            // Scrollable list of ALL stroke chips: shows every stroke (e.g. 1..18 for 曜) without cutting off!
+            LazyRow(
+                state = strokeListState,
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(6.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                contentPadding = PaddingValues(horizontal = 2.dp)
+            ) {
+                items(totalStrokes) { index ->
+                    val stepNum = index + 1
+                    val isCurrent = stepNum == currentStep
+                    val isDrawn = stepNum <= currentStep
+
+                    Box(
+                        modifier = Modifier
+                            .size(28.dp)
+                            .clip(CircleShape)
+                            .background(
+                                when {
+                                    isCurrent -> activeStrokeColor
+                                    isDrawn -> MaterialTheme.colors.matchaBg
+                                    else -> MaterialTheme.colors.surfaceContainer
+                                }
+                            )
+                            .clickable {
+                                isPlayingAnimation = false
+                                currentStep = stepNum
+                            },
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Text(
+                            text = "$stepNum",
+                            fontSize = 11.sp,
+                            fontWeight = if (isCurrent) FontWeight.Bold else FontWeight.Medium,
+                            color = when {
+                                isCurrent -> Color.White
+                                isDrawn -> MaterialTheme.colors.matchaAccent
+                                else -> MaterialTheme.colors.textMuted
+                            }
+                        )
+                    }
                 }
             }
         }

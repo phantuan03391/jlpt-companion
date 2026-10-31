@@ -115,6 +115,16 @@ fun FlashcardScreen(
             FlipCard(
                 isFlipped = state.isFlipped,
                 onFlip = { viewModel.flipCard() },
+                onSwipeLeft = {
+                    if (currentIndex < totalCount - 1) {
+                        viewModel.nextCard()
+                    }
+                },
+                onSwipeRight = {
+                    if (currentIndex > 0) {
+                        viewModel.prevCard()
+                    }
+                },
                 modifier = Modifier
                     .fillMaxWidth()
                     .weight(1f)
@@ -127,7 +137,16 @@ fun FlashcardScreen(
                 }
             )
 
-            Spacer(modifier = Modifier.height(14.dp))
+            Spacer(modifier = Modifier.height(8.dp))
+
+            Text(
+                text = "👆 Chạm để lật • 👈👉 Vuốt để chuyển thẻ",
+                fontSize = 11.sp,
+                fontWeight = FontWeight.Medium,
+                color = MaterialTheme.colors.textMuted
+            )
+
+            Spacer(modifier = Modifier.height(8.dp))
 
             // Control Buttons Row
             FlashcardActionRow(

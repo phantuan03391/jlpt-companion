@@ -3,9 +3,7 @@ package com.jlpt.n5.ui.screens.flashcard.components
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Card
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Text
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -15,6 +13,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.jlpt.n5.model.FlashcardItem
 import com.jlpt.n5.model.FlashcardType
+import com.jlpt.n5.tts.LocalTTS
 import com.jlpt.n5.ui.components.JapaneseBadge
 import com.jlpt.n5.ui.theme.*
 
@@ -24,6 +23,8 @@ fun FlashcardFront(
     showReadingHint: Boolean,
     modifier: Modifier = Modifier
 ) {
+    val tts = LocalTTS.current
+
     Card(
         modifier = modifier.fillMaxSize(),
         shape = RoundedCornerShape(24.dp),
@@ -46,7 +47,7 @@ fun FlashcardFront(
                     textColor = MaterialTheme.colors.toriiAccent
                 )
 
-                Spacer(modifier = Modifier.height(28.dp))
+                Spacer(modifier = Modifier.height(24.dp))
 
                 Text(
                     text = card.frontMain,
@@ -57,7 +58,7 @@ fun FlashcardFront(
                 )
 
                 if (showReadingHint && card.frontSub.isNotEmpty()) {
-                    Spacer(modifier = Modifier.height(12.dp))
+                    Spacer(modifier = Modifier.height(10.dp))
                     Text(
                         text = card.frontSub,
                         fontSize = 17.sp,
@@ -67,7 +68,25 @@ fun FlashcardFront(
                     )
                 }
 
-                Spacer(modifier = Modifier.height(36.dp))
+                Spacer(modifier = Modifier.height(16.dp))
+
+                Button(
+                    onClick = {
+                        val speechText = if (card.type == FlashcardType.KANJI) card.frontMain else card.frontMain
+                        tts.speak(speechText)
+                    },
+                    shape = RoundedCornerShape(20.dp),
+                    colors = ButtonDefaults.buttonColors(
+                        backgroundColor = MaterialTheme.colors.surfaceContainer,
+                        contentColor = MaterialTheme.colors.toriiAccent
+                    ),
+                    elevation = ButtonDefaults.elevation(0.dp),
+                    contentPadding = PaddingValues(horizontal = 14.dp, vertical = 6.dp)
+                ) {
+                    Text("🔊 Nghe phát âm", fontSize = 13.sp, fontWeight = FontWeight.Bold)
+                }
+
+                Spacer(modifier = Modifier.height(28.dp))
 
                 Text(
                     text = "🔄 Chạm vào thẻ để lật xem nghĩa",
@@ -85,6 +104,8 @@ fun FlashcardBack(
     card: FlashcardItem,
     modifier: Modifier = Modifier
 ) {
+    val tts = LocalTTS.current
+
     Card(
         modifier = modifier.fillMaxSize(),
         shape = RoundedCornerShape(24.dp),
@@ -137,12 +158,27 @@ fun FlashcardBack(
                         elevation = 1.dp
                     ) {
                         Column(modifier = Modifier.padding(14.dp)) {
-                            Text(
-                                text = "Ví dụ mẫu:",
-                                fontSize = 11.sp,
-                                fontWeight = FontWeight.Bold,
-                                color = MaterialTheme.colors.textMuted
-                            )
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement = Arrangement.SpaceBetween,
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Text(
+                                    text = "Ví dụ mẫu:",
+                                    fontSize = 11.sp,
+                                    fontWeight = FontWeight.Bold,
+                                    color = MaterialTheme.colors.textMuted
+                                )
+                                IconButton(
+                                    onClick = {
+                                        val firstLine = card.example.lines().firstOrNull() ?: card.example
+                                        tts.speak(firstLine)
+                                    },
+                                    modifier = Modifier.size(24.dp)
+                                ) {
+                                    Text(text = "🔊", fontSize = 13.sp)
+                                }
+                            }
                             Spacer(modifier = Modifier.height(4.dp))
                             Text(
                                 text = card.example,

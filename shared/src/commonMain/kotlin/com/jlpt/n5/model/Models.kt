@@ -110,3 +110,15 @@ data class ExamResult(
     val correctCount: Int,
     val totalQuestions: Int
 )
+
+@Serializable
+data class UserProgressData(
+    val masteredVocabIds: Set<Int> = emptySet(),
+    val starredVocabIds: Set<Int> = emptySet(),
+    val masteredKanjiIds: Set<Int> = emptySet(),
+    val starredKanjiIds: Set<Int> = emptySet(),
+    val completedLessonNumbers: Set<Int> = emptySet(),
+    val examHistory: List<ExamResult> = emptyList(),
+    val streakDays: Int = 1,
+    val lastStudyDayEpoch: Long = 0L
+)

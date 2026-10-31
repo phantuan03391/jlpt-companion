@@ -20,6 +20,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.jlpt.n5.data.JLPTRepository
 import com.jlpt.n5.model.Vocabulary
+import com.jlpt.n5.tts.LocalTTS
 import com.jlpt.n5.ui.components.HanVietBadge
 import com.jlpt.n5.ui.theme.*
 
@@ -150,6 +151,7 @@ fun LessonVocabTab(
 
 @Composable
 fun VocabItemCard(vocab: Vocabulary) {
+    val tts = LocalTTS.current
     var isMastered by remember(vocab.id) { mutableStateOf(JLPTRepository.masteredVocabIds.contains(vocab.id)) }
     var isStarred by remember(vocab.id) { mutableStateOf(JLPTRepository.starredVocabIds.contains(vocab.id)) }
 
@@ -189,6 +191,17 @@ fun VocabItemCard(vocab: Vocabulary) {
                 }
 
                 Row(verticalAlignment = Alignment.CenterVertically) {
+                    // Audio pronunciation button
+                    IconButton(
+                        onClick = {
+                            val speechText = if (vocab.word.isNotEmpty()) vocab.word else vocab.reading
+                            tts.speak(speechText)
+                        },
+                        modifier = Modifier.size(32.dp)
+                    ) {
+                        Text(text = "🔊", fontSize = 16.sp)
+                    }
+
                     // Star button
                     IconButton(
                         onClick = {
@@ -229,12 +242,25 @@ fun VocabItemCard(vocab: Vocabulary) {
                         .padding(10.dp)
                 ) {
                     Column {
-                        Text(
-                            text = "Ví dụ: ${vocab.exampleSentence}",
-                            fontSize = 13.sp,
-                            fontWeight = FontWeight.Medium,
-                            color = MaterialTheme.colors.textPrimary
-                        )
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Text(
+                                text = "Ví dụ: ${vocab.exampleSentence}",
+                                fontSize = 13.sp,
+                                fontWeight = FontWeight.Medium,
+                                color = MaterialTheme.colors.textPrimary,
+                                modifier = Modifier.weight(1f)
+                            )
+                            IconButton(
+                                onClick = { tts.speak(vocab.exampleSentence) },
+                                modifier = Modifier.size(26.dp)
+                            ) {
+                                Text(text = "🔊", fontSize = 13.sp)
+                            }
+                        }
                         Text(
                             text = vocab.exampleSentenceMeaning,
                             fontSize = 11.sp,

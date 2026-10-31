@@ -9,7 +9,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.jlpt.n5.data.JLPTRepository
+import com.jlpt.n5.data.PlatformStorage
 import com.jlpt.n5.model.ExamResult
+import com.jlpt.n5.tts.LocalTTS
+import com.jlpt.n5.tts.rememberTextToSpeech
 import com.jlpt.n5.ui.screens.*
 import com.jlpt.n5.ui.theme.*
 import com.jlpt.n5.viewmodel.*
@@ -39,8 +42,11 @@ sealed class Screen {
 
 @Composable
 fun App() {
-    JLPTAppTheme {
-        var currentScreen by remember { mutableStateOf<Screen>(Screen.Main) }
+    val ttsManager = rememberTextToSpeech()
+
+    CompositionLocalProvider(LocalTTS provides ttsManager) {
+        JLPTAppTheme {
+            var currentScreen by remember { mutableStateOf<Screen>(Screen.Main) }
         var currentTab by remember { mutableStateOf(AppTab.HOME) }
         var flashcardLessonTarget by remember { mutableStateOf<Int?>(null) }
         var flashcardKanjiOnly by remember { mutableStateOf(false) }
@@ -200,7 +206,7 @@ fun App() {
                                     score = score,
                                     maxScore = maxScore,
                                     passed = passed,
-                                    timestamp = 1700000000L,
+                                    timestamp = PlatformStorage.currentTimeMillis(),
                                     correctCount = correctCount,
                                     totalQuestions = totalQuestions
                                 )
@@ -234,6 +240,7 @@ fun App() {
             }
         }
     }
+}
 }
 
 expect fun getPlatformName(): String

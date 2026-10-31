@@ -40,13 +40,8 @@ class LessonDetailViewModel(
 
     fun toggleLessonCompleted() {
         val currentLesson = _uiState.value.lesson ?: return
-        val currentCompleted = _uiState.value.isCompleted
-        if (currentCompleted) {
-            repository.completedLessonNumbers.remove(currentLesson.lessonNumber)
-        } else {
-            repository.completedLessonNumbers.add(currentLesson.lessonNumber)
-        }
-        _uiState.update { it.copy(isCompleted = !currentCompleted) }
+        val isNowCompleted = repository.toggleLessonCompleted(currentLesson.lessonNumber)
+        _uiState.update { it.copy(isCompleted = isNowCompleted) }
     }
 
     fun toggleVocabMastered(vocabId: Int) {

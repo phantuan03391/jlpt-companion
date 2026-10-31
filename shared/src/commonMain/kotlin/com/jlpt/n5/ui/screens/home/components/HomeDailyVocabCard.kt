@@ -11,6 +11,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.jlpt.n5.model.Vocabulary
+import com.jlpt.n5.tts.LocalTTS
 import com.jlpt.n5.ui.components.JapaneseBadge
 import com.jlpt.n5.ui.theme.*
 
@@ -20,6 +21,8 @@ fun HomeDailyVocabCard(
     onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val tts = LocalTTS.current
+
     Column(modifier = modifier) {
         Text(
             text = "Từ vựng tâm điểm hôm nay",
@@ -50,7 +53,19 @@ fun HomeDailyVocabCard(
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colors.toriiAccent
                     )
-                    JapaneseBadge(text = vocab.type)
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        IconButton(
+                            onClick = {
+                                val textToSpeak = if (vocab.word.isNotEmpty()) vocab.word else vocab.reading
+                                tts.speak(textToSpeak)
+                            },
+                            modifier = Modifier.size(32.dp)
+                        ) {
+                            Text(text = "🔊", fontSize = 16.sp)
+                        }
+                        Spacer(modifier = Modifier.width(4.dp))
+                        JapaneseBadge(text = vocab.type)
+                    }
                 }
 
                 Text(
@@ -72,11 +87,24 @@ fun HomeDailyVocabCard(
                     Spacer(modifier = Modifier.height(8.dp))
                     Divider(color = MaterialTheme.colors.outlineBorder)
                     Spacer(modifier = Modifier.height(8.dp))
-                    Text(
-                        text = "Ví dụ: ${vocab.exampleSentence}",
-                        fontSize = 13.sp,
-                        color = MaterialTheme.colors.textSecondary
-                    )
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text(
+                            text = "Ví dụ: ${vocab.exampleSentence}",
+                            fontSize = 13.sp,
+                            color = MaterialTheme.colors.textSecondary,
+                            modifier = Modifier.weight(1f)
+                        )
+                        IconButton(
+                            onClick = { tts.speak(vocab.exampleSentence) },
+                            modifier = Modifier.size(24.dp)
+                        ) {
+                            Text(text = "🔊", fontSize = 13.sp)
+                        }
+                    }
                     Text(
                         text = vocab.exampleSentenceMeaning,
                         fontSize = 12.sp,

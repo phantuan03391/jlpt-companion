@@ -43,13 +43,103 @@ object JLPTRepository {
 
     fun getKanjiStrokes(kanji: String): List<String> = kanjiStrokesMap[kanji] ?: emptyList()
 
-    // In-memory persistent state across sessions
+    // Persistent state across sessions
     val masteredVocabIds = mutableSetOf<Int>()
     val starredVocabIds = mutableSetOf<Int>()
     val masteredKanjiIds = mutableSetOf<Int>()
     val starredKanjiIds = mutableSetOf<Int>()
     val completedLessonNumbers = mutableSetOf<Int>()
     val examHistory = mutableListOf<ExamResult>()
+    var streakDays: Int = 1
+        private set
+    var lastStudyDayEpoch: Long = 0L
+        private set
+
+    private const val KEY_USER_PROGRESS = "jlpt_n5_user_progress"
+
+    init {
+        loadFromStorage()
+    }
+
+    fun loadFromStorage() {
+        try {
+            val savedJson = PlatformStorage.getString(KEY_USER_PROGRESS)
+            if (!savedJson.isNullOrBlank()) {
+                val progress = json.decodeFromString<UserProgressData>(savedJson)
+                masteredVocabIds.clear()
+                masteredVocabIds.addAll(progress.masteredVocabIds)
+
+                starredVocabIds.clear()
+                starredVocabIds.addAll(progress.starredVocabIds)
+
+                masteredKanjiIds.clear()
+                masteredKanjiIds.addAll(progress.masteredKanjiIds)
+
+                starredKanjiIds.clear()
+                starredKanjiIds.addAll(progress.starredKanjiIds)
+
+                completedLessonNumbers.clear()
+                completedLessonNumbers.addAll(progress.completedLessonNumbers)
+
+                examHistory.clear()
+                examHistory.addAll(progress.examHistory)
+
+                streakDays = progress.streakDays
+                lastStudyDayEpoch = progress.lastStudyDayEpoch
+            }
+            updateStreakOnOpen()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
+    fun saveToStorage() {
+        try {
+            val progress = UserProgressData(
+                masteredVocabIds = masteredVocabIds.toSet(),
+                starredVocabIds = starredVocabIds.toSet(),
+                masteredKanjiIds = masteredKanjiIds.toSet(),
+                starredKanjiIds = starredKanjiIds.toSet(),
+                completedLessonNumbers = completedLessonNumbers.toSet(),
+                examHistory = examHistory.toList(),
+                streakDays = streakDays,
+                lastStudyDayEpoch = lastStudyDayEpoch
+            )
+            val jsonStr = json.encodeToString(UserProgressData.serializer(), progress)
+            PlatformStorage.putString(KEY_USER_PROGRESS, jsonStr)
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
+    private fun updateStreakOnOpen() {
+        val currentDay = PlatformStorage.currentTimeMillis() / (1000L * 60L * 60L * 24L)
+        if (lastStudyDayEpoch == 0L) {
+            lastStudyDayEpoch = currentDay
+            streakDays = 1
+            saveToStorage()
+        } else if (currentDay > lastStudyDayEpoch + 1) {
+            // Streak broken (more than 1 day missed)
+            streakDays = 1
+            lastStudyDayEpoch = currentDay
+            saveToStorage()
+        }
+    }
+
+    fun recordStudyActivity() {
+        val currentDay = PlatformStorage.currentTimeMillis() / (1000L * 60L * 60L * 24L)
+        if (lastStudyDayEpoch == 0L) {
+            streakDays = 1
+            lastStudyDayEpoch = currentDay
+        } else if (currentDay == lastStudyDayEpoch + 1) {
+            streakDays += 1
+            lastStudyDayEpoch = currentDay
+        } else if (currentDay > lastStudyDayEpoch + 1) {
+            streakDays = 1
+            lastStudyDayEpoch = currentDay
+        }
+        saveToStorage()
+    }
 
     fun getLesson(number: Int): Lesson? = lessons.find { it.lessonNumber == number }
 
@@ -58,51 +148,98 @@ object JLPTRepository {
     fun getMockTest(id: String): MockTest? = mockTests.find { it.id == id }
 
     fun toggleMasteredVocab(id: Int): Boolean {
-        return if (masteredVocabIds.contains(id)) {
+        val result = if (masteredVocabIds.contains(id)) {
             masteredVocabIds.remove(id)
             false
         } else {
             masteredVocabIds.add(id)
             true
         }
+        recordStudyActivity()
+        saveToStorage()
+        return result
+    }
+
+    fun markVocabMastered(id: Int, mastered: Boolean = true) {
+        if (mastered) {
+            masteredVocabIds.add(id)
+        } else {
+            masteredVocabIds.remove(id)
+        }
+        recordStudyActivity()
+        saveToStorage()
     }
 
     fun toggleStarredVocab(id: Int): Boolean {
-        return if (starredVocabIds.contains(id)) {
+        val result = if (starredVocabIds.contains(id)) {
             starredVocabIds.remove(id)
             false
         } else {
             starredVocabIds.add(id)
             true
         }
+        saveToStorage()
+        return result
     }
 
     fun toggleMasteredKanji(id: Int): Boolean {
-        return if (masteredKanjiIds.contains(id)) {
+        val result = if (masteredKanjiIds.contains(id)) {
             masteredKanjiIds.remove(id)
             false
         } else {
             masteredKanjiIds.add(id)
             true
         }
+        recordStudyActivity()
+        saveToStorage()
+        return result
+    }
+
+    fun markKanjiMastered(id: Int, mastered: Boolean = true) {
+        if (mastered) {
+            masteredKanjiIds.add(id)
+        } else {
+            masteredKanjiIds.remove(id)
+        }
+        recordStudyActivity()
+        saveToStorage()
     }
 
     fun toggleStarredKanji(id: Int): Boolean {
-        return if (starredKanjiIds.contains(id)) {
+        val result = if (starredKanjiIds.contains(id)) {
             starredKanjiIds.remove(id)
             false
         } else {
             starredKanjiIds.add(id)
             true
         }
+        saveToStorage()
+        return result
     }
 
     fun markLessonCompleted(number: Int) {
         completedLessonNumbers.add(number)
+        recordStudyActivity()
+        saveToStorage()
+    }
+
+    fun toggleLessonCompleted(number: Int): Boolean {
+        val result = if (completedLessonNumbers.contains(number)) {
+            completedLessonNumbers.remove(number)
+            false
+        } else {
+            completedLessonNumbers.add(number)
+            true
+        }
+        recordStudyActivity()
+        saveToStorage()
+        return result
     }
 
     fun addExamResult(result: ExamResult) {
         examHistory.add(0, result)
+        recordStudyActivity()
+        saveToStorage()
     }
 
     fun getAllFlashcards(lessonNumber: Int? = null, kanjiOnly: Boolean = false): List<FlashcardItem> {
