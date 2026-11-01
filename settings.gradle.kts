@@ -3,6 +3,7 @@ rootProject.name = "JLPTN5"
 include(":androidApp")
 include(":shared")
 include(":desktopApp")
+include(":webApp")
 
 pluginManagement {
     repositories {

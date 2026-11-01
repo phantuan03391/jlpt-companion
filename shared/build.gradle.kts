@@ -10,6 +10,10 @@ kotlin {
 
     jvm("desktop")
 
+    js(IR) {
+        browser()
+    }
+
     listOf(
         iosX64(),
         iosArm64(),
