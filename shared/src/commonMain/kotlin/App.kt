@@ -2,10 +2,17 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.List
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -42,11 +49,11 @@ sealed class Screen {
 }
 
 @Composable
-fun App() {
+fun App(fontFamily: FontFamily? = null) {
     val ttsManager = rememberTextToSpeech()
 
     CompositionLocalProvider(LocalTTS provides ttsManager) {
-        JLPTAppTheme {
+        JLPTAppTheme(fontFamily = fontFamily) {
             var currentScreen by remember { mutableStateOf<Screen>(Screen.Main) }
             var currentTab by remember { mutableStateOf(AppTab.HOME) }
             var flashcardLessonTarget by remember { mutableStateOf<Int?>(null) }
@@ -87,7 +94,7 @@ fun App() {
                                     elevation = 8.dp
                                 ) {
                                     BottomNavigationItem(
-                                        icon = { Text(text = "🏠", fontSize = 18.sp) },
+                                        icon = { Icon(Icons.Default.Home, contentDescription = "Trang chủ", modifier = Modifier.size(22.dp)) },
                                         label = { Text("Trang chủ", fontSize = 10.sp, fontWeight = FontWeight.Bold) },
                                         selected = currentTab == AppTab.HOME,
                                         selectedContentColor = MaterialTheme.colors.toriiAccent,
@@ -96,7 +103,7 @@ fun App() {
                                     )
 
                                     BottomNavigationItem(
-                                        icon = { Text(text = "📖", fontSize = 18.sp) },
+                                        icon = { Icon(Icons.Default.List, contentDescription = "25 Bài Minna", modifier = Modifier.size(22.dp)) },
                                         label = { Text("25 Bài Minna", fontSize = 10.sp, fontWeight = FontWeight.Bold) },
                                         selected = currentTab == AppTab.LESSONS,
                                         selectedContentColor = MaterialTheme.colors.toriiAccent,
@@ -105,7 +112,7 @@ fun App() {
                                     )
 
                                     BottomNavigationItem(
-                                        icon = { Text(text = "🗂️", fontSize = 18.sp) },
+                                        icon = { Icon(Icons.Default.Star, contentDescription = "Flashcards", modifier = Modifier.size(22.dp)) },
                                         label = { Text("Flashcards", fontSize = 10.sp, fontWeight = FontWeight.Bold) },
                                         selected = currentTab == AppTab.FLASHCARDS,
                                         selectedContentColor = MaterialTheme.colors.toriiAccent,
@@ -118,7 +125,7 @@ fun App() {
                                     )
 
                                     BottomNavigationItem(
-                                        icon = { Text(text = "🈲", fontSize = 18.sp) },
+                                        icon = { Icon(Icons.Default.Edit, contentDescription = "Kanji N5", modifier = Modifier.size(22.dp)) },
                                         label = { Text("Kanji N5", fontSize = 10.sp, fontWeight = FontWeight.Bold) },
                                         selected = currentTab == AppTab.KANJI,
                                         selectedContentColor = MaterialTheme.colors.toriiAccent,
@@ -127,7 +134,7 @@ fun App() {
                                     )
 
                                     BottomNavigationItem(
-                                        icon = { Text(text = "📝", fontSize = 18.sp) },
+                                        icon = { Icon(Icons.Default.Check, contentDescription = "Thi thử", modifier = Modifier.size(22.dp)) },
                                         label = { Text("Thi thử", fontSize = 10.sp, fontWeight = FontWeight.Bold) },
                                         selected = currentTab == AppTab.MOCK_TESTS,
                                         selectedContentColor = MaterialTheme.colors.toriiAccent,
