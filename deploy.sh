@@ -16,3 +16,4 @@ npm_config_cache=/tmp/npm_cache npx --yes wrangler@3 pages deploy webApp/build/d
 
 echo "✨ Deploy complete! Your website is live at:"
 echo "👉 https://jlpt-companion.pages.dev"
+
