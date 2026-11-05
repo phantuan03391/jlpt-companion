@@ -35,7 +35,8 @@ fun LessonDetailScreen(
     lessonNumber: Int,
     viewModel: LessonDetailViewModel = remember { LessonDetailViewModel() },
     onBack: () -> Unit,
-    onOpenFlashcard: (Int) -> Unit
+    onOpenFlashcard: (Int) -> Unit,
+    onOpenListening: (Int) -> Unit
 ) {
     LaunchedEffect(lessonNumber) {
         viewModel.loadLesson(lessonNumber)
@@ -244,10 +245,14 @@ fun LessonDetailScreen(
             when (selectedTab) {
                 0 -> LessonVocabTab(
                     vocabularies = lesson.vocabularies,
-                    onOpenFlashcard = { onOpenFlashcard(lessonNumber) }
+                    onOpenFlashcard = { onOpenFlashcard(lessonNumber) },
+                    onOpenListening = { onOpenListening(lessonNumber) }
                 )
                 1 -> LessonGrammarTab(grammarPoints = lesson.grammarPoints)
-                2 -> LessonPracticeTab(vocabularies = lesson.vocabularies)
+                2 -> LessonPracticeTab(
+                    vocabularies = lesson.vocabularies,
+                    onOpenListening = { onOpenListening(lessonNumber) }
+                )
             }
         }
     }

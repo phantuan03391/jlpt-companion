@@ -25,7 +25,8 @@ fun HomeScreen(
     onNavigateToLessonDetail: (Int) -> Unit,
     onNavigateToFlashcards: (lessonNum: Int?, kanjiOnly: Boolean) -> Unit,
     onNavigateToMockTests: () -> Unit,
-    onNavigateToKanji: () -> Unit
+    onNavigateToKanji: () -> Unit,
+    onNavigateToListening: (lessonNum: Int?) -> Unit
 ) {
     val uiState by viewModel.uiState.collectAsState()
 
@@ -61,13 +62,14 @@ fun HomeScreen(
             )
         }
 
-        // Quick Action 2x2 Grid
+        // Quick Action Grid + Listening Highlight
         item {
             HomeQuickActionsGrid(
                 onNavigateToFlashcards = { onNavigateToFlashcards(null, false) },
                 onNavigateToKanji = onNavigateToKanji,
                 onNavigateToLessons = onNavigateToLessons,
-                onNavigateToMockTests = onNavigateToMockTests
+                onNavigateToMockTests = onNavigateToMockTests,
+                onNavigateToListening = { onNavigateToListening(null) }
             )
         }
 

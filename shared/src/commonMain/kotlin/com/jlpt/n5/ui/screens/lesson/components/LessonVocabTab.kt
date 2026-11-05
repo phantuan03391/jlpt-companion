@@ -27,7 +27,8 @@ import com.jlpt.n5.ui.theme.*
 @Composable
 fun LessonVocabTab(
     vocabularies: List<Vocabulary>,
-    onOpenFlashcard: () -> Unit
+    onOpenFlashcard: () -> Unit,
+    onOpenListening: () -> Unit
 ) {
     val focusManager = LocalFocusManager.current
     var query by remember { mutableStateOf("") }
@@ -100,44 +101,64 @@ fun LessonVocabTab(
             contentPadding = PaddingValues(bottom = 24.dp),
             verticalArrangement = Arrangement.spacedBy(10.dp)
         ) {
-            // Flashcard shortcut banner
+            // Action shortcut banners: Flashcard & Luyện nghe
             item {
-                Card(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .clickable {
-                            focusManager.clearFocus()
-                            onOpenFlashcard()
-                        },
-                    shape = RoundedCornerShape(14.dp),
-                    backgroundColor = MaterialTheme.colors.toriiBg,
-                    elevation = 0.dp
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(10.dp)
                 ) {
-                    Row(
-                        modifier = Modifier.padding(14.dp),
-                        horizontalArrangement = Arrangement.SpaceBetween,
-                        verticalAlignment = Alignment.CenterVertically
+                    Card(
+                        modifier = Modifier
+                            .weight(1f)
+                            .clickable {
+                                focusManager.clearFocus()
+                                onOpenFlashcard()
+                            },
+                        shape = RoundedCornerShape(14.dp),
+                        backgroundColor = MaterialTheme.colors.toriiBg,
+                        elevation = 0.dp
                     ) {
-                        Column {
+                        Column(modifier = Modifier.padding(12.dp)) {
                             Text(
-                                text = "🗂️ Ôn tập bằng Flashcard",
-                                fontSize = 14.sp,
+                                text = "🗂️ Flashcard",
+                                fontSize = 13.sp,
                                 fontWeight = FontWeight.Bold,
                                 color = MaterialTheme.colors.toriiAccent
                             )
+                            Spacer(modifier = Modifier.height(2.dp))
                             Text(
-                                text = "Lật thẻ ghi nhớ nhanh ${vocabularies.size} từ vựng bài này",
-                                fontSize = 12.sp,
+                                text = "Lật thẻ ${vocabularies.size} từ ➜",
+                                fontSize = 11.sp,
                                 color = MaterialTheme.colors.textSecondary
                             )
                         }
+                    }
 
-                        Text(
-                            text = "Bắt đầu →",
-                            fontSize = 12.sp,
-                            fontWeight = FontWeight.Bold,
-                            color = MaterialTheme.colors.toriiAccent
-                        )
+                    Card(
+                        modifier = Modifier
+                            .weight(1f)
+                            .clickable {
+                                focusManager.clearFocus()
+                                onOpenListening()
+                            },
+                        shape = RoundedCornerShape(14.dp),
+                        backgroundColor = MaterialTheme.colors.matchaBg,
+                        elevation = 0.dp
+                    ) {
+                        Column(modifier = Modifier.padding(12.dp)) {
+                            Text(
+                                text = "🎧 Luyện Nghe",
+                                fontSize = 13.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = MaterialTheme.colors.matchaAccent
+                            )
+                            Spacer(modifier = Modifier.height(2.dp))
+                            Text(
+                                text = "Nghe & phản xạ ➜",
+                                fontSize = 11.sp,
+                                color = MaterialTheme.colors.textSecondary
+                            )
+                        }
                     }
                 }
             }

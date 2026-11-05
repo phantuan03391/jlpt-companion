@@ -37,6 +37,7 @@ sealed class Screen {
     object Main : Screen()
     data class LessonDetail(val lessonNumber: Int) : Screen()
     data class Exam(val testId: String) : Screen()
+    data class ListeningPractice(val lessonNumber: Int? = null) : Screen()
     data class ExamResultScreen(
         val testId: String,
         val score: Int,
@@ -166,7 +167,10 @@ fun App(fontFamily: FontFamily? = null) {
                                                 currentTab = AppTab.FLASHCARDS
                                             },
                                             onNavigateToMockTests = { currentTab = AppTab.MOCK_TESTS },
-                                            onNavigateToKanji = { currentTab = AppTab.KANJI }
+                                            onNavigateToKanji = { currentTab = AppTab.KANJI },
+                                            onNavigateToListening = { lessonNum ->
+                                                currentScreen = Screen.ListeningPractice(lessonNum)
+                                            }
                                         )
 
                                         AppTab.LESSONS -> LessonListScreen(
@@ -216,7 +220,15 @@ fun App(fontFamily: FontFamily? = null) {
                                         flashcardKanjiOnly = false
                                         currentScreen = Screen.Main
                                         currentTab = AppTab.FLASHCARDS
+                                    },
+                                    onOpenListening = { num ->
+                                        currentScreen = Screen.ListeningPractice(num)
                                     }
+                                )
+
+                                is Screen.ListeningPractice -> ListeningPracticeScreen(
+                                    initialLessonNumber = screen.lessonNumber,
+                                    onBack = { currentScreen = Screen.Main }
                                 )
 
                                 is Screen.Exam -> MockTestExamScreen(

@@ -5,9 +5,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Card
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Text
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -24,6 +22,7 @@ fun HomeQuickActionsGrid(
     onNavigateToKanji: () -> Unit,
     onNavigateToLessons: () -> Unit,
     onNavigateToMockTests: () -> Unit,
+    onNavigateToListening: () -> Unit,
     modifier: Modifier = Modifier
 ) {
     Column(modifier = modifier) {
@@ -34,7 +33,73 @@ fun HomeQuickActionsGrid(
             color = MaterialTheme.colors.textPrimary
         )
 
-        Spacer(modifier = Modifier.height(8.dp))
+        Spacer(modifier = Modifier.height(10.dp))
+
+        // Featured Listening Card
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .clip(RoundedCornerShape(16.dp))
+                .clickable { onNavigateToListening() },
+            shape = RoundedCornerShape(16.dp),
+            backgroundColor = MaterialTheme.colors.cardBackground,
+            elevation = 2.dp
+        ) {
+            Row(
+                modifier = Modifier.padding(14.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Box(
+                    modifier = Modifier
+                        .size(46.dp)
+                        .clip(CircleShape)
+                        .background(MaterialTheme.colors.toriiBg),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Text("🎧", fontSize = 22.sp)
+                }
+
+                Spacer(modifier = Modifier.width(12.dp))
+
+                Column(modifier = Modifier.weight(1f)) {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Text(
+                            text = "Luyện Nghe N5",
+                            fontSize = 15.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colors.textPrimary
+                        )
+                        Spacer(modifier = Modifier.width(6.dp))
+                        Surface(
+                            shape = CircleShape,
+                            color = MaterialTheme.colors.toriiBg
+                        ) {
+                            Text(
+                                text = "MỚI",
+                                fontSize = 9.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = MaterialTheme.colors.toriiAccent,
+                                modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)
+                            )
+                        }
+                    }
+                    Text(
+                        text = "Phản xạ âm thanh & trắc nghiệm 25 bài",
+                        fontSize = 12.sp,
+                        color = MaterialTheme.colors.textMuted
+                    )
+                }
+
+                Text(
+                    text = "Luyện ngay ➜",
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = MaterialTheme.colors.toriiAccent
+                )
+            }
+        }
+
+        Spacer(modifier = Modifier.height(10.dp))
 
         Row(
             modifier = Modifier.fillMaxWidth(),
