@@ -25,6 +25,11 @@ local.properties
 *.jks
 *.keystore
 secrets.properties
+.env
+.env.*
+*.pem
+*.key
+*.p12
 
 # OS specific files
 .DS_Store
