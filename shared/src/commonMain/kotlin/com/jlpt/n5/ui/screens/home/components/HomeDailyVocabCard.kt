@@ -4,6 +4,8 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.VolumeUp
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -61,7 +63,12 @@ fun HomeDailyVocabCard(
                             },
                             modifier = Modifier.size(32.dp)
                         ) {
-                            Text(text = "🔊", fontSize = 16.sp)
+                            Icon(
+                                imageVector = Icons.Filled.VolumeUp,
+                                contentDescription = "Phát âm",
+                                tint = MaterialTheme.colors.toriiAccent,
+                                modifier = Modifier.size(20.dp)
+                            )
                         }
                         Spacer(modifier = Modifier.width(4.dp))
                         JapaneseBadge(text = vocab.type)
@@ -102,7 +109,12 @@ fun HomeDailyVocabCard(
                             onClick = { tts.speak(vocab.exampleSentence) },
                             modifier = Modifier.size(24.dp)
                         ) {
-                            Text(text = "🔊", fontSize = 13.sp)
+                            Icon(
+                                imageVector = Icons.Filled.VolumeUp,
+                                contentDescription = "Phát âm câu ví dụ",
+                                tint = MaterialTheme.colors.toriiAccent,
+                                modifier = Modifier.size(16.dp)
+                            )
                         }
                     }
                     Text(

@@ -7,6 +7,12 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.ArrowForward
+import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.filled.Timer
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -92,11 +98,11 @@ fun MockTestExamScreen(
                             .clickable { onBack() },
                         contentAlignment = Alignment.Center
                     ) {
-                        Text(
-                            text = "✕",
-                            fontSize = 14.sp,
-                            fontWeight = FontWeight.Bold,
-                            color = MaterialTheme.colors.textPrimary
+                        Icon(
+                            imageVector = Icons.Filled.Close,
+                            contentDescription = "Thoát",
+                            tint = MaterialTheme.colors.textPrimary,
+                            modifier = Modifier.size(16.dp)
                         )
                     }
 
@@ -123,12 +129,21 @@ fun MockTestExamScreen(
                         .background(if (isUrgent) MaterialTheme.colors.toriiBg else MaterialTheme.colors.surfaceContainer)
                         .padding(horizontal = 12.dp, vertical = 6.dp)
                 ) {
-                    Text(
-                        text = "⏱️ $timeFormatted",
-                        fontSize = 14.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = if (isUrgent) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textPrimary
-                    )
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Icon(
+                            imageVector = Icons.Filled.Timer,
+                            contentDescription = null,
+                            tint = if (isUrgent) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textPrimary,
+                            modifier = Modifier.size(16.dp)
+                        )
+                        Spacer(modifier = Modifier.width(4.dp))
+                        Text(
+                            text = timeFormatted,
+                            fontSize = 14.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = if (isUrgent) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textPrimary
+                        )
+                    }
                 }
 
                 Button(
@@ -252,10 +267,19 @@ fun MockTestExamScreen(
                             backgroundColor = MaterialTheme.colors.cardBackground
                         )
                     ) {
-                        Text(
-                            "← Câu trước",
-                            color = if (currentQuestionIndex > 0) MaterialTheme.colors.textPrimary else MaterialTheme.colors.textMuted
-                        )
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Icon(
+                                imageVector = Icons.Filled.ArrowBack,
+                                contentDescription = null,
+                                tint = if (currentQuestionIndex > 0) MaterialTheme.colors.textPrimary else MaterialTheme.colors.textMuted,
+                                modifier = Modifier.size(16.dp)
+                            )
+                            Spacer(modifier = Modifier.width(4.dp))
+                            Text(
+                                "Câu trước",
+                                color = if (currentQuestionIndex > 0) MaterialTheme.colors.textPrimary else MaterialTheme.colors.textMuted
+                            )
+                        }
                     }
 
                     if (currentQuestionIndex < test.questions.size - 1) {
@@ -264,7 +288,16 @@ fun MockTestExamScreen(
                             shape = RoundedCornerShape(10.dp),
                             colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.toriiAccent)
                         ) {
-                            Text("Câu sau →", color = Color.White)
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                Text("Câu sau", color = Color.White)
+                                Spacer(modifier = Modifier.width(4.dp))
+                                Icon(
+                                    imageVector = Icons.Filled.ArrowForward,
+                                    contentDescription = null,
+                                    tint = Color.White,
+                                    modifier = Modifier.size(16.dp)
+                                )
+                            }
                         }
                     } else {
                         Button(
@@ -272,7 +305,16 @@ fun MockTestExamScreen(
                             shape = RoundedCornerShape(10.dp),
                             colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.matchaAccent)
                         ) {
-                            Text("Nộp bài thi ✓", color = Color.White, fontWeight = FontWeight.Bold)
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                Text("Nộp bài thi", color = Color.White, fontWeight = FontWeight.Bold)
+                                Spacer(modifier = Modifier.width(4.dp))
+                                Icon(
+                                    imageVector = Icons.Filled.Check,
+                                    contentDescription = null,
+                                    tint = Color.White,
+                                    modifier = Modifier.size(16.dp)
+                                )
+                            }
                         }
                     }
                 }

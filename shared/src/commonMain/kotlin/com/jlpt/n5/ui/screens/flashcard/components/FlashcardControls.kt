@@ -5,14 +5,18 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.Icon
 import androidx.compose.material.IconButton
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -41,11 +45,11 @@ fun FlashcardHeaderSection(
                         .clickable { onBack() },
                     contentAlignment = Alignment.Center
                 ) {
-                    Text(
-                        text = "←",
-                        fontSize = 18.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = MaterialTheme.colors.textPrimary
+                    Icon(
+                        imageVector = Icons.Filled.ArrowBack,
+                        contentDescription = "Quay lại",
+                        tint = MaterialTheme.colors.textPrimary,
+                        modifier = Modifier.size(20.dp)
                     )
                 }
                 Spacer(modifier = Modifier.width(10.dp))
@@ -69,7 +73,12 @@ fun FlashcardHeaderSection(
         }
 
         IconButton(onClick = onShuffle) {
-            Text(text = "🔀", fontSize = 18.sp)
+            Icon(
+                imageVector = Icons.Filled.Shuffle,
+                contentDescription = "Trộn thẻ",
+                tint = MaterialTheme.colors.toriiAccent,
+                modifier = Modifier.size(22.dp)
+            )
         }
     }
 }
@@ -89,48 +98,62 @@ fun FlashcardModeSelector(
             .padding(4.dp),
         horizontalArrangement = Arrangement.SpaceEvenly
     ) {
-        ModeSelectButton(
-            text = "📖 Từ vựng Minna",
-            isSelected = !isKanjiMode,
-            modifier = Modifier.weight(1f),
-            onClick = onSelectVocab
-        )
+        Box(
+            modifier = Modifier
+                .weight(1f)
+                .clip(RoundedCornerShape(10.dp))
+                .background(if (!isKanjiMode) MaterialTheme.colors.surface else Color.Transparent)
+                .clickable { onSelectVocab() }
+                .padding(vertical = 10.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Icon(
+                    imageVector = Icons.Filled.MenuBook,
+                    contentDescription = null,
+                    tint = if (!isKanjiMode) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textSecondary,
+                    modifier = Modifier.size(16.dp)
+                )
+                Spacer(modifier = Modifier.width(6.dp))
+                Text(
+                    text = "Từ vựng Minna",
+                    fontSize = 13.sp,
+                    fontWeight = if (!isKanjiMode) FontWeight.Bold else FontWeight.Medium,
+                    color = if (!isKanjiMode) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textSecondary
+                )
+            }
+        }
 
-        ModeSelectButton(
-            text = "🈲 104 Kanji N5",
-            isSelected = isKanjiMode,
-            modifier = Modifier.weight(1f),
-            onClick = onSelectKanji
-        )
+        Box(
+            modifier = Modifier
+                .weight(1f)
+                .clip(RoundedCornerShape(10.dp))
+                .background(if (isKanjiMode) MaterialTheme.colors.surface else Color.Transparent)
+                .clickable { onSelectKanji() }
+                .padding(vertical = 10.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Icon(
+                    imageVector = Icons.Filled.Translate,
+                    contentDescription = null,
+                    tint = if (isKanjiMode) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.textSecondary,
+                    modifier = Modifier.size(16.dp)
+                )
+                Spacer(modifier = Modifier.width(6.dp))
+                Text(
+                    text = "Kanji N5",
+                    fontSize = 13.sp,
+                    fontWeight = if (isKanjiMode) FontWeight.Bold else FontWeight.Medium,
+                    color = if (isKanjiMode) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.textSecondary
+                )
+            }
+        }
     }
 }
 
 @Composable
-fun ModeSelectButton(
-    text: String,
-    isSelected: Boolean,
-    modifier: Modifier = Modifier,
-    onClick: () -> Unit
-) {
-    Box(
-        modifier = modifier
-            .clip(RoundedCornerShape(10.dp))
-            .background(if (isSelected) MaterialTheme.colors.toriiAccent else Color.Transparent)
-            .clickable { onClick() }
-            .padding(vertical = 8.dp),
-        contentAlignment = Alignment.Center
-    ) {
-        Text(
-            text = text,
-            fontSize = 13.sp,
-            fontWeight = FontWeight.Bold,
-            color = if (isSelected) Color.White else MaterialTheme.colors.textSecondary
-        )
-    }
-}
-
-@Composable
-fun FlashcardActionRow(
+fun FlashcardBottomActionBar(
     currentCard: FlashcardItem,
     hasPrev: Boolean,
     hasNext: Boolean,
@@ -147,7 +170,7 @@ fun FlashcardActionRow(
         verticalAlignment = Alignment.CenterVertically
     ) {
         FlashcardActionButton(
-            icon = "⬅️",
+            icon = Icons.Filled.ArrowBack,
             label = "Trước",
             bgColor = MaterialTheme.colors.surfaceContainer,
             textColor = MaterialTheme.colors.textPrimary,
@@ -156,7 +179,7 @@ fun FlashcardActionRow(
         )
 
         FlashcardActionButton(
-            icon = "❌",
+            icon = Icons.Filled.Close,
             label = "Chưa nhớ",
             bgColor = MaterialTheme.colors.toriiBg,
             textColor = MaterialTheme.colors.toriiAccent,
@@ -164,7 +187,7 @@ fun FlashcardActionRow(
         )
 
         FlashcardActionButton(
-            icon = if (currentCard.isStarred) "⭐" else "☆",
+            icon = if (currentCard.isStarred) Icons.Filled.Star else Icons.Filled.StarBorder,
             label = "Yêu thích",
             bgColor = MaterialTheme.colors.amberBg,
             textColor = OchreAmber,
@@ -172,7 +195,7 @@ fun FlashcardActionRow(
         )
 
         FlashcardActionButton(
-            icon = "✅",
+            icon = Icons.Filled.Check,
             label = "Đã thuộc",
             bgColor = MaterialTheme.colors.matchaBg,
             textColor = MaterialTheme.colors.matchaAccent,
@@ -180,7 +203,7 @@ fun FlashcardActionRow(
         )
 
         FlashcardActionButton(
-            icon = "➡️",
+            icon = Icons.Filled.ArrowForward,
             label = "Tiếp",
             bgColor = MaterialTheme.colors.surfaceContainer,
             textColor = MaterialTheme.colors.textPrimary,
@@ -192,7 +215,7 @@ fun FlashcardActionRow(
 
 @Composable
 fun FlashcardActionButton(
-    icon: String,
+    icon: ImageVector,
     label: String,
     bgColor: Color,
     textColor: Color,
@@ -210,7 +233,12 @@ fun FlashcardActionButton(
                 .background(if (enabled) bgColor else MaterialTheme.colors.surfaceContainer),
             contentAlignment = Alignment.Center
         ) {
-            Text(text = icon, fontSize = 20.sp)
+            Icon(
+                imageVector = icon,
+                contentDescription = label,
+                tint = if (enabled) textColor else MaterialTheme.colors.textMuted,
+                modifier = Modifier.size(22.dp)
+            )
         }
 
         Spacer(modifier = Modifier.height(4.dp))

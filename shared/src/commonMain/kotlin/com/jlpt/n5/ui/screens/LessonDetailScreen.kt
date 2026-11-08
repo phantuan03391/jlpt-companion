@@ -12,6 +12,10 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.filled.RadioButtonUnchecked
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -108,11 +112,11 @@ fun LessonDetailScreen(
                                 .clickable { onBack() },
                             contentAlignment = Alignment.Center
                         ) {
-                            Text(
-                                text = "←",
-                                fontSize = if (isScrolledDown) 15.sp else 18.sp,
-                                fontWeight = FontWeight.Bold,
-                                color = MaterialTheme.colors.textPrimary
+                            Icon(
+                                imageVector = Icons.Filled.ArrowBack,
+                                contentDescription = "Quay lại",
+                                tint = MaterialTheme.colors.textPrimary,
+                                modifier = Modifier.size(if (isScrolledDown) 18.dp else 22.dp)
                             )
                         }
 
@@ -161,11 +165,11 @@ fun LessonDetailScreen(
                                 .clickable { viewModel.toggleLessonCompleted() },
                             contentAlignment = Alignment.Center
                         ) {
-                            Text(
-                                text = if (isLessonCompleted) "✓" else "○",
-                                fontSize = 13.sp,
-                                fontWeight = FontWeight.Bold,
-                                color = if (isLessonCompleted) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.textSecondary
+                            Icon(
+                                imageVector = if (isLessonCompleted) Icons.Filled.Check else Icons.Filled.RadioButtonUnchecked,
+                                contentDescription = null,
+                                tint = if (isLessonCompleted) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.textSecondary,
+                                modifier = Modifier.size(16.dp)
                             )
                         }
                     } else {
@@ -178,12 +182,23 @@ fun LessonDetailScreen(
                             elevation = ButtonDefaults.elevation(0.dp),
                             contentPadding = PaddingValues(horizontal = 12.dp, vertical = 6.dp)
                         ) {
-                            Text(
-                                text = if (isLessonCompleted) "✓ Đã học xong" else "Đánh dấu đã học",
-                                fontSize = 11.sp,
-                                fontWeight = FontWeight.Bold,
-                                color = if (isLessonCompleted) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.textSecondary
-                            )
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                if (isLessonCompleted) {
+                                    Icon(
+                                        imageVector = Icons.Filled.Check,
+                                        contentDescription = null,
+                                        tint = MaterialTheme.colors.matchaAccent,
+                                        modifier = Modifier.size(14.dp)
+                                    )
+                                    Spacer(modifier = Modifier.width(4.dp))
+                                }
+                                Text(
+                                    text = if (isLessonCompleted) "Đã học xong" else "Đánh dấu đã học",
+                                    fontSize = 11.sp,
+                                    fontWeight = FontWeight.Bold,
+                                    color = if (isLessonCompleted) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.textSecondary
+                                )
+                            }
                         }
                     }
                 }

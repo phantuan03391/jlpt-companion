@@ -11,6 +11,8 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -149,18 +151,32 @@ fun ListeningPracticeScreen(
                         onClick = onBack,
                         modifier = Modifier.size(36.dp)
                     ) {
-                        Text("←", fontSize = 22.sp, fontWeight = FontWeight.Bold, color = MaterialTheme.colors.textPrimary)
+                        Icon(
+                            imageVector = Icons.Filled.ArrowBack,
+                            contentDescription = "Quay lại",
+                            tint = MaterialTheme.colors.textPrimary,
+                            modifier = Modifier.size(22.dp)
+                        )
                     }
 
                     Spacer(modifier = Modifier.width(8.dp))
 
                     Column(modifier = Modifier.weight(1f)) {
-                        Text(
-                            text = "🎧 Luyện Nghe N5",
-                            fontSize = 18.sp,
-                            fontWeight = FontWeight.Bold,
-                            color = MaterialTheme.colors.textPrimary
-                        )
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Icon(
+                                imageVector = Icons.Filled.Headphones,
+                                contentDescription = null,
+                                tint = MaterialTheme.colors.toriiAccent,
+                                modifier = Modifier.size(20.dp)
+                            )
+                            Spacer(modifier = Modifier.width(6.dp))
+                            Text(
+                                text = "Luyện Nghe N5",
+                                fontSize = 18.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = MaterialTheme.colors.textPrimary
+                            )
+                        }
                         Text(
                             text = if (selectedLessonNumber == null) "Tất cả 25 bài Minna" else "Bài $selectedLessonNumber - ${JLPTRepository.getLesson(selectedLessonNumber!!)?.title ?: ""}",
                             fontSize = 12.sp,
@@ -228,17 +244,38 @@ fun ListeningPracticeScreen(
                     Tab(
                         selected = selectedTab == 0,
                         onClick = { selectedTab = 0; quizRoundKey++ },
-                        text = { Text("🎧 Nghe Từ Vựng", fontSize = 13.sp, fontWeight = FontWeight.Bold) }
+                        icon = {
+                            Icon(
+                                imageVector = Icons.Filled.Headphones,
+                                contentDescription = null,
+                                modifier = Modifier.size(18.dp)
+                            )
+                        },
+                        text = { Text("Từ Vựng", fontSize = 12.sp, fontWeight = FontWeight.Bold) }
                     )
                     Tab(
                         selected = selectedTab == 1,
                         onClick = { selectedTab = 1; quizRoundKey++ },
-                        text = { Text("💬 Nghe Câu Mẫu", fontSize = 13.sp, fontWeight = FontWeight.Bold) }
+                        icon = {
+                            Icon(
+                                imageVector = Icons.Filled.RecordVoiceOver,
+                                contentDescription = null,
+                                modifier = Modifier.size(18.dp)
+                            )
+                        },
+                        text = { Text("Câu Mẫu", fontSize = 12.sp, fontWeight = FontWeight.Bold) }
                     )
                     Tab(
                         selected = selectedTab == 2,
                         onClick = { selectedTab = 2 },
-                        text = { Text("📻 Rảnh Tay (Auto)", fontSize = 13.sp, fontWeight = FontWeight.Bold) }
+                        icon = {
+                            Icon(
+                                imageVector = Icons.Filled.PlayCircleOutline,
+                                contentDescription = null,
+                                modifier = Modifier.size(18.dp)
+                            )
+                        },
+                        text = { Text("Rảnh Tay", fontSize = 12.sp, fontWeight = FontWeight.Bold) }
                     )
                 }
             }
@@ -391,7 +428,7 @@ fun ListeningQuestionView(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    text = if (question.isSentenceMode) "🎧 Lắng nghe câu ví dụ sau" else "🎧 Lắng nghe và chọn nghĩa đúng",
+                    text = if (question.isSentenceMode) "Lắng nghe câu ví dụ sau" else "Lắng nghe và chọn nghĩa đúng",
                     fontSize = 14.sp,
                     fontWeight = FontWeight.Bold,
                     color = MaterialTheme.colors.textSecondary
@@ -408,7 +445,12 @@ fun ListeningQuestionView(
                         .clickable { onReplayAudio() },
                     contentAlignment = Alignment.Center
                 ) {
-                    Text(text = "🔊", fontSize = 36.sp)
+                    Icon(
+                        imageVector = Icons.Filled.VolumeUp,
+                        contentDescription = "Phát âm",
+                        tint = MaterialTheme.colors.toriiAccent,
+                        modifier = Modifier.size(44.dp)
+                    )
                 }
 
                 Spacer(modifier = Modifier.height(12.dp))
@@ -418,7 +460,13 @@ fun ListeningQuestionView(
                     shape = CircleShape,
                     colors = ButtonDefaults.outlinedButtonColors(contentColor = MaterialTheme.colors.toriiAccent)
                 ) {
-                    Text("Bấm để nghe lại ↺", fontSize = 13.sp, fontWeight = FontWeight.Bold)
+                    Icon(
+                        imageVector = Icons.Filled.Replay,
+                        contentDescription = null,
+                        modifier = Modifier.size(16.dp)
+                    )
+                    Spacer(modifier = Modifier.width(6.dp))
+                    Text("Bấm để nghe lại", fontSize = 13.sp, fontWeight = FontWeight.Bold)
                 }
 
                 // If submitted, reveal the details
@@ -485,7 +533,12 @@ fun ListeningQuestionView(
                                         onClick = { tts.speak(question.vocab.exampleSentence) },
                                         modifier = Modifier.size(28.dp)
                                     ) {
-                                        Text("🔊", fontSize = 14.sp)
+                                        Icon(
+                                            imageVector = Icons.Filled.VolumeUp,
+                                            contentDescription = "Phát âm câu ví dụ",
+                                            tint = MaterialTheme.colors.toriiAccent,
+                                            modifier = Modifier.size(16.dp)
+                                        )
                                     }
                                 }
                             }
@@ -543,16 +596,28 @@ fun ListeningQuestionView(
                             .background(if (isSubmitted && isCorrect) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.surfaceContainer),
                         contentAlignment = Alignment.Center
                     ) {
-                        Text(
-                            text = when {
-                                isSubmitted && isCorrect -> "✓"
-                                isSubmitted && isChosen -> "✕"
-                                else -> "${('A' + index)}"
-                            },
-                            fontSize = 12.sp,
-                            fontWeight = FontWeight.Bold,
-                            color = if (isSubmitted && isCorrect) Color.White else MaterialTheme.colors.textSecondary
-                        )
+                        if (isSubmitted && isCorrect) {
+                            Icon(
+                                imageVector = Icons.Filled.Check,
+                                contentDescription = "Đúng",
+                                tint = Color.White,
+                                modifier = Modifier.size(16.dp)
+                            )
+                        } else if (isSubmitted && isChosen) {
+                            Icon(
+                                imageVector = Icons.Filled.Close,
+                                contentDescription = "Sai",
+                                tint = Color.White,
+                                modifier = Modifier.size(16.dp)
+                            )
+                        } else {
+                            Text(
+                                text = "${('A' + index)}",
+                                fontSize = 12.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = MaterialTheme.colors.textSecondary
+                            )
+                        }
                     }
 
                     Spacer(modifier = Modifier.width(12.dp))
@@ -580,12 +645,25 @@ fun ListeningQuestionView(
                 shape = RoundedCornerShape(14.dp),
                 colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.toriiAccent)
             ) {
-                Text(
-                    text = if (currentIndex + 1 < totalCount) "Câu tiếp theo ➜" else "Xem kết quả 🎉",
-                    fontSize = 15.sp,
-                    fontWeight = FontWeight.Bold,
-                    color = Color.White
-                )
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(6.dp)
+                ) {
+                    Text(
+                        text = if (currentIndex + 1 < totalCount) "Câu tiếp theo" else "Xem kết quả",
+                        fontSize = 15.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.White
+                    )
+                    if (currentIndex + 1 < totalCount) {
+                        Icon(
+                            imageVector = Icons.Filled.ArrowForward,
+                            contentDescription = null,
+                            tint = Color.White,
+                            modifier = Modifier.size(16.dp)
+                        )
+                    }
+                }
             }
         }
     }
@@ -618,7 +696,7 @@ fun AutoplayListeningView(
         verticalArrangement = Arrangement.Center
     ) {
         Text(
-            text = "📻 CHẾ ĐỘ RẢNH TAY (AUTOPLAY)",
+            text = "CHẾ ĐỘ RẢNH TAY (AUTOPLAY)",
             fontSize = 12.sp,
             fontWeight = FontWeight.Bold,
             color = MaterialTheme.colors.toriiAccent
@@ -702,7 +780,7 @@ fun AutoplayListeningView(
 
         Spacer(modifier = Modifier.height(32.dp))
 
-        // Control buttons
+        // Control buttons (Real Vector Icons - Zero Font Dependency)
         Row(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(16.dp)
@@ -714,7 +792,12 @@ fun AutoplayListeningView(
                     .clip(CircleShape)
                     .background(MaterialTheme.colors.surfaceContainer)
             ) {
-                Text("⏮", fontSize = 18.sp)
+                Icon(
+                    imageVector = Icons.Filled.SkipPrevious,
+                    contentDescription = "Từ trước",
+                    tint = MaterialTheme.colors.textPrimary,
+                    modifier = Modifier.size(24.dp)
+                )
             }
 
             // Big Play/Pause
@@ -727,10 +810,11 @@ fun AutoplayListeningView(
                 modifier = Modifier.size(64.dp),
                 contentPadding = PaddingValues(0.dp)
             ) {
-                Text(
-                    text = if (isPlaying) "⏸" else "▶",
-                    fontSize = 26.sp,
-                    color = Color.White
+                Icon(
+                    imageVector = if (isPlaying) Icons.Filled.Pause else Icons.Filled.PlayArrow,
+                    contentDescription = if (isPlaying) "Tạm dừng" else "Phát",
+                    tint = Color.White,
+                    modifier = Modifier.size(32.dp)
                 )
             }
 
@@ -741,7 +825,12 @@ fun AutoplayListeningView(
                     .clip(CircleShape)
                     .background(MaterialTheme.colors.surfaceContainer)
             ) {
-                Text("⏭", fontSize = 18.sp)
+                Icon(
+                    imageVector = Icons.Filled.SkipNext,
+                    contentDescription = "Từ sau",
+                    tint = MaterialTheme.colors.textPrimary,
+                    modifier = Modifier.size(24.dp)
+                )
             }
 
             IconButton(
@@ -751,7 +840,12 @@ fun AutoplayListeningView(
                     .clip(CircleShape)
                     .background(MaterialTheme.colors.surfaceContainer)
             ) {
-                Text("🔊", fontSize = 18.sp)
+                Icon(
+                    imageVector = Icons.Filled.VolumeUp,
+                    contentDescription = "Nghe lại",
+                    tint = MaterialTheme.colors.textPrimary,
+                    modifier = Modifier.size(24.dp)
+                )
             }
         }
     }
@@ -780,7 +874,7 @@ fun ListeningResultCard(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = if (percent >= 80) "🎉 Xuất sắc!" else if (percent >= 50) "👏 Khá tốt!" else "💪 Cần luyện thêm!",
+                text = if (percent >= 80) "Xuất sắc!" else if (percent >= 50) "Khá tốt!" else "Cần luyện thêm!",
                 fontSize = 24.sp,
                 fontWeight = FontWeight.Bold,
                 color = if (percent >= 80) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.toriiAccent
@@ -804,7 +898,16 @@ fun ListeningResultCard(
                 shape = RoundedCornerShape(14.dp),
                 colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.toriiAccent)
             ) {
-                Text("Luyện tập lượt mới ↺", fontWeight = FontWeight.Bold, color = Color.White)
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Icon(
+                        imageVector = Icons.Filled.Refresh,
+                        contentDescription = null,
+                        tint = Color.White,
+                        modifier = Modifier.size(18.dp)
+                    )
+                    Spacer(modifier = Modifier.width(6.dp))
+                    Text("Luyện tập lượt mới", fontWeight = FontWeight.Bold, color = Color.White)
+                }
             }
 
             Spacer(modifier = Modifier.height(10.dp))
@@ -816,7 +919,16 @@ fun ListeningResultCard(
                     .height(48.dp),
                 shape = RoundedCornerShape(14.dp)
             ) {
-                Text("Chọn bài học khác 📚", color = MaterialTheme.colors.textPrimary)
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Icon(
+                        imageVector = Icons.Filled.MenuBook,
+                        contentDescription = null,
+                        tint = MaterialTheme.colors.textPrimary,
+                        modifier = Modifier.size(18.dp)
+                    )
+                    Spacer(modifier = Modifier.width(6.dp))
+                    Text("Chọn bài học khác", color = MaterialTheme.colors.textPrimary)
+                }
             }
         }
     }

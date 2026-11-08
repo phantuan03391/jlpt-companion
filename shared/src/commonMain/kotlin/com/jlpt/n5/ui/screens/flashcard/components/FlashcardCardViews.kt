@@ -4,6 +4,9 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.TouchApp
+import androidx.compose.material.icons.filled.VolumeUp
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -83,17 +86,35 @@ fun FlashcardFront(
                     elevation = ButtonDefaults.elevation(0.dp),
                     contentPadding = PaddingValues(horizontal = 14.dp, vertical = 6.dp)
                 ) {
-                    Text("🔊 Nghe phát âm", fontSize = 13.sp, fontWeight = FontWeight.Bold)
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Icon(
+                            imageVector = Icons.Filled.VolumeUp,
+                            contentDescription = null,
+                            tint = MaterialTheme.colors.toriiAccent,
+                            modifier = Modifier.size(16.dp)
+                        )
+                        Spacer(modifier = Modifier.width(6.dp))
+                        Text("Nghe phát âm", fontSize = 13.sp, fontWeight = FontWeight.Bold)
+                    }
                 }
 
                 Spacer(modifier = Modifier.height(28.dp))
 
-                Text(
-                    text = "🔄 Chạm vào thẻ để lật xem nghĩa",
-                    fontSize = 12.sp,
-                    color = MaterialTheme.colors.textMuted,
-                    fontWeight = FontWeight.Medium
-                )
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Icon(
+                        imageVector = Icons.Filled.TouchApp,
+                        contentDescription = null,
+                        tint = MaterialTheme.colors.textMuted,
+                        modifier = Modifier.size(16.dp)
+                    )
+                    Spacer(modifier = Modifier.width(4.dp))
+                    Text(
+                        text = "Chạm vào thẻ để lật xem nghĩa",
+                        fontSize = 12.sp,
+                        color = MaterialTheme.colors.textMuted,
+                        fontWeight = FontWeight.Medium
+                    )
+                }
             }
         }
     }
@@ -176,7 +197,12 @@ fun FlashcardBack(
                                     },
                                     modifier = Modifier.size(24.dp)
                                 ) {
-                                    Text(text = "🔊", fontSize = 13.sp)
+                                    Icon(
+                                        imageVector = Icons.Filled.VolumeUp,
+                                        contentDescription = "Phát âm ví dụ",
+                                        tint = MaterialTheme.colors.toriiAccent,
+                                        modifier = Modifier.size(16.dp)
+                                    )
                                 }
                             }
                             Spacer(modifier = Modifier.height(4.dp))
@@ -192,11 +218,20 @@ fun FlashcardBack(
 
                 Spacer(modifier = Modifier.height(22.dp))
 
-                Text(
-                    text = "🔄 Chạm để lật lại mặt trước",
-                    fontSize = 12.sp,
-                    color = MaterialTheme.colors.textMuted
-                )
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Icon(
+                        imageVector = Icons.Filled.TouchApp,
+                        contentDescription = null,
+                        tint = MaterialTheme.colors.textMuted,
+                        modifier = Modifier.size(16.dp)
+                    )
+                    Spacer(modifier = Modifier.width(4.dp))
+                    Text(
+                        text = "Chạm để lật lại mặt trước",
+                        fontSize = 12.sp,
+                        color = MaterialTheme.colors.textMuted
+                    )
+                }
             }
         }
     }

@@ -4,6 +4,10 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Celebration
+import androidx.compose.material.icons.filled.Visibility
+import androidx.compose.material.icons.filled.VisibilityOff
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -76,12 +80,21 @@ fun FlashcardScreen(
                         onClick = { viewModel.toggleReadingHint() },
                         contentPadding = PaddingValues(horizontal = 6.dp, vertical = 2.dp)
                     ) {
-                        Text(
-                            text = if (state.showReadingHint) "👁️ Ẩn cách đọc" else "👁️ Hiện cách đọc",
-                            fontSize = 11.sp,
-                            fontWeight = FontWeight.SemiBold,
-                            color = MaterialTheme.colors.toriiAccent
-                        )
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Icon(
+                                imageVector = if (state.showReadingHint) Icons.Filled.VisibilityOff else Icons.Filled.Visibility,
+                                contentDescription = null,
+                                tint = MaterialTheme.colors.toriiAccent,
+                                modifier = Modifier.size(14.dp)
+                            )
+                            Spacer(modifier = Modifier.width(4.dp))
+                            Text(
+                                text = if (state.showReadingHint) "Ẩn cách đọc" else "Hiện cách đọc",
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.SemiBold,
+                                color = MaterialTheme.colors.toriiAccent
+                            )
+                        }
                     }
 
                     Spacer(modifier = Modifier.width(6.dp))
@@ -140,7 +153,7 @@ fun FlashcardScreen(
             Spacer(modifier = Modifier.height(8.dp))
 
             Text(
-                text = "👆 Chạm để lật • 👈👉 Vuốt để chuyển thẻ",
+                text = "Chạm để lật • Vuốt để chuyển thẻ",
                 fontSize = 11.sp,
                 fontWeight = FontWeight.Medium,
                 color = MaterialTheme.colors.textMuted
@@ -149,7 +162,7 @@ fun FlashcardScreen(
             Spacer(modifier = Modifier.height(8.dp))
 
             // Control Buttons Row
-            FlashcardActionRow(
+            FlashcardBottomActionBar(
                 currentCard = currentCard,
                 hasPrev = currentIndex > 0,
                 hasNext = currentIndex < totalCount - 1,
@@ -168,7 +181,12 @@ fun FlashcardScreen(
                 contentAlignment = Alignment.Center
             ) {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    Text(text = "🎉", fontSize = 48.sp)
+                    Icon(
+                        imageVector = Icons.Filled.Celebration,
+                        contentDescription = null,
+                        tint = MaterialTheme.colors.toriiAccent,
+                        modifier = Modifier.size(56.dp)
+                    )
                     Spacer(modifier = Modifier.height(8.dp))
                     Text(
                         text = "Không có thẻ nào để hiển thị",

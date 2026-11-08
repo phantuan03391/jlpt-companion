@@ -11,6 +11,8 @@ import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.ui.Alignment
@@ -118,7 +120,7 @@ fun KanjiStrokeOrderView(
             modifier = Modifier.padding(16.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            // Segmented Mode Selector: [👁️ Xem thứ tự nét] | [✍️ Luyện viết tay]
+            // Segmented Mode Selector: [Xem thứ tự nét] | [Luyện viết tay]
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -136,12 +138,21 @@ fun KanjiStrokeOrderView(
                         .padding(vertical = 7.dp),
                     contentAlignment = Alignment.Center
                 ) {
-                    Text(
-                        text = "👁️ Xem thứ tự nét",
-                        fontSize = 12.sp,
-                        fontWeight = if (!isPracticeMode) FontWeight.Bold else FontWeight.Medium,
-                        color = if (!isPracticeMode) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textSecondary
-                    )
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Icon(
+                            imageVector = Icons.Filled.Visibility,
+                            contentDescription = null,
+                            tint = if (!isPracticeMode) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textSecondary,
+                            modifier = Modifier.size(14.dp)
+                        )
+                        Spacer(modifier = Modifier.width(4.dp))
+                        Text(
+                            text = "Xem thứ tự nét",
+                            fontSize = 12.sp,
+                            fontWeight = if (!isPracticeMode) FontWeight.Bold else FontWeight.Medium,
+                            color = if (!isPracticeMode) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textSecondary
+                        )
+                    }
                 }
 
                 Box(
@@ -156,12 +167,21 @@ fun KanjiStrokeOrderView(
                         .padding(vertical = 7.dp),
                     contentAlignment = Alignment.Center
                 ) {
-                    Text(
-                        text = "✍️ Luyện viết tay",
-                        fontSize = 12.sp,
-                        fontWeight = if (isPracticeMode) FontWeight.Bold else FontWeight.Medium,
-                        color = if (isPracticeMode) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textSecondary
-                    )
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Icon(
+                            imageVector = Icons.Filled.Edit,
+                            contentDescription = null,
+                            tint = if (isPracticeMode) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textSecondary,
+                            modifier = Modifier.size(14.dp)
+                        )
+                        Spacer(modifier = Modifier.width(4.dp))
+                        Text(
+                            text = "Luyện viết tay",
+                            fontSize = 12.sp,
+                            fontWeight = if (isPracticeMode) FontWeight.Bold else FontWeight.Medium,
+                            color = if (isPracticeMode) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textSecondary
+                        )
+                    }
                 }
             }
 
@@ -177,7 +197,7 @@ fun KanjiStrokeOrderView(
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
-                        text = "✍️ Thứ tự nét vẽ (Bút thuận)",
+                        text = "Thứ tự nét vẽ (Bút thuận)",
                         fontSize = 14.sp,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colors.textPrimary
@@ -192,12 +212,21 @@ fun KanjiStrokeOrderView(
                         contentPadding = PaddingValues(horizontal = 12.dp, vertical = 4.dp),
                         elevation = ButtonDefaults.elevation(0.dp)
                     ) {
-                        Text(
-                            text = if (isPlayingAnimation) "⏹ Dừng" else "▶ Chạy ảnh động",
-                            fontSize = 11.sp,
-                            fontWeight = FontWeight.Bold,
-                            color = if (isPlayingAnimation) Color.White else MaterialTheme.colors.toriiAccent
-                        )
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Icon(
+                                imageVector = if (isPlayingAnimation) Icons.Filled.Stop else Icons.Filled.PlayArrow,
+                                contentDescription = null,
+                                tint = if (isPlayingAnimation) Color.White else MaterialTheme.colors.toriiAccent,
+                                modifier = Modifier.size(14.dp)
+                            )
+                            Spacer(modifier = Modifier.width(4.dp))
+                            Text(
+                                text = if (isPlayingAnimation) "Dừng" else "Chạy ảnh động",
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = if (isPlayingAnimation) Color.White else MaterialTheme.colors.toriiAccent
+                            )
+                        }
                     }
                 }
 
@@ -322,12 +351,23 @@ fun KanjiStrokeOrderView(
                         ),
                         modifier = Modifier.height(34.dp)
                     ) {
-                        Text(
-                            text = "← Nét trước",
-                            fontSize = 11.sp,
-                            fontWeight = FontWeight.SemiBold,
-                            color = if (currentStep > 1) MaterialTheme.colors.textPrimary else MaterialTheme.colors.textMuted
-                        )
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.spacedBy(4.dp)
+                        ) {
+                            Icon(
+                                imageVector = Icons.Filled.ArrowBack,
+                                contentDescription = null,
+                                modifier = Modifier.size(13.dp),
+                                tint = if (currentStep > 1) MaterialTheme.colors.textPrimary else MaterialTheme.colors.textMuted
+                            )
+                            Text(
+                                text = "Nét trước",
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.SemiBold,
+                                color = if (currentStep > 1) MaterialTheme.colors.textPrimary else MaterialTheme.colors.textMuted
+                            )
+                        }
                     }
 
                     Surface(
@@ -360,12 +400,23 @@ fun KanjiStrokeOrderView(
                         ),
                         modifier = Modifier.height(34.dp)
                     ) {
-                        Text(
-                            text = "Nét sau →",
-                            fontSize = 11.sp,
-                            fontWeight = FontWeight.SemiBold,
-                            color = if (currentStep < totalStrokes) MaterialTheme.colors.textPrimary else MaterialTheme.colors.textMuted
-                        )
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.spacedBy(4.dp)
+                        ) {
+                            Text(
+                                text = "Nét sau",
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.SemiBold,
+                                color = if (currentStep < totalStrokes) MaterialTheme.colors.textPrimary else MaterialTheme.colors.textMuted
+                            )
+                            Icon(
+                                imageVector = Icons.Filled.ArrowForward,
+                                contentDescription = null,
+                                modifier = Modifier.size(13.dp),
+                                tint = if (currentStep < totalStrokes) MaterialTheme.colors.textPrimary else MaterialTheme.colors.textMuted
+                            )
+                        }
                     }
                 }
 
@@ -436,13 +487,24 @@ fun KanjiStrokeOrderView(
                             shape = RoundedCornerShape(10.dp),
                             color = MaterialTheme.colors.matchaBg
                         ) {
-                            Text(
-                                text = "🎉 Đủ $totalStrokes nét!",
-                                fontSize = 11.sp,
-                                fontWeight = FontWeight.Bold,
-                                color = MaterialTheme.colors.matchaAccent,
-                                modifier = Modifier.padding(horizontal = 8.dp, vertical = 3.dp)
-                            )
+                            Row(
+                                modifier = Modifier.padding(horizontal = 8.dp, vertical = 3.dp),
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Icon(
+                                    imageVector = Icons.Filled.Check,
+                                    contentDescription = null,
+                                    tint = MaterialTheme.colors.matchaAccent,
+                                    modifier = Modifier.size(12.dp)
+                                )
+                                Spacer(modifier = Modifier.width(3.dp))
+                                Text(
+                                    text = "Đủ $totalStrokes nét!",
+                                    fontSize = 11.sp,
+                                    fontWeight = FontWeight.Bold,
+                                    color = MaterialTheme.colors.matchaAccent
+                                )
+                            }
                         }
                     } else if (userStrokes.size > totalStrokes) {
                         Surface(
@@ -505,12 +567,23 @@ fun KanjiStrokeOrderView(
                         ),
                         modifier = Modifier.height(34.dp)
                     ) {
-                        Text(
-                            text = "↶ Hoàn tác",
-                            fontSize = 11.sp,
-                            fontWeight = FontWeight.SemiBold,
-                            color = if (userStrokes.isNotEmpty()) MaterialTheme.colors.textPrimary else MaterialTheme.colors.textMuted
-                        )
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.spacedBy(4.dp)
+                        ) {
+                            Icon(
+                                imageVector = Icons.Filled.Undo,
+                                contentDescription = null,
+                                modifier = Modifier.size(13.dp),
+                                tint = if (userStrokes.isNotEmpty()) MaterialTheme.colors.textPrimary else MaterialTheme.colors.textMuted
+                            )
+                            Text(
+                                text = "Hoàn tác",
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.SemiBold,
+                                color = if (userStrokes.isNotEmpty()) MaterialTheme.colors.textPrimary else MaterialTheme.colors.textMuted
+                            )
+                        }
                     }
 
                     OutlinedButton(
@@ -523,12 +596,21 @@ fun KanjiStrokeOrderView(
                         ),
                         modifier = Modifier.height(34.dp)
                     ) {
-                        Text(
-                            text = "🗑️ Xóa hết",
-                            fontSize = 11.sp,
-                            fontWeight = FontWeight.SemiBold,
-                            color = if (userStrokes.isNotEmpty()) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textMuted
-                        )
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Icon(
+                                imageVector = Icons.Filled.Delete,
+                                contentDescription = null,
+                                tint = if (userStrokes.isNotEmpty()) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textMuted,
+                                modifier = Modifier.size(14.dp)
+                            )
+                            Spacer(modifier = Modifier.width(4.dp))
+                            Text(
+                                text = "Xóa hết",
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.SemiBold,
+                                color = if (userStrokes.isNotEmpty()) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textMuted
+                            )
+                        }
                     }
 
                     Button(
@@ -541,12 +623,21 @@ fun KanjiStrokeOrderView(
                         elevation = ButtonDefaults.elevation(0.dp),
                         modifier = Modifier.height(34.dp)
                     ) {
-                        Text(
-                            text = if (showGhostGuide) "👁️ Nét mẫu: Bật" else "🕶️ Nét mẫu: Tắt",
-                            fontSize = 11.sp,
-                            fontWeight = FontWeight.Bold,
-                            color = if (showGhostGuide) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textSecondary
-                        )
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Icon(
+                                imageVector = if (showGhostGuide) Icons.Filled.Visibility else Icons.Filled.VisibilityOff,
+                                contentDescription = null,
+                                tint = if (showGhostGuide) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textSecondary,
+                                modifier = Modifier.size(14.dp)
+                            )
+                            Spacer(modifier = Modifier.width(4.dp))
+                            Text(
+                                text = if (showGhostGuide) "Nét mẫu: Bật" else "Nét mẫu: Tắt",
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = if (showGhostGuide) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textSecondary
+                            )
+                        }
                     }
 
                     Box(
@@ -560,7 +651,12 @@ fun KanjiStrokeOrderView(
                             .border(2.dp, MaterialTheme.colors.outlineBorder, CircleShape),
                         contentAlignment = Alignment.Center
                     ) {
-                        Text(text = "🎨", fontSize = 14.sp)
+                        Icon(
+                            imageVector = Icons.Filled.Palette,
+                            contentDescription = "Màu mực",
+                            tint = Color.White,
+                            modifier = Modifier.size(16.dp)
+                        )
                     }
                 }
             }

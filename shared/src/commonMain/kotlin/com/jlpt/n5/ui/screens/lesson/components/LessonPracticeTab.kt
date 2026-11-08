@@ -10,6 +10,12 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowForward
+import androidx.compose.material.icons.filled.Celebration
+import androidx.compose.material.icons.filled.Headphones
+import androidx.compose.material.icons.filled.Refresh
+import androidx.compose.material.icons.filled.VolumeUp
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -98,7 +104,12 @@ fun LessonPracticeTab(
                         .background(MaterialTheme.colors.matchaAccent.copy(alpha = 0.2f)),
                     contentAlignment = Alignment.Center
                 ) {
-                    Text("🎧", fontSize = 18.sp)
+                    Icon(
+                        imageVector = Icons.Filled.Headphones,
+                        contentDescription = null,
+                        tint = MaterialTheme.colors.matchaAccent,
+                        modifier = Modifier.size(20.dp)
+                    )
                 }
 
                 Spacer(modifier = Modifier.width(12.dp))
@@ -117,12 +128,23 @@ fun LessonPracticeTab(
                     )
                 }
 
-                Text(
-                    text = "Vào nghe ➜",
-                    fontSize = 12.sp,
-                    fontWeight = FontWeight.Bold,
-                    color = MaterialTheme.colors.matchaAccent
-                )
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(4.dp)
+                ) {
+                    Text(
+                        text = "Vào nghe",
+                        fontSize = 12.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colors.matchaAccent
+                    )
+                    Icon(
+                        imageVector = Icons.Filled.ArrowForward,
+                        contentDescription = null,
+                        modifier = Modifier.size(14.dp),
+                        tint = MaterialTheme.colors.matchaAccent
+                    )
+                }
             }
         }
 
@@ -139,12 +161,21 @@ fun LessonPracticeTab(
                     modifier = Modifier.padding(24.dp),
                     horizontalAlignment = Alignment.CenterHorizontally
                 ) {
-                    Text(
-                        text = "🎉 Hoàn thành lượt luyện tập!",
-                        fontSize = 18.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = MaterialTheme.colors.matchaAccent
-                    )
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Icon(
+                            imageVector = Icons.Filled.Celebration,
+                            contentDescription = null,
+                            tint = MaterialTheme.colors.matchaAccent,
+                            modifier = Modifier.size(22.dp)
+                        )
+                        Spacer(modifier = Modifier.width(6.dp))
+                        Text(
+                            text = "Hoàn thành lượt luyện tập!",
+                            fontSize = 18.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colors.matchaAccent
+                        )
+                    }
                     Spacer(modifier = Modifier.height(8.dp))
                     Text(
                         text = "Bạn đạt được $score / ${practiceVocabs.size} câu đúng",
@@ -165,7 +196,18 @@ fun LessonPracticeTab(
                         shape = RoundedCornerShape(12.dp),
                         colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.toriiAccent)
                     ) {
-                        Text("Luyện tập lượt mới ↺", color = Color.White, fontWeight = FontWeight.Bold)
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.spacedBy(6.dp)
+                        ) {
+                            Icon(
+                                imageVector = Icons.Filled.Refresh,
+                                contentDescription = null,
+                                tint = Color.White,
+                                modifier = Modifier.size(16.dp)
+                            )
+                            Text("Luyện tập lượt mới", color = Color.White, fontWeight = FontWeight.Bold)
+                        }
                     }
                 }
             }
@@ -229,7 +271,12 @@ fun LessonPracticeTab(
                                 .clip(CircleShape)
                                 .background(MaterialTheme.colors.toriiBg)
                         ) {
-                            Text("🔊", fontSize = 16.sp)
+                            Icon(
+                                imageVector = Icons.Filled.VolumeUp,
+                                contentDescription = "Phát âm",
+                                tint = MaterialTheme.colors.toriiAccent,
+                                modifier = Modifier.size(20.dp)
+                            )
                         }
                     }
 
@@ -316,11 +363,24 @@ fun LessonPracticeTab(
                             shape = RoundedCornerShape(10.dp),
                             colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.toriiAccent)
                         ) {
-                            Text(
-                                text = if (currentQuestionIdx + 1 < practiceVocabs.size) "Câu tiếp theo ➜" else "Xem kết quả 🎉",
-                                color = Color.White,
-                                fontWeight = FontWeight.Bold
-                            )
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically,
+                                horizontalArrangement = Arrangement.spacedBy(6.dp)
+                            ) {
+                                Text(
+                                    text = if (currentQuestionIdx + 1 < practiceVocabs.size) "Câu tiếp theo" else "Xem kết quả",
+                                    color = Color.White,
+                                    fontWeight = FontWeight.Bold
+                                )
+                                if (currentQuestionIdx + 1 < practiceVocabs.size) {
+                                    Icon(
+                                        imageVector = Icons.Filled.ArrowForward,
+                                        contentDescription = null,
+                                        tint = Color.White,
+                                        modifier = Modifier.size(16.dp)
+                                    )
+                                }
+                            }
                         }
                     }
                 }

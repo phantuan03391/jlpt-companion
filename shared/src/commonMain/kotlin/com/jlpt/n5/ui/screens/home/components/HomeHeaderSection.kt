@@ -5,6 +5,9 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Brightness4
+import androidx.compose.material.icons.filled.Whatshot
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -51,9 +54,11 @@ fun HomeHeaderSection(
                     .background(MaterialTheme.colors.surfaceContainer)
                     .size(38.dp)
             ) {
-                Text(
-                    text = if (darkMode.value) "☀️" else "🌙",
-                    fontSize = 18.sp
+                Icon(
+                    imageVector = Icons.Filled.Brightness4,
+                    contentDescription = "Chuyển giao diện sáng tối",
+                    tint = MaterialTheme.colors.textPrimary,
+                    modifier = Modifier.size(20.dp)
                 )
             }
 
@@ -67,7 +72,13 @@ fun HomeHeaderSection(
                     .padding(horizontal = 10.dp, vertical = 6.dp)
             ) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    Text(text = "🔥 ", fontSize = 13.sp)
+                    Icon(
+                        imageVector = Icons.Filled.Whatshot,
+                        contentDescription = "Chuỗi ngày",
+                        tint = OchreAmber,
+                        modifier = Modifier.size(16.dp)
+                    )
+                    Spacer(modifier = Modifier.width(4.dp))
                     Text(
                         text = "$streakDays ngày",
                         fontSize = 12.sp,

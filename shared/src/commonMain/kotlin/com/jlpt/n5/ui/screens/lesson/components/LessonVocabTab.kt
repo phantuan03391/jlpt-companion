@@ -10,6 +10,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -74,11 +76,11 @@ fun LessonVocabTab(
                         query = ""
                         focusManager.clearFocus()
                     }) {
-                        Text(
-                            text = "✕",
-                            fontSize = 16.sp,
-                            fontWeight = FontWeight.Bold,
-                            color = MaterialTheme.colors.textMuted
+                        Icon(
+                            imageVector = Icons.Filled.Close,
+                            contentDescription = "Xóa",
+                            tint = MaterialTheme.colors.textMuted,
+                            modifier = Modifier.size(18.dp)
                         )
                     }
                 }
@@ -119,15 +121,24 @@ fun LessonVocabTab(
                         elevation = 0.dp
                     ) {
                         Column(modifier = Modifier.padding(12.dp)) {
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                Icon(
+                                    imageVector = Icons.Filled.Layers,
+                                    contentDescription = null,
+                                    tint = MaterialTheme.colors.toriiAccent,
+                                    modifier = Modifier.size(16.dp)
+                                )
+                                Spacer(modifier = Modifier.width(6.dp))
+                                Text(
+                                    text = "Flashcard",
+                                    fontSize = 13.sp,
+                                    fontWeight = FontWeight.Bold,
+                                    color = MaterialTheme.colors.toriiAccent
+                                )
+                            }
+                            Spacer(modifier = Modifier.height(4.dp))
                             Text(
-                                text = "🗂️ Flashcard",
-                                fontSize = 13.sp,
-                                fontWeight = FontWeight.Bold,
-                                color = MaterialTheme.colors.toriiAccent
-                            )
-                            Spacer(modifier = Modifier.height(2.dp))
-                            Text(
-                                text = "Lật thẻ ${vocabularies.size} từ ➜",
+                                text = "Lật thẻ ${vocabularies.size} từ",
                                 fontSize = 11.sp,
                                 color = MaterialTheme.colors.textSecondary
                             )
@@ -146,15 +157,24 @@ fun LessonVocabTab(
                         elevation = 0.dp
                     ) {
                         Column(modifier = Modifier.padding(12.dp)) {
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                Icon(
+                                    imageVector = Icons.Filled.Headphones,
+                                    contentDescription = null,
+                                    tint = MaterialTheme.colors.matchaAccent,
+                                    modifier = Modifier.size(16.dp)
+                                )
+                                Spacer(modifier = Modifier.width(6.dp))
+                                Text(
+                                    text = "Luyện Nghe",
+                                    fontSize = 13.sp,
+                                    fontWeight = FontWeight.Bold,
+                                    color = MaterialTheme.colors.matchaAccent
+                                )
+                            }
+                            Spacer(modifier = Modifier.height(4.dp))
                             Text(
-                                text = "🎧 Luyện Nghe",
-                                fontSize = 13.sp,
-                                fontWeight = FontWeight.Bold,
-                                color = MaterialTheme.colors.matchaAccent
-                            )
-                            Spacer(modifier = Modifier.height(2.dp))
-                            Text(
-                                text = "Nghe & phản xạ ➜",
+                                text = "Nghe & phản xạ",
                                 fontSize = 11.sp,
                                 color = MaterialTheme.colors.textSecondary
                             )
@@ -220,7 +240,12 @@ fun VocabItemCard(vocab: Vocabulary) {
                         },
                         modifier = Modifier.size(32.dp)
                     ) {
-                        Text(text = "🔊", fontSize = 16.sp)
+                        Icon(
+                            imageVector = Icons.Filled.VolumeUp,
+                            contentDescription = "Phát âm",
+                            tint = MaterialTheme.colors.toriiAccent,
+                            modifier = Modifier.size(20.dp)
+                        )
                     }
 
                     // Star button
@@ -230,7 +255,12 @@ fun VocabItemCard(vocab: Vocabulary) {
                         },
                         modifier = Modifier.size(32.dp)
                     ) {
-                        Text(text = if (isStarred) "⭐" else "☆", fontSize = 16.sp)
+                        Icon(
+                            imageVector = if (isStarred) Icons.Filled.Star else Icons.Filled.StarBorder,
+                            contentDescription = "Yêu thích",
+                            tint = OchreAmber,
+                            modifier = Modifier.size(20.dp)
+                        )
                     }
 
                     // Mastered check button
@@ -240,7 +270,12 @@ fun VocabItemCard(vocab: Vocabulary) {
                         },
                         modifier = Modifier.size(32.dp)
                     ) {
-                        Text(text = if (isMastered) "✅" else "⚪", fontSize = 16.sp)
+                        Icon(
+                            imageVector = if (isMastered) Icons.Filled.CheckCircle else Icons.Filled.RadioButtonUnchecked,
+                            contentDescription = "Thuộc từ",
+                            tint = if (isMastered) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.textMuted,
+                            modifier = Modifier.size(20.dp)
+                        )
                     }
                 }
             }
@@ -279,7 +314,12 @@ fun VocabItemCard(vocab: Vocabulary) {
                                 onClick = { tts.speak(vocab.exampleSentence) },
                                 modifier = Modifier.size(26.dp)
                             ) {
-                                Text(text = "🔊", fontSize = 13.sp)
+                                Icon(
+                                    imageVector = Icons.Filled.VolumeUp,
+                                    contentDescription = "Phát âm ví dụ",
+                                    tint = MaterialTheme.colors.toriiAccent,
+                                    modifier = Modifier.size(16.dp)
+                                )
                             }
                         }
                         Text(

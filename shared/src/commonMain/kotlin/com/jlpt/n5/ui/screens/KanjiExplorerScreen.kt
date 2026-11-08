@@ -11,6 +11,9 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.filled.Layers
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -72,12 +75,21 @@ fun KanjiExplorerScreen(
                 shape = RoundedCornerShape(10.dp),
                 contentPadding = PaddingValues(horizontal = 12.dp, vertical = 6.dp)
             ) {
-                Text(
-                    "🗂️ Ôn thẻ",
-                    fontSize = 12.sp,
-                    fontWeight = FontWeight.Bold,
-                    color = androidx.compose.ui.graphics.Color.White
-                )
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Icon(
+                        imageVector = Icons.Filled.Layers,
+                        contentDescription = null,
+                        tint = androidx.compose.ui.graphics.Color.White,
+                        modifier = Modifier.size(16.dp)
+                    )
+                    Spacer(modifier = Modifier.width(6.dp))
+                    Text(
+                        "Ôn thẻ",
+                        fontSize = 12.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = androidx.compose.ui.graphics.Color.White
+                    )
+                }
             }
         }
 
@@ -102,11 +114,11 @@ fun KanjiExplorerScreen(
                         viewModel.setSearchQuery("")
                         focusManager.clearFocus()
                     }) {
-                        Text(
-                            text = "✕",
-                            fontSize = 16.sp,
-                            fontWeight = FontWeight.Bold,
-                            color = MaterialTheme.colors.textMuted
+                        Icon(
+                            imageVector = Icons.Filled.Close,
+                            contentDescription = "Xóa tìm kiếm",
+                            tint = MaterialTheme.colors.textMuted,
+                            modifier = Modifier.size(18.dp)
                         )
                     }
                 }

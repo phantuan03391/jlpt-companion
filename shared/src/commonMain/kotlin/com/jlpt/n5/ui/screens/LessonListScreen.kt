@@ -12,6 +12,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Close
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalFocusManager
@@ -87,11 +89,11 @@ fun LessonListScreen(
                         viewModel.setSearchQuery("")
                         focusManager.clearFocus()
                     }) {
-                        Text(
-                            text = "✕",
-                            fontSize = 16.sp,
-                            fontWeight = FontWeight.Bold,
-                            color = MaterialTheme.colors.textMuted
+                        Icon(
+                            imageVector = Icons.Filled.Close,
+                            contentDescription = "Xóa tìm kiếm",
+                            tint = MaterialTheme.colors.textMuted,
+                            modifier = Modifier.size(18.dp)
                         )
                     }
                 }

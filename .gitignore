@@ -65,3 +65,7 @@ shared/shared.podspec
 # CMake / Native
 .externalNativeBuild
 .cxx
+
+# Scratch scripts
+scratch/
+__pycache__/

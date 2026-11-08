@@ -6,6 +6,8 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
@@ -56,12 +58,21 @@ fun MockTestResultScreen(
                     contentAlignment = Alignment.Center
                 ) {
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                        Text(
-                            text = if (passed) "🎉 合格 (ĐỖ N5)" else "💪 CẦN CỐ GẮNG THÊM",
-                            fontSize = 24.sp,
-                            fontWeight = FontWeight.Black,
-                            color = Color.White
-                        )
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Icon(
+                                imageVector = if (passed) Icons.Filled.Celebration else Icons.Filled.ThumbUp,
+                                contentDescription = null,
+                                tint = Color.White,
+                                modifier = Modifier.size(24.dp)
+                            )
+                            Spacer(modifier = Modifier.width(8.dp))
+                            Text(
+                                text = if (passed) "合格 (ĐỖ N5)" else "CẦN CỐ GẮNG THÊM",
+                                fontSize = 24.sp,
+                                fontWeight = FontWeight.Black,
+                                color = Color.White
+                            )
+                        }
 
                         Spacer(modifier = Modifier.height(10.dp))
 
@@ -166,19 +177,36 @@ fun MockTestResultScreen(
                                 else -> Color.Transparent
                             }
 
-                            Box(
+                            Row(
                                 modifier = Modifier
                                     .fillMaxWidth()
                                     .padding(vertical = 2.dp)
                                     .background(optBg, RoundedCornerShape(6.dp))
-                                    .padding(horizontal = 8.dp, vertical = 4.dp)
+                                    .padding(horizontal = 8.dp, vertical = 4.dp),
+                                verticalAlignment = Alignment.CenterVertically
                             ) {
                                 Text(
-                                    text = "${('1' + idx)}. $optText ${if (isCorrectAnswer) "✓" else if (isUserPick) "✗" else ""}",
+                                    text = "${('1' + idx)}. $optText",
                                     fontSize = 13.sp,
                                     fontWeight = if (isCorrectAnswer || isUserPick) FontWeight.Bold else FontWeight.Normal,
-                                    color = if (isCorrectAnswer) MaterialTheme.colors.matchaAccent else if (isUserPick) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textSecondary
+                                    color = if (isCorrectAnswer) MaterialTheme.colors.matchaAccent else if (isUserPick) MaterialTheme.colors.toriiAccent else MaterialTheme.colors.textSecondary,
+                                    modifier = Modifier.weight(1f)
                                 )
+                                if (isCorrectAnswer) {
+                                    Icon(
+                                        imageVector = Icons.Filled.Check,
+                                        contentDescription = "Đáp án đúng",
+                                        tint = MaterialTheme.colors.matchaAccent,
+                                        modifier = Modifier.size(16.dp)
+                                    )
+                                } else if (isUserPick) {
+                                    Icon(
+                                        imageVector = Icons.Filled.Close,
+                                        contentDescription = "Bạn chọn sai",
+                                        tint = MaterialTheme.colors.toriiAccent,
+                                        modifier = Modifier.size(16.dp)
+                                    )
+                                }
                             }
                         }
 
@@ -192,12 +220,21 @@ fun MockTestResultScreen(
                                 .padding(10.dp)
                         ) {
                             Column {
-                                Text(
-                                    text = "💡 Giải thích chi tiết:",
-                                    fontSize = 12.sp,
-                                    fontWeight = FontWeight.Bold,
-                                    color = MaterialTheme.colors.toriiAccent
-                                )
+                                Row(verticalAlignment = Alignment.CenterVertically) {
+                                    Icon(
+                                        imageVector = Icons.Filled.Lightbulb,
+                                        contentDescription = null,
+                                        tint = MaterialTheme.colors.toriiAccent,
+                                        modifier = Modifier.size(16.dp)
+                                    )
+                                    Spacer(modifier = Modifier.width(4.dp))
+                                    Text(
+                                        text = "Giải thích chi tiết:",
+                                        fontSize = 12.sp,
+                                        fontWeight = FontWeight.Bold,
+                                        color = MaterialTheme.colors.toriiAccent
+                                    )
+                                }
                                 Spacer(modifier = Modifier.height(2.dp))
                                 Text(
                                     text = q.explanation,

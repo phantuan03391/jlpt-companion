@@ -8,6 +8,10 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.filled.VolumeUp
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -44,7 +48,7 @@ fun KanjiDetailDialog(
                     .verticalScroll(rememberScrollState())
                     .padding(18.dp)
             ) {
-                // Header Row with Kanji, Mastered button, and Close '✕' button
+                // Header Row with Kanji, Mastered button, and Close button
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween,
@@ -67,7 +71,12 @@ fun KanjiDetailDialog(
                             },
                             modifier = Modifier.size(34.dp)
                         ) {
-                            Text(text = "🔊", fontSize = 17.sp)
+                            Icon(
+                                imageVector = Icons.Filled.VolumeUp,
+                                contentDescription = "Phát âm",
+                                tint = MaterialTheme.colors.toriiAccent,
+                                modifier = Modifier.size(20.dp)
+                            )
                         }
                         Spacer(modifier = Modifier.width(4.dp))
                         Column {
@@ -87,8 +96,17 @@ fun KanjiDetailDialog(
                             elevation = ButtonDefaults.elevation(0.dp),
                             contentPadding = PaddingValues(horizontal = 10.dp, vertical = 6.dp)
                         ) {
+                            if (isMastered) {
+                                Icon(
+                                    imageVector = Icons.Filled.Check,
+                                    contentDescription = null,
+                                    tint = MaterialTheme.colors.matchaAccent,
+                                    modifier = Modifier.size(14.dp)
+                                )
+                                Spacer(modifier = Modifier.width(4.dp))
+                            }
                             Text(
-                                text = if (isMastered) "✓ Thuộc" else "Chưa thuộc",
+                                text = if (isMastered) "Thuộc" else "Chưa thuộc",
                                 fontSize = 11.sp,
                                 fontWeight = FontWeight.Bold,
                                 color = if (isMastered) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.textSecondary
@@ -97,7 +115,7 @@ fun KanjiDetailDialog(
 
                         Spacer(modifier = Modifier.width(8.dp))
 
-                        // Close '✕' button at top-right
+                        // Close button at top-right
                         Box(
                             modifier = Modifier
                                 .size(32.dp)
@@ -106,11 +124,11 @@ fun KanjiDetailDialog(
                                 .clickable { onDismiss() },
                             contentAlignment = Alignment.Center
                         ) {
-                            Text(
-                                text = "✕",
-                                fontSize = 14.sp,
-                                fontWeight = FontWeight.Bold,
-                                color = MaterialTheme.colors.textSecondary
+                            Icon(
+                                imageVector = Icons.Filled.Close,
+                                contentDescription = "Đóng",
+                                tint = MaterialTheme.colors.textSecondary,
+                                modifier = Modifier.size(16.dp)
                             )
                         }
                     }
@@ -196,7 +214,12 @@ fun KanjiDetailDialog(
                                     onClick = { tts.speak(if (ex.word.isNotEmpty()) ex.word else ex.reading) },
                                     modifier = Modifier.size(28.dp)
                                 ) {
-                                    Text(text = "🔊", fontSize = 14.sp)
+                                    Icon(
+                                        imageVector = Icons.Filled.VolumeUp,
+                                        contentDescription = "Phát âm ví dụ",
+                                        tint = MaterialTheme.colors.toriiAccent,
+                                        modifier = Modifier.size(16.dp)
+                                    )
                                 }
                             }
                         }
