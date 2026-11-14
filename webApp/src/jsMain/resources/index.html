@@ -24,7 +24,7 @@
             align-items: center;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
-        #ComposeTarget {
+        canvas, #ComposeTarget {
             width: 100%;
             height: 100%;
             outline: none;
@@ -38,12 +38,10 @@
     <script src="skiko.js"></script>
     <script src="webApp.js"></script>
     <script>
-        // Touch-to-Wheel Adapter for iOS WebKit & Mobile Browsers
-        // Bridges mobile touch gestures to Compose Multiplatform Web's Skiko canvas scroll engine
+        // Touch-to-Wheel Adapter for iOS WebKit (Safari, Cốc Cốc iOS, Chrome iOS) & Mobile Browsers
+        // Attached to `window` and dynamically queries `#ComposeTarget` because ComposeWindow
+        // clones and replaces the <canvas> node in the DOM on every window resize event.
         (function() {
-            var canvas = document.getElementById('ComposeTarget');
-            if (!canvas) return;
-
             var touchStartX = 0;
             var touchStartY = 0;
             var lastTouchX = 0;
@@ -52,9 +50,15 @@
             var velocityY = 0;
             var velocityX = 0;
             var isMoved = false;
+            var hadTouchMove = false;
+            var activeTouchId = null;
             var justStoppedMomentum = false;
             var momentumAnimId = null;
-            var SLOP = 8; // movement threshold to distinguish tap from scroll
+            var SLOP = 6; // movement threshold (px) to distinguish tap from scroll
+
+            function getActiveCanvas() {
+                return document.getElementById('ComposeTarget') || document.querySelector('canvas');
+            }
 
             function stopMomentum() {
                 if (momentumAnimId !== null) {
@@ -65,32 +69,63 @@
                 return false;
             }
 
-            function dispatchWheel(touch, deltaX, deltaY) {
+            function dispatchMouse(type, clientX, clientY) {
+                var canvas = getActiveCanvas();
+                if (!canvas) return;
                 var rect = canvas.getBoundingClientRect();
-                var clientX = touch.clientX;
-                var clientY = touch.clientY;
+                var offsetX = clientX - rect.left;
+                var offsetY = clientY - rect.top;
+                var mouseEv = new MouseEvent(type, {
+                    clientX: clientX,
+                    clientY: clientY,
+                    screenX: clientX,
+                    screenY: clientY,
+                    button: 0,
+                    buttons: type === 'mouseup' ? 0 : 1,
+                    bubbles: true,
+                    cancelable: true,
+                    view: window
+                });
+                try {
+                    Object.defineProperty(mouseEv, 'offsetX', { get: function() { return offsetX; }, configurable: true });
+                    Object.defineProperty(mouseEv, 'offsetY', { get: function() { return offsetY; }, configurable: true });
+                } catch (_) {}
+                canvas.dispatchEvent(mouseEv);
+            }
+
+            function dispatchWheel(clientX, clientY, deltaX, deltaY) {
+                var canvas = getActiveCanvas();
+                if (!canvas) return;
+
+                var rect = canvas.getBoundingClientRect();
                 var offsetX = clientX - rect.left;
                 var offsetY = clientY - rect.top;
 
                 var wheelEv = new WheelEvent('wheel', {
                     clientX: clientX,
                     clientY: clientY,
+                    screenX: clientX,
+                    screenY: clientY,
                     deltaX: deltaX,
                     deltaY: deltaY,
                     deltaMode: 0,
                     bubbles: true,
-                    cancelable: true
+                    cancelable: true,
+                    view: window
                 });
-                Object.defineProperty(wheelEv, 'offsetX', { value: offsetX, configurable: true });
-                Object.defineProperty(wheelEv, 'offsetY', { value: offsetY, configurable: true });
+                try {
+                    Object.defineProperty(wheelEv, 'offsetX', { get: function() { return offsetX; }, configurable: true });
+                    Object.defineProperty(wheelEv, 'offsetY', { get: function() { return offsetY; }, configurable: true });
+                } catch (_) {}
                 canvas.dispatchEvent(wheelEv);
             }
 
-            canvas.addEventListener('touchstart', function(e) {
+            window.addEventListener('touchstart', function(e) {
                 if (e.touches.length !== 1) return;
                 justStoppedMomentum = stopMomentum();
 
                 var touch = e.touches[0];
+                activeTouchId = touch.identifier;
                 touchStartX = touch.clientX;
                 touchStartY = touch.clientY;
                 lastTouchX = touch.clientX;
@@ -99,10 +134,12 @@
                 velocityY = 0;
                 velocityX = 0;
                 isMoved = false;
-            }, { passive: false });
+                hadTouchMove = false;
+            }, { passive: false, capture: true });
 
-            canvas.addEventListener('touchmove', function(e) {
+            window.addEventListener('touchmove', function(e) {
                 if (e.touches.length !== 1) return;
+                hadTouchMove = true;
                 var touch = e.touches[0];
                 var now = performance.now();
                 var dt = Math.max(1, now - lastTouchTime);
@@ -110,14 +147,17 @@
                 var totalDistX = Math.abs(touch.clientX - touchStartX);
                 var totalDistY = Math.abs(touch.clientY - touchStartY);
 
+                // Always prevent default on touchmove in iOS WKWebView (Cốc Cốc / Chrome / Safari)
+                // so native pull-to-refresh / rubber-banding does not hijack the touch stream
+                if (e.cancelable) {
+                    e.preventDefault();
+                }
+
                 if (!isMoved && (totalDistX > SLOP || totalDistY > SLOP)) {
                     isMoved = true;
                 }
 
                 if (isMoved) {
-                    // Prevent iOS Safari bounce / rubberband / pull down refresh
-                    e.preventDefault();
-
                     var deltaX = lastTouchX - touch.clientX;
                     var deltaY = lastTouchY - touch.clientY;
 
@@ -127,47 +167,73 @@
                     var instVx = deltaX / dt;
                     velocityX = velocityX * 0.35 + instVx * 0.65;
 
-                    dispatchWheel(touch, deltaX, deltaY);
+                    dispatchWheel(touch.clientX, touch.clientY, deltaX, deltaY);
                 }
 
                 lastTouchX = touch.clientX;
                 lastTouchY = touch.clientY;
                 lastTouchTime = now;
-            }, { passive: false });
+            }, { passive: false, capture: true });
 
-            canvas.addEventListener('touchend', function(e) {
+            window.addEventListener('touchend', function(e) {
                 // If this tap was only to stop an ongoing fast scroll, suppress click activation
                 if (justStoppedMomentum && !isMoved) {
-                    e.preventDefault();
+                    if (e.cancelable) e.preventDefault();
                     justStoppedMomentum = false;
+                    hadTouchMove = false;
+                    return;
+                }
+
+                // If finger slightly jittered (< SLOP) so touchmove called preventDefault(),
+                // synthesize the tap click so iOS WKWebView doesn't swallow the tap
+                if (!isMoved && hadTouchMove && e.changedTouches.length > 0) {
+                    if (e.cancelable) e.preventDefault();
+                    var tapTouch = e.changedTouches[0];
+                    dispatchMouse('mousemove', tapTouch.clientX, tapTouch.clientY);
+                    dispatchMouse('mousedown', tapTouch.clientX, tapTouch.clientY);
+                    dispatchMouse('mouseup', tapTouch.clientX, tapTouch.clientY);
+                    hadTouchMove = false;
+                    activeTouchId = null;
                     return;
                 }
 
                 if (isMoved && e.changedTouches.length > 0) {
+                    // Suppress synthetic mouse click at the end of a scroll drag
+                    if (e.cancelable) e.preventDefault();
+
                     var touch = e.changedTouches[0];
+                    var endX = touch.clientX;
+                    var endY = touch.clientY;
+
                     // Natural iOS momentum flick deceleration
                     var currentVy = velocityY * 16.0;
-                    currentVy = Math.max(-100, Math.min(100, currentVy));
+                    var currentVx = velocityX * 16.0;
+                    currentVy = Math.max(-120, Math.min(120, currentVy));
+                    currentVx = Math.max(-120, Math.min(120, currentVx));
 
-                    if (Math.abs(currentVy) > 1.2) {
+                    if (Math.abs(currentVy) > 1.0 || Math.abs(currentVx) > 1.0) {
                         function momentumStep() {
-                            if (Math.abs(currentVy) < 0.4) {
+                            if (Math.abs(currentVy) < 0.4 && Math.abs(currentVx) < 0.4) {
                                 stopMomentum();
                                 return;
                             }
-                            dispatchWheel(touch, 0, currentVy);
+                            dispatchWheel(endX, endY, currentVx, currentVy);
                             currentVy *= 0.94; // standard iOS deceleration friction
+                            currentVx *= 0.94;
                             momentumAnimId = requestAnimationFrame(momentumStep);
                         }
                         momentumAnimId = requestAnimationFrame(momentumStep);
                     }
                 }
-            }, { passive: false });
+                isMoved = false;
+                activeTouchId = null;
+            }, { passive: false, capture: true });
 
-            canvas.addEventListener('touchcancel', function(e) {
+            window.addEventListener('touchcancel', function() {
                 stopMomentum();
                 isMoved = false;
-            }, { passive: false });
+                activeTouchId = null;
+            }, { passive: false, capture: true });
         })();
     </script>
 </body>
