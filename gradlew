@@ -117,6 +117,24 @@ esac
 CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
 
 
+# Auto-detect JAVA_HOME if missing
+if [ -z "$JAVA_HOME" ] && ! which java >/dev/null 2>&1 ; then
+    if [ "$( uname )" = "Darwin" ] && [ -d "/Applications/Android Studio.app/Contents/jbr/Contents/Home" ]; then
+        export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
+    elif [ "$( uname )" = "Linux" ]; then
+        echo "📦 Provisioning OpenJDK 17 for Linux CI environment..."
+        mkdir -p /tmp/jdk17
+        if [ ! -x /tmp/jdk17/bin/java ]; then
+            curl -sL "https://api.adoptium.net/v3/binary/latest/17/ga/linux/x64/jdk/hotspot/normal/eclipse" | tar -xz -C /tmp/jdk17 --strip-components=1
+        fi
+        if [ -x /tmp/jdk17/bin/java ]; then
+            export JAVA_HOME=/tmp/jdk17
+            export PATH="$JAVA_HOME/bin:$PATH"
+            echo "☕ Java ready: $($JAVA_HOME/bin/java -version 2>&1 | head -n 1)"
+        fi
+    fi
+fi
+
 # Determine the Java command to use to start the JVM.
 if [ -n "$JAVA_HOME" ] ; then
     if [ -x "$JAVA_HOME/jre/sh/java" ] ; then
