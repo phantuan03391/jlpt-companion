@@ -17,3 +17,4 @@ chmod +x ./gradlew
 ./gradlew :webApp:jsBrowserDistribution --no-daemon
 
 echo "✅ Build complete! Assets ready in webApp/build/dist/js/productionExecutable"
+

@@ -21,19 +21,22 @@ fun JapaneseBadge(
     backgroundColor: Color? = null,
     textColor: Color? = null
 ) {
+    if (text.isEmpty()) return
     val bg = backgroundColor ?: MaterialTheme.colors.surfaceContainer
     val tc = textColor ?: MaterialTheme.colors.toriiAccent
 
     Box(
         modifier = modifier
-            .background(bg, RoundedCornerShape(8.dp))
-            .padding(horizontal = 10.dp, vertical = 4.dp)
+            .background(bg, RoundedCornerShape(6.dp))
+            .padding(horizontal = 8.dp, vertical = 2.dp)
     ) {
         Text(
             text = text,
             color = tc,
             fontSize = 11.sp,
-            fontWeight = FontWeight.Bold
+            fontWeight = FontWeight.Bold,
+            maxLines = 1,
+            softWrap = false
         )
     }
 }

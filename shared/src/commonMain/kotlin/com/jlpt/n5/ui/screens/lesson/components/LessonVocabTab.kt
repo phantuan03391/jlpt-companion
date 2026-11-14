@@ -226,14 +226,6 @@ fun VocabItemCard(vocab: Vocabulary) {
                         if (vocab.hanViet.isNotEmpty()) {
                             HanVietBadge(hanViet = vocab.hanViet)
                         }
-
-                        if (vocab.type.isNotEmpty()) {
-                            JapaneseBadge(
-                                text = vocab.type,
-                                backgroundColor = if (vocab.type.contains("Động từ")) MaterialTheme.colors.matchaBg else MaterialTheme.colors.surfaceContainer,
-                                textColor = if (vocab.type.contains("Động từ")) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.textSecondary
-                            )
-                        }
                     }
 
                     Spacer(modifier = Modifier.height(2.dp))
@@ -243,24 +235,6 @@ fun VocabItemCard(vocab: Vocabulary) {
                         fontSize = 13.sp,
                         color = MaterialTheme.colors.textMuted
                     )
-
-                    if (vocab.dictionaryForm.isNotEmpty()) {
-                        Spacer(modifier = Modifier.height(3.dp))
-                        Row(verticalAlignment = Alignment.CenterVertically) {
-                            Text(
-                                text = "Thể từ điển: ",
-                                fontSize = 12.sp,
-                                fontWeight = FontWeight.Normal,
-                                color = MaterialTheme.colors.textSecondary
-                            )
-                            Text(
-                                text = vocab.dictionaryForm,
-                                fontSize = 12.sp,
-                                fontWeight = FontWeight.Bold,
-                                color = MaterialTheme.colors.matchaAccent
-                            )
-                        }
-                    }
                 }
 
                 Row(verticalAlignment = Alignment.CenterVertically) {
@@ -308,6 +282,39 @@ fun VocabItemCard(vocab: Vocabulary) {
                             tint = if (isMastered) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.textMuted,
                             modifier = Modifier.size(20.dp)
                         )
+                    }
+                }
+            }
+
+            if (vocab.type.isNotEmpty() || vocab.dictionaryForm.isNotEmpty()) {
+                Spacer(modifier = Modifier.height(6.dp))
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    if (vocab.type.isNotEmpty()) {
+                        JapaneseBadge(
+                            text = vocab.type,
+                            backgroundColor = if (vocab.type.contains("Động từ")) MaterialTheme.colors.matchaBg else MaterialTheme.colors.surfaceContainer,
+                            textColor = if (vocab.type.contains("Động từ")) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.textSecondary
+                        )
+                    }
+
+                    if (vocab.dictionaryForm.isNotEmpty()) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Text(
+                                text = "Thể từ điển: ",
+                                fontSize = 12.sp,
+                                fontWeight = FontWeight.Normal,
+                                color = MaterialTheme.colors.textSecondary
+                            )
+                            Text(
+                                text = vocab.dictionaryForm,
+                                fontSize = 12.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = MaterialTheme.colors.matchaAccent
+                            )
+                        }
                     }
                 }
             }
