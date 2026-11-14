@@ -81,6 +81,16 @@ fun HomeDailyVocabCard(
                     color = MaterialTheme.colors.textMuted
                 )
 
+                if (vocab.dictionaryForm.isNotEmpty()) {
+                    Spacer(modifier = Modifier.height(2.dp))
+                    Text(
+                        text = "Thể từ điển: ${vocab.dictionaryForm}",
+                        fontSize = 13.sp,
+                        fontWeight = FontWeight.SemiBold,
+                        color = MaterialTheme.colors.matchaAccent
+                    )
+                }
+
                 Spacer(modifier = Modifier.height(6.dp))
 
                 Text(

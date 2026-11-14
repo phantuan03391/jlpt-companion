@@ -24,6 +24,7 @@ import com.jlpt.n5.data.JLPTRepository
 import com.jlpt.n5.model.Vocabulary
 import com.jlpt.n5.tts.LocalTTS
 import com.jlpt.n5.ui.components.HanVietBadge
+import com.jlpt.n5.ui.components.JapaneseBadge
 import com.jlpt.n5.ui.theme.*
 
 @Composable
@@ -40,7 +41,9 @@ fun LessonVocabTab(
             it.word.contains(query, ignoreCase = true) ||
                     it.reading.contains(query, ignoreCase = true) ||
                     it.meaning.contains(query, ignoreCase = true) ||
-                    it.hanViet.contains(query, ignoreCase = true)
+                    it.hanViet.contains(query, ignoreCase = true) ||
+                    it.type.contains(query, ignoreCase = true) ||
+                    it.dictionaryForm.contains(query, ignoreCase = true)
         }
     }
 
@@ -209,7 +212,10 @@ fun VocabItemCard(vocab: Vocabulary) {
                 verticalAlignment = Alignment.Top
             ) {
                 Column(modifier = Modifier.weight(1f)) {
-                    Row(verticalAlignment = Alignment.CenterVertically) {
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(6.dp)
+                    ) {
                         Text(
                             text = vocab.word,
                             fontSize = 20.sp,
@@ -217,18 +223,44 @@ fun VocabItemCard(vocab: Vocabulary) {
                             color = MaterialTheme.colors.toriiAccent
                         )
 
-                        Spacer(modifier = Modifier.width(8.dp))
-
                         if (vocab.hanViet.isNotEmpty()) {
                             HanVietBadge(hanViet = vocab.hanViet)
                         }
+
+                        if (vocab.type.isNotEmpty()) {
+                            JapaneseBadge(
+                                text = vocab.type,
+                                backgroundColor = if (vocab.type.contains("Động từ")) MaterialTheme.colors.matchaBg else MaterialTheme.colors.surfaceContainer,
+                                textColor = if (vocab.type.contains("Động từ")) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.textSecondary
+                            )
+                        }
                     }
+
+                    Spacer(modifier = Modifier.height(2.dp))
 
                     Text(
                         text = "${vocab.reading} • ${vocab.romaji}",
                         fontSize = 13.sp,
                         color = MaterialTheme.colors.textMuted
                     )
+
+                    if (vocab.dictionaryForm.isNotEmpty()) {
+                        Spacer(modifier = Modifier.height(3.dp))
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Text(
+                                text = "Thể từ điển: ",
+                                fontSize = 12.sp,
+                                fontWeight = FontWeight.Normal,
+                                color = MaterialTheme.colors.textSecondary
+                            )
+                            Text(
+                                text = vocab.dictionaryForm,
+                                fontSize = 12.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = MaterialTheme.colors.matchaAccent
+                            )
+                        }
+                    }
                 }
 
                 Row(verticalAlignment = Alignment.CenterVertically) {

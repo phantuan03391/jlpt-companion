@@ -277,6 +277,7 @@ object JLPTRepository {
                     val isMastered = masteredVocabIds.contains(v.id)
                     val isStarred = starredVocabIds.contains(v.id)
                     val frontSub = if (v.hanViet.isNotEmpty()) "【${v.hanViet}】・${v.reading}" else v.reading
+                    val dictInfo = if (v.dictionaryForm.isNotEmpty()) " | Từ điển: ${v.dictionaryForm}" else ""
                     list.add(
                         FlashcardItem(
                             id = "vocab_${v.id}",
@@ -284,7 +285,7 @@ object JLPTRepository {
                             frontMain = v.word,
                             frontSub = frontSub,
                             backMeaning = v.meaning,
-                            backDetails = "Loại: ${v.type} | Romaji: ${v.romaji}",
+                            backDetails = "Loại: ${v.type}$dictInfo | Romaji: ${v.romaji}",
                             example = if (v.exampleSentence.isNotEmpty()) "${v.exampleSentence}\n(${v.exampleSentenceMeaning})" else "",
                             isMastered = isMastered,
                             isStarred = isStarred

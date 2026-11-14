@@ -40,6 +40,7 @@ data class Vocabulary(
     val meaning: String,
     val hanViet: String = "",
     val type: String = "",
+    val dictionaryForm: String = "",
     val exampleSentence: String = "",
     val exampleSentenceReading: String = "",
     val exampleSentenceMeaning: String = ""

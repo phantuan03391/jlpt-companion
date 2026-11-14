@@ -2999,7 +2999,8 @@ object DataFixtures {
         "type": "Đại từ",
         "exampleSentence": "わたしは ナムです。",
         "exampleSentenceReading": "わたしは なむです。",
-        "exampleSentenceMeaning": "Tôi là Nam."
+        "exampleSentenceMeaning": "Tôi là Nam.",
+        "dictionaryForm": ""
       },
       {
         "id": 102,
@@ -3011,7 +3012,8 @@ object DataFixtures {
         "type": "Đại từ",
         "exampleSentence": "わたしたちは がくせいです。",
         "exampleSentenceReading": "わたしたちは がくせいです。",
-        "exampleSentenceMeaning": "Chúng tôi là học sinh."
+        "exampleSentenceMeaning": "Chúng tôi là học sinh.",
+        "dictionaryForm": ""
       },
       {
         "id": 103,
@@ -3023,7 +3025,8 @@ object DataFixtures {
         "type": "Đại từ",
         "exampleSentence": "あなたは がくせいですか。",
         "exampleSentenceReading": "あなたは がくせいですか。",
-        "exampleSentenceMeaning": "Bạn có phải là học sinh không?"
+        "exampleSentenceMeaning": "Bạn có phải là học sinh không?",
+        "dictionaryForm": ""
       },
       {
         "id": 104,
@@ -3035,7 +3038,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "あの人は だれですか。",
         "exampleSentenceReading": "あのひとは だれですか。",
-        "exampleSentenceMeaning": "Người kia là ai vậy?"
+        "exampleSentenceMeaning": "Người kia là ai vậy?",
+        "dictionaryForm": ""
       },
       {
         "id": 105,
@@ -3047,7 +3051,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "あの方は たなか先生です。",
         "exampleSentenceReading": "あのかたは たなかせんせいです。",
-        "exampleSentenceMeaning": "Vị kia là thầy Tanaka."
+        "exampleSentenceMeaning": "Vị kia là thầy Tanaka.",
+        "dictionaryForm": ""
       },
       {
         "id": 106,
@@ -3059,7 +3064,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "皆さん、おはようございます。",
         "exampleSentenceReading": "みなさん、おはようございます。",
-        "exampleSentenceMeaning": "Chào buổi sáng mọi người."
+        "exampleSentenceMeaning": "Chào buổi sáng mọi người.",
+        "dictionaryForm": ""
       },
       {
         "id": 107,
@@ -3071,7 +3077,8 @@ object DataFixtures {
         "type": "Hậu tố",
         "exampleSentence": "こちらは ミラーさんです。",
         "exampleSentenceReading": "こちらは みらーさんです。",
-        "exampleSentenceMeaning": "Đây là anh Miller."
+        "exampleSentenceMeaning": "Đây là anh Miller.",
+        "dictionaryForm": ""
       },
       {
         "id": 108,
@@ -3083,7 +3090,8 @@ object DataFixtures {
         "type": "Hậu tố",
         "exampleSentence": "さくらちゃんは かわいいです。",
         "exampleSentenceReading": "さくらちゃんは かわいいです。",
-        "exampleSentenceMeaning": "Bé Sakura rất đáng yêu."
+        "exampleSentenceMeaning": "Bé Sakura rất đáng yêu.",
+        "dictionaryForm": ""
       },
       {
         "id": 109,
@@ -3095,7 +3103,8 @@ object DataFixtures {
         "type": "Hậu tố",
         "exampleSentence": "やまだ君は どこですか。",
         "exampleSentenceReading": "やまだくんは どこですか。",
-        "exampleSentenceMeaning": "Cậu Yamada ở đâu rồi?"
+        "exampleSentenceMeaning": "Cậu Yamada ở đâu rồi?",
+        "dictionaryForm": ""
       },
       {
         "id": 110,
@@ -3107,7 +3116,8 @@ object DataFixtures {
         "type": "Hậu tố",
         "exampleSentence": "わたしは ベトナム人です。",
         "exampleSentenceReading": "わたしは べとなむじんです。",
-        "exampleSentenceMeaning": "Tôi là người Việt Nam."
+        "exampleSentenceMeaning": "Tôi là người Việt Nam.",
+        "dictionaryForm": ""
       },
       {
         "id": 111,
@@ -3119,7 +3129,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "やまださんは 先生です。",
         "exampleSentenceReading": "やまださんは せんせいです。",
-        "exampleSentenceMeaning": "Anh Yamada là giáo viên."
+        "exampleSentenceMeaning": "Anh Yamada là giáo viên.",
+        "dictionaryForm": ""
       },
       {
         "id": 112,
@@ -3131,7 +3142,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "わたしは にほんごの きょうしです。",
         "exampleSentenceReading": "わたしは にほんごの きょうしです。",
-        "exampleSentenceMeaning": "Tôi là giáo viên tiếng Nhật."
+        "exampleSentenceMeaning": "Tôi là giáo viên tiếng Nhật.",
+        "dictionaryForm": ""
       },
       {
         "id": 113,
@@ -3143,7 +3155,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "わたしは 学生です。",
         "exampleSentenceReading": "わたしは がくせいです。",
-        "exampleSentenceMeaning": "Tôi là sinh viên."
+        "exampleSentenceMeaning": "Tôi là sinh viên.",
+        "dictionaryForm": ""
       },
       {
         "id": 114,
@@ -3155,7 +3168,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "たなかさんは 会社員です。",
         "exampleSentenceReading": "たなかさんは かいしゃいんです。",
-        "exampleSentenceMeaning": "Anh Tanaka là nhân viên công ty."
+        "exampleSentenceMeaning": "Anh Tanaka là nhân viên công ty.",
+        "dictionaryForm": ""
       },
       {
         "id": 115,
@@ -3167,7 +3181,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "IMCの 社員です。",
         "exampleSentenceReading": "IMCの しゃいんです。",
-        "exampleSentenceMeaning": "Là nhân viên công ty IMC."
+        "exampleSentenceMeaning": "Là nhân viên công ty IMC.",
+        "dictionaryForm": ""
       },
       {
         "id": 116,
@@ -3179,7 +3194,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "あねは 銀行員です。",
         "exampleSentenceReading": "あねは ぎんこういんです。",
-        "exampleSentenceMeaning": "Chị gái tôi là nhân viên ngân hàng."
+        "exampleSentenceMeaning": "Chị gái tôi là nhân viên ngân hàng.",
+        "dictionaryForm": ""
       },
       {
         "id": 117,
@@ -3191,7 +3207,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ちちは 医者です。",
         "exampleSentenceReading": "ちちは いしゃです。",
-        "exampleSentenceMeaning": "Bố tôi là bác sĩ."
+        "exampleSentenceMeaning": "Bố tôi là bác sĩ.",
+        "dictionaryForm": ""
       },
       {
         "id": 118,
@@ -3203,7 +3220,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "シュミットさんは 研究者です。",
         "exampleSentenceReading": "しゅみっとさんは けんきゅうしゃです。",
-        "exampleSentenceMeaning": "Anh Schmidt là nhà nghiên cứu."
+        "exampleSentenceMeaning": "Anh Schmidt là nhà nghiên cứu.",
+        "dictionaryForm": ""
       },
       {
         "id": 119,
@@ -3215,7 +3233,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "かれは ITの エンジニアです。",
         "exampleSentenceReading": "かれは ITの えんじにあです。",
-        "exampleSentenceMeaning": "Anh ấy là kỹ sư CNTT."
+        "exampleSentenceMeaning": "Anh ấy là kỹ sư CNTT.",
+        "dictionaryForm": ""
       },
       {
         "id": 120,
@@ -3227,7 +3246,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ハノイ大学の 学生です。",
         "exampleSentenceReading": "ハノイだいがくの がくせいです。",
-        "exampleSentenceMeaning": "Tôi là sinh viên Đại học Hà Nội."
+        "exampleSentenceMeaning": "Tôi là sinh viên Đại học Hà Nội.",
+        "dictionaryForm": ""
       },
       {
         "id": 121,
@@ -3239,7 +3259,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "あの建物は 病院です。",
         "exampleSentenceReading": "あのたてものは びょういんです。",
-        "exampleSentenceMeaning": "Tòa nhà kia là bệnh viện."
+        "exampleSentenceMeaning": "Tòa nhà kia là bệnh viện.",
+        "dictionaryForm": ""
       },
       {
         "id": 122,
@@ -3251,7 +3272,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "電気を つけてください。",
         "exampleSentenceReading": "でんきを つけてください。",
-        "exampleSentenceMeaning": "Xin hãy bật đèn lên."
+        "exampleSentenceMeaning": "Xin hãy bật đèn lên.",
+        "dictionaryForm": ""
       },
       {
         "id": 123,
@@ -3263,7 +3285,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "あの人は だれですか。",
         "exampleSentenceReading": "あのひとは だれですか。",
-        "exampleSentenceMeaning": "Người kia là ai vậy?"
+        "exampleSentenceMeaning": "Người kia là ai vậy?",
+        "dictionaryForm": ""
       },
       {
         "id": 124,
@@ -3275,7 +3298,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "あの方は どなたですか。",
         "exampleSentenceReading": "あのかたは どなたですか。",
-        "exampleSentenceMeaning": "Vị kia là ai ạ?"
+        "exampleSentenceMeaning": "Vị kia là ai ạ?",
+        "dictionaryForm": ""
       },
       {
         "id": 125,
@@ -3287,7 +3311,8 @@ object DataFixtures {
         "type": "Hậu tố",
         "exampleSentence": "わたしは 20歳です。",
         "exampleSentenceReading": "わたしは はたち／にじゅっさいです。",
-        "exampleSentenceMeaning": "Tôi 20 tuổi."
+        "exampleSentenceMeaning": "Tôi 20 tuổi.",
+        "dictionaryForm": ""
       },
       {
         "id": 126,
@@ -3299,7 +3324,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "あなたは 何歳ですか。",
         "exampleSentenceReading": "あなたは なんさいですか。",
-        "exampleSentenceMeaning": "Bạn bao nhiêu tuổi?"
+        "exampleSentenceMeaning": "Bạn bao nhiêu tuổi?",
+        "dictionaryForm": ""
       },
       {
         "id": 127,
@@ -3311,7 +3337,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "おいくつですか。",
         "exampleSentenceReading": "おいくつですか。",
-        "exampleSentenceMeaning": "Bác bao nhiêu tuổi rồi ạ?"
+        "exampleSentenceMeaning": "Bác bao nhiêu tuổi rồi ạ?",
+        "dictionaryForm": ""
       },
       {
         "id": 128,
@@ -3323,7 +3350,8 @@ object DataFixtures {
         "type": "Thán từ",
         "exampleSentence": "はい、そうです。",
         "exampleSentenceReading": "はい、そうです。",
-        "exampleSentenceMeaning": "Vâng, đúng vậy."
+        "exampleSentenceMeaning": "Vâng, đúng vậy.",
+        "dictionaryForm": ""
       },
       {
         "id": 129,
@@ -3335,7 +3363,8 @@ object DataFixtures {
         "type": "Thán từ",
         "exampleSentence": "いいえ、ちがいます。",
         "exampleSentenceReading": "いいえ、ちがいます。",
-        "exampleSentenceMeaning": "Không, không phải đâu."
+        "exampleSentenceMeaning": "Không, không phải đâu.",
+        "dictionaryForm": ""
       },
       {
         "id": 130,
@@ -3347,7 +3376,8 @@ object DataFixtures {
         "type": "Chào hỏi",
         "exampleSentence": "初めまして、ナムです。",
         "exampleSentenceReading": "はじめまして、なむです。",
-        "exampleSentenceMeaning": "Chào bạn, tôi là Nam."
+        "exampleSentenceMeaning": "Chào bạn, tôi là Nam.",
+        "dictionaryForm": ""
       },
       {
         "id": 131,
@@ -3359,7 +3389,8 @@ object DataFixtures {
         "type": "Chào hỏi",
         "exampleSentence": "どうぞよろしくお願いします。",
         "exampleSentenceReading": "どうぞよろしくおねがいします。",
-        "exampleSentenceMeaning": "Rất mong được bạn giúp đỡ."
+        "exampleSentenceMeaning": "Rất mong được bạn giúp đỡ.",
+        "dictionaryForm": ""
       },
       {
         "id": 132,
@@ -3371,7 +3402,8 @@ object DataFixtures {
         "type": "Chào hỏi",
         "exampleSentence": "失礼ですが、お名前は？",
         "exampleSentenceReading": "しつれいですが、おなまえは？",
-        "exampleSentenceMeaning": "Xin lỗi, anh/chị tên là gì ạ?"
+        "exampleSentenceMeaning": "Xin lỗi, anh/chị tên là gì ạ?",
+        "dictionaryForm": ""
       },
       {
         "id": 133,
@@ -3383,7 +3415,8 @@ object DataFixtures {
         "type": "Chào hỏi",
         "exampleSentence": "お名前は 何ですか。",
         "exampleSentenceReading": "おなまえは なんですか。",
-        "exampleSentenceMeaning": "Tên của bạn là gì?"
+        "exampleSentenceMeaning": "Tên của bạn là gì?",
+        "dictionaryForm": ""
       },
       {
         "id": 134,
@@ -3395,7 +3428,8 @@ object DataFixtures {
         "type": "Giao tiếp",
         "exampleSentence": "こちらは たなかさんです。",
         "exampleSentenceReading": "こちらは たなかさんです。",
-        "exampleSentenceMeaning": "Đây là anh Tanaka."
+        "exampleSentenceMeaning": "Đây là anh Tanaka.",
+        "dictionaryForm": ""
       },
       {
         "id": 135,
@@ -3407,11 +3441,12 @@ object DataFixtures {
         "type": "Giao tiếp",
         "exampleSentence": "ベトナムから 来ました。",
         "exampleSentenceReading": "べとなむから きました。",
-        "exampleSentenceMeaning": "Tôi đến từ Việt Nam."
+        "exampleSentenceMeaning": "Tôi đến từ Việt Nam.",
+        "dictionaryForm": ""
       },
       {
         "id": 136,
-        "word": "どうぞよろしく",
+        "word": "どうぞよろしくお願いします",
         "reading": "どうぞよろしくおねがいします",
         "romaji": "douzo yoroshiku onegaishimasu",
         "meaning": "Rất mong nhận được sự giúp đỡ",
@@ -3419,7 +3454,8 @@ object DataFixtures {
         "type": "Chào hỏi",
         "exampleSentence": "どうぞ よろしく お願いします。",
         "exampleSentenceReading": "どうぞ よろしく おねがいします。",
-        "exampleSentenceMeaning": "Rất mong được sự giúp đỡ của bạn."
+        "exampleSentenceMeaning": "Rất mong được sự giúp đỡ của bạn.",
+        "dictionaryForm": ""
       }
     ],
     "grammarPoints": [
@@ -3506,7 +3542,8 @@ object DataFixtures {
         "type": "Đại từ chỉ thị",
         "exampleSentence": "これは ほんです。",
         "exampleSentenceReading": "これは ほんです。",
-        "exampleSentenceMeaning": "Đây là quyển sách."
+        "exampleSentenceMeaning": "Đây là quyển sách.",
+        "dictionaryForm": ""
       },
       {
         "id": 202,
@@ -3518,7 +3555,8 @@ object DataFixtures {
         "type": "Đại từ chỉ thị",
         "exampleSentence": "それは なんですか。",
         "exampleSentenceReading": "それは なんですか。",
-        "exampleSentenceMeaning": "Đó là cái gì vậy?"
+        "exampleSentenceMeaning": "Đó là cái gì vậy?",
+        "dictionaryForm": ""
       },
       {
         "id": 203,
@@ -3530,7 +3568,8 @@ object DataFixtures {
         "type": "Đại từ chỉ thị",
         "exampleSentence": "あれは くるまです。",
         "exampleSentenceReading": "あれは くるまです。",
-        "exampleSentenceMeaning": "Kia là chiếc xe ô tô."
+        "exampleSentenceMeaning": "Kia là chiếc xe ô tô.",
+        "dictionaryForm": ""
       },
       {
         "id": 204,
@@ -3542,7 +3581,8 @@ object DataFixtures {
         "type": "Đại từ chỉ thị",
         "exampleSentence": "この本は おもしろいです。",
         "exampleSentenceReading": "このほんは おもしろいです。",
-        "exampleSentenceMeaning": "Quyển sách này thú vị lắm."
+        "exampleSentenceMeaning": "Quyển sách này thú vị lắm.",
+        "dictionaryForm": ""
       },
       {
         "id": 205,
@@ -3554,7 +3594,8 @@ object DataFixtures {
         "type": "Đại từ chỉ thị",
         "exampleSentence": "その傘は だれのですか。",
         "exampleSentenceReading": "そのかさは だれのですか。",
-        "exampleSentenceMeaning": "Cái ô đó của ai thế?"
+        "exampleSentenceMeaning": "Cái ô đó của ai thế?",
+        "dictionaryForm": ""
       },
       {
         "id": 206,
@@ -3566,7 +3607,8 @@ object DataFixtures {
         "type": "Đại từ chỉ thị",
         "exampleSentence": "あの人は 先生です。",
         "exampleSentenceReading": "あのひとは せんせいです。",
-        "exampleSentenceMeaning": "Người kia là giáo viên."
+        "exampleSentenceMeaning": "Người kia là giáo viên.",
+        "dictionaryForm": ""
       },
       {
         "id": 207,
@@ -3578,7 +3620,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "にほんごの 本を よみます。",
         "exampleSentenceReading": "にほんごの ほんを よみます。",
-        "exampleSentenceMeaning": "Tôi đọc sách tiếng Nhật."
+        "exampleSentenceMeaning": "Tôi đọc sách tiếng Nhật.",
+        "dictionaryForm": ""
       },
       {
         "id": 208,
@@ -3590,7 +3633,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "電子辞書を 買いました。",
         "exampleSentenceReading": "でんしじしょを かいました。",
-        "exampleSentenceMeaning": "Tôi đã mua một chiếc từ điển điện tử."
+        "exampleSentenceMeaning": "Tôi đã mua một chiếc từ điển điện tử.",
+        "dictionaryForm": ""
       },
       {
         "id": 209,
@@ -3602,7 +3646,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "これは 車の 雑誌です。",
         "exampleSentenceReading": "これは くるまの ざっしです。",
-        "exampleSentenceMeaning": "Đây là tạp chí xe hơi."
+        "exampleSentenceMeaning": "Đây là tạp chí xe hơi.",
+        "dictionaryForm": ""
       },
       {
         "id": 210,
@@ -3614,7 +3659,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "毎朝 新聞を 読みます。",
         "exampleSentenceReading": "まいあさ しんぶんを よみます。",
-        "exampleSentenceMeaning": "Mỗi sáng tôi đều đọc báo."
+        "exampleSentenceMeaning": "Mỗi sáng tôi đều đọc báo.",
+        "dictionaryForm": ""
       },
       {
         "id": 211,
@@ -3626,7 +3672,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ノートに メモを します。",
         "exampleSentenceReading": "のーとに めもを します。",
-        "exampleSentenceMeaning": "Tôi ghi chú vào vở."
+        "exampleSentenceMeaning": "Tôi ghi chú vào vở.",
+        "dictionaryForm": ""
       },
       {
         "id": 212,
@@ -3638,7 +3685,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "スケジュールを 手帳に 書きます。",
         "exampleSentenceReading": "すけじゅーるを てちょうに かきます。",
-        "exampleSentenceMeaning": "Tôi viết lịch trình vào sổ tay."
+        "exampleSentenceMeaning": "Tôi viết lịch trình vào sổ tay.",
+        "dictionaryForm": ""
       },
       {
         "id": 213,
@@ -3650,7 +3698,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "わたしの 名刺を どうぞ。",
         "exampleSentenceReading": "わたしの めいしを どうぞ。",
-        "exampleSentenceMeaning": "Xin gửi bạn danh thiếp của tôi."
+        "exampleSentenceMeaning": "Xin gửi bạn danh thiếp của tôi.",
+        "dictionaryForm": ""
       },
       {
         "id": 214,
@@ -3662,7 +3711,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "クレジットカードで 払います。",
         "exampleSentenceReading": "くれじっとかーどで はらいます。",
-        "exampleSentenceMeaning": "Tôi thanh toán bằng thẻ tín dụng."
+        "exampleSentenceMeaning": "Tôi thanh toán bằng thẻ tín dụng.",
+        "dictionaryForm": ""
       },
       {
         "id": 215,
@@ -3674,7 +3724,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "テレホンカードを もっていますか。",
         "exampleSentenceReading": "てれほんかーどを もっていますか。",
-        "exampleSentenceMeaning": "Bạn có thẻ điện thoại không?"
+        "exampleSentenceMeaning": "Bạn có thẻ điện thoại không?",
+        "dictionaryForm": ""
       },
       {
         "id": 216,
@@ -3686,7 +3737,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "鉛筆で 書いてください。",
         "exampleSentenceReading": "えんぴつで かいてください。",
-        "exampleSentenceMeaning": "Xin vui lòng viết bằng bút chì."
+        "exampleSentenceMeaning": "Xin vui lòng viết bằng bút chì.",
+        "dictionaryForm": ""
       },
       {
         "id": 217,
@@ -3698,7 +3750,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "黒い ボールペンが ありますか。",
         "exampleSentenceReading": "くろい ぼーるぺんが ありますか。",
-        "exampleSentenceMeaning": "Bạn có bút bi đen không?"
+        "exampleSentenceMeaning": "Bạn có bút bi đen không?",
+        "dictionaryForm": ""
       },
       {
         "id": 218,
@@ -3710,7 +3763,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "これは 新しい シャープペンシルです。",
         "exampleSentenceReading": "これは あたらしい しゃーぷぺんしるです。",
-        "exampleSentenceMeaning": "Đây là chiếc bút chì bấm mới."
+        "exampleSentenceMeaning": "Đây là chiếc bút chì bấm mới.",
+        "dictionaryForm": ""
       },
       {
         "id": 219,
@@ -3722,7 +3776,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "部屋の 鍵を なくしました。",
         "exampleSentenceReading": "へやの かぎを なくしました。",
-        "exampleSentenceMeaning": "Tôi làm mất chìa khóa phòng rồi."
+        "exampleSentenceMeaning": "Tôi làm mất chìa khóa phòng rồi.",
+        "dictionaryForm": ""
       },
       {
         "id": 220,
@@ -3734,7 +3789,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "この時計は 日本の です。",
         "exampleSentenceReading": "このとけいは にほんの です。",
-        "exampleSentenceMeaning": "Chiếc đồng hồ này là của Nhật."
+        "exampleSentenceMeaning": "Chiếc đồng hồ này là của Nhật.",
+        "dictionaryForm": ""
       },
       {
         "id": 221,
@@ -3746,7 +3802,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "雨ですから、傘を 持ちます。",
         "exampleSentenceReading": "あめですから、かさを もちます。",
-        "exampleSentenceMeaning": "Vì trời mưa nên tôi mang ô theo."
+        "exampleSentenceMeaning": "Vì trời mưa nên tôi mang ô theo.",
+        "dictionaryForm": ""
       },
       {
         "id": 222,
@@ -3758,7 +3815,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "重い 鞄を 持ちます。",
         "exampleSentenceReading": "おもい かばんを もちます。",
-        "exampleSentenceMeaning": "Tôi xách chiếc túi nặng."
+        "exampleSentenceMeaning": "Tôi xách chiếc túi nặng.",
+        "dictionaryForm": ""
       },
       {
         "id": 223,
@@ -3770,7 +3828,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "日本語の CDを 聞きます。",
         "exampleSentenceReading": "にほんごの CDを ききます。",
-        "exampleSentenceMeaning": "Tôi nghe đĩa CD tiếng Nhật."
+        "exampleSentenceMeaning": "Tôi nghe đĩa CD tiếng Nhật.",
+        "dictionaryForm": ""
       },
       {
         "id": 224,
@@ -3782,7 +3841,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "毎晩 テレビを 見ます。",
         "exampleSentenceReading": "まいばん てれびを みます。",
-        "exampleSentenceMeaning": "Mỗi tối tôi đều xem tivi."
+        "exampleSentenceMeaning": "Mỗi tối tôi đều xem tivi.",
+        "dictionaryForm": ""
       },
       {
         "id": 225,
@@ -3794,7 +3854,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ラジオで ニュースを 聞きます。",
         "exampleSentenceReading": "らじおで にゅーすを ききます。",
-        "exampleSentenceMeaning": "Tôi nghe tin tức qua radio."
+        "exampleSentenceMeaning": "Tôi nghe tin tức qua radio.",
+        "dictionaryForm": ""
       },
       {
         "id": 226,
@@ -3806,7 +3867,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "日本の カメラを 買いました。",
         "exampleSentenceReading": "にほんの かめらを かいました。",
-        "exampleSentenceMeaning": "Tôi đã mua máy ảnh của Nhật."
+        "exampleSentenceMeaning": "Tôi đã mua máy ảnh của Nhật.",
+        "dictionaryForm": ""
       },
       {
         "id": 227,
@@ -3818,7 +3880,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "会社で コンピューターを 使います。",
         "exampleSentenceReading": "かいしゃで こんぴゅーたーを つかいます。",
-        "exampleSentenceMeaning": "Tôi dùng máy vi tính ở công ty."
+        "exampleSentenceMeaning": "Tôi dùng máy vi tính ở công ty.",
+        "dictionaryForm": ""
       },
       {
         "id": 228,
@@ -3830,7 +3893,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "父の 車は 白いです。",
         "exampleSentenceReading": "ちちの くるまは しろいです。",
-        "exampleSentenceMeaning": "Xe ô tô của bố tôi màu trắng."
+        "exampleSentenceMeaning": "Xe ô tô của bố tôi màu trắng.",
+        "dictionaryForm": ""
       },
       {
         "id": 229,
@@ -3842,7 +3906,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "机の 上に 本が あります。",
         "exampleSentenceReading": "つくえの うえに ほんが あります。",
-        "exampleSentenceMeaning": "Trên bàn có quyển sách."
+        "exampleSentenceMeaning": "Trên bàn có quyển sách.",
+        "dictionaryForm": ""
       },
       {
         "id": 230,
@@ -3854,7 +3919,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "いすに 座ってください。",
         "exampleSentenceReading": "いすに すわってください。",
-        "exampleSentenceMeaning": "Xin mời ngồi vào ghế."
+        "exampleSentenceMeaning": "Xin mời ngồi vào ghế.",
+        "dictionaryForm": ""
       },
       {
         "id": 231,
@@ -3866,7 +3932,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "チョコレートを 食べました。",
         "exampleSentenceReading": "ちょこれーとを たべました。",
-        "exampleSentenceMeaning": "Tôi đã ăn kẹo sô-cô-la."
+        "exampleSentenceMeaning": "Tôi đã ăn kẹo sô-cô-la.",
+        "dictionaryForm": ""
       },
       {
         "id": 232,
@@ -3878,7 +3945,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "朝 コーヒーを 飲みます。",
         "exampleSentenceReading": "あさ こーひーを のみます。",
-        "exampleSentenceMeaning": "Buổi sáng tôi uống cà phê."
+        "exampleSentenceMeaning": "Buổi sáng tôi uống cà phê.",
+        "dictionaryForm": ""
       },
       {
         "id": 233,
@@ -3890,7 +3958,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "京都の お土産です。",
         "exampleSentenceReading": "きょうとの おみやげです。",
-        "exampleSentenceMeaning": "Đây là quà đặc sản của Kyoto."
+        "exampleSentenceMeaning": "Đây là quà đặc sản của Kyoto.",
+        "dictionaryForm": ""
       },
       {
         "id": 234,
@@ -3902,7 +3971,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "英語を 勉強します。",
         "exampleSentenceReading": "えいごを べんきょうします。",
-        "exampleSentenceMeaning": "Tôi học tiếng Anh."
+        "exampleSentenceMeaning": "Tôi học tiếng Anh.",
+        "dictionaryForm": ""
       },
       {
         "id": 235,
@@ -3914,7 +3984,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "日本語が 上手に なりました。",
         "exampleSentenceReading": "にほんごが じょうずに なりました。",
-        "exampleSentenceMeaning": "Tiếng Nhật của tôi đã giỏi hơn."
+        "exampleSentenceMeaning": "Tiếng Nhật của tôi đã giỏi hơn.",
+        "dictionaryForm": ""
       },
       {
         "id": 236,
@@ -3926,7 +3997,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "それは 何ですか。",
         "exampleSentenceReading": "それは なんですか。",
-        "exampleSentenceMeaning": "Đó là cái gì thế?"
+        "exampleSentenceMeaning": "Đó là cái gì thế?",
+        "dictionaryForm": ""
       },
       {
         "id": 237,
@@ -3938,7 +4010,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "はい、そうです。",
         "exampleSentenceReading": "はい、そうです。",
-        "exampleSentenceMeaning": "Vâng, đúng vậy."
+        "exampleSentenceMeaning": "Vâng, đúng vậy.",
+        "dictionaryForm": ""
       },
       {
         "id": 238,
@@ -3947,70 +4020,11 @@ object DataFixtures {
         "romaji": "chigaimasu",
         "meaning": "Không phải / Sai rồi",
         "hanViet": "Vi",
-        "type": "Động từ",
+        "type": "Động từ nhóm 1",
         "exampleSentence": "いいえ、違います。",
         "exampleSentenceReading": "いいえ、ちがいます。",
-        "exampleSentenceMeaning": "Không, không phải đâu."
-      },
-      {
-        "id": 239,
-        "word": "この～",
-        "reading": "この",
-        "romaji": "kono",
-        "meaning": "Cái ~ này (+ danh từ)",
-        "hanViet": "",
-        "type": "Liên thể từ",
-        "exampleSentence": "この本は おもしろいです。",
-        "exampleSentenceReading": "このほんは おもしろいです。",
-        "exampleSentenceMeaning": "Quyển sách này thú vị."
-      },
-      {
-        "id": 240,
-        "word": "その～",
-        "reading": "その",
-        "romaji": "sono",
-        "meaning": "Cái ~ đó (+ danh từ)",
-        "hanViet": "",
-        "type": "Liên thể từ",
-        "exampleSentence": "その傘は あなたのですか。",
-        "exampleSentenceReading": "そのかさは あなたのですか。",
-        "exampleSentenceMeaning": "Cái ô đó là của bạn à?"
-      },
-      {
-        "id": 241,
-        "word": "あの～",
-        "reading": "あの",
-        "romaji": "ano",
-        "meaning": "Cái ~ kia (+ danh từ)",
-        "hanViet": "",
-        "type": "Liên thể từ",
-        "exampleSentence": "あの車は たかいです。",
-        "exampleSentenceReading": "あのくるまは たかいです。",
-        "exampleSentenceMeaning": "Chiếc xe ô tô kia đắt tiền."
-      },
-      {
-        "id": 242,
-        "word": "ノート",
-        "reading": "のーと",
-        "romaji": "nooto",
-        "meaning": "Vở / Tập viết",
-        "hanViet": "",
-        "type": "Danh từ",
-        "exampleSentence": "これは ノートです。",
-        "exampleSentenceReading": "これは のーとです。",
-        "exampleSentenceMeaning": "Đây là cuốn vở."
-      },
-      {
-        "id": 243,
-        "word": "ボールペン",
-        "reading": "ぼーるぺん",
-        "romaji": "boorupen",
-        "meaning": "Bút bi",
-        "hanViet": "",
-        "type": "Danh từ",
-        "exampleSentence": "ボールペンを ください。",
-        "exampleSentenceReading": "ぼーるぺんを ください。",
-        "exampleSentenceMeaning": "Xin hãy cho tôi cái bút bi."
+        "exampleSentenceMeaning": "Không, không phải đâu.",
+        "dictionaryForm": "違う (ちがう)"
       }
     ],
     "grammarPoints": [
@@ -4068,7 +4082,8 @@ object DataFixtures {
         "type": "Đại từ",
         "exampleSentence": "ここは きょうしつです。",
         "exampleSentenceReading": "ここは きょうしつです。",
-        "exampleSentenceMeaning": "Đây là phòng học."
+        "exampleSentenceMeaning": "Đây là phòng học.",
+        "dictionaryForm": ""
       },
       {
         "id": 302,
@@ -4080,7 +4095,8 @@ object DataFixtures {
         "type": "Đại từ",
         "exampleSentence": "そこは うけつけです。",
         "exampleSentenceReading": "そこは うけつけです。",
-        "exampleSentenceMeaning": "Đó là quầy lễ tân."
+        "exampleSentenceMeaning": "Đó là quầy lễ tân.",
+        "dictionaryForm": ""
       },
       {
         "id": 303,
@@ -4092,7 +4108,8 @@ object DataFixtures {
         "type": "Đại từ",
         "exampleSentence": "あそこは レストランです。",
         "exampleSentenceReading": "あそこは れすとらんです。",
-        "exampleSentenceMeaning": "Đằng kia là nhà hàng."
+        "exampleSentenceMeaning": "Đằng kia là nhà hàng.",
+        "dictionaryForm": ""
       },
       {
         "id": 304,
@@ -4104,7 +4121,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "お手洗いは どこですか。",
         "exampleSentenceReading": "おてあらいは どこですか。",
-        "exampleSentenceMeaning": "Nhà vệ sinh ở đâu vậy?"
+        "exampleSentenceMeaning": "Nhà vệ sinh ở đâu vậy?",
+        "dictionaryForm": ""
       },
       {
         "id": 305,
@@ -4116,7 +4134,8 @@ object DataFixtures {
         "type": "Đại từ",
         "exampleSentence": "こちらは じむしょです。",
         "exampleSentenceReading": "こちらは じむしょです。",
-        "exampleSentenceMeaning": "Phía này là văn phòng ạ."
+        "exampleSentenceMeaning": "Phía này là văn phòng ạ.",
+        "dictionaryForm": ""
       },
       {
         "id": 306,
@@ -4128,7 +4147,8 @@ object DataFixtures {
         "type": "Đại từ",
         "exampleSentence": "そちらは エレベーターです。",
         "exampleSentenceReading": "そちらは えれべーたーです。",
-        "exampleSentenceMeaning": "Phía đó là thang máy ạ."
+        "exampleSentenceMeaning": "Phía đó là thang máy ạ.",
+        "dictionaryForm": ""
       },
       {
         "id": 307,
@@ -4140,7 +4160,8 @@ object DataFixtures {
         "type": "Đại từ",
         "exampleSentence": "あちらは でんわです。",
         "exampleSentenceReading": "あちらは でんわです。",
-        "exampleSentenceMeaning": "Phía kia là điện thoại ạ."
+        "exampleSentenceMeaning": "Phía kia là điện thoại ạ.",
+        "dictionaryForm": ""
       },
       {
         "id": 308,
@@ -4152,7 +4173,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "かいぎしつは どちらですか。",
         "exampleSentenceReading": "かいぎしつは どちらですか。",
-        "exampleSentenceMeaning": "Phòng họp ở hướng nào ạ?"
+        "exampleSentenceMeaning": "Phòng họp ở hướng nào ạ?",
+        "dictionaryForm": ""
       },
       {
         "id": 309,
@@ -4164,7 +4186,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "教室に 学生が います。",
         "exampleSentenceReading": "きょうしつに がくせいが います。",
-        "exampleSentenceMeaning": "Trong phòng học có học sinh."
+        "exampleSentenceMeaning": "Trong phòng học có học sinh.",
+        "dictionaryForm": ""
       },
       {
         "id": 310,
@@ -4176,7 +4199,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "食堂で 昼ご飯を 食べます。",
         "exampleSentenceReading": "しょくどうで ひるごはんを たべます。",
-        "exampleSentenceMeaning": "Tôi ăn trưa ở nhà ăn."
+        "exampleSentenceMeaning": "Tôi ăn trưa ở nhà ăn.",
+        "dictionaryForm": ""
       },
       {
         "id": 311,
@@ -4188,7 +4212,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "先生は 事務所に います。",
         "exampleSentenceReading": "せんせいは じむしょに います。",
-        "exampleSentenceMeaning": "Thầy giáo đang ở văn phòng."
+        "exampleSentenceMeaning": "Thầy giáo đang ở văn phòng.",
+        "dictionaryForm": ""
       },
       {
         "id": 312,
@@ -4200,7 +4225,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "会議室で ミーティングを します。",
         "exampleSentenceReading": "かいぎしつで みーてぃんぐを します。",
-        "exampleSentenceMeaning": "Chúng tôi họp ở phòng họp."
+        "exampleSentenceMeaning": "Chúng tôi họp ở phòng họp.",
+        "dictionaryForm": ""
       },
       {
         "id": 313,
@@ -4212,7 +4238,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "受付で 名前を 書きます。",
         "exampleSentenceReading": "うけつけで なまえを かきます。",
-        "exampleSentenceMeaning": "Tôi viết tên tại quầy lễ tân."
+        "exampleSentenceMeaning": "Tôi viết tên tại quầy lễ tân.",
+        "dictionaryForm": ""
       },
       {
         "id": 314,
@@ -4224,7 +4251,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ロビーで 友達を 待ちます。",
         "exampleSentenceReading": "ろびーで ともだちを まちます。",
-        "exampleSentenceMeaning": "Tôi đợi bạn ở sảnh."
+        "exampleSentenceMeaning": "Tôi đợi bạn ở sảnh.",
+        "dictionaryForm": ""
       },
       {
         "id": 315,
@@ -4236,7 +4264,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "わたしの 部屋は 3階です。",
         "exampleSentenceReading": "わたしの へやは さんがいです。",
-        "exampleSentenceMeaning": "Phòng của tôi ở tầng 3."
+        "exampleSentenceMeaning": "Phòng của tôi ở tầng 3.",
+        "dictionaryForm": ""
       },
       {
         "id": 316,
@@ -4248,7 +4277,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "トイレは あちらです。",
         "exampleSentenceReading": "といれは あちらです。",
-        "exampleSentenceMeaning": "Nhà vệ sinh ở đằng kia."
+        "exampleSentenceMeaning": "Nhà vệ sinh ở đằng kia.",
+        "dictionaryForm": ""
       },
       {
         "id": 317,
@@ -4260,7 +4290,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "お手洗いは どこですか。",
         "exampleSentenceReading": "おてあらいは どこですか。",
-        "exampleSentenceMeaning": "Cho tôi hỏi nhà vệ sinh ở đâu ạ?"
+        "exampleSentenceMeaning": "Cho tôi hỏi nhà vệ sinh ở đâu ạ?",
+        "dictionaryForm": ""
       },
       {
         "id": 318,
@@ -4272,7 +4303,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "階段を 上がります。",
         "exampleSentenceReading": "かいだんを あがります。",
-        "exampleSentenceMeaning": "Tôi đi lên cầu thang bộ."
+        "exampleSentenceMeaning": "Tôi đi lên cầu thang bộ.",
+        "dictionaryForm": ""
       },
       {
         "id": 319,
@@ -4284,7 +4316,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "エレベーターで 8階へ 行きます。",
         "exampleSentenceReading": "えれべーたーで はちかいへ いきます。",
-        "exampleSentenceMeaning": "Tôi đi thang máy lên tầng 8."
+        "exampleSentenceMeaning": "Tôi đi thang máy lên tầng 8.",
+        "dictionaryForm": ""
       },
       {
         "id": 320,
@@ -4296,7 +4329,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "エスカレーターは 右に あります。",
         "exampleSentenceReading": "えすかれーたーは みぎに あります。",
-        "exampleSentenceMeaning": "Thang cuốn ở bên tay phải."
+        "exampleSentenceMeaning": "Thang cuốn ở bên tay phải.",
+        "dictionaryForm": ""
       },
       {
         "id": 321,
@@ -4308,7 +4342,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "自動販売機で ジュースを 買います。",
         "exampleSentenceReading": "じどうはんばいきで じゅーすを かいます。",
-        "exampleSentenceMeaning": "Tôi mua nước ép ở máy bán hàng tự động."
+        "exampleSentenceMeaning": "Tôi mua nước ép ở máy bán hàng tự động.",
+        "dictionaryForm": ""
       },
       {
         "id": 322,
@@ -4320,7 +4355,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "電話を かけます。",
         "exampleSentenceReading": "でんわを かけます。",
-        "exampleSentenceMeaning": "Tôi gọi điện thoại."
+        "exampleSentenceMeaning": "Tôi gọi điện thoại.",
+        "dictionaryForm": ""
       },
       {
         "id": 323,
@@ -4332,7 +4368,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "お国は どちらですか。",
         "exampleSentenceReading": "おくには どちらですか。",
-        "exampleSentenceMeaning": "Đất nước của bạn là nước nào ạ?"
+        "exampleSentenceMeaning": "Đất nước của bạn là nước nào ạ?",
+        "dictionaryForm": ""
       },
       {
         "id": 324,
@@ -4344,7 +4381,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "父の 会社は 東京に あります。",
         "exampleSentenceReading": "ちちの かいしゃは とうきょうに あります。",
-        "exampleSentenceMeaning": "Công ty của bố tôi ở Tokyo."
+        "exampleSentenceMeaning": "Công ty của bố tôi ở Tokyo.",
+        "dictionaryForm": ""
       },
       {
         "id": 325,
@@ -4356,7 +4394,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "6時に うちへ 帰ります。",
         "exampleSentenceReading": "ろくじに うちへ かえります。",
-        "exampleSentenceMeaning": "Lúc 6 giờ tôi về nhà."
+        "exampleSentenceMeaning": "Lúc 6 giờ tôi về nhà.",
+        "dictionaryForm": ""
       },
       {
         "id": 326,
@@ -4368,7 +4407,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "日本の 靴は いいです。",
         "exampleSentenceReading": "にほんの くつは いいです。",
-        "exampleSentenceMeaning": "Giày của Nhật rất tốt."
+        "exampleSentenceMeaning": "Giày của Nhật rất tốt.",
+        "dictionaryForm": ""
       },
       {
         "id": 327,
@@ -4380,7 +4420,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "青い ネクタイを 買いました。",
         "exampleSentenceReading": "あおい ねくたいを かいました。",
-        "exampleSentenceMeaning": "Tôi đã mua một chiếc cà vạt màu xanh."
+        "exampleSentenceMeaning": "Tôi đã mua một chiếc cà vạt màu xanh.",
+        "dictionaryForm": ""
       },
       {
         "id": 328,
@@ -4392,7 +4433,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "フランスの ワインを 飲みます。",
         "exampleSentenceReading": "ふらんすの わいんを のみます。",
-        "exampleSentenceMeaning": "Tôi uống rượu vang Pháp."
+        "exampleSentenceMeaning": "Tôi uống rượu vang Pháp.",
+        "dictionaryForm": ""
       },
       {
         "id": 329,
@@ -4404,7 +4446,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ワイン売場は 地下に あります。",
         "exampleSentenceReading": "わいんうりばは ちかに あります。",
-        "exampleSentenceMeaning": "Khu bán rượu vang ở dưới tầng hầm."
+        "exampleSentenceMeaning": "Khu bán rượu vang ở dưới tầng hầm.",
+        "dictionaryForm": ""
       },
       {
         "id": 330,
@@ -4416,7 +4459,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "地下に 駐車場が あります。",
         "exampleSentenceReading": "ちかに ちゅうしゃじょうが あります。",
-        "exampleSentenceMeaning": "Dưới tầng hầm có bãi đỗ xe."
+        "exampleSentenceMeaning": "Dưới tầng hầm có bãi đỗ xe.",
+        "dictionaryForm": ""
       },
       {
         "id": 331,
@@ -4428,7 +4472,8 @@ object DataFixtures {
         "type": "Hậu tố",
         "exampleSentence": "事務室は 2階です。",
         "exampleSentenceReading": "じむしつは にかいです。",
-        "exampleSentenceMeaning": "Phòng làm việc ở tầng 2."
+        "exampleSentenceMeaning": "Phòng làm việc ở tầng 2.",
+        "dictionaryForm": ""
       },
       {
         "id": 332,
@@ -4440,7 +4485,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "あなたの 部屋は 何階ですか。",
         "exampleSentenceReading": "あなたの へやは なんがいですか。",
-        "exampleSentenceMeaning": "Phòng của bạn ở tầng mấy?"
+        "exampleSentenceMeaning": "Phòng của bạn ở tầng mấy?",
+        "dictionaryForm": ""
       },
       {
         "id": 333,
@@ -4452,7 +4498,8 @@ object DataFixtures {
         "type": "Đơn vị tiền tệ",
         "exampleSentence": "これは 1000円です。",
         "exampleSentenceReading": "これは せんえんです。",
-        "exampleSentenceMeaning": "Cái này giá 1000 Yên."
+        "exampleSentenceMeaning": "Cái này giá 1000 Yên.",
+        "dictionaryForm": ""
       },
       {
         "id": 334,
@@ -4464,7 +4511,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "このネクタイは いくらですか。",
         "exampleSentenceReading": "このねくたいは いくらですか。",
-        "exampleSentenceMeaning": "Chiếc cà vạt này bao nhiêu tiền?"
+        "exampleSentenceMeaning": "Chiếc cà vạt này bao nhiêu tiền?",
+        "dictionaryForm": ""
       },
       {
         "id": 335,
@@ -4476,7 +4524,8 @@ object DataFixtures {
         "type": "Số từ",
         "exampleSentence": "300円 (さんびゃくえん) です。",
         "exampleSentenceReading": "さんびゃくえんです。",
-        "exampleSentenceMeaning": "Giá 300 Yên."
+        "exampleSentenceMeaning": "Giá 300 Yên.",
+        "dictionaryForm": ""
       },
       {
         "id": 336,
@@ -4488,7 +4537,8 @@ object DataFixtures {
         "type": "Số từ",
         "exampleSentence": "5000円 (ごせんえん) です。",
         "exampleSentenceReading": "ごせんえんです。",
-        "exampleSentenceMeaning": "Giá 5000 Yên."
+        "exampleSentenceMeaning": "Giá 5000 Yên.",
+        "dictionaryForm": ""
       },
       {
         "id": 337,
@@ -4500,7 +4550,8 @@ object DataFixtures {
         "type": "Số từ",
         "exampleSentence": "2万円 (にまんえん) です。",
         "exampleSentenceReading": "にまんえんです。",
-        "exampleSentenceMeaning": "Giá 2 vạn Yên (20.000 Yên)."
+        "exampleSentenceMeaning": "Giá 2 vạn Yên (20.000 Yên).",
+        "dictionaryForm": ""
       },
       {
         "id": 338,
@@ -4512,7 +4563,8 @@ object DataFixtures {
         "type": "Chào hỏi",
         "exampleSentence": "すみません、これは いくらですか。",
         "exampleSentenceReading": "すみません、これは いくらですか。",
-        "exampleSentenceMeaning": "Xin lỗi, cái này bao nhiêu tiền vậy?"
+        "exampleSentenceMeaning": "Xin lỗi, cái này bao nhiêu tiền vậy?",
+        "dictionaryForm": ""
       },
       {
         "id": 339,
@@ -4524,31 +4576,8 @@ object DataFixtures {
         "type": "Chào hỏi",
         "exampleSentence": "いらっしゃいませ、何名様ですか。",
         "exampleSentenceReading": "いらっしゃいませ、なんめいさまですか。",
-        "exampleSentenceMeaning": "Kính chào quý khách, quý khách đi mấy người ạ?"
-      },
-      {
-        "id": 340,
-        "word": "トイレ",
-        "reading": "といれ",
-        "romaji": "toire",
-        "meaning": "Nhà vệ sinh",
-        "hanViet": "",
-        "type": "Danh từ",
-        "exampleSentence": "トイレは どこですか。",
-        "exampleSentenceReading": "といれは どこですか。",
-        "exampleSentenceMeaning": "Nhà vệ sinh ở đâu?"
-      },
-      {
-        "id": 341,
-        "word": "エレベーター",
-        "reading": "えれべーたー",
-        "romaji": "erebeetaa",
-        "meaning": "Thang máy",
-        "hanViet": "",
-        "type": "Danh từ",
-        "exampleSentence": "エレベーターで 行きます。",
-        "exampleSentenceReading": "えれべーたーで いきます。",
-        "exampleSentenceMeaning": "Đi bằng thang máy."
+        "exampleSentenceMeaning": "Kính chào quý khách, quý khách đi mấy người ạ?",
+        "dictionaryForm": ""
       },
       {
         "id": 342,
@@ -4560,7 +4589,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "お国は どちらですか。",
         "exampleSentenceReading": "おくには どちらですか。",
-        "exampleSentenceMeaning": "Bạn là người nước nào?"
+        "exampleSentenceMeaning": "Bạn là người nước nào?",
+        "dictionaryForm": ""
       }
     ],
     "grammarPoints": [
@@ -4618,7 +4648,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "毎朝 6時に 起きます。",
         "exampleSentenceReading": "まいあさ ろくじに おきます。",
-        "exampleSentenceMeaning": "Mỗi sáng tôi thức dậy lúc 6 giờ."
+        "exampleSentenceMeaning": "Mỗi sáng tôi thức dậy lúc 6 giờ.",
+        "dictionaryForm": "起きる (おきる)"
       },
       {
         "id": 402,
@@ -4630,7 +4661,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "夜 11時に 寝ます。",
         "exampleSentenceReading": "よる じゅういちじに ねます。",
-        "exampleSentenceMeaning": "Tôi đi ngủ lúc 11 giờ đêm."
+        "exampleSentenceMeaning": "Tôi đi ngủ lúc 11 giờ đêm.",
+        "dictionaryForm": "寝る (ねる)"
       },
       {
         "id": 403,
@@ -4642,7 +4674,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "会社で 働きます。",
         "exampleSentenceReading": "かいしゃで はたらきます。",
-        "exampleSentenceMeaning": "Tôi làm việc ở công ty."
+        "exampleSentenceMeaning": "Tôi làm việc ở công ty.",
+        "dictionaryForm": "働く (はたらく)"
       },
       {
         "id": 404,
@@ -4654,7 +4687,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "日曜日は 休みます。",
         "exampleSentenceReading": "にちようびは やすみます。",
-        "exampleSentenceMeaning": "Chủ nhật tôi nghỉ ngơi."
+        "exampleSentenceMeaning": "Chủ nhật tôi nghỉ ngơi.",
+        "dictionaryForm": "休む (やすむ)"
       },
       {
         "id": 405,
@@ -4666,7 +4700,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "図書館で 勉強します。",
         "exampleSentenceReading": "としょかんで べんきょうします。",
-        "exampleSentenceMeaning": "Tôi học bài ở thư viện."
+        "exampleSentenceMeaning": "Tôi học bài ở thư viện.",
+        "dictionaryForm": "勉強する (べんきょうする)"
       },
       {
         "id": 406,
@@ -4678,7 +4713,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "授業は 5時に 終わります。",
         "exampleSentenceReading": "じゅぎょうは ごじに おわります。",
-        "exampleSentenceMeaning": "Tiết học kết thúc lúc 5 giờ."
+        "exampleSentenceMeaning": "Tiết học kết thúc lúc 5 giờ.",
+        "dictionaryForm": "終わる (おわる)"
       },
       {
         "id": 407,
@@ -4690,7 +4726,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "デパートへ 買い物に 行きます。",
         "exampleSentenceReading": "でぱーとへ かいものに いきます。",
-        "exampleSentenceMeaning": "Tôi đi trung tâm bách hóa mua sắm."
+        "exampleSentenceMeaning": "Tôi đi trung tâm bách hóa mua sắm.",
+        "dictionaryForm": ""
       },
       {
         "id": 408,
@@ -4702,7 +4739,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "銀行は 9時から 3時までです。",
         "exampleSentenceReading": "ぎんこうは くじから さんじまでです。",
-        "exampleSentenceMeaning": "Ngân hàng mở cửa từ 9 giờ đến 3 giờ."
+        "exampleSentenceMeaning": "Ngân hàng mở cửa từ 9 giờ đến 3 giờ.",
+        "dictionaryForm": ""
       },
       {
         "id": 409,
@@ -4714,7 +4752,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "郵便局で 切手を 買います。",
         "exampleSentenceReading": "ゆうびんきょくで きってを かいます。",
-        "exampleSentenceMeaning": "Tôi mua tem ở bưu điện."
+        "exampleSentenceMeaning": "Tôi mua tem ở bưu điện.",
+        "dictionaryForm": ""
       },
       {
         "id": 410,
@@ -4726,7 +4765,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "図書館で 本を 借ります。",
         "exampleSentenceReading": "としょかんで ほんを かります。",
-        "exampleSentenceMeaning": "Tôi mượn sách ở thư viện."
+        "exampleSentenceMeaning": "Tôi mượn sách ở thư viện.",
+        "dictionaryForm": ""
       },
       {
         "id": 411,
@@ -4738,7 +4778,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "日曜日 美術館へ 行きました。",
         "exampleSentenceReading": "にちようび びじゅつかんへ いきました。",
-        "exampleSentenceMeaning": "Chủ nhật tôi đã đi bảo tàng mỹ thuật."
+        "exampleSentenceMeaning": "Chủ nhật tôi đã đi bảo tàng mỹ thuật.",
+        "dictionaryForm": ""
       },
       {
         "id": 412,
@@ -4750,7 +4791,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "今 何時ですか。",
         "exampleSentenceReading": "いま なんじですか。",
-        "exampleSentenceMeaning": "Bây giờ là mấy giờ?"
+        "exampleSentenceMeaning": "Bây giờ là mấy giờ?",
+        "dictionaryForm": ""
       },
       {
         "id": 413,
@@ -4762,7 +4804,8 @@ object DataFixtures {
         "type": "Hậu tố",
         "exampleSentence": "今は 10時です。",
         "exampleSentenceReading": "いまは じゅうじです。",
-        "exampleSentenceMeaning": "Bây giờ là 10 giờ."
+        "exampleSentenceMeaning": "Bây giờ là 10 giờ.",
+        "dictionaryForm": ""
       },
       {
         "id": 414,
@@ -4774,7 +4817,8 @@ object DataFixtures {
         "type": "Hậu tố",
         "exampleSentence": "10時 15分です。",
         "exampleSentenceReading": "じゅうじ じゅうごふんです。",
-        "exampleSentenceMeaning": "Là 10 giờ 15 phút."
+        "exampleSentenceMeaning": "Là 10 giờ 15 phút.",
+        "dictionaryForm": ""
       },
       {
         "id": 415,
@@ -4786,7 +4830,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "7時半に 起きます。",
         "exampleSentenceReading": "しちじはんに おきます。",
-        "exampleSentenceMeaning": "Tôi thức dậy lúc 7 giờ rưỡi."
+        "exampleSentenceMeaning": "Tôi thức dậy lúc 7 giờ rưỡi.",
+        "dictionaryForm": ""
       },
       {
         "id": 416,
@@ -4798,7 +4843,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "会議は 何時からですか。",
         "exampleSentenceReading": "かいぎは なんじからですか。",
-        "exampleSentenceMeaning": "Cuộc họp từ mấy giờ thế?"
+        "exampleSentenceMeaning": "Cuộc họp từ mấy giờ thế?",
+        "dictionaryForm": ""
       },
       {
         "id": 417,
@@ -4810,7 +4856,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "今 何時 何分ですか。",
         "exampleSentenceReading": "いま なんじ なんぷんですか。",
-        "exampleSentenceMeaning": "Bây giờ là mấy giờ mấy phút?"
+        "exampleSentenceMeaning": "Bây giờ là mấy giờ mấy phút?",
+        "dictionaryForm": ""
       },
       {
         "id": 418,
@@ -4822,7 +4869,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "午前 9時に 始まります。",
         "exampleSentenceReading": "ごぜん くじに はじまります。",
-        "exampleSentenceMeaning": "Bắt đầu lúc 9 giờ sáng."
+        "exampleSentenceMeaning": "Bắt đầu lúc 9 giờ sáng.",
+        "dictionaryForm": ""
       },
       {
         "id": 419,
@@ -4834,7 +4882,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "午後 2時に 会います。",
         "exampleSentenceReading": "ごご にじに あいます。",
-        "exampleSentenceMeaning": "Gặp nhau lúc 2 giờ chiều."
+        "exampleSentenceMeaning": "Gặp nhau lúc 2 giờ chiều.",
+        "dictionaryForm": ""
       },
       {
         "id": 420,
@@ -4846,7 +4895,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "朝 ご飯を 食べません。",
         "exampleSentenceReading": "あさ ごはんを たべません。",
-        "exampleSentenceMeaning": "Buổi sáng tôi không ăn cơm."
+        "exampleSentenceMeaning": "Buổi sáng tôi không ăn cơm.",
+        "dictionaryForm": ""
       },
       {
         "id": 421,
@@ -4858,7 +4908,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "昼 友達と 食べます。",
         "exampleSentenceReading": "ひる ともだちと たべます。",
-        "exampleSentenceMeaning": "Buổi trưa tôi ăn cùng bạn."
+        "exampleSentenceMeaning": "Buổi trưa tôi ăn cùng bạn.",
+        "dictionaryForm": ""
       },
       {
         "id": 422,
@@ -4870,7 +4921,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "晩 日本語を 勉強します。",
         "exampleSentenceReading": "ばん にほんごを べんきょうします。",
-        "exampleSentenceMeaning": "Buổi tối tôi học tiếng Nhật."
+        "exampleSentenceMeaning": "Buổi tối tôi học tiếng Nhật.",
+        "dictionaryForm": ""
       },
       {
         "id": 423,
@@ -4882,7 +4934,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "おととい 雨が 降りました。",
         "exampleSentenceReading": "おととい あめが ふりました。",
-        "exampleSentenceMeaning": "Hôm kia trời đã mưa."
+        "exampleSentenceMeaning": "Hôm kia trời đã mưa.",
+        "dictionaryForm": ""
       },
       {
         "id": 424,
@@ -4894,7 +4947,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "きのう 映画を 見ました。",
         "exampleSentenceReading": "きのう えいがを みました。",
-        "exampleSentenceMeaning": "Hôm qua tôi đã xem phim."
+        "exampleSentenceMeaning": "Hôm qua tôi đã xem phim.",
+        "dictionaryForm": ""
       },
       {
         "id": 425,
@@ -4906,7 +4960,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "今日は いい天気です。",
         "exampleSentenceReading": "きょうは いいてんきです。",
-        "exampleSentenceMeaning": "Hôm nay thời tiết đẹp thật."
+        "exampleSentenceMeaning": "Hôm nay thời tiết đẹp thật.",
+        "dictionaryForm": ""
       },
       {
         "id": 426,
@@ -4918,7 +4973,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "明日 東京へ 行きます。",
         "exampleSentenceReading": "あした とうきょうへ いきます。",
-        "exampleSentenceMeaning": "Ngày mai tôi đi Tokyo."
+        "exampleSentenceMeaning": "Ngày mai tôi đi Tokyo.",
+        "dictionaryForm": ""
       },
       {
         "id": 427,
@@ -4930,7 +4986,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "あさって テストが あります。",
         "exampleSentenceReading": "あさって てすとが あります。",
-        "exampleSentenceMeaning": "Ngày kia có bài kiểm tra."
+        "exampleSentenceMeaning": "Ngày kia có bài kiểm tra.",
+        "dictionaryForm": ""
       },
       {
         "id": 428,
@@ -4942,7 +4999,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "今朝 パンを 食べました。",
         "exampleSentenceReading": "けさ ぱんを たべました。",
-        "exampleSentenceMeaning": "Sáng nay tôi đã ăn bánh mì."
+        "exampleSentenceMeaning": "Sáng nay tôi đã ăn bánh mì.",
+        "dictionaryForm": ""
       },
       {
         "id": 429,
@@ -4954,7 +5012,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "今晩 うちに います。",
         "exampleSentenceReading": "こんばん うちに います。",
-        "exampleSentenceMeaning": "Tối nay tôi ở nhà."
+        "exampleSentenceMeaning": "Tối nay tôi ở nhà.",
+        "dictionaryForm": ""
       },
       {
         "id": 430,
@@ -4966,7 +5025,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "会社の 休みは 土曜日です。",
         "exampleSentenceReading": "かいしゃの やすみは どようびです。",
-        "exampleSentenceMeaning": "Ngày nghỉ của công ty là thứ Bảy."
+        "exampleSentenceMeaning": "Ngày nghỉ của công ty là thứ Bảy.",
+        "dictionaryForm": ""
       },
       {
         "id": 431,
@@ -4978,7 +5038,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "昼休みは 12時からです。",
         "exampleSentenceReading": "ひるやすみは じゅうにじからです。",
-        "exampleSentenceMeaning": "Nghỉ trưa từ 12 giờ."
+        "exampleSentenceMeaning": "Nghỉ trưa từ 12 giờ.",
+        "dictionaryForm": ""
       },
       {
         "id": 432,
@@ -4990,7 +5051,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "毎朝 走ります。",
         "exampleSentenceReading": "まいあさ はしります。",
-        "exampleSentenceMeaning": "Mỗi sáng tôi đều chạy bộ."
+        "exampleSentenceMeaning": "Mỗi sáng tôi đều chạy bộ.",
+        "dictionaryForm": ""
       },
       {
         "id": 433,
@@ -5002,7 +5064,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "毎晩 本を 読みます。",
         "exampleSentenceReading": "まいばん ほんを よみます。",
-        "exampleSentenceMeaning": "Mỗi tối tôi đều đọc sách."
+        "exampleSentenceMeaning": "Mỗi tối tôi đều đọc sách.",
+        "dictionaryForm": ""
       },
       {
         "id": 434,
@@ -5014,7 +5077,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "毎日 日本語を 勉強します。",
         "exampleSentenceReading": "まいにち にほんごを べんきょうします。",
-        "exampleSentenceMeaning": "Mỗi ngày tôi đều học tiếng Nhật."
+        "exampleSentenceMeaning": "Mỗi ngày tôi đều học tiếng Nhật.",
+        "dictionaryForm": ""
       },
       {
         "id": 435,
@@ -5026,7 +5090,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "月曜日に 会議が あります。",
         "exampleSentenceReading": "げつようびに かいぎが あります。",
-        "exampleSentenceMeaning": "Thứ Hai có cuộc họp."
+        "exampleSentenceMeaning": "Thứ Hai có cuộc họp.",
+        "dictionaryForm": ""
       },
       {
         "id": 436,
@@ -5038,7 +5103,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "火曜日は 休みです。",
         "exampleSentenceReading": "かようびは やすみです。",
-        "exampleSentenceMeaning": "Thứ Ba là ngày nghỉ."
+        "exampleSentenceMeaning": "Thứ Ba là ngày nghỉ.",
+        "dictionaryForm": ""
       },
       {
         "id": 437,
@@ -5050,7 +5116,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "水曜日に テニスを します。",
         "exampleSentenceReading": "すいようびに てにすを します。",
-        "exampleSentenceMeaning": "Thứ Tư tôi chơi quần vợt."
+        "exampleSentenceMeaning": "Thứ Tư tôi chơi quần vợt.",
+        "dictionaryForm": ""
       },
       {
         "id": 438,
@@ -5062,7 +5129,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "木曜日は 雨でした。",
         "exampleSentenceReading": "もくようびは あめでした。",
-        "exampleSentenceMeaning": "Thứ Năm trời đã mưa."
+        "exampleSentenceMeaning": "Thứ Năm trời đã mưa.",
+        "dictionaryForm": ""
       },
       {
         "id": 439,
@@ -5074,7 +5142,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "金曜日の 夜 飲みます。",
         "exampleSentenceReading": "きんようびの よる のみます。",
-        "exampleSentenceMeaning": "Tối thứ Sáu tôi đi uống."
+        "exampleSentenceMeaning": "Tối thứ Sáu tôi đi uống.",
+        "dictionaryForm": ""
       },
       {
         "id": 440,
@@ -5086,7 +5155,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "土曜日に 買い物を します。",
         "exampleSentenceReading": "どようびに かいものを します。",
-        "exampleSentenceMeaning": "Thứ Bảy tôi đi mua sắm."
+        "exampleSentenceMeaning": "Thứ Bảy tôi đi mua sắm.",
+        "dictionaryForm": ""
       },
       {
         "id": 441,
@@ -5098,7 +5168,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "日曜日は うちに います。",
         "exampleSentenceReading": "にちようびは うちに います。",
-        "exampleSentenceMeaning": "Chủ Nhật tôi ở nhà."
+        "exampleSentenceMeaning": "Chủ Nhật tôi ở nhà.",
+        "dictionaryForm": ""
       },
       {
         "id": 442,
@@ -5110,7 +5181,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "今日は 何曜日ですか。",
         "exampleSentenceReading": "きょうは なんようびですか。",
-        "exampleSentenceMeaning": "Hôm nay là thứ mấy thế?"
+        "exampleSentenceMeaning": "Hôm nay là thứ mấy thế?",
+        "dictionaryForm": ""
       },
       {
         "id": 443,
@@ -5122,31 +5194,8 @@ object DataFixtures {
         "type": "Giao tiếp",
         "exampleSentence": "夜遅くまで、大変ですね。",
         "exampleSentenceReading": "よるおそくまで、たいへんですね。",
-        "exampleSentenceMeaning": "Làm việc tới tận khuya, vất vả quá nhỉ."
-      },
-      {
-        "id": 444,
-        "word": "～分",
-        "reading": "～ふん／ぷん",
-        "romaji": "-fun/-pun",
-        "meaning": "～ phút",
-        "hanViet": "Phân",
-        "type": "Lượng từ",
-        "exampleSentence": "3時 15分です。",
-        "exampleSentenceReading": "さんじ じゅうごふんです。",
-        "exampleSentenceMeaning": "3 giờ 15 phút."
-      },
-      {
-        "id": 445,
-        "word": "晩 / 夜",
-        "reading": "ばん／よる",
-        "romaji": "ban / yoru",
-        "meaning": "Buổi tối / Đêm",
-        "hanViet": "Vãn / Dạ",
-        "type": "Danh từ",
-        "exampleSentence": "晩 テレビを 見ます。",
-        "exampleSentenceReading": "ばん てれびを みます。",
-        "exampleSentenceMeaning": "Buổi tối tôi xem TV."
+        "exampleSentenceMeaning": "Làm việc tới tận khuya, vất vả quá nhỉ.",
+        "dictionaryForm": ""
       }
     ],
     "grammarPoints": [
@@ -5216,7 +5265,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "スーパーへ 行きます。",
         "exampleSentenceReading": "すーぱーへ いきます。",
-        "exampleSentenceMeaning": "Tôi đi siêu thị."
+        "exampleSentenceMeaning": "Tôi đi siêu thị.",
+        "dictionaryForm": "行く (いく)"
       },
       {
         "id": 502,
@@ -5228,7 +5278,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "友達が うちへ 来ます。",
         "exampleSentenceReading": "ともだちが うちへ きます。",
-        "exampleSentenceMeaning": "Bạn tôi đến nhà chơi."
+        "exampleSentenceMeaning": "Bạn tôi đến nhà chơi.",
+        "dictionaryForm": "来る (くる)"
       },
       {
         "id": 503,
@@ -5240,7 +5291,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "国へ 帰ります。",
         "exampleSentenceReading": "くにへ かえります。",
-        "exampleSentenceMeaning": "Tôi về nước."
+        "exampleSentenceMeaning": "Tôi về nước.",
+        "dictionaryForm": "帰る (かえる)"
       },
       {
         "id": 504,
@@ -5252,7 +5304,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "学校へ 行きます。",
         "exampleSentenceReading": "がっこうへ いきます。",
-        "exampleSentenceMeaning": "Tôi đi đến trường."
+        "exampleSentenceMeaning": "Tôi đi đến trường.",
+        "dictionaryForm": ""
       },
       {
         "id": 505,
@@ -5264,7 +5317,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "スーパーで 肉を 買います。",
         "exampleSentenceReading": "すーぱーで にくを かいます。",
-        "exampleSentenceMeaning": "Tôi mua thịt ở siêu thị."
+        "exampleSentenceMeaning": "Tôi mua thịt ở siêu thị.",
+        "dictionaryForm": ""
       },
       {
         "id": 506,
@@ -5276,7 +5330,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "駅で 友達に 会います。",
         "exampleSentenceReading": "えきで ともだちに あいます。",
-        "exampleSentenceMeaning": "Tôi gặp bạn ở nhà ga."
+        "exampleSentenceMeaning": "Tôi gặp bạn ở nhà ga.",
+        "dictionaryForm": ""
       },
       {
         "id": 507,
@@ -5288,7 +5343,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "飛行機で 日本へ 行きます。",
         "exampleSentenceReading": "ひこうきで にほんへ いきます。",
-        "exampleSentenceMeaning": "Tôi đi Nhật bằng máy bay."
+        "exampleSentenceMeaning": "Tôi đi Nhật bằng máy bay.",
+        "dictionaryForm": ""
       },
       {
         "id": 508,
@@ -5300,7 +5356,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "船で 島へ 行きます。",
         "exampleSentenceReading": "ふねで しまへ いきます。",
-        "exampleSentenceMeaning": "Tôi đi đảo bằng tàu thủy."
+        "exampleSentenceMeaning": "Tôi đi đảo bằng tàu thủy.",
+        "dictionaryForm": ""
       },
       {
         "id": 509,
@@ -5312,7 +5369,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "電車で 会社へ 行きます。",
         "exampleSentenceReading": "でんしゃで かいしゃへ いきます。",
-        "exampleSentenceMeaning": "Tôi đi làm bằng tàu điện."
+        "exampleSentenceMeaning": "Tôi đi làm bằng tàu điện.",
+        "dictionaryForm": ""
       },
       {
         "id": 510,
@@ -5324,7 +5382,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "地下鉄は 速いです。",
         "exampleSentenceReading": "ちかてつは はやいです。",
-        "exampleSentenceMeaning": "Tàu điện ngầm chạy nhanh."
+        "exampleSentenceMeaning": "Tàu điện ngầm chạy nhanh.",
+        "dictionaryForm": ""
       },
       {
         "id": 511,
@@ -5336,7 +5395,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "新幹線は とても きれいです。",
         "exampleSentenceReading": "しんかんせんは とても きれいです。",
-        "exampleSentenceMeaning": "Tàu Shinkansen rất đẹp."
+        "exampleSentenceMeaning": "Tàu Shinkansen rất đẹp.",
+        "dictionaryForm": ""
       },
       {
         "id": 512,
@@ -5348,7 +5408,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "バスで 病院へ 行きます。",
         "exampleSentenceReading": "ばすで びょういんへ いきます。",
-        "exampleSentenceMeaning": "Tôi đi bệnh viện bằng xe buýt."
+        "exampleSentenceMeaning": "Tôi đi bệnh viện bằng xe buýt.",
+        "dictionaryForm": ""
       },
       {
         "id": 513,
@@ -5360,7 +5421,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "タクシーを 呼びます。",
         "exampleSentenceReading": "たくしーを よびます。",
-        "exampleSentenceMeaning": "Tôi gọi taxi."
+        "exampleSentenceMeaning": "Tôi gọi taxi.",
+        "dictionaryForm": ""
       },
       {
         "id": 514,
@@ -5372,7 +5434,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "自転車で 公園へ 行きます。",
         "exampleSentenceReading": "じてんしゃで こうえんへ いきます。",
-        "exampleSentenceMeaning": "Tôi đi công viên bằng xe đạp."
+        "exampleSentenceMeaning": "Tôi đi công viên bằng xe đạp.",
+        "dictionaryForm": ""
       },
       {
         "id": 515,
@@ -5384,7 +5447,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "駅から 歩いて 帰ります。",
         "exampleSentenceReading": "えきから あるいて かえります。",
-        "exampleSentenceMeaning": "Từ ga tôi đi bộ về nhà."
+        "exampleSentenceMeaning": "Từ ga tôi đi bộ về nhà.",
+        "dictionaryForm": ""
       },
       {
         "id": 516,
@@ -5396,7 +5460,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "あの人は 親切です。",
         "exampleSentenceReading": "あのひとは しんせつです。",
-        "exampleSentenceMeaning": "Người kia rất tốt bụng."
+        "exampleSentenceMeaning": "Người kia rất tốt bụng.",
+        "dictionaryForm": ""
       },
       {
         "id": 517,
@@ -5408,7 +5473,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "友達と 遊びます。",
         "exampleSentenceReading": "ともだちと あそびます。",
-        "exampleSentenceMeaning": "Tôi đi chơi với bạn."
+        "exampleSentenceMeaning": "Tôi đi chơi với bạn.",
+        "dictionaryForm": ""
       },
       {
         "id": 518,
@@ -5420,7 +5486,8 @@ object DataFixtures {
         "type": "Đại từ",
         "exampleSentence": "彼は 優しいです。",
         "exampleSentenceReading": "かれは やさしいです。",
-        "exampleSentenceMeaning": "Anh ấy rất hiền từ."
+        "exampleSentenceMeaning": "Anh ấy rất hiền từ.",
+        "dictionaryForm": ""
       },
       {
         "id": 519,
@@ -5432,7 +5499,8 @@ object DataFixtures {
         "type": "Đại từ",
         "exampleSentence": "彼女は 日本人です。",
         "exampleSentenceReading": "かのじょは にほんじんです。",
-        "exampleSentenceMeaning": "Cô ấy là người Nhật."
+        "exampleSentenceMeaning": "Cô ấy là người Nhật.",
+        "dictionaryForm": ""
       },
       {
         "id": 520,
@@ -5444,7 +5512,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "家族と 旅行します。",
         "exampleSentenceReading": "かぞくと りょこうします。",
-        "exampleSentenceMeaning": "Tôi đi du lịch với gia đình."
+        "exampleSentenceMeaning": "Tôi đi du lịch với gia đình.",
+        "dictionaryForm": ""
       },
       {
         "id": 521,
@@ -5456,7 +5525,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "一人で 映画を 見ました。",
         "exampleSentenceReading": "ひとりで えいがを みました。",
-        "exampleSentenceMeaning": "Tôi xem phim một mình."
+        "exampleSentenceMeaning": "Tôi xem phim một mình.",
+        "dictionaryForm": ""
       },
       {
         "id": 522,
@@ -5468,7 +5538,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "先週 京都へ 行きました。",
         "exampleSentenceReading": "せんしゅう きょうとへ いきました。",
-        "exampleSentenceMeaning": "Tuần trước tôi đã đi Kyoto."
+        "exampleSentenceMeaning": "Tuần trước tôi đã đi Kyoto.",
+        "dictionaryForm": ""
       },
       {
         "id": 523,
@@ -5480,7 +5551,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "今週は 忙しいです。",
         "exampleSentenceReading": "こんしゅうは いそがしいです。",
-        "exampleSentenceMeaning": "Tuần này tôi rất bận."
+        "exampleSentenceMeaning": "Tuần này tôi rất bận.",
+        "dictionaryForm": ""
       },
       {
         "id": 524,
@@ -5492,7 +5564,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "来週 テストが あります。",
         "exampleSentenceReading": "らいしゅう てすとが あります。",
-        "exampleSentenceMeaning": "Tuần sau có bài kiểm tra."
+        "exampleSentenceMeaning": "Tuần sau có bài kiểm tra.",
+        "dictionaryForm": ""
       },
       {
         "id": 525,
@@ -5504,7 +5577,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "先月 日本へ 来ました。",
         "exampleSentenceReading": "せんげつ にほんへ きました。",
-        "exampleSentenceMeaning": "Tháng trước tôi đã đến Nhật."
+        "exampleSentenceMeaning": "Tháng trước tôi đã đến Nhật.",
+        "dictionaryForm": ""
       },
       {
         "id": 526,
@@ -5516,7 +5590,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "今月は 休みが 多いです。",
         "exampleSentenceReading": "こんげつは やすみが おおいです。",
-        "exampleSentenceMeaning": "Tháng này có nhiều ngày nghỉ."
+        "exampleSentenceMeaning": "Tháng này có nhiều ngày nghỉ.",
+        "dictionaryForm": ""
       },
       {
         "id": 527,
@@ -5528,7 +5603,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "来月 ベトナムへ 帰ります。",
         "exampleSentenceReading": "らいげつ べとなむへ かえります。",
-        "exampleSentenceMeaning": "Tháng sau tôi về Việt Nam."
+        "exampleSentenceMeaning": "Tháng sau tôi về Việt Nam.",
+        "dictionaryForm": ""
       },
       {
         "id": 528,
@@ -5540,7 +5616,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "去年 卒業しました。",
         "exampleSentenceReading": "きょねん そつぎょうしました。",
-        "exampleSentenceMeaning": "Năm ngoái tôi đã tốt nghiệp."
+        "exampleSentenceMeaning": "Năm ngoái tôi đã tốt nghiệp.",
+        "dictionaryForm": ""
       },
       {
         "id": 529,
@@ -5552,7 +5629,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "今年 25歳に なります。",
         "exampleSentenceReading": "ことし にじゅうごさいに なります。",
-        "exampleSentenceMeaning": "Năm nay tôi tròn 25 tuổi."
+        "exampleSentenceMeaning": "Năm nay tôi tròn 25 tuổi.",
+        "dictionaryForm": ""
       },
       {
         "id": 530,
@@ -5564,7 +5642,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "来年 日本へ 行きます。",
         "exampleSentenceReading": "らいねん にほんへ いきます。",
-        "exampleSentenceMeaning": "Năm sau tôi sẽ đi Nhật."
+        "exampleSentenceMeaning": "Năm sau tôi sẽ đi Nhật.",
+        "dictionaryForm": ""
       },
       {
         "id": 531,
@@ -5576,7 +5655,8 @@ object DataFixtures {
         "type": "Hậu tố",
         "exampleSentence": "4月は 桜が 咲きます。",
         "exampleSentenceReading": "しがつは さくらが さきます。",
-        "exampleSentenceMeaning": "Tháng 4 hoa anh đào nở."
+        "exampleSentenceMeaning": "Tháng 4 hoa anh đào nở.",
+        "dictionaryForm": ""
       },
       {
         "id": 532,
@@ -5588,7 +5668,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "誕生日は 何月ですか。",
         "exampleSentenceReading": "たんじょうびは なんがつですか。",
-        "exampleSentenceMeaning": "Sinh nhật bạn là tháng mấy?"
+        "exampleSentenceMeaning": "Sinh nhật bạn là tháng mấy?",
+        "dictionaryForm": ""
       },
       {
         "id": 533,
@@ -5600,7 +5681,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "1月1日は 元日です。",
         "exampleSentenceReading": "いちがつついたちは がんじつです。",
-        "exampleSentenceMeaning": "Ngày mùng 1 tháng 1 là Tết."
+        "exampleSentenceMeaning": "Ngày mùng 1 tháng 1 là Tết.",
+        "dictionaryForm": ""
       },
       {
         "id": 534,
@@ -5612,7 +5694,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "2日に 会いましょう。",
         "exampleSentenceReading": "ふつかに あいましょう。",
-        "exampleSentenceMeaning": "Gặp nhau vào ngày mùng 2 nhé."
+        "exampleSentenceMeaning": "Gặp nhau vào ngày mùng 2 nhé.",
+        "dictionaryForm": ""
       },
       {
         "id": 535,
@@ -5624,7 +5707,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "3日間 休みます。",
         "exampleSentenceReading": "みっかかん やすみます。",
-        "exampleSentenceMeaning": "Tôi nghỉ trong 3 ngày."
+        "exampleSentenceMeaning": "Tôi nghỉ trong 3 ngày.",
+        "dictionaryForm": ""
       },
       {
         "id": 536,
@@ -5636,7 +5720,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "4日は 友達の 誕生日です。",
         "exampleSentenceReading": "よっかは ともだちの たんじょうびです。",
-        "exampleSentenceMeaning": "Ngày mùng 4 là sinh nhật bạn tôi."
+        "exampleSentenceMeaning": "Ngày mùng 4 là sinh nhật bạn tôi.",
+        "dictionaryForm": ""
       },
       {
         "id": 537,
@@ -5648,7 +5733,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "5日に 出発します。",
         "exampleSentenceReading": "いつかに しゅっぱつします。",
-        "exampleSentenceMeaning": "Xuất phát vào ngày mùng 5."
+        "exampleSentenceMeaning": "Xuất phát vào ngày mùng 5.",
+        "dictionaryForm": ""
       },
       {
         "id": 538,
@@ -5660,7 +5746,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "10日に 荷物が 届きます。",
         "exampleSentenceReading": "とおかに にもつが とどきます。",
-        "exampleSentenceMeaning": "Hàng sẽ đến vào ngày mùng 10."
+        "exampleSentenceMeaning": "Hàng sẽ đến vào ngày mùng 10.",
+        "dictionaryForm": ""
       },
       {
         "id": 539,
@@ -5672,7 +5759,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "14日は バレンタインデーです。",
         "exampleSentenceReading": "じゅうよっかは ばれんたいんでーです。",
-        "exampleSentenceMeaning": "Ngày 14 là ngày Valentine."
+        "exampleSentenceMeaning": "Ngày 14 là ngày Valentine.",
+        "dictionaryForm": ""
       },
       {
         "id": 540,
@@ -5684,7 +5772,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "20日は 給料日です。",
         "exampleSentenceReading": "はつかは きゅうりょうびです。",
-        "exampleSentenceMeaning": "Ngày 20 là ngày nhận lương."
+        "exampleSentenceMeaning": "Ngày 20 là ngày nhận lương.",
+        "dictionaryForm": ""
       },
       {
         "id": 541,
@@ -5696,7 +5785,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "24日に パーティーを します。",
         "exampleSentenceReading": "にじゅうよっかに ぱーてぃーを します。",
-        "exampleSentenceMeaning": "Tổ chức tiệc vào ngày 24."
+        "exampleSentenceMeaning": "Tổ chức tiệc vào ngày 24.",
+        "dictionaryForm": ""
       },
       {
         "id": 542,
@@ -5708,7 +5798,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "今日は 何日ですか。",
         "exampleSentenceReading": "きょうは なんにちですか。",
-        "exampleSentenceMeaning": "Hôm nay là ngày mùng mấy?"
+        "exampleSentenceMeaning": "Hôm nay là ngày mùng mấy?",
+        "dictionaryForm": ""
       },
       {
         "id": 543,
@@ -5720,7 +5811,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "いつ 日本へ 行きますか。",
         "exampleSentenceReading": "いつ にほんへ いきますか。",
-        "exampleSentenceMeaning": "Khi nào bạn đi Nhật?"
+        "exampleSentenceMeaning": "Khi nào bạn đi Nhật?",
+        "dictionaryForm": ""
       },
       {
         "id": 544,
@@ -5732,31 +5824,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "お誕生日 おめでとうございます。",
         "exampleSentenceReading": "おたんじょうび おめでとうございます。",
-        "exampleSentenceMeaning": "Chúc mừng sinh nhật bạn."
-      },
-      {
-        "id": 545,
-        "word": "スーパー",
-        "reading": "すーぱー",
-        "romaji": "suupaa",
-        "meaning": "Siêu thị",
-        "hanViet": "",
-        "type": "Danh từ",
-        "exampleSentence": "スーパーで 買い物を します。",
-        "exampleSentenceReading": "すーぱーで かいものを します。",
-        "exampleSentenceMeaning": "Mua sắm ở siêu thị."
-      },
-      {
-        "id": 546,
-        "word": "バス",
-        "reading": "ばす",
-        "romaji": "basu",
-        "meaning": "Xe buýt",
-        "hanViet": "",
-        "type": "Danh từ",
-        "exampleSentence": "バスで 学校へ 行きます。",
-        "exampleSentenceReading": "ばすで がっこうへ いきます。",
-        "exampleSentenceMeaning": "Đến trường bằng xe buýt."
+        "exampleSentenceMeaning": "Chúc mừng sinh nhật bạn.",
+        "dictionaryForm": ""
       }
     ],
     "grammarPoints": [
@@ -5814,7 +5883,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "ご飯を 食べます。",
         "exampleSentenceReading": "ごはんを たべます。",
-        "exampleSentenceMeaning": "Tôi ăn cơm."
+        "exampleSentenceMeaning": "Tôi ăn cơm.",
+        "dictionaryForm": "食べる (たべる)"
       },
       {
         "id": 602,
@@ -5826,7 +5896,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "水を 飲みます。",
         "exampleSentenceReading": "みずを のみます。",
-        "exampleSentenceMeaning": "Tôi uống nước."
+        "exampleSentenceMeaning": "Tôi uống nước.",
+        "dictionaryForm": "飲む (のむ)"
       },
       {
         "id": 603,
@@ -5838,7 +5909,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "たばこを 吸いません。",
         "exampleSentenceReading": "たばこを すいません。",
-        "exampleSentenceMeaning": "Tôi không hút thuốc lá."
+        "exampleSentenceMeaning": "Tôi không hút thuốc lá.",
+        "dictionaryForm": "吸う (すう)"
       },
       {
         "id": 604,
@@ -5850,7 +5922,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "映画を 見ます。",
         "exampleSentenceReading": "えいがを みます。",
-        "exampleSentenceMeaning": "Tôi xem phim."
+        "exampleSentenceMeaning": "Tôi xem phim.",
+        "dictionaryForm": "見る (みる)"
       },
       {
         "id": 605,
@@ -5862,7 +5935,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "音楽を 聞きます。",
         "exampleSentenceReading": "おんがくを ききます。",
-        "exampleSentenceMeaning": "Tôi nghe nhạc."
+        "exampleSentenceMeaning": "Tôi nghe nhạc.",
+        "dictionaryForm": "聞く (きく)"
       },
       {
         "id": 606,
@@ -5874,7 +5948,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "本を 読みます。",
         "exampleSentenceReading": "ほんを よみます。",
-        "exampleSentenceMeaning": "Tôi đọc sách."
+        "exampleSentenceMeaning": "Tôi đọc sách.",
+        "dictionaryForm": "読む (よむ)"
       },
       {
         "id": 607,
@@ -5886,7 +5961,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "手紙を 書きます。",
         "exampleSentenceReading": "てがみを かきます。",
-        "exampleSentenceMeaning": "Tôi viết thư."
+        "exampleSentenceMeaning": "Tôi viết thư.",
+        "dictionaryForm": "書く (かく)"
       },
       {
         "id": 608,
@@ -5898,7 +5974,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "パンを 買いました。",
         "exampleSentenceReading": "ぱんを かいました。",
-        "exampleSentenceMeaning": "Tôi đã mua bánh mì."
+        "exampleSentenceMeaning": "Tôi đã mua bánh mì.",
+        "dictionaryForm": "買う (かう)"
       },
       {
         "id": 609,
@@ -5910,7 +5987,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "写真を 撮ります。",
         "exampleSentenceReading": "しゃしんを とります。",
-        "exampleSentenceMeaning": "Tôi chụp ảnh."
+        "exampleSentenceMeaning": "Tôi chụp ảnh.",
+        "dictionaryForm": "撮る (とる)"
       },
       {
         "id": 610,
@@ -5922,7 +6000,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "サッカーを します。",
         "exampleSentenceReading": "さっかーを します。",
-        "exampleSentenceMeaning": "Tôi chơi bóng đá."
+        "exampleSentenceMeaning": "Tôi chơi bóng đá.",
+        "dictionaryForm": "する"
       },
       {
         "id": 611,
@@ -5934,7 +6013,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "駅で 友達に 会います。",
         "exampleSentenceReading": "えきで ともだちに あいます。",
-        "exampleSentenceMeaning": "Tôi gặp bạn ở nhà ga."
+        "exampleSentenceMeaning": "Tôi gặp bạn ở nhà ga.",
+        "dictionaryForm": "会う (あう)"
       },
       {
         "id": 612,
@@ -5946,7 +6026,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "朝ご飯を 食べましたか。",
         "exampleSentenceReading": "あさごはんを たべましたか。",
-        "exampleSentenceMeaning": "Bạn đã ăn sáng chưa?"
+        "exampleSentenceMeaning": "Bạn đã ăn sáng chưa?",
+        "dictionaryForm": ""
       },
       {
         "id": 613,
@@ -5958,7 +6039,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "毎朝 朝ご飯を 食べます。",
         "exampleSentenceReading": "まいあさ あさごはんを たべます。",
-        "exampleSentenceMeaning": "Mỗi sáng tôi đều ăn sáng."
+        "exampleSentenceMeaning": "Mỗi sáng tôi đều ăn sáng.",
+        "dictionaryForm": ""
       },
       {
         "id": 614,
@@ -5970,7 +6052,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "昼ご飯は ラーメンです。",
         "exampleSentenceReading": "ひるごはんは らーめんです。",
-        "exampleSentenceMeaning": "Bữa trưa là mì ramen."
+        "exampleSentenceMeaning": "Bữa trưa là mì ramen.",
+        "dictionaryForm": ""
       },
       {
         "id": 615,
@@ -5982,7 +6065,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "晩ご飯を 一緒に 食べましょう。",
         "exampleSentenceReading": "ばんごはんを いっしょに たべましょう。",
-        "exampleSentenceMeaning": "Cùng ăn cơm tối nhé."
+        "exampleSentenceMeaning": "Cùng ăn cơm tối nhé.",
+        "dictionaryForm": ""
       },
       {
         "id": 616,
@@ -5994,7 +6078,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "毎朝 パンを 食べます。",
         "exampleSentenceReading": "まいあさ ぱんを たべます。",
-        "exampleSentenceMeaning": "Mỗi sáng tôi ăn bánh mì."
+        "exampleSentenceMeaning": "Mỗi sáng tôi ăn bánh mì.",
+        "dictionaryForm": ""
       },
       {
         "id": 617,
@@ -6006,7 +6091,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "卵を 2個 買いました。",
         "exampleSentenceReading": "たまごを にこ かいました。",
-        "exampleSentenceMeaning": "Tôi đã mua 2 quả trứng."
+        "exampleSentenceMeaning": "Tôi đã mua 2 quả trứng.",
+        "dictionaryForm": ""
       },
       {
         "id": 618,
@@ -6018,7 +6104,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "牛肉が 好きです。",
         "exampleSentenceReading": "ぎゅうにくが すきです。",
-        "exampleSentenceMeaning": "Tôi thích thịt bò."
+        "exampleSentenceMeaning": "Tôi thích thịt bò.",
+        "dictionaryForm": ""
       },
       {
         "id": 619,
@@ -6030,7 +6117,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "新鮮な 魚を 食べます。",
         "exampleSentenceReading": "しんせんな さかなを たべます。",
-        "exampleSentenceMeaning": "Tôi ăn cá tươi."
+        "exampleSentenceMeaning": "Tôi ăn cá tươi.",
+        "dictionaryForm": ""
       },
       {
         "id": 620,
@@ -6042,7 +6130,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "野菜を たくさん 食べます。",
         "exampleSentenceReading": "やさいを たくさん たべます。",
-        "exampleSentenceMeaning": "Tôi ăn nhiều rau xanh."
+        "exampleSentenceMeaning": "Tôi ăn nhiều rau xanh.",
+        "dictionaryForm": ""
       },
       {
         "id": 621,
@@ -6054,7 +6143,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "日本の 果物は 甘いです。",
         "exampleSentenceReading": "にほんの くだものは あまいいです。",
-        "exampleSentenceMeaning": "Hoa quả Nhật Bản rất ngọt."
+        "exampleSentenceMeaning": "Hoa quả Nhật Bản rất ngọt.",
+        "dictionaryForm": ""
       },
       {
         "id": 622,
@@ -6066,7 +6156,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "冷たい 水を ください。",
         "exampleSentenceReading": "つめたい みずを ください。",
-        "exampleSentenceMeaning": "Cho tôi xin nước lạnh."
+        "exampleSentenceMeaning": "Cho tôi xin nước lạnh.",
+        "dictionaryForm": ""
       },
       {
         "id": 623,
@@ -6078,7 +6169,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "お茶を どうぞ。",
         "exampleSentenceReading": "おちゃを どうぞ。",
-        "exampleSentenceMeaning": "Xin mời dùng trà."
+        "exampleSentenceMeaning": "Xin mời dùng trà.",
+        "dictionaryForm": ""
       },
       {
         "id": 624,
@@ -6090,7 +6182,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ミルクティーの 紅茶です。",
         "exampleSentenceReading": "みるくてぃーの こうちゃです。",
-        "exampleSentenceMeaning": "Là hồng trà để pha trà sữa."
+        "exampleSentenceMeaning": "Là hồng trà để pha trà sữa.",
+        "dictionaryForm": ""
       },
       {
         "id": 625,
@@ -6102,7 +6195,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "朝 牛乳を 飲みます。",
         "exampleSentenceReading": "あさ ぎゅうにゅうを のみます。",
-        "exampleSentenceMeaning": "Buổi sáng tôi uống sữa bò."
+        "exampleSentenceMeaning": "Buổi sáng tôi uống sữa bò.",
+        "dictionaryForm": ""
       },
       {
         "id": 626,
@@ -6114,7 +6208,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "オレンジジュースを 飲みます。",
         "exampleSentenceReading": "おれんじじゅーすを のみます。",
-        "exampleSentenceMeaning": "Tôi uống nước cam ép."
+        "exampleSentenceMeaning": "Tôi uống nước cam ép.",
+        "dictionaryForm": ""
       },
       {
         "id": 627,
@@ -6126,7 +6221,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "冷たい ビールで 乾杯します。",
         "exampleSentenceReading": "つめたい びーるで かんぱいします。",
-        "exampleSentenceMeaning": "Nâng ly bằng bia lạnh."
+        "exampleSentenceMeaning": "Nâng ly bằng bia lạnh.",
+        "dictionaryForm": ""
       },
       {
         "id": 628,
@@ -6138,7 +6234,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "日本のお酒を 飲みました。",
         "exampleSentenceReading": "にほんのおさけを のみました。",
-        "exampleSentenceMeaning": "Tôi đã uống rượu Sake của Nhật."
+        "exampleSentenceMeaning": "Tôi đã uống rượu Sake của Nhật.",
+        "dictionaryForm": ""
       },
       {
         "id": 629,
@@ -6150,7 +6247,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ここで たばこを 吸わないでください。",
         "exampleSentenceReading": "ここで たばこを すわないでください。",
-        "exampleSentenceMeaning": "Xin đừng hút thuốc ở đây."
+        "exampleSentenceMeaning": "Xin đừng hút thuốc ở đây.",
+        "dictionaryForm": ""
       },
       {
         "id": 630,
@@ -6162,7 +6260,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "母に 手紙を 書きました。",
         "exampleSentenceReading": "ははに てがみを かきました。",
-        "exampleSentenceMeaning": "Tôi đã viết thư cho mẹ."
+        "exampleSentenceMeaning": "Tôi đã viết thư cho mẹ.",
+        "dictionaryForm": ""
       },
       {
         "id": 631,
@@ -6174,7 +6273,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "明日までに レポートを 出します。",
         "exampleSentenceReading": "あしたまでに れぽーとを だします。",
-        "exampleSentenceMeaning": "Nộp báo cáo trước ngày mai."
+        "exampleSentenceMeaning": "Nộp báo cáo trước ngày mai.",
+        "dictionaryForm": ""
       },
       {
         "id": 632,
@@ -6186,7 +6286,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "家族の 写真を 見せます。",
         "exampleSentenceReading": "かぞくの しゃしんを みせます。",
-        "exampleSentenceMeaning": "Tôi cho xem ảnh gia đình."
+        "exampleSentenceMeaning": "Tôi cho xem ảnh gia đình.",
+        "dictionaryForm": ""
       },
       {
         "id": 633,
@@ -6198,7 +6299,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "あの店は 安いです。",
         "exampleSentenceReading": "あのみせは やすいです。",
-        "exampleSentenceMeaning": "Cửa hàng kia giá rẻ."
+        "exampleSentenceMeaning": "Cửa hàng kia giá rẻ.",
+        "dictionaryForm": ""
       },
       {
         "id": 634,
@@ -6210,7 +6312,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "レストランで 食事します。",
         "exampleSentenceReading": "れすとらんで しょくじします。",
-        "exampleSentenceMeaning": "Tôi ăn uống ở nhà hàng."
+        "exampleSentenceMeaning": "Tôi ăn uống ở nhà hàng.",
+        "dictionaryForm": ""
       },
       {
         "id": 635,
@@ -6222,7 +6325,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "きれいな 庭が あります。",
         "exampleSentenceReading": "きれいな にわが あります。",
-        "exampleSentenceMeaning": "Có một khu vườn rất đẹp."
+        "exampleSentenceMeaning": "Có một khu vườn rất đẹp.",
+        "dictionaryForm": ""
       },
       {
         "id": 636,
@@ -6234,7 +6338,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "宿題を しましたか。",
         "exampleSentenceReading": "しゅくだいを しましたか。",
-        "exampleSentenceMeaning": "Bạn đã làm bài tập chưa?"
+        "exampleSentenceMeaning": "Bạn đã làm bài tập chưa?",
+        "dictionaryForm": ""
       },
       {
         "id": 637,
@@ -6246,7 +6351,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "週末 テニスを します。",
         "exampleSentenceReading": "しゅうまつ てにすを します。",
-        "exampleSentenceMeaning": "Cuối tuần tôi chơi tennis."
+        "exampleSentenceMeaning": "Cuối tuần tôi chơi tennis.",
+        "dictionaryForm": ""
       },
       {
         "id": 638,
@@ -6258,7 +6364,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "サッカーを 見るのが 好きです。",
         "exampleSentenceReading": "さっかーを みるのが すきです。",
-        "exampleSentenceMeaning": "Tôi thích xem bóng đá."
+        "exampleSentenceMeaning": "Tôi thích xem bóng đá.",
+        "dictionaryForm": ""
       },
       {
         "id": 639,
@@ -6270,7 +6377,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "春 公園で お花見を します。",
         "exampleSentenceReading": "はる こうえんで おはなみを します。",
-        "exampleSentenceMeaning": "Mùa xuân đi ngắm hoa anh đào ở công viên."
+        "exampleSentenceMeaning": "Mùa xuân đi ngắm hoa anh đào ở công viên.",
+        "dictionaryForm": ""
       },
       {
         "id": 640,
@@ -6282,7 +6390,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "一緒に 行きましょう。",
         "exampleSentenceReading": "いっしょに いきましょう。",
-        "exampleSentenceMeaning": "Cùng đi nhé."
+        "exampleSentenceMeaning": "Cùng đi nhé.",
+        "dictionaryForm": ""
       },
       {
         "id": 641,
@@ -6294,7 +6403,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "ちょっと 待ってください。",
         "exampleSentenceReading": "ちょっと まってください。",
-        "exampleSentenceMeaning": "Xin hãy đợi một lát."
+        "exampleSentenceMeaning": "Xin hãy đợi một lát.",
+        "dictionaryForm": ""
       },
       {
         "id": 642,
@@ -6306,7 +6416,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "いつも ここで 買います。",
         "exampleSentenceReading": "いつも ここで かいます。",
-        "exampleSentenceMeaning": "Tôi luôn mua hàng ở đây."
+        "exampleSentenceMeaning": "Tôi luôn mua hàng ở đây.",
+        "dictionaryForm": ""
       },
       {
         "id": 643,
@@ -6318,19 +6429,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "時々 映画を 見ます。",
         "exampleSentenceReading": "ときどき えいがを みます。",
-        "exampleSentenceMeaning": "Thỉnh thoảng tôi có xem phim."
-      },
-      {
-        "id": 644,
-        "word": "パン",
-        "reading": "ぱん",
-        "romaji": "pan",
-        "meaning": "Bánh mì",
-        "hanViet": "",
-        "type": "Danh từ",
-        "exampleSentence": "パンと 卵を 食べます。",
-        "exampleSentenceReading": "ぱんと たまごを たべます。",
-        "exampleSentenceMeaning": "Ăn bánh mì và trứng."
+        "exampleSentenceMeaning": "Thỉnh thoảng tôi có xem phim.",
+        "dictionaryForm": ""
       }
     ],
     "grammarPoints": [
@@ -6410,7 +6510,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "はさみで 紙を 切ります。",
         "exampleSentenceReading": "はさみで かみを きります。",
-        "exampleSentenceMeaning": "Tôi dùng kéo cắt giấy."
+        "exampleSentenceMeaning": "Tôi dùng kéo cắt giấy.",
+        "dictionaryForm": "切る (きる)"
       },
       {
         "id": 702,
@@ -6422,7 +6523,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "荷物を 送ります。",
         "exampleSentenceReading": "にもつを おくります。",
-        "exampleSentenceMeaning": "Tôi gửi kiện hàng."
+        "exampleSentenceMeaning": "Tôi gửi kiện hàng.",
+        "dictionaryForm": "送る (おくる)"
       },
       {
         "id": 703,
@@ -6434,7 +6536,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "友達に プレゼントを あげました。",
         "exampleSentenceReading": "ともだちに ぷれぜんとを あげました。",
-        "exampleSentenceMeaning": "Tôi đã tặng quà cho bạn."
+        "exampleSentenceMeaning": "Tôi đã tặng quà cho bạn.",
+        "dictionaryForm": "あげる"
       },
       {
         "id": 704,
@@ -6446,7 +6549,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "母に 花を もらいました。",
         "exampleSentenceReading": "ははに はなを もらいました。",
-        "exampleSentenceMeaning": "Tôi đã nhận hoa từ mẹ."
+        "exampleSentenceMeaning": "Tôi đã nhận hoa từ mẹ.",
+        "dictionaryForm": "もらう"
       },
       {
         "id": 705,
@@ -6458,7 +6562,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "友達に お金を 貸しました。",
         "exampleSentenceReading": "ともだちに おかねを かしました。",
-        "exampleSentenceMeaning": "Tôi đã cho bạn mượn tiền."
+        "exampleSentenceMeaning": "Tôi đã cho bạn mượn tiền.",
+        "dictionaryForm": "貸す (かす)"
       },
       {
         "id": 706,
@@ -6470,7 +6575,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "図書館で 本を 借ります。",
         "exampleSentenceReading": "としょかんで ほんを かります。",
-        "exampleSentenceMeaning": "Tôi mượn sách ở thư viện."
+        "exampleSentenceMeaning": "Tôi mượn sách ở thư viện.",
+        "dictionaryForm": "借りる (かりる)"
       },
       {
         "id": 707,
@@ -6482,7 +6588,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "日本語を 教えます。",
         "exampleSentenceReading": "にほんごを おしえます。",
-        "exampleSentenceMeaning": "Tôi dạy tiếng Nhật."
+        "exampleSentenceMeaning": "Tôi dạy tiếng Nhật.",
+        "dictionaryForm": "教える (おしえる)"
       },
       {
         "id": 708,
@@ -6494,7 +6601,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "先生に ピアノを 習います。",
         "exampleSentenceReading": "せんせいに ぴあのを ならいます。",
-        "exampleSentenceMeaning": "Tôi học piano từ thầy giáo."
+        "exampleSentenceMeaning": "Tôi học piano từ thầy giáo.",
+        "dictionaryForm": "習う (ならう)"
       },
       {
         "id": 709,
@@ -6506,7 +6614,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "電話を かけます。",
         "exampleSentenceReading": "でんわを かけます。",
-        "exampleSentenceMeaning": "Tôi gọi điện thoại."
+        "exampleSentenceMeaning": "Tôi gọi điện thoại.",
+        "dictionaryForm": "かける"
       },
       {
         "id": 710,
@@ -6518,19 +6627,21 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "手を 洗います。",
         "exampleSentenceReading": "てを あらいます。",
-        "exampleSentenceMeaning": "Tôi rửa tay."
+        "exampleSentenceMeaning": "Tôi rửa tay.",
+        "dictionaryForm": ""
       },
       {
         "id": 711,
-        "word": "はし",
+        "word": "箸",
         "reading": "はし",
         "romaji": "hashi",
-        "meaning": "Đôi đũa",
-        "hanViet": "",
+        "meaning": "Đũa / Đôi đũa",
+        "hanViet": "Trợ",
         "type": "Danh từ",
         "exampleSentence": "はしで 食べます。",
         "exampleSentenceReading": "はしで たべます。",
-        "exampleSentenceMeaning": "Tôi ăn bằng đũa."
+        "exampleSentenceMeaning": "Tôi ăn bằng đũa.",
+        "dictionaryForm": ""
       },
       {
         "id": 712,
@@ -6542,7 +6653,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "スプーンで カレーを 食べます。",
         "exampleSentenceReading": "すぷーんで かれーを たべます。",
-        "exampleSentenceMeaning": "Tôi ăn cà ri bằng thìa."
+        "exampleSentenceMeaning": "Tôi ăn cà ri bằng thìa.",
+        "dictionaryForm": ""
       },
       {
         "id": 713,
@@ -6554,7 +6666,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ナイフで 肉を 切ります。",
         "exampleSentenceReading": "ないふで にくを きります。",
-        "exampleSentenceMeaning": "Tôi cắt thịt bằng dao."
+        "exampleSentenceMeaning": "Tôi cắt thịt bằng dao.",
+        "dictionaryForm": ""
       },
       {
         "id": 714,
@@ -6566,7 +6679,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "フォークを 使います。",
         "exampleSentenceReading": "ふぉーくを つかいます。",
-        "exampleSentenceMeaning": "Tôi dùng dĩa."
+        "exampleSentenceMeaning": "Tôi dùng dĩa.",
+        "dictionaryForm": ""
       },
       {
         "id": 715,
@@ -6578,7 +6692,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "はさみで 切ってください。",
         "exampleSentenceReading": "はさみで きってください。",
-        "exampleSentenceMeaning": "Xin hãy cắt bằng kéo."
+        "exampleSentenceMeaning": "Xin hãy cắt bằng kéo.",
+        "dictionaryForm": ""
       },
       {
         "id": 716,
@@ -6590,7 +6705,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "パソコンで メールを 書きます。",
         "exampleSentenceReading": "ぱそこんで めーるを かきます。",
-        "exampleSentenceMeaning": "Tôi viết email bằng máy tính."
+        "exampleSentenceMeaning": "Tôi viết email bằng máy tính.",
+        "dictionaryForm": ""
       },
       {
         "id": 717,
@@ -6602,7 +6718,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ケータイを 忘れました。",
         "exampleSentenceReading": "けーたいを わすれました。",
-        "exampleSentenceMeaning": "Tôi để quên điện thoại rồi."
+        "exampleSentenceMeaning": "Tôi để quên điện thoại rồi.",
+        "dictionaryForm": ""
       },
       {
         "id": 718,
@@ -6614,7 +6731,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "メールを 送りました。",
         "exampleSentenceReading": "めーるを おくりました。",
-        "exampleSentenceMeaning": "Tôi đã gửi email."
+        "exampleSentenceMeaning": "Tôi đã gửi email.",
+        "dictionaryForm": ""
       },
       {
         "id": 719,
@@ -6626,7 +6744,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "友達に 年賀状を 送ります。",
         "exampleSentenceReading": "ともだちに ねんがじょうを おくります。",
-        "exampleSentenceMeaning": "Tôi gửi thiệp chúc tết cho bạn."
+        "exampleSentenceMeaning": "Tôi gửi thiệp chúc tết cho bạn.",
+        "dictionaryForm": ""
       },
       {
         "id": 720,
@@ -6638,7 +6757,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "消しゴムを 貸してください。",
         "exampleSentenceReading": "けしごむを かしてください。",
-        "exampleSentenceMeaning": "Cho tôi mượn cục tẩy với."
+        "exampleSentenceMeaning": "Cho tôi mượn cục tẩy với.",
+        "dictionaryForm": ""
       },
       {
         "id": 721,
@@ -6650,7 +6770,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "紙に 名前を 書きます。",
         "exampleSentenceReading": "かみに なまえを かきます。",
-        "exampleSentenceMeaning": "Viết tên lên giấy."
+        "exampleSentenceMeaning": "Viết tên lên giấy.",
+        "dictionaryForm": ""
       },
       {
         "id": 722,
@@ -6662,7 +6783,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "きれいな 花を 買いました。",
         "exampleSentenceReading": "きれいな はなを かいました。",
-        "exampleSentenceMeaning": "Tôi đã mua những bông hoa đẹp."
+        "exampleSentenceMeaning": "Tôi đã mua những bông hoa đẹp.",
+        "dictionaryForm": ""
       },
       {
         "id": 723,
@@ -6674,7 +6796,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "白い シャツを 着ます。",
         "exampleSentenceReading": "しろい しゃつを きます。",
-        "exampleSentenceMeaning": "Tôi mặc áo sơ mi trắng."
+        "exampleSentenceMeaning": "Tôi mặc áo sơ mi trắng.",
+        "dictionaryForm": ""
       },
       {
         "id": 724,
@@ -6686,7 +6809,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "誕生日の プレゼントです。",
         "exampleSentenceReading": "たんじょうびの ぷれぜんとです。",
-        "exampleSentenceMeaning": "Đây là quà sinh nhật."
+        "exampleSentenceMeaning": "Đây là quà sinh nhật.",
+        "dictionaryForm": ""
       },
       {
         "id": 725,
@@ -6698,7 +6822,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "荷物を 持ちます。",
         "exampleSentenceReading": "にもつを もちます。",
-        "exampleSentenceMeaning": "Tôi xách hành lý."
+        "exampleSentenceMeaning": "Tôi xách hành lý.",
+        "dictionaryForm": ""
       },
       {
         "id": 726,
@@ -6710,7 +6835,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "お金が ありません。",
         "exampleSentenceReading": "おかねが ありません。",
-        "exampleSentenceMeaning": "Tôi không có tiền."
+        "exampleSentenceMeaning": "Tôi không có tiền.",
+        "dictionaryForm": ""
       },
       {
         "id": 727,
@@ -6722,7 +6848,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "電車の 切符を 買います。",
         "exampleSentenceReading": "でんしゃの きっぷを かいます。",
-        "exampleSentenceMeaning": "Tôi mua vé tàu điện."
+        "exampleSentenceMeaning": "Tôi mua vé tàu điện.",
+        "dictionaryForm": ""
       },
       {
         "id": 728,
@@ -6734,7 +6861,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "クリスマスに パーティーを します。",
         "exampleSentenceReading": "くりすますに ぱーてぃーを します。",
-        "exampleSentenceMeaning": "Tổ chức tiệc vào lễ Giáng sinh."
+        "exampleSentenceMeaning": "Tổ chức tiệc vào lễ Giáng sinh.",
+        "dictionaryForm": ""
       },
       {
         "id": 729,
@@ -6746,7 +6874,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "父は 会社員です。",
         "exampleSentenceReading": "ちちは かいしゃいんです。",
-        "exampleSentenceMeaning": "Bố tôi là nhân viên công ty."
+        "exampleSentenceMeaning": "Bố tôi là nhân viên công ty.",
+        "dictionaryForm": ""
       },
       {
         "id": 730,
@@ -6758,7 +6887,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "母は 優しいです。",
         "exampleSentenceReading": "ははは やさしいです。",
-        "exampleSentenceMeaning": "Mẹ tôi rất hiền."
+        "exampleSentenceMeaning": "Mẹ tôi rất hiền.",
+        "dictionaryForm": ""
       },
       {
         "id": 731,
@@ -6770,7 +6900,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "お父さんは お元気ですか。",
         "exampleSentenceReading": "おとうさんは おげんきですか。",
-        "exampleSentenceMeaning": "Bác trai có khỏe không ạ?"
+        "exampleSentenceMeaning": "Bác trai có khỏe không ạ?",
+        "dictionaryForm": ""
       },
       {
         "id": 732,
@@ -6782,7 +6913,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "お母さんの 料理は おいしいです。",
         "exampleSentenceReading": "おかあさんの りょうりは おいしいです。",
-        "exampleSentenceMeaning": "Món ăn mẹ nấu rất ngon."
+        "exampleSentenceMeaning": "Món ăn mẹ nấu rất ngon.",
+        "dictionaryForm": ""
       },
       {
         "id": 733,
@@ -6794,7 +6926,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "もう 昼ご飯を 食べました。",
         "exampleSentenceReading": "もう ひるごはんを たべました。",
-        "exampleSentenceMeaning": "Tôi đã ăn trưa rồi."
+        "exampleSentenceMeaning": "Tôi đã ăn trưa rồi.",
+        "dictionaryForm": ""
       },
       {
         "id": 734,
@@ -6806,7 +6939,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "いいえ、まだです。",
         "exampleSentenceReading": "いいえ、まだです。",
-        "exampleSentenceMeaning": "Chưa, tôi vẫn chưa làm."
+        "exampleSentenceMeaning": "Chưa, tôi vẫn chưa làm.",
+        "dictionaryForm": ""
       },
       {
         "id": 735,
@@ -6818,7 +6952,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "これから 勉強します。",
         "exampleSentenceReading": "これから べんきょうします。",
-        "exampleSentenceMeaning": "Từ bây giờ tôi sẽ học bài."
+        "exampleSentenceMeaning": "Từ bây giờ tôi sẽ học bài.",
+        "dictionaryForm": ""
       },
       {
         "id": 736,
@@ -6827,70 +6962,11 @@ object DataFixtures {
         "romaji": "denwa o kakemasu",
         "meaning": "Gọi điện thoại",
         "hanViet": "Điện Thoại",
-        "type": "Cụm động từ",
+        "type": "Động từ nhóm 2",
         "exampleSentence": "家族に 電話を かけます。",
         "exampleSentenceReading": "かぞくに でんわを かけます。",
-        "exampleSentenceMeaning": "Gọi điện thoại cho gia đình."
-      },
-      {
-        "id": 737,
-        "word": "箸",
-        "reading": "はし",
-        "romaji": "hashi",
-        "meaning": "Đũa",
-        "hanViet": "Trợ",
-        "type": "Danh từ",
-        "exampleSentence": "箸で ご飯を 食べます。",
-        "exampleSentenceReading": "はしで ごはんを たべます。",
-        "exampleSentenceMeaning": "Ăn cơm bằng đũa."
-      },
-      {
-        "id": 738,
-        "word": "スプーン",
-        "reading": "すぷーん",
-        "romaji": "supuun",
-        "meaning": "Cái thìa / Muỗng",
-        "hanViet": "",
-        "type": "Danh từ",
-        "exampleSentence": "スプーンを 使います。",
-        "exampleSentenceReading": "すぷーんを つかいます。",
-        "exampleSentenceMeaning": "Sử dụng muỗng."
-      },
-      {
-        "id": 739,
-        "word": "ナイフ",
-        "reading": "ないふ",
-        "romaji": "naifu",
-        "meaning": "Con dao",
-        "hanViet": "",
-        "type": "Danh từ",
-        "exampleSentence": "ナイフで 切ります。",
-        "exampleSentenceReading": "ないふで きります。",
-        "exampleSentenceMeaning": "Cắt bằng dao."
-      },
-      {
-        "id": 740,
-        "word": "フォーク",
-        "reading": "ふぉーく",
-        "romaji": "fooku",
-        "meaning": "Cái dĩa / Nĩa",
-        "hanViet": "",
-        "type": "Danh từ",
-        "exampleSentence": "フォークで 食べます。",
-        "exampleSentenceReading": "ふぉーくで たべます。",
-        "exampleSentenceMeaning": "Ăn bằng nĩa."
-      },
-      {
-        "id": 741,
-        "word": "プレゼント",
-        "reading": "ぷれぜんと",
-        "romaji": "purezento",
-        "meaning": "Quà tặng",
-        "hanViet": "",
-        "type": "Danh từ",
-        "exampleSentence": "すてきな プレゼントです。",
-        "exampleSentenceReading": "すてきな ぷれぜんとです。",
-        "exampleSentenceMeaning": "Món quà thật tuyệt vời."
+        "exampleSentenceMeaning": "Gọi điện thoại cho gia đình.",
+        "dictionaryForm": "電話をかける (でんわをかける)"
       }
     ],
     "grammarPoints": [
@@ -6970,7 +7046,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "ミラーさんは ハンサムです。",
         "exampleSentenceReading": "みらーさんは はんさむです。",
-        "exampleSentenceMeaning": "Anh Miller rất đẹp trai."
+        "exampleSentenceMeaning": "Anh Miller rất đẹp trai.",
+        "dictionaryForm": ""
       },
       {
         "id": 802,
@@ -6982,7 +7059,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "京都は きれいな 町です。",
         "exampleSentenceReading": "きょうとは きれいな まちです。",
-        "exampleSentenceMeaning": "Kyoto là thành phố xinh đẹp."
+        "exampleSentenceMeaning": "Kyoto là thành phố xinh đẹp.",
+        "dictionaryForm": ""
       },
       {
         "id": 803,
@@ -6994,7 +7072,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "図書館は 静かです。",
         "exampleSentenceReading": "としょかんは しずかです。",
-        "exampleSentenceMeaning": "Thư viện rất yên tĩnh."
+        "exampleSentenceMeaning": "Thư viện rất yên tĩnh.",
+        "dictionaryForm": ""
       },
       {
         "id": 804,
@@ -7006,7 +7085,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "東京は にぎやかな 町です。",
         "exampleSentenceReading": "とうきょうは にぎやかな まちです。",
-        "exampleSentenceMeaning": "Tokyo là thành phố nhộn nhịp."
+        "exampleSentenceMeaning": "Tokyo là thành phố nhộn nhịp.",
+        "dictionaryForm": ""
       },
       {
         "id": 805,
@@ -7018,7 +7098,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "富士山は 有名です。",
         "exampleSentenceReading": "ふじさんは ゆうめいです。",
-        "exampleSentenceMeaning": "Núi Phú Sĩ rất nổi tiếng."
+        "exampleSentenceMeaning": "Núi Phú Sĩ rất nổi tiếng.",
+        "dictionaryForm": ""
       },
       {
         "id": 806,
@@ -7030,7 +7111,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "先生は とても 親切です。",
         "exampleSentenceReading": "せんせいは とても しんせつです。",
-        "exampleSentenceMeaning": "Thầy giáo rất tốt bụng."
+        "exampleSentenceMeaning": "Thầy giáo rất tốt bụng.",
+        "dictionaryForm": ""
       },
       {
         "id": 807,
@@ -7042,7 +7124,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "お元気ですか。はい、元気です。",
         "exampleSentenceReading": "おげんきですか。はい、げんきです。",
-        "exampleSentenceMeaning": "Bạn có khỏe không? Vâng, tôi khỏe."
+        "exampleSentenceMeaning": "Bạn có khỏe không? Vâng, tôi khỏe.",
+        "dictionaryForm": ""
       },
       {
         "id": 808,
@@ -7054,7 +7137,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "明日は 暇ですか。",
         "exampleSentenceReading": "あしたは ひまですか。",
-        "exampleSentenceMeaning": "Ngày mai bạn có rảnh không?"
+        "exampleSentenceMeaning": "Ngày mai bạn có rảnh không?",
+        "dictionaryForm": ""
       },
       {
         "id": 809,
@@ -7066,7 +7150,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "地下鉄は とても 便利です。",
         "exampleSentenceReading": "ちかてつは とても べんりです。",
-        "exampleSentenceMeaning": "Tàu điện ngầm rất tiện lợi."
+        "exampleSentenceMeaning": "Tàu điện ngầm rất tiện lợi.",
+        "dictionaryForm": ""
       },
       {
         "id": 810,
@@ -7078,7 +7163,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "すてきな シャツですね。",
         "exampleSentenceReading": "すてきな しゃつですね。",
-        "exampleSentenceMeaning": "Chiếc áo sơ mi tuyệt quá nhỉ."
+        "exampleSentenceMeaning": "Chiếc áo sơ mi tuyệt quá nhỉ.",
+        "dictionaryForm": ""
       },
       {
         "id": 811,
@@ -7090,7 +7176,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "大きい 家に 住みたいです。",
         "exampleSentenceReading": "おおきい いえに すみたいです。",
-        "exampleSentenceMeaning": "Tôi muốn sống trong ngôi nhà to lớn."
+        "exampleSentenceMeaning": "Tôi muốn sống trong ngôi nhà to lớn.",
+        "dictionaryForm": ""
       },
       {
         "id": 812,
@@ -7102,7 +7189,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "小さい 車を 買いました。",
         "exampleSentenceReading": "ちいさい くるまを かいました。",
-        "exampleSentenceMeaning": "Tôi đã mua một chiếc xe nhỏ."
+        "exampleSentenceMeaning": "Tôi đã mua một chiếc xe nhỏ.",
+        "dictionaryForm": ""
       },
       {
         "id": 813,
@@ -7114,7 +7202,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "新しい 本を 読みます。",
         "exampleSentenceReading": "あたらしい ほんを よみます。",
-        "exampleSentenceMeaning": "Tôi đọc quyển sách mới."
+        "exampleSentenceMeaning": "Tôi đọc quyển sách mới.",
+        "dictionaryForm": ""
       },
       {
         "id": 814,
@@ -7126,7 +7215,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "古い お寺を 見ました。",
         "exampleSentenceReading": "ふるい おてらを みました。",
-        "exampleSentenceMeaning": "Tôi đã ngắm nhìn ngôi chùa cổ."
+        "exampleSentenceMeaning": "Tôi đã ngắm nhìn ngôi chùa cổ.",
+        "dictionaryForm": ""
       },
       {
         "id": 815,
@@ -7138,7 +7228,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "今日は いい天気です。",
         "exampleSentenceReading": "きょうは いいてんきです。",
-        "exampleSentenceMeaning": "Hôm nay thời tiết tốt thật."
+        "exampleSentenceMeaning": "Hôm nay thời tiết tốt thật.",
+        "dictionaryForm": ""
       },
       {
         "id": 816,
@@ -7150,7 +7241,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "気分が 悪いです。",
         "exampleSentenceReading": "きぶんが わるいです。",
-        "exampleSentenceMeaning": "Tâm trạng tôi không tốt."
+        "exampleSentenceMeaning": "Tâm trạng tôi không tốt.",
+        "dictionaryForm": ""
       },
       {
         "id": 817,
@@ -7162,7 +7254,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "夏は とても 暑いです。",
         "exampleSentenceReading": "なつは とても あついです。",
-        "exampleSentenceMeaning": "Mùa hè rất nóng."
+        "exampleSentenceMeaning": "Mùa hè rất nóng.",
+        "dictionaryForm": ""
       },
       {
         "id": 818,
@@ -7174,7 +7267,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "熱い お茶を 飲みます。",
         "exampleSentenceReading": "あつい おちゃを のみます。",
-        "exampleSentenceMeaning": "Tôi uống trà nóng."
+        "exampleSentenceMeaning": "Tôi uống trà nóng.",
+        "dictionaryForm": ""
       },
       {
         "id": 819,
@@ -7186,7 +7280,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "冬は 寒いです。",
         "exampleSentenceReading": "ふゆは さむいです。",
-        "exampleSentenceMeaning": "Mùa đông rất lạnh."
+        "exampleSentenceMeaning": "Mùa đông rất lạnh.",
+        "dictionaryForm": ""
       },
       {
         "id": 820,
@@ -7198,7 +7293,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "冷たい 水を ください。",
         "exampleSentenceReading": "つめたい みずを ください。",
-        "exampleSentenceMeaning": "Cho tôi nước lạnh nhé."
+        "exampleSentenceMeaning": "Cho tôi nước lạnh nhé.",
+        "dictionaryForm": ""
       },
       {
         "id": 821,
@@ -7210,7 +7306,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "漢字は 難しいです。",
         "exampleSentenceReading": "かんじは むずかしいです。",
-        "exampleSentenceMeaning": "Chữ Hán rất khó."
+        "exampleSentenceMeaning": "Chữ Hán rất khó.",
+        "dictionaryForm": ""
       },
       {
         "id": 822,
@@ -7222,7 +7319,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "このテストは 易しいです。",
         "exampleSentenceReading": "このてすとは やさしいです。",
-        "exampleSentenceMeaning": "Bài kiểm tra này dễ."
+        "exampleSentenceMeaning": "Bài kiểm tra này dễ.",
+        "dictionaryForm": ""
       },
       {
         "id": 823,
@@ -7234,7 +7332,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "この時計は 高いです。",
         "exampleSentenceReading": "このとけいは たかいです。",
-        "exampleSentenceMeaning": "Chiếc đồng hồ này đắt tiền."
+        "exampleSentenceMeaning": "Chiếc đồng hồ này đắt tiền.",
+        "dictionaryForm": ""
       },
       {
         "id": 824,
@@ -7246,7 +7345,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "このスーパーは 安いです。",
         "exampleSentenceReading": "このすーぱーは やすいです。",
-        "exampleSentenceMeaning": "Siêu thị này giá rẻ."
+        "exampleSentenceMeaning": "Siêu thị này giá rẻ.",
+        "dictionaryForm": ""
       },
       {
         "id": 825,
@@ -7258,7 +7358,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "あの山は 低いです。",
         "exampleSentenceReading": "あのやまは ひくいです。",
-        "exampleSentenceMeaning": "Ngọn núi kia thấp."
+        "exampleSentenceMeaning": "Ngọn núi kia thấp.",
+        "dictionaryForm": ""
       },
       {
         "id": 826,
@@ -7270,7 +7371,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "日本の アニメは おもしろいです。",
         "exampleSentenceReading": "にほんの あにめは おもしろいです。",
-        "exampleSentenceMeaning": "Anime Nhật Bản rất thú vị."
+        "exampleSentenceMeaning": "Anime Nhật Bản rất thú vị.",
+        "dictionaryForm": ""
       },
       {
         "id": 827,
@@ -7282,7 +7384,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "寿司は とても おいしいです。",
         "exampleSentenceReading": "すしは とても おいしいです。",
-        "exampleSentenceMeaning": "Sushi rất ngon."
+        "exampleSentenceMeaning": "Sushi rất ngon.",
+        "dictionaryForm": ""
       },
       {
         "id": 828,
@@ -7294,7 +7397,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "今週は 忙しいです。",
         "exampleSentenceReading": "こんしゅうは いそがしいです。",
-        "exampleSentenceMeaning": "Tuần này tôi rất bận."
+        "exampleSentenceMeaning": "Tuần này tôi rất bận.",
+        "dictionaryForm": ""
       },
       {
         "id": 829,
@@ -7306,7 +7410,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "旅行は 楽しかったです。",
         "exampleSentenceReading": "りょこうは たのしかったです。",
-        "exampleSentenceMeaning": "Chuyến du lịch đã rất vui."
+        "exampleSentenceMeaning": "Chuyến du lịch đã rất vui.",
+        "dictionaryForm": ""
       },
       {
         "id": 830,
@@ -7318,7 +7423,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "白い シャツを 買いました。",
         "exampleSentenceReading": "しろい しゃつを かいました。",
-        "exampleSentenceMeaning": "Tôi đã mua áo sơ mi trắng."
+        "exampleSentenceMeaning": "Tôi đã mua áo sơ mi trắng.",
+        "dictionaryForm": ""
       },
       {
         "id": 831,
@@ -7330,7 +7436,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "黒い 靴を 履きます。",
         "exampleSentenceReading": "くろい くつを はきます。",
-        "exampleSentenceMeaning": "Tôi đi giày màu đen."
+        "exampleSentenceMeaning": "Tôi đi giày màu đen.",
+        "dictionaryForm": ""
       },
       {
         "id": 832,
@@ -7342,7 +7449,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "赤い りんごを 食べます。",
         "exampleSentenceReading": "あかい りんごを たべます。",
-        "exampleSentenceMeaning": "Tôi ăn quả táo đỏ."
+        "exampleSentenceMeaning": "Tôi ăn quả táo đỏ.",
+        "dictionaryForm": ""
       },
       {
         "id": 833,
@@ -7354,7 +7462,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "青い 空が きれいです。",
         "exampleSentenceReading": "あおい そらが きれいです。",
-        "exampleSentenceMeaning": "Bầu trời xanh thật đẹp."
+        "exampleSentenceMeaning": "Bầu trời xanh thật đẹp.",
+        "dictionaryForm": ""
       },
       {
         "id": 834,
@@ -7366,7 +7475,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "4月に 桜が 咲きます。",
         "exampleSentenceReading": "しがつに さくらが さきます。",
-        "exampleSentenceMeaning": "Hoa anh đào nở vào tháng 4."
+        "exampleSentenceMeaning": "Hoa anh đào nở vào tháng 4.",
+        "dictionaryForm": ""
       },
       {
         "id": 835,
@@ -7378,7 +7488,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "富士山は 高い 山です。",
         "exampleSentenceReading": "ふじさんは たかい やまです。",
-        "exampleSentenceMeaning": "Núi Phú Sĩ là ngọn núi cao."
+        "exampleSentenceMeaning": "Núi Phú Sĩ là ngọn núi cao.",
+        "dictionaryForm": ""
       },
       {
         "id": 836,
@@ -7390,7 +7501,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "静かな 町に 住んでいます。",
         "exampleSentenceReading": "しずかな まちに すんでいます。",
-        "exampleSentenceMeaning": "Tôi sống ở một thị trấn yên bình."
+        "exampleSentenceMeaning": "Tôi sống ở một thị trấn yên bình.",
+        "dictionaryForm": ""
       },
       {
         "id": 837,
@@ -7402,7 +7514,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "日本の 食べ物が 好きです。",
         "exampleSentenceReading": "にほんの たべものが すきです。",
-        "exampleSentenceMeaning": "Tôi thích đồ ăn Nhật Bản."
+        "exampleSentenceMeaning": "Tôi thích đồ ăn Nhật Bản.",
+        "dictionaryForm": ""
       },
       {
         "id": 838,
@@ -7414,7 +7527,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "速い 車ですね。",
         "exampleSentenceReading": "はやい くるまですね。",
-        "exampleSentenceMeaning": "Xe chạy nhanh nhỉ."
+        "exampleSentenceMeaning": "Xe chạy nhanh nhỉ.",
+        "dictionaryForm": ""
       },
       {
         "id": 839,
@@ -7426,7 +7540,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "東京は にぎやかな 所です。",
         "exampleSentenceReading": "とうきょうは にぎやかな ところです。",
-        "exampleSentenceMeaning": "Tokyo là một nơi náo nhiệt."
+        "exampleSentenceMeaning": "Tokyo là một nơi náo nhiệt.",
+        "dictionaryForm": ""
       },
       {
         "id": 840,
@@ -7438,7 +7553,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "学校の 寮に 住んでいます。",
         "exampleSentenceReading": "がっこうの りょうに すんでいます。",
-        "exampleSentenceMeaning": "Tôi sống ở ký túc xá trường."
+        "exampleSentenceMeaning": "Tôi sống ở ký túc xá trường.",
+        "dictionaryForm": ""
       },
       {
         "id": 841,
@@ -7450,7 +7566,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "日本の 生活は 楽しいです。",
         "exampleSentenceReading": "にほんの せいかつは たのしいです。",
-        "exampleSentenceMeaning": "Cuộc sống ở Nhật rất vui."
+        "exampleSentenceMeaning": "Cuộc sống ở Nhật rất vui.",
+        "dictionaryForm": ""
       },
       {
         "id": 842,
@@ -7462,7 +7579,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "お仕事は どうですか。",
         "exampleSentenceReading": "おしごとは どうですか。",
-        "exampleSentenceMeaning": "Công việc của bạn dạo này thế nào?"
+        "exampleSentenceMeaning": "Công việc của bạn dạo này thế nào?",
+        "dictionaryForm": ""
       },
       {
         "id": 843,
@@ -7474,7 +7592,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "日本の 生活は どうですか。",
         "exampleSentenceReading": "にほんの せいかつは どうですか。",
-        "exampleSentenceMeaning": "Cuộc sống ở Nhật thế nào?"
+        "exampleSentenceMeaning": "Cuộc sống ở Nhật thế nào?",
+        "dictionaryForm": ""
       },
       {
         "id": 844,
@@ -7486,7 +7605,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "ハノイは どんな 町ですか。",
         "exampleSentenceReading": "ハノイは どんな まちですか。",
-        "exampleSentenceMeaning": "Hà Nội là thành phố như thế nào?"
+        "exampleSentenceMeaning": "Hà Nội là thành phố như thế nào?",
+        "dictionaryForm": ""
       },
       {
         "id": 845,
@@ -7498,7 +7618,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "とても おいしいです。",
         "exampleSentenceReading": "とても おいしいです。",
-        "exampleSentenceMeaning": "Ngon lắm."
+        "exampleSentenceMeaning": "Ngon lắm.",
+        "dictionaryForm": ""
       },
       {
         "id": 846,
@@ -7510,139 +7631,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "あまり 寒くないです。",
         "exampleSentenceReading": "あまり さむくないです。",
-        "exampleSentenceMeaning": "Không lạnh lắm."
-      },
-      {
-        "id": 847,
-        "word": "ハンサム[な]",
-        "reading": "はんさむ",
-        "romaji": "hansamu",
-        "meaning": "Đẹp trai",
-        "hanViet": "",
-        "type": "Tính từ -na",
-        "exampleSentence": "ミラーさんは ハンサムです。",
-        "exampleSentenceReading": "みらーさんは はんさむです。",
-        "exampleSentenceMeaning": "Anh Miller rất đẹp trai."
-      },
-      {
-        "id": 848,
-        "word": "きれい[な]",
-        "reading": "きれい",
-        "romaji": "kirei",
-        "meaning": "Đẹp / Sạch sẽ",
-        "hanViet": "Khởi Lệ",
-        "type": "Tính từ -na",
-        "exampleSentence": "桜が きれいです。",
-        "exampleSentenceReading": "さくらが きれいです。",
-        "exampleSentenceMeaning": "Hoa anh đào đẹp quá."
-      },
-      {
-        "id": 849,
-        "word": "静か[な]",
-        "reading": "しずか",
-        "romaji": "shizuka",
-        "meaning": "Yên tĩnh",
-        "hanViet": "Tĩnh",
-        "type": "Tính từ -na",
-        "exampleSentence": "静かな 部屋です。",
-        "exampleSentenceReading": "しずかな へやです。",
-        "exampleSentenceMeaning": "Căn phòng yên tĩnh."
-      },
-      {
-        "id": 850,
-        "word": "にぎやか[な]",
-        "reading": "にぎやか",
-        "romaji": "nigiyaka",
-        "meaning": "Náo nhiệt / Nhộn nhịp",
-        "hanViet": "",
-        "type": "Tính từ -na",
-        "exampleSentence": "東京は にぎやかです。",
-        "exampleSentenceReading": "とうきょうは にぎやかです。",
-        "exampleSentenceMeaning": "Tokyo rất nhộn nhịp."
-      },
-      {
-        "id": 851,
-        "word": "有名[な]",
-        "reading": "ゆうめい",
-        "romaji": "yuumei",
-        "meaning": "Nổi tiếng",
-        "hanViet": "Hữu Danh",
-        "type": "Tính từ -na",
-        "exampleSentence": "富士山は 有名です。",
-        "exampleSentenceReading": "ふじさんは ゆうめいです。",
-        "exampleSentenceMeaning": "Núi Phú Sĩ rất nổi tiếng."
-      },
-      {
-        "id": 852,
-        "word": "親切[な]",
-        "reading": "しんせつ",
-        "romaji": "shinsetsu",
-        "meaning": "Thân thiện / Tốt bụng",
-        "hanViet": "Thân Thiết",
-        "type": "Tính từ -na",
-        "exampleSentence": "先生は 親切です。",
-        "exampleSentenceReading": "せんせいは しんせつです。",
-        "exampleSentenceMeaning": "Thầy giáo rất tốt bụng."
-      },
-      {
-        "id": 853,
-        "word": "元気[な]",
-        "reading": "げんき",
-        "romaji": "genki",
-        "meaning": "Khỏe mạnh",
-        "hanViet": "Nguyên Khí",
-        "type": "Tính từ -na",
-        "exampleSentence": "お元気ですか。ー はい、元気です。",
-        "exampleSentenceReading": "おげんきですか。ー はい、げんきです。",
-        "exampleSentenceMeaning": "Bạn có khỏe không? - Vâng, tôi khỏe."
-      },
-      {
-        "id": 854,
-        "word": "暇[な]",
-        "reading": "ひま",
-        "romaji": "hima",
-        "meaning": "Rảnh rỗi",
-        "hanViet": "Hạ",
-        "type": "Tính từ -na",
-        "exampleSentence": "あした 暇ですか。",
-        "exampleSentenceReading": "あした ひまですか。",
-        "exampleSentenceMeaning": "Ngày mai bạn có rảnh không?"
-      },
-      {
-        "id": 855,
-        "word": "便利[な]",
-        "reading": "べんり",
-        "romaji": "benri",
-        "meaning": "Tiện lợi",
-        "hanViet": "Tiện Lợi",
-        "type": "Tính từ -na",
-        "exampleSentence": "地下鉄は 便利です。",
-        "exampleSentenceReading": "ちかてつは べんりです。",
-        "exampleSentenceMeaning": "Tàu điện ngầm rất tiện lợi."
-      },
-      {
-        "id": 856,
-        "word": "いい (よい)",
-        "reading": "いい",
-        "romaji": "ii",
-        "meaning": "Tốt / Hay",
-        "hanViet": "Lương",
-        "type": "Tính từ -i",
-        "exampleSentence": "天気が いいです。",
-        "exampleSentenceReading": "てんきが いいです。",
-        "exampleSentenceMeaning": "Thời tiết đẹp."
-      },
-      {
-        "id": 857,
-        "word": "暑い / 熱い",
-        "reading": "あつい",
-        "romaji": "atsui",
-        "meaning": "Nóng (thời tiết / nước)",
-        "hanViet": "Thử / Nhiệt",
-        "type": "Tính từ -i",
-        "exampleSentence": "今日は 暑いです。",
-        "exampleSentenceReading": "きょうは あついです。",
-        "exampleSentenceMeaning": "Hôm nay trời nóng."
+        "exampleSentenceMeaning": "Không lạnh lắm.",
+        "dictionaryForm": ""
       }
     ],
     "grammarPoints": [
@@ -7727,7 +7717,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "わたしは 寿司が 好きです。",
         "exampleSentenceReading": "わたしは すしが すきです。",
-        "exampleSentenceMeaning": "Tôi thích sushi."
+        "exampleSentenceMeaning": "Tôi thích sushi.",
+        "dictionaryForm": ""
       },
       {
         "id": 902,
@@ -7739,7 +7730,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "納豆が 嫌いです。",
         "exampleSentenceReading": "なっとうが きらいです。",
-        "exampleSentenceMeaning": "Tôi ghét đậu natto."
+        "exampleSentenceMeaning": "Tôi ghét đậu natto.",
+        "dictionaryForm": ""
       },
       {
         "id": 903,
@@ -7751,7 +7743,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "たなかさんは 料理が 上手です。",
         "exampleSentenceReading": "たなかさんは りょうりが じょうずです。",
-        "exampleSentenceMeaning": "Anh Tanaka nấu ăn giỏi."
+        "exampleSentenceMeaning": "Anh Tanaka nấu ăn giỏi.",
+        "dictionaryForm": ""
       },
       {
         "id": 904,
@@ -7763,7 +7756,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "わたしは 絵が 下手です。",
         "exampleSentenceReading": "わたしは えが へたです。",
-        "exampleSentenceMeaning": "Tôi vẽ tranh kém."
+        "exampleSentenceMeaning": "Tôi vẽ tranh kém.",
+        "dictionaryForm": ""
       },
       {
         "id": 905,
@@ -7775,7 +7769,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "日本語が わかります。",
         "exampleSentenceReading": "にほんごが わかります。",
-        "exampleSentenceMeaning": "Tôi hiểu tiếng Nhật."
+        "exampleSentenceMeaning": "Tôi hiểu tiếng Nhật.",
+        "dictionaryForm": "わかる"
       },
       {
         "id": 906,
@@ -7787,7 +7782,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "時間が あります。",
         "exampleSentenceReading": "じかんが あります。",
-        "exampleSentenceMeaning": "Tôi có thời gian."
+        "exampleSentenceMeaning": "Tôi có thời gian.",
+        "dictionaryForm": "ある"
       },
       {
         "id": 907,
@@ -7799,7 +7795,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "日本料理を 作ります。",
         "exampleSentenceReading": "にほんりょうりを つくります。",
-        "exampleSentenceMeaning": "Tôi nấu món ăn Nhật."
+        "exampleSentenceMeaning": "Tôi nấu món ăn Nhật.",
+        "dictionaryForm": ""
       },
       {
         "id": 908,
@@ -7811,7 +7808,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "冷たい 飲み物が 欲しいです。",
         "exampleSentenceReading": "つめたい のみものが ほしいです。",
-        "exampleSentenceMeaning": "Tôi muốn đồ uống lạnh."
+        "exampleSentenceMeaning": "Tôi muốn đồ uống lạnh.",
+        "dictionaryForm": ""
       },
       {
         "id": 909,
@@ -7823,7 +7821,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "どんな スポーツが 好きですか。",
         "exampleSentenceReading": "どんな すぽーつが すきですか。",
-        "exampleSentenceMeaning": "Bạn thích môn thể thao nào?"
+        "exampleSentenceMeaning": "Bạn thích môn thể thao nào?",
+        "dictionaryForm": ""
       },
       {
         "id": 910,
@@ -7835,7 +7834,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "日本人は 野球が 好きです。",
         "exampleSentenceReading": "にほんじんは やきゅうが すきです。",
-        "exampleSentenceMeaning": "Người Nhật rất thích bóng chày."
+        "exampleSentenceMeaning": "Người Nhật rất thích bóng chày.",
+        "dictionaryForm": ""
       },
       {
         "id": 911,
@@ -7847,7 +7847,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ダンスを 習います。",
         "exampleSentenceReading": "だんすを ならいます。",
-        "exampleSentenceMeaning": "Tôi học nhảy khiêu vũ."
+        "exampleSentenceMeaning": "Tôi học nhảy khiêu vũ.",
+        "dictionaryForm": ""
       },
       {
         "id": 912,
@@ -7859,7 +7860,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "日本へ 旅行に 行きます。",
         "exampleSentenceReading": "にほんへ りょこうに いきます。",
-        "exampleSentenceMeaning": "Tôi đi du lịch Nhật Bản."
+        "exampleSentenceMeaning": "Tôi đi du lịch Nhật Bản.",
+        "dictionaryForm": ""
       },
       {
         "id": 913,
@@ -7871,7 +7873,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "毎晩 音楽を 聞きます。",
         "exampleSentenceReading": "まいばん おんがくを ききます。",
-        "exampleSentenceMeaning": "Mỗi tối tôi đều nghe nhạc."
+        "exampleSentenceMeaning": "Mỗi tối tôi đều nghe nhạc.",
+        "dictionaryForm": ""
       },
       {
         "id": 914,
@@ -7883,7 +7886,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "日本の 歌を 歌います。",
         "exampleSentenceReading": "にほんの うたを うたいます。",
-        "exampleSentenceMeaning": "Tôi hát bài hát tiếng Nhật."
+        "exampleSentenceMeaning": "Tôi hát bài hát tiếng Nhật.",
+        "dictionaryForm": ""
       },
       {
         "id": 915,
@@ -7895,7 +7899,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "クラシックが 好きです。",
         "exampleSentenceReading": "くらしっくが すきです。",
-        "exampleSentenceMeaning": "Tôi thích nhạc cổ điển."
+        "exampleSentenceMeaning": "Tôi thích nhạc cổ điển.",
+        "dictionaryForm": ""
       },
       {
         "id": 916,
@@ -7907,7 +7912,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "友達と カラオケへ 行きます。",
         "exampleSentenceReading": "ともだちと からおけへ いきます。",
-        "exampleSentenceMeaning": "Tôi đi hát karaoke cùng bạn."
+        "exampleSentenceMeaning": "Tôi đi hát karaoke cùng bạn.",
+        "dictionaryForm": ""
       },
       {
         "id": 917,
@@ -7919,7 +7925,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "歌舞伎を 見ました。",
         "exampleSentenceReading": "かぶきを みました。",
-        "exampleSentenceMeaning": "Tôi đã đi xem kịch Kabuki."
+        "exampleSentenceMeaning": "Tôi đã đi xem kịch Kabuki.",
+        "dictionaryForm": ""
       },
       {
         "id": 918,
@@ -7931,7 +7938,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "美術館で 絵を 見ます。",
         "exampleSentenceReading": "びじゅつかんで えを みます。",
-        "exampleSentenceMeaning": "Tôi ngắm tranh ở viện bảo tàng."
+        "exampleSentenceMeaning": "Tôi ngắm tranh ở viện bảo tàng.",
+        "dictionaryForm": ""
       },
       {
         "id": 919,
@@ -7943,7 +7951,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "きれいな 字を 書きます。",
         "exampleSentenceReading": "きれいな じを かきます。",
-        "exampleSentenceMeaning": "Viết nét chữ rất đẹp."
+        "exampleSentenceMeaning": "Viết nét chữ rất đẹp.",
+        "dictionaryForm": ""
       },
       {
         "id": 920,
@@ -7955,7 +7964,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "毎日 漢字を 覚えます。",
         "exampleSentenceReading": "まいにち かんじを おぼえます。",
-        "exampleSentenceMeaning": "Mỗi ngày tôi đều học chữ Hán."
+        "exampleSentenceMeaning": "Mỗi ngày tôi đều học chữ Hán.",
+        "dictionaryForm": ""
       },
       {
         "id": 921,
@@ -7967,7 +7977,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "細かいお金が ありません。",
         "exampleSentenceReading": "こまかいおかねが ありません。",
-        "exampleSentenceMeaning": "Tôi không có tiền lẻ."
+        "exampleSentenceMeaning": "Tôi không có tiền lẻ.",
+        "dictionaryForm": ""
       },
       {
         "id": 922,
@@ -7979,7 +7990,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "コンサートの チケットを 買いました。",
         "exampleSentenceReading": "こんさーとの ちけっとを かいました。",
-        "exampleSentenceMeaning": "Tôi đã mua vé xem ca nhạc."
+        "exampleSentenceMeaning": "Tôi đã mua vé xem ca nhạc.",
+        "dictionaryForm": ""
       },
       {
         "id": 923,
@@ -7991,7 +8003,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "勉強する 時間が ありません。",
         "exampleSentenceReading": "べんきょうする じかんが ありません。",
-        "exampleSentenceMeaning": "Tôi không có thời gian học bài."
+        "exampleSentenceMeaning": "Tôi không có thời gian học bài.",
+        "dictionaryForm": ""
       },
       {
         "id": 924,
@@ -8003,7 +8016,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "今日は 用事が あります。",
         "exampleSentenceReading": "きょうは ようじが あります。",
-        "exampleSentenceMeaning": "Hôm nay tôi có việc bận."
+        "exampleSentenceMeaning": "Hôm nay tôi có việc bận.",
+        "dictionaryForm": ""
       },
       {
         "id": 925,
@@ -8015,7 +8029,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "友達と 約束が あります。",
         "exampleSentenceReading": "ともだちと やくそくが あります。",
-        "exampleSentenceMeaning": "Tôi có hẹn với bạn."
+        "exampleSentenceMeaning": "Tôi có hẹn với bạn.",
+        "dictionaryForm": ""
       },
       {
         "id": 926,
@@ -8027,7 +8042,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "コンビニで アルバイトを します。",
         "exampleSentenceReading": "こんびにで あるばいとを します。",
-        "exampleSentenceMeaning": "Tôi làm thêm ở cửa hàng tiện lợi."
+        "exampleSentenceMeaning": "Tôi làm thêm ở cửa hàng tiện lợi.",
+        "dictionaryForm": ""
       },
       {
         "id": 927,
@@ -8039,7 +8055,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ご主人は お元気ですか。",
         "exampleSentenceReading": "ごしゅじんは おげんきですか。",
-        "exampleSentenceMeaning": "Chồng chị có khỏe không ạ?"
+        "exampleSentenceMeaning": "Chồng chị có khỏe không ạ?",
+        "dictionaryForm": ""
       },
       {
         "id": 928,
@@ -8051,7 +8068,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "夫は 会社員です。",
         "exampleSentenceReading": "おっとは かいしゃいんです。",
-        "exampleSentenceMeaning": "Chồng tôi là nhân viên công ty."
+        "exampleSentenceMeaning": "Chồng tôi là nhân viên công ty.",
+        "dictionaryForm": ""
       },
       {
         "id": 929,
@@ -8063,7 +8081,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "たなかさんの 奥さんは 親切です。",
         "exampleSentenceReading": "たなかさんの おくさんは しんせつです。",
-        "exampleSentenceMeaning": "Vợ anh Tanaka rất tốt bụng."
+        "exampleSentenceMeaning": "Vợ anh Tanaka rất tốt bụng.",
+        "dictionaryForm": ""
       },
       {
         "id": 930,
@@ -8075,7 +8094,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "妻は 料理が 上手です。",
         "exampleSentenceReading": "つまは りょうりが じょうずです。",
-        "exampleSentenceMeaning": "Vợ tôi nấu ăn rất ngon."
+        "exampleSentenceMeaning": "Vợ tôi nấu ăn rất ngon.",
+        "dictionaryForm": ""
       },
       {
         "id": 931,
@@ -8087,7 +8107,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "子どもが 2人 います。",
         "exampleSentenceReading": "こどもが ふたり います。",
-        "exampleSentenceMeaning": "Tôi có 2 đứa con."
+        "exampleSentenceMeaning": "Tôi có 2 đứa con.",
+        "dictionaryForm": ""
       },
       {
         "id": 932,
@@ -8099,7 +8120,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "よく 映画を 見ます。",
         "exampleSentenceReading": "よく えいがを みます。",
-        "exampleSentenceMeaning": "Tôi rất hay xem phim."
+        "exampleSentenceMeaning": "Tôi rất hay xem phim.",
+        "dictionaryForm": ""
       },
       {
         "id": 933,
@@ -8111,7 +8133,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "だいたい わかりました。",
         "exampleSentenceReading": "だいたい わかりました。",
-        "exampleSentenceMeaning": "Tôi đã hiểu đại khái rồi."
+        "exampleSentenceMeaning": "Tôi đã hiểu đại khái rồi.",
+        "dictionaryForm": ""
       },
       {
         "id": 934,
@@ -8123,7 +8146,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "本が たくさん あります。",
         "exampleSentenceReading": "ほんが たくさん あります。",
-        "exampleSentenceMeaning": "Có rất nhiều sách."
+        "exampleSentenceMeaning": "Có rất nhiều sách.",
+        "dictionaryForm": ""
       },
       {
         "id": 935,
@@ -8135,7 +8159,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "少し 疲れました。",
         "exampleSentenceReading": "すこし つかれました。",
-        "exampleSentenceMeaning": "Tôi hơi mệt một chút."
+        "exampleSentenceMeaning": "Tôi hơi mệt một chút.",
+        "dictionaryForm": ""
       },
       {
         "id": 936,
@@ -8147,7 +8172,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "全然 わかりません。",
         "exampleSentenceReading": "ぜんぜん わかりません。",
-        "exampleSentenceMeaning": "Tôi hoàn toàn không hiểu gì cả."
+        "exampleSentenceMeaning": "Tôi hoàn toàn không hiểu gì cả.",
+        "dictionaryForm": ""
       },
       {
         "id": 937,
@@ -8159,7 +8185,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "早く 起きます。",
         "exampleSentenceReading": "はやく おきます。",
-        "exampleSentenceMeaning": "Tôi thức dậy sớm."
+        "exampleSentenceMeaning": "Tôi thức dậy sớm.",
+        "dictionaryForm": ""
       },
       {
         "id": 938,
@@ -8171,67 +8198,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "どうして 遅れましたか。",
         "exampleSentenceReading": "どうして おくれましたか。",
-        "exampleSentenceMeaning": "Tại sao bạn lại đến muộn?"
-      },
-      {
-        "id": 939,
-        "word": "好き[な]",
-        "reading": "すき",
-        "romaji": "suki",
-        "meaning": "Thích",
-        "hanViet": "Hảo",
-        "type": "Tính từ -na",
-        "exampleSentence": "日本料理が 好きです。",
-        "exampleSentenceReading": "にほんりょうりが すきです。",
-        "exampleSentenceMeaning": "Tôi thích món ăn Nhật."
-      },
-      {
-        "id": 940,
-        "word": "嫌い[な]",
-        "reading": "きらい",
-        "romaji": "kirai",
-        "meaning": "Ghét / Không thích",
-        "hanViet": "Hiềm",
-        "type": "Tính từ -na",
-        "exampleSentence": "納豆が 嫌いです。",
-        "exampleSentenceReading": "なっとうが きらいです。",
-        "exampleSentenceMeaning": "Tôi ghét món đậu lên men Natto."
-      },
-      {
-        "id": 941,
-        "word": "上手[な]",
-        "reading": "じょうず",
-        "romaji": "jouzu",
-        "meaning": "Giỏi / Khéo léo",
-        "hanViet": "Thượng Thủ",
-        "type": "Tính từ -na",
-        "exampleSentence": "ミラーさんは テニスが 上手です。",
-        "exampleSentenceReading": "みらーさんは てにすが じょうずです。",
-        "exampleSentenceMeaning": "Anh Miller chơi quần vợt giỏi."
-      },
-      {
-        "id": 942,
-        "word": "下手[な]",
-        "reading": "へた",
-        "romaji": "heta",
-        "meaning": "Kém / Dở",
-        "hanViet": "Hạ Thủ",
-        "type": "Tính từ -na",
-        "exampleSentence": "わたしは 歌が 下手です。",
-        "exampleSentenceReading": "わたしは うたが へたです。",
-        "exampleSentenceMeaning": "Tôi hát dở lắm."
-      },
-      {
-        "id": 943,
-        "word": "スポーツ",
-        "reading": "すぽーつ",
-        "romaji": "supootsu",
-        "meaning": "Thể thao",
-        "hanViet": "",
-        "type": "Danh từ",
-        "exampleSentence": "どんな スポーツが 好きですか。",
-        "exampleSentenceReading": "どんな すぽーつが すきですか。",
-        "exampleSentenceMeaning": "Bạn thích môn thể thao nào?"
+        "exampleSentenceMeaning": "Tại sao bạn lại đến muộn?",
+        "dictionaryForm": ""
       }
     ],
     "grammarPoints": [
@@ -8304,7 +8272,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "机の 上に 本が あります。",
         "exampleSentenceReading": "つくえの うえに ほんが あります。",
-        "exampleSentenceMeaning": "Trên bàn có quyển sách."
+        "exampleSentenceMeaning": "Trên bàn có quyển sách.",
+        "dictionaryForm": "ある"
       },
       {
         "id": 1002,
@@ -8316,7 +8285,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "教室に 学生が います。",
         "exampleSentenceReading": "きょうしつに がくせいが います。",
-        "exampleSentenceMeaning": "Trong phòng học có học sinh."
+        "exampleSentenceMeaning": "Trong phòng học có học sinh.",
+        "dictionaryForm": "いる"
       },
       {
         "id": 1003,
@@ -8328,7 +8298,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "いろいろな 国の 人が います。",
         "exampleSentenceReading": "いろいろな くにの ひとが います。",
-        "exampleSentenceMeaning": "Có người đến từ nhiều quốc gia khác nhau."
+        "exampleSentenceMeaning": "Có người đến từ nhiều quốc gia khác nhau.",
+        "dictionaryForm": ""
       },
       {
         "id": 1004,
@@ -8340,7 +8311,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "あの男の人は だれですか。",
         "exampleSentenceReading": "あのおとこのひとは だれですか。",
-        "exampleSentenceMeaning": "Người đàn ông kia là ai?"
+        "exampleSentenceMeaning": "Người đàn ông kia là ai?",
+        "dictionaryForm": ""
       },
       {
         "id": 1005,
@@ -8352,7 +8324,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "きれいな 女の人ですね。",
         "exampleSentenceReading": "きれいな おんなのひとですね。",
-        "exampleSentenceMeaning": "Người phụ nữ xinh đẹp quá nhỉ."
+        "exampleSentenceMeaning": "Người phụ nữ xinh đẹp quá nhỉ.",
+        "dictionaryForm": ""
       },
       {
         "id": 1006,
@@ -8364,7 +8337,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "男の子が 走っています。",
         "exampleSentenceReading": "おとこのこが はしっています。",
-        "exampleSentenceMeaning": "Bé trai đang chạy bộ."
+        "exampleSentenceMeaning": "Bé trai đang chạy bộ.",
+        "dictionaryForm": ""
       },
       {
         "id": 1007,
@@ -8376,7 +8350,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "女の子が 笑っています。",
         "exampleSentenceReading": "おんなのこが わらっています。",
-        "exampleSentenceMeaning": "Bé gái đang cười."
+        "exampleSentenceMeaning": "Bé gái đang cười.",
+        "dictionaryForm": ""
       },
       {
         "id": 1008,
@@ -8388,7 +8363,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "庭に 犬が います。",
         "exampleSentenceReading": "にわに いぬが います。",
-        "exampleSentenceMeaning": "Ở ngoài vườn có một con chó."
+        "exampleSentenceMeaning": "Ở ngoài vườn có một con chó.",
+        "dictionaryForm": ""
       },
       {
         "id": 1009,
@@ -8400,7 +8376,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "かわいい 猫ですね。",
         "exampleSentenceReading": "かわいい ねこですね。",
-        "exampleSentenceMeaning": "Con mèo đáng yêu quá."
+        "exampleSentenceMeaning": "Con mèo đáng yêu quá.",
+        "dictionaryForm": ""
       },
       {
         "id": 1010,
@@ -8412,7 +8389,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "動物園で パンダを 見ました。",
         "exampleSentenceReading": "どうぶつえんで ぱんだを みました。",
-        "exampleSentenceMeaning": "Tôi đã ngắm gấu trúc ở sở thú."
+        "exampleSentenceMeaning": "Tôi đã ngắm gấu trúc ở sở thú.",
+        "dictionaryForm": ""
       },
       {
         "id": 1011,
@@ -8424,7 +8402,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "象の 鼻は 長いです。",
         "exampleSentenceReading": "ぞうの はなは ながいです。",
-        "exampleSentenceMeaning": "Vòi của con voi rất dài."
+        "exampleSentenceMeaning": "Vòi của con voi rất dài.",
+        "dictionaryForm": ""
       },
       {
         "id": 1012,
@@ -8436,7 +8415,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "大きな 木が あります。",
         "exampleSentenceReading": "おおきな きが あります。",
-        "exampleSentenceMeaning": "Có một cái cây to lớn."
+        "exampleSentenceMeaning": "Có một cái cây to lớn.",
+        "dictionaryForm": ""
       },
       {
         "id": 1013,
@@ -8448,7 +8428,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "いろいろな 物を 買いました。",
         "exampleSentenceReading": "いろいろな ものを かいました。",
-        "exampleSentenceMeaning": "Tôi đã mua nhiều đồ vật."
+        "exampleSentenceMeaning": "Tôi đã mua nhiều đồ vật.",
+        "dictionaryForm": ""
       },
       {
         "id": 1014,
@@ -8460,7 +8441,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "時計の 電池を 換えます。",
         "exampleSentenceReading": "とけいの でんちを かえます。",
-        "exampleSentenceMeaning": "Tôi thay pin cho đồng hồ."
+        "exampleSentenceMeaning": "Tôi thay pin cho đồng hồ.",
+        "dictionaryForm": ""
       },
       {
         "id": 1015,
@@ -8472,7 +8454,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "箱の 中に 何が ありますか。",
         "exampleSentenceReading": "はこの なかに なにが ありますか。",
-        "exampleSentenceMeaning": "Trong hộp có cái gì thế?"
+        "exampleSentenceMeaning": "Trong hộp có cái gì thế?",
+        "dictionaryForm": ""
       },
       {
         "id": 1016,
@@ -8484,7 +8467,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "スイッチを 押します。",
         "exampleSentenceReading": "すいっちを おします。",
-        "exampleSentenceMeaning": "Bấm công tắc."
+        "exampleSentenceMeaning": "Bấm công tắc.",
+        "dictionaryForm": ""
       },
       {
         "id": 1017,
@@ -8496,7 +8480,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "冷蔵庫に ビールが あります。",
         "exampleSentenceReading": "れいぞうこに びーるが あります。",
-        "exampleSentenceMeaning": "Trong tủ lạnh có bia."
+        "exampleSentenceMeaning": "Trong tủ lạnh có bia.",
+        "dictionaryForm": ""
       },
       {
         "id": 1018,
@@ -8508,7 +8493,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "テーブルの 上に 置きます。",
         "exampleSentenceReading": "てーぶるの うえに おきます。",
-        "exampleSentenceMeaning": "Đặt lên trên bàn."
+        "exampleSentenceMeaning": "Đặt lên trên bàn.",
+        "dictionaryForm": ""
       },
       {
         "id": 1019,
@@ -8520,7 +8506,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ベッドで 寝ます。",
         "exampleSentenceReading": "べっどで ねます。",
-        "exampleSentenceMeaning": "Tôi ngủ trên giường."
+        "exampleSentenceMeaning": "Tôi ngủ trên giường.",
+        "dictionaryForm": ""
       },
       {
         "id": 1020,
@@ -8532,7 +8519,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "本棚に 本を 並べます。",
         "exampleSentenceReading": "ほんだなに ほんを ならべます。",
-        "exampleSentenceMeaning": "Xếp sách lên giá sách."
+        "exampleSentenceMeaning": "Xếp sách lên giá sách.",
+        "dictionaryForm": ""
       },
       {
         "id": 1021,
@@ -8544,7 +8532,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ドアを 開けてください。",
         "exampleSentenceReading": "どあを あけてください。",
-        "exampleSentenceMeaning": "Xin hãy mở cửa."
+        "exampleSentenceMeaning": "Xin hãy mở cửa.",
+        "dictionaryForm": ""
       },
       {
         "id": 1022,
@@ -8556,7 +8545,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "窓から 海が 見えます。",
         "exampleSentenceReading": "まどから うみが みえます。",
-        "exampleSentenceMeaning": "Từ cửa sổ nhìn thấy biển."
+        "exampleSentenceMeaning": "Từ cửa sổ nhìn thấy biển.",
+        "dictionaryForm": ""
       },
       {
         "id": 1023,
@@ -8568,7 +8558,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "手紙を ポストに 入れます。",
         "exampleSentenceReading": "てがみを ぽすとに入れます。",
-        "exampleSentenceMeaning": "Bỏ thư vào hòm thư."
+        "exampleSentenceMeaning": "Bỏ thư vào hòm thư.",
+        "dictionaryForm": ""
       },
       {
         "id": 1024,
@@ -8580,7 +8571,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "高い ビルが あります。",
         "exampleSentenceReading": "たかい びるが あります。",
-        "exampleSentenceMeaning": "Có những tòa nhà chọc trời."
+        "exampleSentenceMeaning": "Có những tòa nhà chọc trời.",
+        "dictionaryForm": ""
       },
       {
         "id": 1025,
@@ -8592,7 +8584,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "公園を 散歩します。",
         "exampleSentenceReading": "こうえんを さんぽします。",
-        "exampleSentenceMeaning": "Tôi đi dạo ở công viên."
+        "exampleSentenceMeaning": "Tôi đi dạo ở công viên.",
+        "dictionaryForm": ""
       },
       {
         "id": 1026,
@@ -8604,7 +8597,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "喫茶店で コーヒーを 飲みます。",
         "exampleSentenceReading": "きっさてんで こーひーを のみます。",
-        "exampleSentenceMeaning": "Uống cà phê ở quán nước."
+        "exampleSentenceMeaning": "Uống cà phê ở quán nước.",
+        "dictionaryForm": ""
       },
       {
         "id": 1027,
@@ -8616,7 +8610,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "本屋で 雑誌を 買いました。",
         "exampleSentenceReading": "ほんやで ざっしを かいました。",
-        "exampleSentenceMeaning": "Tôi mua tạp chí ở hiệu sách."
+        "exampleSentenceMeaning": "Tôi mua tạp chí ở hiệu sách.",
+        "dictionaryForm": ""
       },
       {
         "id": 1028,
@@ -8628,7 +8623,8 @@ object DataFixtures {
         "type": "Hậu tố",
         "exampleSentence": "花屋で バラを 買います。",
         "exampleSentenceReading": "はなやで ばらを かいます。",
-        "exampleSentenceMeaning": "Mua hoa hồng ở tiệm hoa."
+        "exampleSentenceMeaning": "Mua hoa hồng ở tiệm hoa.",
+        "dictionaryForm": ""
       },
       {
         "id": 1029,
@@ -8640,7 +8636,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "タクシー乗り場は あそこです。",
         "exampleSentenceReading": "たくしーのりばは あそこです。",
-        "exampleSentenceMeaning": "Bến đón taxi ở đằng kia."
+        "exampleSentenceMeaning": "Bến đón taxi ở đằng kia.",
+        "dictionaryForm": ""
       },
       {
         "id": 1030,
@@ -8652,7 +8649,8 @@ object DataFixtures {
         "type": "Danh từ vị trí",
         "exampleSentence": "机の 上に 本が あります。",
         "exampleSentenceReading": "つくえの うえに ほんが あります。",
-        "exampleSentenceMeaning": "Trên bàn có quyển sách."
+        "exampleSentenceMeaning": "Trên bàn có quyển sách.",
+        "dictionaryForm": ""
       },
       {
         "id": 1031,
@@ -8664,7 +8662,8 @@ object DataFixtures {
         "type": "Danh từ vị trí",
         "exampleSentence": "椅子の 下に 猫が います。",
         "exampleSentenceReading": "いすの したに ねこが います。",
-        "exampleSentenceMeaning": "Dưới ghế có con mèo."
+        "exampleSentenceMeaning": "Dưới ghế có con mèo.",
+        "dictionaryForm": ""
       },
       {
         "id": 1032,
@@ -8676,7 +8675,8 @@ object DataFixtures {
         "type": "Danh từ vị trí",
         "exampleSentence": "駅の 前で 待ちます。",
         "exampleSentenceReading": "えきの まえで まちます。",
-        "exampleSentenceMeaning": "Tôi đợi ở trước cửa ga."
+        "exampleSentenceMeaning": "Tôi đợi ở trước cửa ga.",
+        "dictionaryForm": ""
       },
       {
         "id": 1033,
@@ -8688,7 +8688,8 @@ object DataFixtures {
         "type": "Danh từ vị trí",
         "exampleSentence": "車の 後ろに います。",
         "exampleSentenceReading": "くるまの うしろに います。",
-        "exampleSentenceMeaning": "Đang ở sau xe ô tô."
+        "exampleSentenceMeaning": "Đang ở sau xe ô tô.",
+        "dictionaryForm": ""
       },
       {
         "id": 1034,
@@ -8700,7 +8701,8 @@ object DataFixtures {
         "type": "Danh từ vị trí",
         "exampleSentence": "右へ 曲がってください。",
         "exampleSentenceReading": "みぎへ まがってください。",
-        "exampleSentenceMeaning": "Xin hãy rẽ sang bên phải."
+        "exampleSentenceMeaning": "Xin hãy rẽ sang bên phải.",
+        "dictionaryForm": ""
       },
       {
         "id": 1035,
@@ -8712,7 +8714,8 @@ object DataFixtures {
         "type": "Danh từ vị trí",
         "exampleSentence": "左に 郵便局が あります。",
         "exampleSentenceReading": "ひだりに ゆうびんきょくが あります。",
-        "exampleSentenceMeaning": "Bên trái có bưu điện."
+        "exampleSentenceMeaning": "Bên trái có bưu điện.",
+        "dictionaryForm": ""
       },
       {
         "id": 1036,
@@ -8724,7 +8727,8 @@ object DataFixtures {
         "type": "Danh từ vị trí",
         "exampleSentence": "鞄の 中に 財布が あります。",
         "exampleSentenceReading": "かばんの なかに さいふが あります。",
-        "exampleSentenceMeaning": "Trong túi có chiếc ví."
+        "exampleSentenceMeaning": "Trong túi có chiếc ví.",
+        "dictionaryForm": ""
       },
       {
         "id": 1037,
@@ -8736,7 +8740,8 @@ object DataFixtures {
         "type": "Danh từ vị trí",
         "exampleSentence": "外は 寒いです。",
         "exampleSentenceReading": "そとは さむいです。",
-        "exampleSentenceMeaning": "Bên ngoài trời rất lạnh."
+        "exampleSentenceMeaning": "Bên ngoài trời rất lạnh.",
+        "dictionaryForm": ""
       },
       {
         "id": 1038,
@@ -8748,7 +8753,8 @@ object DataFixtures {
         "type": "Danh từ vị trí",
         "exampleSentence": "銀行の 隣は 郵便局です。",
         "exampleSentenceReading": "ぎんこうの となりは ゆうびんきょくです。",
-        "exampleSentenceMeaning": "Bên cạnh ngân hàng là bưu điện."
+        "exampleSentenceMeaning": "Bên cạnh ngân hàng là bưu điện.",
+        "dictionaryForm": ""
       },
       {
         "id": 1039,
@@ -8760,7 +8766,8 @@ object DataFixtures {
         "type": "Danh từ vị trí",
         "exampleSentence": "学校の 近くに 住んでいます。",
         "exampleSentenceReading": "がっこうの ちかくに すんでいます。",
-        "exampleSentenceMeaning": "Tôi sống ở gần trường học."
+        "exampleSentenceMeaning": "Tôi sống ở gần trường học.",
+        "dictionaryForm": ""
       },
       {
         "id": 1040,
@@ -8772,19 +8779,8 @@ object DataFixtures {
         "type": "Danh từ vị trí",
         "exampleSentence": "本屋と 銀行の 間です。",
         "exampleSentenceReading": "ほんやと ぎんこうの あいだです。",
-        "exampleSentenceMeaning": "Ở giữa hiệu sách và ngân hàng."
-      },
-      {
-        "id": 1041,
-        "word": "いろいろ[な]",
-        "reading": "いろいろ",
-        "romaji": "iroiro",
-        "meaning": "Nhiều loại / Đa dạng",
-        "hanViet": "Sắc",
-        "type": "Tính từ -na",
-        "exampleSentence": "いろいろな 店が あります。",
-        "exampleSentenceReading": "いろいろな みせが あります。",
-        "exampleSentenceMeaning": "Có rất nhiều cửa hàng khác nhau."
+        "exampleSentenceMeaning": "Ở giữa hiệu sách và ngân hàng.",
+        "dictionaryForm": ""
       },
       {
         "id": 1042,
@@ -8796,7 +8792,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "机の 上に 本が あります。",
         "exampleSentenceReading": "つくえの うえに ほんが あります。",
-        "exampleSentenceMeaning": "Trên bàn có quyển sách."
+        "exampleSentenceMeaning": "Trên bàn có quyển sách.",
+        "dictionaryForm": ""
       },
       {
         "id": 1043,
@@ -8808,7 +8805,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "椅子に 座ります。",
         "exampleSentenceReading": "いすに すわります。",
-        "exampleSentenceMeaning": "Ngồi vào ghế."
+        "exampleSentenceMeaning": "Ngồi vào ghế.",
+        "dictionaryForm": ""
       }
     ],
     "grammarPoints": [
@@ -8876,7 +8874,8 @@ object DataFixtures {
         "type": "Lượng từ",
         "exampleSentence": "りんごを ひとつ ください。",
         "exampleSentenceReading": "りんごを ひとつ ください。",
-        "exampleSentenceMeaning": "Cho tôi một quả táo."
+        "exampleSentenceMeaning": "Cho tôi một quả táo.",
+        "dictionaryForm": ""
       },
       {
         "id": 1102,
@@ -8888,7 +8887,8 @@ object DataFixtures {
         "type": "Lượng từ",
         "exampleSentence": "みかんを ふたつ 食べました。",
         "exampleSentenceReading": "みかんを ふたつ たべました。",
-        "exampleSentenceMeaning": "Tôi đã ăn 2 quả quýt."
+        "exampleSentenceMeaning": "Tôi đã ăn 2 quả quýt.",
+        "dictionaryForm": ""
       },
       {
         "id": 1103,
@@ -8900,7 +8900,8 @@ object DataFixtures {
         "type": "Lượng từ",
         "exampleSentence": "パンを みっつ 買いました。",
         "exampleSentenceReading": "ぱんを みっつ かいました。",
-        "exampleSentenceMeaning": "Tôi mua 3 cái bánh mì."
+        "exampleSentenceMeaning": "Tôi mua 3 cái bánh mì.",
+        "dictionaryForm": ""
       },
       {
         "id": 1104,
@@ -8912,7 +8913,8 @@ object DataFixtures {
         "type": "Lượng từ",
         "exampleSentence": "いすが よっつ あります。",
         "exampleSentenceReading": "いすが よっつ あります。",
-        "exampleSentenceMeaning": "Có 4 cái ghế."
+        "exampleSentenceMeaning": "Có 4 cái ghế.",
+        "dictionaryForm": ""
       },
       {
         "id": 1105,
@@ -8924,7 +8926,8 @@ object DataFixtures {
         "type": "Lượng từ",
         "exampleSentence": "卵が いつつ あります。",
         "exampleSentenceReading": "たまごが いつつ あります。",
-        "exampleSentenceMeaning": "Có 5 quả trứng."
+        "exampleSentenceMeaning": "Có 5 quả trứng.",
+        "dictionaryForm": ""
       },
       {
         "id": 1106,
@@ -8936,7 +8939,8 @@ object DataFixtures {
         "type": "Lượng từ",
         "exampleSentence": "ビールを むっつ 買います。",
         "exampleSentenceReading": "びーるを むっつ かいます。",
-        "exampleSentenceMeaning": "Tôi mua 6 lon bia."
+        "exampleSentenceMeaning": "Tôi mua 6 lon bia.",
+        "dictionaryForm": ""
       },
       {
         "id": 1107,
@@ -8948,7 +8952,8 @@ object DataFixtures {
         "type": "Lượng từ",
         "exampleSentence": "机が ななつ あります。",
         "exampleSentenceReading": "つくえが ななつ あります。",
-        "exampleSentenceMeaning": "Có 7 cái bàn."
+        "exampleSentenceMeaning": "Có 7 cái bàn.",
+        "dictionaryForm": ""
       },
       {
         "id": 1108,
@@ -8960,7 +8965,8 @@ object DataFixtures {
         "type": "Lượng từ",
         "exampleSentence": "箱が やっつ あります。",
         "exampleSentenceReading": "はこが やっつ あります。",
-        "exampleSentenceMeaning": "Có 8 cái hộp."
+        "exampleSentenceMeaning": "Có 8 cái hộp.",
+        "dictionaryForm": ""
       },
       {
         "id": 1109,
@@ -8972,7 +8978,8 @@ object DataFixtures {
         "type": "Lượng từ",
         "exampleSentence": "鍵が ここのつ あります。",
         "exampleSentenceReading": "かぎが ここのつ あります。",
-        "exampleSentenceMeaning": "Có 9 chiếc chìa khóa."
+        "exampleSentenceMeaning": "Có 9 chiếc chìa khóa.",
+        "dictionaryForm": ""
       },
       {
         "id": 1110,
@@ -8984,7 +8991,8 @@ object DataFixtures {
         "type": "Lượng từ",
         "exampleSentence": "切手を とお 買いました。",
         "exampleSentenceReading": "きってを とお かいました。",
-        "exampleSentenceMeaning": "Tôi đã mua 10 con tem."
+        "exampleSentenceMeaning": "Tôi đã mua 10 con tem.",
+        "dictionaryForm": ""
       },
       {
         "id": 1111,
@@ -8996,7 +9004,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "りんごが いくつ ありますか。",
         "exampleSentenceReading": "りんごが いくつ ありますか。",
-        "exampleSentenceMeaning": "Có mấy quả táo thế?"
+        "exampleSentenceMeaning": "Có mấy quả táo thế?",
+        "dictionaryForm": ""
       },
       {
         "id": 1112,
@@ -9008,7 +9017,8 @@ object DataFixtures {
         "type": "Lượng từ",
         "exampleSentence": "一人で 行きます。",
         "exampleSentenceReading": "ひとりで いきます。",
-        "exampleSentenceMeaning": "Tôi đi một mình."
+        "exampleSentenceMeaning": "Tôi đi một mình.",
+        "dictionaryForm": ""
       },
       {
         "id": 1113,
@@ -9020,7 +9030,8 @@ object DataFixtures {
         "type": "Lượng từ",
         "exampleSentence": "二人で 映画を 見ました。",
         "exampleSentenceReading": "ふたりで えいがを みました。",
-        "exampleSentenceMeaning": "Hai người chúng tôi đã xem phim."
+        "exampleSentenceMeaning": "Hai người chúng tôi đã xem phim.",
+        "dictionaryForm": ""
       },
       {
         "id": 1114,
@@ -9032,7 +9043,8 @@ object DataFixtures {
         "type": "Hậu tố",
         "exampleSentence": "学生が 5人 います。",
         "exampleSentenceReading": "がくせいが ごにん います。",
-        "exampleSentenceMeaning": "Có 5 học sinh."
+        "exampleSentenceMeaning": "Có 5 học sinh.",
+        "dictionaryForm": ""
       },
       {
         "id": 1115,
@@ -9044,7 +9056,8 @@ object DataFixtures {
         "type": "Hậu tố",
         "exampleSentence": "車が 2台 あります。",
         "exampleSentenceReading": "くるまが にだい あります。",
-        "exampleSentenceMeaning": "Có 2 chiếc ô tô."
+        "exampleSentenceMeaning": "Có 2 chiếc ô tô.",
+        "dictionaryForm": ""
       },
       {
         "id": 1116,
@@ -9056,7 +9069,8 @@ object DataFixtures {
         "type": "Hậu tố",
         "exampleSentence": "紙を 3枚 ください。",
         "exampleSentenceReading": "かみを さんまい ください。",
-        "exampleSentenceMeaning": "Cho tôi 3 tờ giấy."
+        "exampleSentenceMeaning": "Cho tôi 3 tờ giấy.",
+        "dictionaryForm": ""
       },
       {
         "id": 1117,
@@ -9068,7 +9082,8 @@ object DataFixtures {
         "type": "Hậu tố",
         "exampleSentence": "1週間に 2回 走ります。",
         "exampleSentenceReading": "いっしゅうかんに にかい はしります。",
-        "exampleSentenceMeaning": "Mỗi tuần tôi chạy bộ 2 lần."
+        "exampleSentenceMeaning": "Mỗi tuần tôi chạy bộ 2 lần.",
+        "dictionaryForm": ""
       },
       {
         "id": 1118,
@@ -9080,7 +9095,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "赤い りんごを 食べます。",
         "exampleSentenceReading": "あかい りんごを たべます。",
-        "exampleSentenceMeaning": "Tôi ăn quả táo đỏ."
+        "exampleSentenceMeaning": "Tôi ăn quả táo đỏ.",
+        "dictionaryForm": ""
       },
       {
         "id": 1119,
@@ -9092,7 +9108,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "日本の みかんは 甘いです。",
         "exampleSentenceReading": "にほんの みかんは あまいです。",
-        "exampleSentenceMeaning": "Quýt Nhật Bản rất ngọt."
+        "exampleSentenceMeaning": "Quýt Nhật Bản rất ngọt.",
+        "dictionaryForm": ""
       },
       {
         "id": 1120,
@@ -9104,7 +9121,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "昼ご飯に サンドイッチを 食べます。",
         "exampleSentenceReading": "ひるごはんに さんどいっちを たべます。",
-        "exampleSentenceMeaning": "Ăn bánh sandwich vào bữa trưa."
+        "exampleSentenceMeaning": "Ăn bánh sandwich vào bữa trưa.",
+        "dictionaryForm": ""
       },
       {
         "id": 1121,
@@ -9116,7 +9134,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "辛い カレーが 好きです。",
         "exampleSentenceReading": "からい かれーが すきです。",
-        "exampleSentenceMeaning": "Tôi thích món cà ri cay."
+        "exampleSentenceMeaning": "Tôi thích món cà ri cay.",
+        "dictionaryForm": ""
       },
       {
         "id": 1122,
@@ -9128,7 +9147,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "夏に アイスクリームを 食べます。",
         "exampleSentenceReading": "なつに あいすくりーむを たべます。",
-        "exampleSentenceMeaning": "Mùa hè tôi ăn kem."
+        "exampleSentenceMeaning": "Mùa hè tôi ăn kem.",
+        "dictionaryForm": ""
       },
       {
         "id": 1123,
@@ -9140,7 +9160,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "80円の 切手を 買います。",
         "exampleSentenceReading": "はちじゅうえんの きってを かいます。",
-        "exampleSentenceMeaning": "Tôi mua con tem 80 Yên."
+        "exampleSentenceMeaning": "Tôi mua con tem 80 Yên.",
+        "dictionaryForm": ""
       },
       {
         "id": 1124,
@@ -9152,7 +9173,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "国へ はがきを 送ります。",
         "exampleSentenceReading": "くにへ はがきを おくります。",
-        "exampleSentenceMeaning": "Tôi gửi bưu thiếp về nước."
+        "exampleSentenceMeaning": "Tôi gửi bưu thiếp về nước.",
+        "dictionaryForm": ""
       },
       {
         "id": 1125,
@@ -9164,7 +9186,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "手紙を 封筒に 入れます。",
         "exampleSentenceReading": "てがみを ふうとうに いれます。",
-        "exampleSentenceMeaning": "Bỏ thư vào phong bì."
+        "exampleSentenceMeaning": "Bỏ thư vào phong bì.",
+        "dictionaryForm": ""
       },
       {
         "id": 1126,
@@ -9176,7 +9199,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "速達で 送ってください。",
         "exampleSentenceReading": "そくたつで おくってください。",
-        "exampleSentenceMeaning": "Xin hãy gửi chuyển phát nhanh."
+        "exampleSentenceMeaning": "Xin hãy gửi chuyển phát nhanh.",
+        "dictionaryForm": ""
       },
       {
         "id": 1127,
@@ -9188,7 +9212,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "大切な書類を 書留で 送ります。",
         "exampleSentenceReading": "たいせつなしょるいを かきとめで おくります。",
-        "exampleSentenceMeaning": "Gửi giấy tờ quan trọng bảo đảm."
+        "exampleSentenceMeaning": "Gửi giấy tờ quan trọng bảo đảm.",
+        "dictionaryForm": ""
       },
       {
         "id": 1128,
@@ -9200,7 +9225,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ベトナムへ エアメールで 送ります。",
         "exampleSentenceReading": "べとなむへ えあめーるで おくります。",
-        "exampleSentenceMeaning": "Gửi đường hàng không về VN."
+        "exampleSentenceMeaning": "Gửi đường hàng không về VN.",
+        "dictionaryForm": ""
       },
       {
         "id": 1129,
@@ -9212,7 +9238,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "船便は 安いですが、遅いです。",
         "exampleSentenceReading": "ふなびんは やすいですが、おそいです。",
-        "exampleSentenceMeaning": "Đường biển rẻ nhưng chậm."
+        "exampleSentenceMeaning": "Đường biển rẻ nhưng chậm.",
+        "dictionaryForm": ""
       },
       {
         "id": 1130,
@@ -9224,7 +9251,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "両親は ハノイに 住んでいます。",
         "exampleSentenceReading": "りょうしんは ハノイに すんでいます。",
-        "exampleSentenceMeaning": "Bố mẹ tôi sống ở Hà Nội."
+        "exampleSentenceMeaning": "Bố mẹ tôi sống ở Hà Nội.",
+        "dictionaryForm": ""
       },
       {
         "id": 1131,
@@ -9236,7 +9264,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "兄弟が 何人 いますか。",
         "exampleSentenceReading": "きょうだいが なんにん いますか。",
-        "exampleSentenceMeaning": "Bạn có mấy anh chị em?"
+        "exampleSentenceMeaning": "Bạn có mấy anh chị em?",
+        "dictionaryForm": ""
       },
       {
         "id": 1132,
@@ -9248,7 +9277,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "兄は 会社員です。",
         "exampleSentenceReading": "あには かいしゃいんです。",
-        "exampleSentenceMeaning": "Anh trai tôi là nhân viên công ty."
+        "exampleSentenceMeaning": "Anh trai tôi là nhân viên công ty.",
+        "dictionaryForm": ""
       },
       {
         "id": 1133,
@@ -9260,7 +9290,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "お兄さんは 背が 高いです。",
         "exampleSentenceReading": "おにいさんは せが たかいです。",
-        "exampleSentenceMeaning": "Anh trai bạn cao thật."
+        "exampleSentenceMeaning": "Anh trai bạn cao thật.",
+        "dictionaryForm": ""
       },
       {
         "id": 1134,
@@ -9272,7 +9303,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "姉は 銀行員です。",
         "exampleSentenceReading": "あねは ぎんこういんです。",
-        "exampleSentenceMeaning": "Chị gái tôi làm ở ngân hàng."
+        "exampleSentenceMeaning": "Chị gái tôi làm ở ngân hàng.",
+        "dictionaryForm": ""
       },
       {
         "id": 1135,
@@ -9284,7 +9316,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "きれいな お姉さんですね。",
         "exampleSentenceReading": "きれいな おねえさんですね。",
-        "exampleSentenceMeaning": "Chị gái bạn đẹp quá."
+        "exampleSentenceMeaning": "Chị gái bạn đẹp quá.",
+        "dictionaryForm": ""
       },
       {
         "id": 1136,
@@ -9296,7 +9329,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "東京まで どのくらい かかりますか。",
         "exampleSentenceReading": "とうきょうまで どのくらい かかりますか。",
-        "exampleSentenceMeaning": "Mất bao lâu để đến Tokyo?"
+        "exampleSentenceMeaning": "Mất bao lâu để đến Tokyo?",
+        "dictionaryForm": ""
       },
       {
         "id": 1137,
@@ -9308,7 +9342,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "全部で 5000円です。",
         "exampleSentenceReading": "ぜんぶで ごせんえんです。",
-        "exampleSentenceMeaning": "Tất cả hết 5000 Yên."
+        "exampleSentenceMeaning": "Tất cả hết 5000 Yên.",
+        "dictionaryForm": ""
       }
     ],
     "grammarPoints": [
@@ -9366,7 +9401,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "このテストは 簡単です。",
         "exampleSentenceReading": "このてすとは かんたんです。",
-        "exampleSentenceMeaning": "Bài kiểm tra này đơn giản."
+        "exampleSentenceMeaning": "Bài kiểm tra này đơn giản.",
+        "dictionaryForm": ""
       },
       {
         "id": 1202,
@@ -9378,7 +9414,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "駅から 家まで 近いです。",
         "exampleSentenceReading": "えきから いえまで ちかいです。",
-        "exampleSentenceMeaning": "Từ ga về nhà rất gần."
+        "exampleSentenceMeaning": "Từ ga về nhà rất gần.",
+        "dictionaryForm": ""
       },
       {
         "id": 1203,
@@ -9390,7 +9427,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "学校は 家から 遠いです。",
         "exampleSentenceReading": "がっこうは いえから とおいです。",
-        "exampleSentenceMeaning": "Trường học xa nhà tôi."
+        "exampleSentenceMeaning": "Trường học xa nhà tôi.",
+        "dictionaryForm": ""
       },
       {
         "id": 1204,
@@ -9402,7 +9440,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "新幹線は 速いです。",
         "exampleSentenceReading": "しんかんせんは はやいです。",
-        "exampleSentenceMeaning": "Tàu Shinkansen chạy rất nhanh."
+        "exampleSentenceMeaning": "Tàu Shinkansen chạy rất nhanh.",
+        "dictionaryForm": ""
       },
       {
         "id": 1205,
@@ -9414,7 +9453,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "バスは 遅いです。",
         "exampleSentenceReading": "ばすは おそいです。",
-        "exampleSentenceMeaning": "Xe buýt chạy chậm."
+        "exampleSentenceMeaning": "Xe buýt chạy chậm.",
+        "dictionaryForm": ""
       },
       {
         "id": 1206,
@@ -9426,7 +9466,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "人が 多いです。",
         "exampleSentenceReading": "ひとが おおいです。",
-        "exampleSentenceMeaning": "Đông người quá."
+        "exampleSentenceMeaning": "Đông người quá.",
+        "dictionaryForm": ""
       },
       {
         "id": 1207,
@@ -9438,7 +9479,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "雨が 少ないです。",
         "exampleSentenceReading": "あめが すくないです。",
-        "exampleSentenceMeaning": "Ít mưa."
+        "exampleSentenceMeaning": "Ít mưa.",
+        "dictionaryForm": ""
       },
       {
         "id": 1208,
@@ -9450,7 +9492,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "春は 暖かいです。",
         "exampleSentenceReading": "はるは あたたかいです。",
-        "exampleSentenceMeaning": "Mùa xuân ấm áp."
+        "exampleSentenceMeaning": "Mùa xuân ấm áp.",
+        "dictionaryForm": ""
       },
       {
         "id": 1209,
@@ -9462,7 +9505,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "秋は 涼しくて 気持ちいいです。",
         "exampleSentenceReading": "あきは すずしくて きもちいいです。",
-        "exampleSentenceMeaning": "Mùa thu mát mẻ sảng khoái."
+        "exampleSentenceMeaning": "Mùa thu mát mẻ sảng khoái.",
+        "dictionaryForm": ""
       },
       {
         "id": 1210,
@@ -9474,7 +9518,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "このケーキは 甘いです。",
         "exampleSentenceReading": "このけーきは あまいです。",
-        "exampleSentenceMeaning": "Chiếc bánh ngọt này ngọt quá."
+        "exampleSentenceMeaning": "Chiếc bánh ngọt này ngọt quá.",
+        "dictionaryForm": ""
       },
       {
         "id": 1211,
@@ -9486,7 +9531,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "キムチは 辛いです。",
         "exampleSentenceReading": "きむちは からいです。",
-        "exampleSentenceMeaning": "Kim chi rất cay."
+        "exampleSentenceMeaning": "Kim chi rất cay.",
+        "dictionaryForm": ""
       },
       {
         "id": 1212,
@@ -9498,7 +9544,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "この鞄は 重いです。",
         "exampleSentenceReading": "このかばんは おもいです。",
-        "exampleSentenceMeaning": "Chiếc túi này nặng."
+        "exampleSentenceMeaning": "Chiếc túi này nặng.",
+        "dictionaryForm": ""
       },
       {
         "id": 1213,
@@ -9510,7 +9557,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "このパソコンは 軽いです。",
         "exampleSentenceReading": "このぱそこんは かるいです。",
-        "exampleSentenceMeaning": "Chiếc laptop này nhẹ."
+        "exampleSentenceMeaning": "Chiếc laptop này nhẹ.",
+        "dictionaryForm": ""
       },
       {
         "id": 1214,
@@ -9522,7 +9570,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "どの季節が いちばん 好きですか。",
         "exampleSentenceReading": "どのきせつが いちばん すきですか。",
-        "exampleSentenceMeaning": "Bạn thích mùa nào nhất?"
+        "exampleSentenceMeaning": "Bạn thích mùa nào nhất?",
+        "dictionaryForm": ""
       },
       {
         "id": 1215,
@@ -9534,7 +9583,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "春に 桜が 咲きます。",
         "exampleSentenceReading": "はるに さくらが さきます。",
-        "exampleSentenceMeaning": "Hoa anh đào nở vào mùa xuân."
+        "exampleSentenceMeaning": "Hoa anh đào nở vào mùa xuân.",
+        "dictionaryForm": ""
       },
       {
         "id": 1216,
@@ -9546,7 +9596,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "夏休みは 海へ 行きます。",
         "exampleSentenceReading": "なつやすみは うみへ いきます。",
-        "exampleSentenceMeaning": "Nghỉ hè tôi đi biển."
+        "exampleSentenceMeaning": "Nghỉ hè tôi đi biển.",
+        "dictionaryForm": ""
       },
       {
         "id": 1217,
@@ -9558,7 +9609,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "秋の 紅葉が きれいです。",
         "exampleSentenceReading": "あきの こうようが きれいです。",
-        "exampleSentenceMeaning": "Lá đỏ mùa thu rất đẹp."
+        "exampleSentenceMeaning": "Lá đỏ mùa thu rất đẹp.",
+        "dictionaryForm": ""
       },
       {
         "id": 1218,
@@ -9570,7 +9622,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "冬に スキーを します。",
         "exampleSentenceReading": "ふゆに すきーを します。",
-        "exampleSentenceMeaning": "Mùa đông tôi đi trượt tuyết."
+        "exampleSentenceMeaning": "Mùa đông tôi đi trượt tuyết.",
+        "dictionaryForm": ""
       },
       {
         "id": 1219,
@@ -9582,7 +9635,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "今日の 天気は どうですか。",
         "exampleSentenceReading": "きょうの てんきは どうですか。",
-        "exampleSentenceMeaning": "Thời tiết hôm nay thế nào?"
+        "exampleSentenceMeaning": "Thời tiết hôm nay thế nào?",
+        "dictionaryForm": ""
       },
       {
         "id": 1220,
@@ -9594,7 +9648,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "雨が 降っています。",
         "exampleSentenceReading": "あめが ふっています。",
-        "exampleSentenceMeaning": "Trời đang mưa."
+        "exampleSentenceMeaning": "Trời đang mưa.",
+        "dictionaryForm": ""
       },
       {
         "id": 1221,
@@ -9606,7 +9661,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "雪が たくさん 降りました。",
         "exampleSentenceReading": "ゆきが たくさん ふりました。",
-        "exampleSentenceMeaning": "Tuyết đã rơi rất nhiều."
+        "exampleSentenceMeaning": "Tuyết đã rơi rất nhiều.",
+        "dictionaryForm": ""
       },
       {
         "id": 1222,
@@ -9618,7 +9674,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "今日は 曇りです。",
         "exampleSentenceReading": "きょうは くもりです。",
-        "exampleSentenceMeaning": "Hôm nay trời nhiều mây."
+        "exampleSentenceMeaning": "Hôm nay trời nhiều mây.",
+        "dictionaryForm": ""
       },
       {
         "id": 1223,
@@ -9630,7 +9687,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ホテルに 泊まります。",
         "exampleSentenceReading": "ほてるに とまります。",
-        "exampleSentenceMeaning": "Tôi trọ ở khách sạn."
+        "exampleSentenceMeaning": "Tôi trọ ở khách sạn.",
+        "dictionaryForm": ""
       },
       {
         "id": 1224,
@@ -9642,7 +9700,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "空港で 友達を 迎えます。",
         "exampleSentenceReading": "くうこうで ともだちを むかえます。",
-        "exampleSentenceMeaning": "Tôi đón bạn ở sân bay."
+        "exampleSentenceMeaning": "Tôi đón bạn ở sân bay.",
+        "dictionaryForm": ""
       },
       {
         "id": 1225,
@@ -9654,7 +9713,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "夏 海で 泳ぎます。",
         "exampleSentenceReading": "なつ うみで およぎます。",
-        "exampleSentenceMeaning": "Mùa hè bơi ở biển."
+        "exampleSentenceMeaning": "Mùa hè bơi ở biển.",
+        "dictionaryForm": ""
       },
       {
         "id": 1226,
@@ -9666,7 +9726,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "世界を 旅行したいです。",
         "exampleSentenceReading": "せかいを りょこうしたいです。",
-        "exampleSentenceMeaning": "Tôi muốn đi du lịch thế giới."
+        "exampleSentenceMeaning": "Tôi muốn đi du lịch thế giới.",
+        "dictionaryForm": ""
       },
       {
         "id": 1227,
@@ -9678,7 +9739,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "誕生日パーティーを します。",
         "exampleSentenceReading": "たんじょうびぱーてぃーを します。",
-        "exampleSentenceMeaning": "Tổ chức tiệc sinh nhật."
+        "exampleSentenceMeaning": "Tổ chức tiệc sinh nhật.",
+        "dictionaryForm": ""
       },
       {
         "id": 1228,
@@ -9690,7 +9752,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "日本の 夏祭りは にぎやかです。",
         "exampleSentenceReading": "にほんの なつまつりは にぎやかです。",
-        "exampleSentenceMeaning": "Lễ hội mùa hè Nhật Bản náo nhiệt."
+        "exampleSentenceMeaning": "Lễ hội mùa hè Nhật Bản náo nhiệt.",
+        "dictionaryForm": ""
       },
       {
         "id": 1229,
@@ -9702,7 +9765,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "すき焼きを 食べました。",
         "exampleSentenceReading": "すきやきを たべました。",
-        "exampleSentenceMeaning": "Tôi đã ăn món Sukiyaki."
+        "exampleSentenceMeaning": "Tôi đã ăn món Sukiyaki.",
+        "dictionaryForm": ""
       },
       {
         "id": 1230,
@@ -9714,7 +9778,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "刺身は 新鮮で おいしいです。",
         "exampleSentenceReading": "さしみは しんせんで おいしいです。",
-        "exampleSentenceMeaning": "Sashimi tươi ngon."
+        "exampleSentenceMeaning": "Sashimi tươi ngon.",
+        "dictionaryForm": ""
       },
       {
         "id": 1231,
@@ -9726,7 +9791,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "寿司を 握ります。",
         "exampleSentenceReading": "すしを にぎります。",
-        "exampleSentenceMeaning": "Nắm sushi."
+        "exampleSentenceMeaning": "Nắm sushi.",
+        "dictionaryForm": ""
       },
       {
         "id": 1232,
@@ -9738,7 +9804,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "天ぷらは サクサクしています。",
         "exampleSentenceReading": "てんぷらは さくさくしています。",
-        "exampleSentenceMeaning": "Tempura giòn rụm."
+        "exampleSentenceMeaning": "Tempura giòn rụm.",
+        "dictionaryForm": ""
       },
       {
         "id": 1233,
@@ -9750,7 +9817,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "日本と ベトナムと どちらが 暑いですか。",
         "exampleSentenceReading": "にほんと べとなむと どちらが あついですか。",
-        "exampleSentenceMeaning": "Nhật và Việt Nam bên nào nóng hơn?"
+        "exampleSentenceMeaning": "Nhật và Việt Nam bên nào nóng hơn?",
+        "dictionaryForm": ""
       },
       {
         "id": 1234,
@@ -9762,19 +9830,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "ベトナムのほうが ずっと 暑いです。",
         "exampleSentenceReading": "べとなむのほうが ずっと あついです。",
-        "exampleSentenceMeaning": "Việt Nam nóng hơn hẳn."
-      },
-      {
-        "id": 1235,
-        "word": "簡単[な]",
-        "reading": "かんたん",
-        "romaji": "kantan",
-        "meaning": "Đơn giản / Dễ",
-        "hanViet": "Giản Đơn",
-        "type": "Tính từ -na",
-        "exampleSentence": "テストは 簡単でした。",
-        "exampleSentenceReading": "てすとは かんたんでした。",
-        "exampleSentenceMeaning": "Bài kiểm tra đã rất đơn giản."
+        "exampleSentenceMeaning": "Việt Nam nóng hơn hẳn.",
+        "dictionaryForm": ""
       }
     ],
     "grammarPoints": [
@@ -9849,7 +9906,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "週末 友達と 遊びます。",
         "exampleSentenceReading": "しゅうまつ ともだちと あそびます。",
-        "exampleSentenceMeaning": "Cuối tuần tôi đi chơi với bạn."
+        "exampleSentenceMeaning": "Cuối tuần tôi đi chơi với bạn.",
+        "dictionaryForm": "遊ぶ (あそぶ)"
       },
       {
         "id": 1302,
@@ -9861,7 +9919,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "海で 泳ぎます。",
         "exampleSentenceReading": "うみで およぎます。",
-        "exampleSentenceMeaning": "Tôi bơi ở biển."
+        "exampleSentenceMeaning": "Tôi bơi ở biển.",
+        "dictionaryForm": "泳ぐ (およぐ)"
       },
       {
         "id": 1303,
@@ -9873,7 +9932,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "空港へ 友達を 迎えに 行きます。",
         "exampleSentenceReading": "くうこうへ ともだちを むかえに いきます。",
-        "exampleSentenceMeaning": "Tôi ra sân bay đón bạn."
+        "exampleSentenceMeaning": "Tôi ra sân bay đón bạn.",
+        "dictionaryForm": "迎える (むかえる)"
       },
       {
         "id": 1304,
@@ -9885,7 +9945,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "たくさん 歩いて、疲れました。",
         "exampleSentenceReading": "たくさん あるいて、つかれました。",
-        "exampleSentenceMeaning": "Đi bộ nhiều nên tôi mệt rồi."
+        "exampleSentenceMeaning": "Đi bộ nhiều nên tôi mệt rồi.",
+        "dictionaryForm": "疲れる (つかれる)"
       },
       {
         "id": 1305,
@@ -9897,7 +9958,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "手紙を 出します。",
         "exampleSentenceReading": "てがみを だします。",
-        "exampleSentenceMeaning": "Tôi gửi thư đi."
+        "exampleSentenceMeaning": "Tôi gửi thư đi.",
+        "dictionaryForm": "出す (だす)"
       },
       {
         "id": 1306,
@@ -9909,7 +9971,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "喫茶店に 入ります。",
         "exampleSentenceReading": "きっさてんに はいります。",
-        "exampleSentenceMeaning": "Tôi vào quán cà phê."
+        "exampleSentenceMeaning": "Tôi vào quán cà phê.",
+        "dictionaryForm": "入る (はいる)"
       },
       {
         "id": 1307,
@@ -9918,10 +9981,11 @@ object DataFixtures {
         "romaji": "demasu",
         "meaning": "Rời khỏi / Bước ra (khỏi nơi nào [を])",
         "hanViet": "Xuất",
-        "type": "Động từ nhóm 1",
+        "type": "Động từ nhóm 2",
         "exampleSentence": "部屋を 出ます。",
         "exampleSentenceReading": "へやを でます。",
-        "exampleSentenceMeaning": "Tôi bước ra khỏi phòng."
+        "exampleSentenceMeaning": "Tôi bước ra khỏi phòng.",
+        "dictionaryForm": "出る (でる)"
       },
       {
         "id": 1308,
@@ -9933,7 +9997,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "来年 結婚します。",
         "exampleSentenceReading": "らいねん けっこんします。",
-        "exampleSentenceMeaning": "Năm sau tôi sẽ kết hôn."
+        "exampleSentenceMeaning": "Năm sau tôi sẽ kết hôn.",
+        "dictionaryForm": "結婚する (けっこんする)"
       },
       {
         "id": 1309,
@@ -9945,7 +10010,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "デパートで 買い物します。",
         "exampleSentenceReading": "でぱーとで かいものします。",
-        "exampleSentenceMeaning": "Mua sắm ở trung tâm thương mại."
+        "exampleSentenceMeaning": "Mua sắm ở trung tâm thương mại.",
+        "dictionaryForm": "買い物する (かいものする)"
       },
       {
         "id": 1310,
@@ -9957,7 +10023,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "家族と 食事します。",
         "exampleSentenceReading": "かぞくと しょくじします。",
-        "exampleSentenceMeaning": "Dùng bữa cùng gia đình."
+        "exampleSentenceMeaning": "Dùng bữa cùng gia đình.",
+        "dictionaryForm": "食事する (しょくじする)"
       },
       {
         "id": 1311,
@@ -9969,7 +10036,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "公園を 散歩します。",
         "exampleSentenceReading": "こうえんを さんぽします。",
-        "exampleSentenceMeaning": "Tôi đi dạo quanh công viên."
+        "exampleSentenceMeaning": "Tôi đi dạo quanh công viên.",
+        "dictionaryForm": "散歩する (さんぽする)"
       },
       {
         "id": 1312,
@@ -9981,7 +10049,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "仕事は 大変ですが、楽しいです。",
         "exampleSentenceReading": "しごとは たいへんですが、たのしいです。",
-        "exampleSentenceMeaning": "Công việc vất vả nhưng rất vui."
+        "exampleSentenceMeaning": "Công việc vất vả nhưng rất vui.",
+        "dictionaryForm": ""
       },
       {
         "id": 1313,
@@ -9993,7 +10062,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "新しい パソコンが 欲しいです。",
         "exampleSentenceReading": "あたらしい ぱそこんが ほしいです。",
-        "exampleSentenceMeaning": "Tôi muốn có chiếc máy tính mới."
+        "exampleSentenceMeaning": "Tôi muốn có chiếc máy tính mới.",
+        "dictionaryForm": ""
       },
       {
         "id": 1314,
@@ -10005,7 +10075,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "一人で 寂しいです。",
         "exampleSentenceReading": "ひとりで さびしいです。",
-        "exampleSentenceMeaning": "Ở một mình nên thấy cô đơn."
+        "exampleSentenceMeaning": "Ở một mình nên thấy cô đơn.",
+        "dictionaryForm": ""
       },
       {
         "id": 1315,
@@ -10017,7 +10088,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "部屋は 広くて 明るいです。",
         "exampleSentenceReading": "へやは ひろくて あかるいです。",
-        "exampleSentenceMeaning": "Căn phòng rộng và sáng sủa."
+        "exampleSentenceMeaning": "Căn phòng rộng và sáng sủa.",
+        "dictionaryForm": ""
       },
       {
         "id": 1316,
@@ -10029,7 +10101,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "寮の 部屋は 狭いです。",
         "exampleSentenceReading": "りょうの へやは せまいいです。",
-        "exampleSentenceMeaning": "Phòng ký túc xá chật chội."
+        "exampleSentenceMeaning": "Phòng ký túc xá chật chội.",
+        "dictionaryForm": ""
       },
       {
         "id": 1317,
@@ -10041,7 +10114,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "市役所へ 手続きに 行きます。",
         "exampleSentenceReading": "しやくしょへ てつづきに いきます。",
-        "exampleSentenceMeaning": "Tôi đến tòa thị chính làm thủ tục."
+        "exampleSentenceMeaning": "Tôi đến tòa thị chính làm thủ tục.",
+        "dictionaryForm": ""
       },
       {
         "id": 1318,
@@ -10053,7 +10127,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "プールで 泳ぎます。",
         "exampleSentenceReading": "ぷーるで およぎます。",
-        "exampleSentenceMeaning": "Tôi bơi ở hồ bơi."
+        "exampleSentenceMeaning": "Tôi bơi ở hồ bơi.",
+        "dictionaryForm": ""
       },
       {
         "id": 1319,
@@ -10065,7 +10140,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "川で 魚を 釣ります。",
         "exampleSentenceReading": "かわで さかなを つります。",
-        "exampleSentenceMeaning": "Câu cá ở bờ sông."
+        "exampleSentenceMeaning": "Câu cá ở bờ sông.",
+        "dictionaryForm": ""
       },
       {
         "id": 1320,
@@ -10077,7 +10153,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "大学で 経済を 勉強します。",
         "exampleSentenceReading": "だいがくで けいざいを べんきょうします。",
-        "exampleSentenceMeaning": "Tôi học kinh tế ở đại học."
+        "exampleSentenceMeaning": "Tôi học kinh tế ở đại học.",
+        "dictionaryForm": ""
       },
       {
         "id": 1321,
@@ -10089,7 +10166,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "美術に 興味が あります。",
         "exampleSentenceReading": "びじゅつに きょうみが あります。",
-        "exampleSentenceMeaning": "Tôi có hứng thú với mỹ thuật."
+        "exampleSentenceMeaning": "Tôi có hứng thú với mỹ thuật.",
+        "dictionaryForm": ""
       },
       {
         "id": 1322,
@@ -10101,7 +10179,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "週末 釣りに 行きます。",
         "exampleSentenceReading": "しゅうまつ つりに いきます。",
-        "exampleSentenceMeaning": "Cuối tuần tôi đi câu cá."
+        "exampleSentenceMeaning": "Cuối tuần tôi đi câu cá.",
+        "dictionaryForm": ""
       },
       {
         "id": 1323,
@@ -10113,7 +10192,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "冬 スキーを しに行きます。",
         "exampleSentenceReading": "ふゆ すきーを しにいきます。",
-        "exampleSentenceMeaning": "Mùa đông tôi đi trượt tuyết."
+        "exampleSentenceMeaning": "Mùa đông tôi đi trượt tuyết.",
+        "dictionaryForm": ""
       },
       {
         "id": 1324,
@@ -10125,7 +10205,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "午後は 会議が あります。",
         "exampleSentenceReading": "ごごは かいぎが あります。",
-        "exampleSentenceMeaning": "Buổi chiều có cuộc họp."
+        "exampleSentenceMeaning": "Buổi chiều có cuộc họp.",
+        "dictionaryForm": ""
       },
       {
         "id": 1325,
@@ -10137,7 +10218,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "外国人登録を します。",
         "exampleSentenceReading": "がいこくじんとうろくを します。",
-        "exampleSentenceMeaning": "Đăng ký thẻ cư trú người nước ngoài."
+        "exampleSentenceMeaning": "Đăng ký thẻ cư trú người nước ngoài.",
+        "dictionaryForm": ""
       },
       {
         "id": 1326,
@@ -10149,7 +10231,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "週末 何を しますか。",
         "exampleSentenceReading": "しゅうまつ なにを しますか。",
-        "exampleSentenceMeaning": "Cuối tuần bạn làm gì?"
+        "exampleSentenceMeaning": "Cuối tuần bạn làm gì?",
+        "dictionaryForm": ""
       },
       {
         "id": 1327,
@@ -10161,7 +10244,8 @@ object DataFixtures {
         "type": "Hậu tố",
         "exampleSentence": "7時ごろ 起きます。",
         "exampleSentenceReading": "しちじごろ おきます。",
-        "exampleSentenceMeaning": "Tôi thức dậy vào khoảng 7 giờ."
+        "exampleSentenceMeaning": "Tôi thức dậy vào khoảng 7 giờ.",
+        "dictionaryForm": ""
       },
       {
         "id": 1328,
@@ -10173,7 +10257,8 @@ object DataFixtures {
         "type": "Đại từ",
         "exampleSentence": "何か 食べたいです。",
         "exampleSentenceReading": "なにか たべたいです。",
-        "exampleSentenceMeaning": "Tôi muốn ăn cái gì đó."
+        "exampleSentenceMeaning": "Tôi muốn ăn cái gì đó.",
+        "dictionaryForm": ""
       },
       {
         "id": 1329,
@@ -10185,7 +10270,8 @@ object DataFixtures {
         "type": "Đại từ",
         "exampleSentence": "週末 どこか 行きましたか。",
         "exampleSentenceReading": "しゅうまつ どこか いきましたか。",
-        "exampleSentenceMeaning": "Cuối tuần bạn có đi đâu không?"
+        "exampleSentenceMeaning": "Cuối tuần bạn có đi đâu không?",
+        "dictionaryForm": ""
       },
       {
         "id": 1330,
@@ -10197,7 +10283,8 @@ object DataFixtures {
         "type": "Giao tiếp",
         "exampleSentence": "おなかが すきましたね。ご飯を 食べましょう。",
         "exampleSentenceReading": "おなかが すきましたね。ごはんを たべましょう。",
-        "exampleSentenceMeaning": "Đói bụng rồi nhỉ, cùng đi ăn cơm thôi."
+        "exampleSentenceMeaning": "Đói bụng rồi nhỉ, cùng đi ăn cơm thôi.",
+        "dictionaryForm": ""
       },
       {
         "id": 1331,
@@ -10209,7 +10296,8 @@ object DataFixtures {
         "type": "Giao tiếp",
         "exampleSentence": "のどが かわきましたから、水を 飲みます。",
         "exampleSentenceReading": "のどが かわきましたから、みずを のみます。",
-        "exampleSentenceMeaning": "Khát nước quá nên tôi uống nước."
+        "exampleSentenceMeaning": "Khát nước quá nên tôi uống nước.",
+        "dictionaryForm": ""
       }
     ],
     "grammarPoints": [
@@ -10277,7 +10365,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "エアコンを つけます。",
         "exampleSentenceReading": "えあこんを つけます。",
-        "exampleSentenceMeaning": "Tôi bật điều hòa."
+        "exampleSentenceMeaning": "Tôi bật điều hòa.",
+        "dictionaryForm": "つける"
       },
       {
         "id": 1402,
@@ -10289,7 +10378,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "電気を 消してください。",
         "exampleSentenceReading": "でんきを けしてください。",
-        "exampleSentenceMeaning": "Xin hãy tắt đèn đi."
+        "exampleSentenceMeaning": "Xin hãy tắt đèn đi.",
+        "dictionaryForm": "消す (けす)"
       },
       {
         "id": 1403,
@@ -10301,7 +10391,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "窓を 開けます。",
         "exampleSentenceReading": "まどを あけます。",
-        "exampleSentenceMeaning": "Tôi mở cửa sổ."
+        "exampleSentenceMeaning": "Tôi mở cửa sổ.",
+        "dictionaryForm": "開ける (あける)"
       },
       {
         "id": 1404,
@@ -10313,7 +10404,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "ドアを 閉めてください。",
         "exampleSentenceReading": "どあを しめてください。",
-        "exampleSentenceMeaning": "Xin vui lòng đóng cửa lại."
+        "exampleSentenceMeaning": "Xin vui lòng đóng cửa lại.",
+        "dictionaryForm": "閉める (しめる)"
       },
       {
         "id": 1405,
@@ -10325,7 +10417,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "遅刻ですから、急ぎます。",
         "exampleSentenceReading": "ちこくですから、いそぎます。",
-        "exampleSentenceMeaning": "Vì muộn giờ nên tôi phải vội."
+        "exampleSentenceMeaning": "Vì muộn giờ nên tôi phải vội.",
+        "dictionaryForm": "急ぐ (いそぐ)"
       },
       {
         "id": 1406,
@@ -10337,7 +10430,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "ここで 待ってください。",
         "exampleSentenceReading": "ここで まってください。",
-        "exampleSentenceMeaning": "Xin hãy đợi ở đây."
+        "exampleSentenceMeaning": "Xin hãy đợi ở đây.",
+        "dictionaryForm": "待つ (まつ)"
       },
       {
         "id": 1407,
@@ -10349,7 +10443,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "ここに 車を 止めます。",
         "exampleSentenceReading": "ここに くるまを とめます。",
-        "exampleSentenceMeaning": "Đỗ xe ô tô ở đây."
+        "exampleSentenceMeaning": "Đỗ xe ô tô ở đây.",
+        "dictionaryForm": "止める (とめる)"
       },
       {
         "id": 1408,
@@ -10361,7 +10456,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "右へ 曲がってください。",
         "exampleSentenceReading": "みぎへ まがってください。",
-        "exampleSentenceMeaning": "Xin hãy rẽ sang bên phải."
+        "exampleSentenceMeaning": "Xin hãy rẽ sang bên phải.",
+        "dictionaryForm": "曲がる (まがる)"
       },
       {
         "id": 1409,
@@ -10373,7 +10469,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "荷物を 持ちましょうか。",
         "exampleSentenceReading": "にもつを もちましょうか。",
-        "exampleSentenceMeaning": "Để tôi xách hộ hành lý nhé?"
+        "exampleSentenceMeaning": "Để tôi xách hộ hành lý nhé?",
+        "dictionaryForm": "持つ (もつ)"
       },
       {
         "id": 1410,
@@ -10385,7 +10482,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "塩を 取ってください。",
         "exampleSentenceReading": "しおを とってください。",
-        "exampleSentenceMeaning": "Lấy giùm tôi lọ muối với."
+        "exampleSentenceMeaning": "Lấy giùm tôi lọ muối với.",
+        "dictionaryForm": "取る (とる)"
       },
       {
         "id": 1411,
@@ -10397,7 +10495,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "仕事を 手伝います。",
         "exampleSentenceReading": "しごとを てつだいます。",
-        "exampleSentenceMeaning": "Tôi giúp đỡ công việc."
+        "exampleSentenceMeaning": "Tôi giúp đỡ công việc.",
+        "dictionaryForm": "手伝う (てつだう)"
       },
       {
         "id": 1412,
@@ -10409,7 +10508,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "タクシーを 呼びます。",
         "exampleSentenceReading": "たくしーを よびます。",
-        "exampleSentenceMeaning": "Tôi gọi xe taxi."
+        "exampleSentenceMeaning": "Tôi gọi xe taxi.",
+        "dictionaryForm": "呼ぶ (よぶ)"
       },
       {
         "id": 1413,
@@ -10421,7 +10521,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "日本語で 話してください。",
         "exampleSentenceReading": "にほんごで はなしてください。",
-        "exampleSentenceMeaning": "Xin hãy nói bằng tiếng Nhật."
+        "exampleSentenceMeaning": "Xin hãy nói bằng tiếng Nhật.",
+        "dictionaryForm": "話す (はなす)"
       },
       {
         "id": 1414,
@@ -10433,7 +10534,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "パスポートを 見せてください。",
         "exampleSentenceReading": "ぱすぽーとを みせてください。",
-        "exampleSentenceMeaning": "Xin cho xem hộ chiếu."
+        "exampleSentenceMeaning": "Xin cho xem hộ chiếu.",
+        "dictionaryForm": "見せる (みせる)"
       },
       {
         "id": 1415,
@@ -10445,7 +10547,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "住所を 教えてください。",
         "exampleSentenceReading": "じゅうしょを おしえてください。",
-        "exampleSentenceMeaning": "Xin hãy cho tôi biết địa chỉ."
+        "exampleSentenceMeaning": "Xin hãy cho tôi biết địa chỉ.",
+        "dictionaryForm": "教える (おしえる)"
       },
       {
         "id": 1416,
@@ -10457,7 +10560,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "授業を 始めましょう。",
         "exampleSentenceReading": "じゅぎょうを はじめましょう。",
-        "exampleSentenceMeaning": "Chúng ta cùng bắt đầu tiết học nào."
+        "exampleSentenceMeaning": "Chúng ta cùng bắt đầu tiết học nào.",
+        "dictionaryForm": "始める (はじめる)"
       },
       {
         "id": 1417,
@@ -10469,7 +10573,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "雨が 降っています。",
         "exampleSentenceReading": "あめが ふっています。",
-        "exampleSentenceMeaning": "Trời đang đổ mưa."
+        "exampleSentenceMeaning": "Trời đang đổ mưa.",
+        "dictionaryForm": "降る (ふる)"
       },
       {
         "id": 1418,
@@ -10481,7 +10586,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "資料を コピーします。",
         "exampleSentenceReading": "しりょうを こぴーします。",
-        "exampleSentenceMeaning": "Tôi photo tài liệu."
+        "exampleSentenceMeaning": "Tôi photo tài liệu.",
+        "dictionaryForm": "コピーする"
       },
       {
         "id": 1419,
@@ -10493,7 +10599,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "エアコンを つけてください。",
         "exampleSentenceReading": "えあこんを つけてください。",
-        "exampleSentenceMeaning": "Xin hãy bật điều hòa lên."
+        "exampleSentenceMeaning": "Xin hãy bật điều hòa lên.",
+        "dictionaryForm": ""
       },
       {
         "id": 1420,
@@ -10505,7 +10612,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "パスポートを 忘れました。",
         "exampleSentenceReading": "ぱすぽーとを わすれました。",
-        "exampleSentenceMeaning": "Tôi để quên hộ chiếu rồi."
+        "exampleSentenceMeaning": "Tôi để quên hộ chiếu rồi.",
+        "dictionaryForm": ""
       },
       {
         "id": 1421,
@@ -10517,7 +10625,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ここに 名前を 書きます。",
         "exampleSentenceReading": "ここに なまえを かきます。",
-        "exampleSentenceMeaning": "Viết tên vào đây."
+        "exampleSentenceMeaning": "Viết tên vào đây.",
+        "dictionaryForm": ""
       },
       {
         "id": 1422,
@@ -10529,7 +10638,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "住所は どこですか。",
         "exampleSentenceReading": "じゅうしょは どこですか。",
-        "exampleSentenceMeaning": "Địa chỉ của bạn ở đâu?"
+        "exampleSentenceMeaning": "Địa chỉ của bạn ở đâu?",
+        "dictionaryForm": ""
       },
       {
         "id": 1423,
@@ -10541,7 +10651,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "地図を 見ながら 行きます。",
         "exampleSentenceReading": "ちずを みながら いきます。",
-        "exampleSentenceMeaning": "Tôi vừa xem bản đồ vừa đi."
+        "exampleSentenceMeaning": "Tôi vừa xem bản đồ vừa đi.",
+        "dictionaryForm": ""
       },
       {
         "id": 1424,
@@ -10553,7 +10664,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "塩を 少し 入れます。",
         "exampleSentenceReading": "しおを すこし いれます。",
-        "exampleSentenceMeaning": "Cho một chút muối vào."
+        "exampleSentenceMeaning": "Cho một chút muối vào.",
+        "dictionaryForm": ""
       },
       {
         "id": 1425,
@@ -10565,7 +10677,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "コーヒーに 砂糖を 入れます。",
         "exampleSentenceReading": "こーひーに さとうを いれます。",
-        "exampleSentenceMeaning": "Cho đường vào cà phê."
+        "exampleSentenceMeaning": "Cho đường vào cà phê.",
+        "dictionaryForm": ""
       },
       {
         "id": 1426,
@@ -10577,7 +10690,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "問題は 難しいです。",
         "exampleSentenceReading": "もんだいは むずかしいです。",
-        "exampleSentenceMeaning": "Câu hỏi này khó quá."
+        "exampleSentenceMeaning": "Câu hỏi này khó quá.",
+        "dictionaryForm": ""
       },
       {
         "id": 1427,
@@ -10589,7 +10703,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "答えを 書いてください。",
         "exampleSentenceReading": "こたえを かいてください。",
-        "exampleSentenceMeaning": "Xin hãy viết câu trả lời."
+        "exampleSentenceMeaning": "Xin hãy viết câu trả lời.",
+        "dictionaryForm": ""
       },
       {
         "id": 1428,
@@ -10601,7 +10716,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "この漢字の 読み方は 何ですか。",
         "exampleSentenceReading": "このかんじの よみかたは なんですか。",
-        "exampleSentenceMeaning": "Cách đọc của chữ Hán này là gì?"
+        "exampleSentenceMeaning": "Cách đọc của chữ Hán này là gì?",
+        "dictionaryForm": ""
       },
       {
         "id": 1429,
@@ -10613,7 +10729,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "まっすぐ 行ってください。",
         "exampleSentenceReading": "まっすぐ いってください。",
-        "exampleSentenceMeaning": "Xin hãy đi thẳng."
+        "exampleSentenceMeaning": "Xin hãy đi thẳng.",
+        "dictionaryForm": ""
       },
       {
         "id": 1430,
@@ -10625,7 +10742,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "ゆっくり 話してください。",
         "exampleSentenceReading": "ゆっくり はなしてください。",
-        "exampleSentenceMeaning": "Xin hãy nói chậm lại một chút."
+        "exampleSentenceMeaning": "Xin hãy nói chậm lại một chút.",
+        "dictionaryForm": ""
       },
       {
         "id": 1431,
@@ -10637,7 +10755,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "すぐ 行きます。",
         "exampleSentenceReading": "すぐ いきます。",
-        "exampleSentenceMeaning": "Tôi sẽ đến ngay."
+        "exampleSentenceMeaning": "Tôi sẽ đến ngay.",
+        "dictionaryForm": ""
       },
       {
         "id": 1432,
@@ -10649,7 +10768,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "また 明日 会いましょう。",
         "exampleSentenceReading": "また あした あいましょう。",
-        "exampleSentenceMeaning": "Hẹn gặp lại ngày mai nhé."
+        "exampleSentenceMeaning": "Hẹn gặp lại ngày mai nhé.",
+        "dictionaryForm": ""
       },
       {
         "id": 1433,
@@ -10661,7 +10781,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "あとで 電話します。",
         "exampleSentenceReading": "あとで でんわします。",
-        "exampleSentenceMeaning": "Lát nữa tôi sẽ gọi lại."
+        "exampleSentenceMeaning": "Lát nữa tôi sẽ gọi lại.",
+        "dictionaryForm": ""
       },
       {
         "id": 1434,
@@ -10673,7 +10794,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "もう少し 待ってください。",
         "exampleSentenceReading": "もうすこし まってください。",
-        "exampleSentenceMeaning": "Xin đợi thêm một chút nữa."
+        "exampleSentenceMeaning": "Xin đợi thêm một chút nữa.",
+        "dictionaryForm": ""
       },
       {
         "id": 1435,
@@ -10682,10 +10804,11 @@ object DataFixtures {
         "romaji": "suwarimasu",
         "meaning": "Ngồi",
         "hanViet": "Tọa",
-        "type": "Động từ",
+        "type": "Động từ nhóm 1",
         "exampleSentence": "ここに 座ってください。",
         "exampleSentenceReading": "ここに すわってください。",
-        "exampleSentenceMeaning": "Xin mời ngồi vào đây."
+        "exampleSentenceMeaning": "Xin mời ngồi vào đây.",
+        "dictionaryForm": "座る (すわる)"
       },
       {
         "id": 1436,
@@ -10694,10 +10817,11 @@ object DataFixtures {
         "romaji": "tachimasu",
         "meaning": "Đứng",
         "hanViet": "Lập",
-        "type": "Động từ",
+        "type": "Động từ nhóm 1",
         "exampleSentence": "立ってください。",
         "exampleSentenceReading": "たってください。",
-        "exampleSentenceMeaning": "Xin hãy đứng dậy."
+        "exampleSentenceMeaning": "Xin hãy đứng dậy.",
+        "dictionaryForm": "立つ (たつ)"
       }
     ],
     "grammarPoints": [
@@ -10772,7 +10896,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "立ってください。",
         "exampleSentenceReading": "たってください。",
-        "exampleSentenceMeaning": "Xin mời đứng dậy."
+        "exampleSentenceMeaning": "Xin mời đứng dậy.",
+        "dictionaryForm": "立つ (たつ)"
       },
       {
         "id": 1502,
@@ -10784,7 +10909,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "いすに 座ってください。",
         "exampleSentenceReading": "いすに すわってください。",
-        "exampleSentenceMeaning": "Xin mời ngồi vào ghế."
+        "exampleSentenceMeaning": "Xin mời ngồi vào ghế.",
+        "dictionaryForm": "座る (すわる)"
       },
       {
         "id": 1503,
@@ -10796,7 +10922,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "辞書を 使います。",
         "exampleSentenceReading": "じしょを つかいます。",
-        "exampleSentenceMeaning": "Tôi sử dụng từ điển."
+        "exampleSentenceMeaning": "Tôi sử dụng từ điển.",
+        "dictionaryForm": "使う (つかう)"
       },
       {
         "id": 1504,
@@ -10808,7 +10935,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "ここに 荷物を 置いてください。",
         "exampleSentenceReading": "ここに にもつを おいてください。",
-        "exampleSentenceMeaning": "Xin hãy đặt hành lý ở đây."
+        "exampleSentenceMeaning": "Xin hãy đặt hành lý ở đây.",
+        "dictionaryForm": "置く (おく)"
       },
       {
         "id": 1505,
@@ -10820,7 +10948,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "晩ご飯を 作ります。",
         "exampleSentenceReading": "ばんごはんを つくります。",
-        "exampleSentenceMeaning": "Tôi nấu cơm tối."
+        "exampleSentenceMeaning": "Tôi nấu cơm tối.",
+        "dictionaryForm": "作る (つくる)"
       },
       {
         "id": 1506,
@@ -10832,7 +10961,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "野菜を 売っています。",
         "exampleSentenceReading": "やさいを うっています。",
-        "exampleSentenceMeaning": "Đang bán rau củ."
+        "exampleSentenceMeaning": "Đang bán rau củ.",
+        "dictionaryForm": "売る (うる)"
       },
       {
         "id": 1507,
@@ -10844,7 +10974,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "たなかさんを 知っていますか。",
         "exampleSentenceReading": "たなかさんを しっていますか。",
-        "exampleSentenceMeaning": "Bạn có biết anh Tanaka không?"
+        "exampleSentenceMeaning": "Bạn có biết anh Tanaka không?",
+        "dictionaryForm": "知る (しる)"
       },
       {
         "id": 1508,
@@ -10856,7 +10987,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "東京に 住んでいます。",
         "exampleSentenceReading": "とうきょうに すんでいます。",
-        "exampleSentenceMeaning": "Tôi đang sống ở Tokyo."
+        "exampleSentenceMeaning": "Tôi đang sống ở Tokyo.",
+        "dictionaryForm": "住む (すむ)"
       },
       {
         "id": 1509,
@@ -10868,7 +11000,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "大学で 研究します。",
         "exampleSentenceReading": "だいがくで けんきゅうします。",
-        "exampleSentenceMeaning": "Tôi làm nghiên cứu ở đại học."
+        "exampleSentenceMeaning": "Tôi làm nghiên cứu ở đại học.",
+        "dictionaryForm": "研究する (けんきゅうする)"
       },
       {
         "id": 1510,
@@ -10880,7 +11013,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "資料を 見てください。",
         "exampleSentenceReading": "しりょうを みてください。",
-        "exampleSentenceMeaning": "Xin hãy xem tài liệu."
+        "exampleSentenceMeaning": "Xin hãy xem tài liệu.",
+        "dictionaryForm": ""
       },
       {
         "id": 1511,
@@ -10892,7 +11026,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "新しい カタログです。",
         "exampleSentenceReading": "あたらしい かたろぐです。",
-        "exampleSentenceMeaning": "Đây là cuốn danh mục mới."
+        "exampleSentenceMeaning": "Đây là cuốn danh mục mới.",
+        "dictionaryForm": ""
       },
       {
         "id": 1512,
@@ -10904,7 +11039,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "電車の 時刻表を 見ます。",
         "exampleSentenceReading": "でんしゃの じこくひょうを みます。",
-        "exampleSentenceMeaning": "Xem bảng giờ tàu điện."
+        "exampleSentenceMeaning": "Xem bảng giờ tàu điện.",
+        "dictionaryForm": ""
       },
       {
         "id": 1513,
@@ -10916,7 +11052,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "新しい 服を 買いました。",
         "exampleSentenceReading": "あたらしい ふくを かいました。",
-        "exampleSentenceMeaning": "Tôi mua quần áo mới."
+        "exampleSentenceMeaning": "Tôi mua quần áo mới.",
+        "dictionaryForm": ""
       },
       {
         "id": 1514,
@@ -10928,7 +11065,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "日本の 製品は 素晴らしいです。",
         "exampleSentenceReading": "にほんの せいひんは すばらしいです。",
-        "exampleSentenceMeaning": "Sản phẩm Nhật Bản rất tuyệt vời."
+        "exampleSentenceMeaning": "Sản phẩm Nhật Bản rất tuyệt vời.",
+        "dictionaryForm": ""
       },
       {
         "id": 1515,
@@ -10940,7 +11078,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "新しい ソフトを 作ります。",
         "exampleSentenceReading": "あたらしい そふとを つくります。",
-        "exampleSentenceMeaning": "Phát triển phần mềm mới."
+        "exampleSentenceMeaning": "Phát triển phần mềm mới.",
+        "dictionaryForm": ""
       },
       {
         "id": 1516,
@@ -10952,7 +11091,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "電子辞書を 使います。",
         "exampleSentenceReading": "でんしじしょを つかいます。",
-        "exampleSentenceMeaning": "Tôi dùng từ điển điện tử."
+        "exampleSentenceMeaning": "Tôi dùng từ điển điện tử.",
+        "dictionaryForm": ""
       },
       {
         "id": 1517,
@@ -10964,7 +11104,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "日本の 経済を 勉強します。",
         "exampleSentenceReading": "にほんの けいざいを べんきょうします。",
-        "exampleSentenceMeaning": "Tôi học về kinh tế Nhật Bản."
+        "exampleSentenceMeaning": "Tôi học về kinh tế Nhật Bản.",
+        "dictionaryForm": ""
       },
       {
         "id": 1518,
@@ -10976,7 +11117,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "市役所で 手続きします。",
         "exampleSentenceReading": "しやくしょで てつづきします。",
-        "exampleSentenceMeaning": "Làm thủ tục ở tòa thị chính."
+        "exampleSentenceMeaning": "Làm thủ tục ở tòa thị chính.",
+        "dictionaryForm": ""
       },
       {
         "id": 1519,
@@ -10988,7 +11130,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "高校の 先生です。",
         "exampleSentenceReading": "こうこうの せんせいです。",
-        "exampleSentenceMeaning": "Là giáo viên cấp 3."
+        "exampleSentenceMeaning": "Là giáo viên cấp 3.",
+        "dictionaryForm": ""
       },
       {
         "id": 1520,
@@ -11000,7 +11143,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "歯医者へ 行きます。",
         "exampleSentenceReading": "はいしゃへ いきます。",
-        "exampleSentenceMeaning": "Tôi đi khám răng."
+        "exampleSentenceMeaning": "Tôi đi khám răng.",
+        "dictionaryForm": ""
       },
       {
         "id": 1521,
@@ -11012,7 +11156,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ミラーさんは 独身です。",
         "exampleSentenceReading": "みらーさんは どくしんです。",
-        "exampleSentenceMeaning": "Anh Miller còn độc thân."
+        "exampleSentenceMeaning": "Anh Miller còn độc thân.",
+        "dictionaryForm": ""
       },
       {
         "id": 1522,
@@ -11024,7 +11169,8 @@ object DataFixtures {
         "type": "Chào hỏi",
         "exampleSentence": "すみません、写真を 撮っても いいですか。",
         "exampleSentenceReading": "すみません、しゃしんを とっても いいですか。",
-        "exampleSentenceMeaning": "Xin lỗi, tôi chụp ảnh có được không?"
+        "exampleSentenceMeaning": "Xin lỗi, tôi chụp ảnh có được không?",
+        "dictionaryForm": ""
       },
       {
         "id": 1523,
@@ -11036,7 +11182,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "皆さん、聞いてください。",
         "exampleSentenceReading": "みなさん、きいてください。",
-        "exampleSentenceMeaning": "Mọi người xin hãy lắng nghe."
+        "exampleSentenceMeaning": "Mọi người xin hãy lắng nghe.",
+        "dictionaryForm": ""
       },
       {
         "id": 1524,
@@ -11048,7 +11195,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "家族を 思い出します。",
         "exampleSentenceReading": "かぞくを おもいだします。",
-        "exampleSentenceMeaning": "Tôi nhớ về gia đình."
+        "exampleSentenceMeaning": "Tôi nhớ về gia đình.",
+        "dictionaryForm": "思い出す (おもいだす)"
       },
       {
         "id": 1525,
@@ -11060,19 +11208,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "先生は いらっしゃいますか。",
         "exampleSentenceReading": "せんせいは いらっしゃいますか。",
-        "exampleSentenceMeaning": "Thầy giáo có ở đây không ạ?"
-      },
-      {
-        "id": 1526,
-        "word": "カタログ",
-        "reading": "かたろぐ",
-        "romaji": "katarogu",
-        "meaning": "Catalogue",
-        "hanViet": "",
-        "type": "Danh từ",
-        "exampleSentence": "カタログを もらいます。",
-        "exampleSentenceReading": "かたろぐを もらいます。",
-        "exampleSentenceMeaning": "Nhận cuốn catalogue."
+        "exampleSentenceMeaning": "Thầy giáo có ở đây không ạ?",
+        "dictionaryForm": "いらっしゃる"
       },
       {
         "id": 1527,
@@ -11084,7 +11221,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "専門は 経済です。",
         "exampleSentenceReading": "せんもんは けいざいです。",
-        "exampleSentenceMeaning": "Chuyên môn của tôi là kinh tế."
+        "exampleSentenceMeaning": "Chuyên môn của tôi là kinh tế.",
+        "dictionaryForm": ""
       }
     ],
     "grammarPoints": [
@@ -11147,7 +11285,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "電車に 乗ります。",
         "exampleSentenceReading": "でんしゃに のります。",
-        "exampleSentenceMeaning": "Tôi lên tàu điện."
+        "exampleSentenceMeaning": "Tôi lên tàu điện.",
+        "dictionaryForm": "乗る (のる)"
       },
       {
         "id": 1602,
@@ -11159,7 +11298,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "駅で 電車を 降ります。",
         "exampleSentenceReading": "えきで でんしゃを おります。",
-        "exampleSentenceMeaning": "Tôi xuống tàu ở nhà ga."
+        "exampleSentenceMeaning": "Tôi xuống tàu ở nhà ga.",
+        "dictionaryForm": "降りる (おりる)"
       },
       {
         "id": 1603,
@@ -11171,7 +11311,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "新宿で 地下鉄に 乗り換えます。",
         "exampleSentenceReading": "しんじゅくで ちかてつに のりかえます。",
-        "exampleSentenceMeaning": "Tôi đổi sang tàu ngầm ở Shinjuku."
+        "exampleSentenceMeaning": "Tôi đổi sang tàu ngầm ở Shinjuku.",
+        "dictionaryForm": "乗り換える (のりかえる)"
       },
       {
         "id": 1604,
@@ -11183,7 +11324,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "朝 シャワーを 浴びます。",
         "exampleSentenceReading": "あさ しゃわーを あびます。",
-        "exampleSentenceMeaning": "Buổi sáng tôi tắm vòi sen."
+        "exampleSentenceMeaning": "Buổi sáng tôi tắm vòi sen.",
+        "dictionaryForm": "浴びる (あびる)"
       },
       {
         "id": 1605,
@@ -11195,7 +11337,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "コーヒーに 砂糖を 入れます。",
         "exampleSentenceReading": "こーひーに さとうを いれます。",
-        "exampleSentenceMeaning": "Cho đường vào cà phê."
+        "exampleSentenceMeaning": "Cho đường vào cà phê.",
+        "dictionaryForm": "入れる (いれる)"
       },
       {
         "id": 1606,
@@ -11207,7 +11350,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "銀行で お金を 出します。",
         "exampleSentenceReading": "ぎんこうで おかねを だします。",
-        "exampleSentenceMeaning": "Tôi rút tiền ở ngân hàng."
+        "exampleSentenceMeaning": "Tôi rút tiền ở ngân hàng.",
+        "dictionaryForm": "出す (だす)"
       },
       {
         "id": 1607,
@@ -11219,7 +11363,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "ATMで お金を 下ろします。",
         "exampleSentenceReading": "ATMで おかねを おろします。",
-        "exampleSentenceMeaning": "Rút tiền ở cây ATM."
+        "exampleSentenceMeaning": "Rút tiền ở cây ATM.",
+        "dictionaryForm": "下ろす (おろす)"
       },
       {
         "id": 1608,
@@ -11231,7 +11376,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "大学に 入ります。",
         "exampleSentenceReading": "だいがくに はいります。",
-        "exampleSentenceMeaning": "Tôi đỗ vào trường đại học."
+        "exampleSentenceMeaning": "Tôi đỗ vào trường đại học.",
+        "dictionaryForm": "入る (はいる)"
       },
       {
         "id": 1609,
@@ -11240,10 +11386,11 @@ object DataFixtures {
         "romaji": "demasu",
         "meaning": "Tốt nghiệp (đại học [を])",
         "hanViet": "Xuất",
-        "type": "Động từ nhóm 1",
+        "type": "Động từ nhóm 2",
         "exampleSentence": "大学を 出ました。",
         "exampleSentenceReading": "だいがくを でました。",
-        "exampleSentenceMeaning": "Tôi đã tốt nghiệp đại học."
+        "exampleSentenceMeaning": "Tôi đã tốt nghiệp đại học.",
+        "dictionaryForm": "出る (でる)"
       },
       {
         "id": 1610,
@@ -11255,7 +11402,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "ボタンを 押します。",
         "exampleSentenceReading": "ぼたんを おします。",
-        "exampleSentenceMeaning": "Bấm nút bấm."
+        "exampleSentenceMeaning": "Bấm nút bấm.",
+        "dictionaryForm": "押す (おす)"
       },
       {
         "id": 1611,
@@ -11267,7 +11415,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "友達と お酒を 飲みます。",
         "exampleSentenceReading": "ともだちと おさけを のみます。",
-        "exampleSentenceMeaning": "Tôi uống rượu cùng bạn."
+        "exampleSentenceMeaning": "Tôi uống rượu cùng bạn.",
+        "dictionaryForm": "飲む (のむ)"
       },
       {
         "id": 1612,
@@ -11279,7 +11428,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "仕事を 始めます。",
         "exampleSentenceReading": "しごとを はじめます。",
-        "exampleSentenceMeaning": "Tôi bắt đầu làm việc."
+        "exampleSentenceMeaning": "Tôi bắt đầu làm việc.",
+        "dictionaryForm": "始める (はじめる)"
       },
       {
         "id": 1613,
@@ -11291,7 +11441,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "工場を 見学します。",
         "exampleSentenceReading": "こうじょうを けんがくします。",
-        "exampleSentenceMeaning": "Đi tham quan nhà máy."
+        "exampleSentenceMeaning": "Đi tham quan nhà máy.",
+        "dictionaryForm": "見学する (けんがくする)"
       },
       {
         "id": 1614,
@@ -11303,7 +11454,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "家族に 電話します。",
         "exampleSentenceReading": "かぞくに でんわします。",
-        "exampleSentenceMeaning": "Tôi gọi điện cho gia đình."
+        "exampleSentenceMeaning": "Tôi gọi điện cho gia đình.",
+        "dictionaryForm": "電話する (でんわする)"
       },
       {
         "id": 1615,
@@ -11315,7 +11467,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "あの先生は 若いです。",
         "exampleSentenceReading": "あのせんせいは わかいです。",
-        "exampleSentenceMeaning": "Thầy giáo kia trẻ tuổi."
+        "exampleSentenceMeaning": "Thầy giáo kia trẻ tuổi.",
+        "dictionaryForm": ""
       },
       {
         "id": 1616,
@@ -11327,7 +11480,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "髪が 長いです。",
         "exampleSentenceReading": "かみが ながいです。",
-        "exampleSentenceMeaning": "Tóc dài."
+        "exampleSentenceMeaning": "Tóc dài.",
+        "dictionaryForm": ""
       },
       {
         "id": 1617,
@@ -11339,7 +11493,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "夏休みは 短かったです。",
         "exampleSentenceReading": "なつやすみは みじかかったです。",
-        "exampleSentenceMeaning": "Kỳ nghỉ hè ngắn quá."
+        "exampleSentenceMeaning": "Kỳ nghỉ hè ngắn quá.",
+        "dictionaryForm": ""
       },
       {
         "id": 1618,
@@ -11351,7 +11506,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "部屋が 明るいです。",
         "exampleSentenceReading": "へやが あかるいです。",
-        "exampleSentenceMeaning": "Căn phòng sáng sủa."
+        "exampleSentenceMeaning": "Căn phòng sáng sủa.",
+        "dictionaryForm": ""
       },
       {
         "id": 1619,
@@ -11363,7 +11519,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "夜は 暗くて 危ないです。",
         "exampleSentenceReading": "よるは くらくて あぶないです。",
-        "exampleSentenceMeaning": "Ban đêm trời tối nguy hiểm."
+        "exampleSentenceMeaning": "Ban đêm trời tối nguy hiểm.",
+        "dictionaryForm": ""
       },
       {
         "id": 1620,
@@ -11375,7 +11532,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "体に 気をつけてください。",
         "exampleSentenceReading": "からだに きをつけてください。",
-        "exampleSentenceMeaning": "Hãy giữ gìn sức khỏe."
+        "exampleSentenceMeaning": "Hãy giữ gìn sức khỏe.",
+        "dictionaryForm": ""
       },
       {
         "id": 1621,
@@ -11387,7 +11545,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "頭が いいですね。",
         "exampleSentenceReading": "あたまが いいですね。",
-        "exampleSentenceMeaning": "Thông minh thật đấy."
+        "exampleSentenceMeaning": "Thông minh thật đấy.",
+        "dictionaryForm": ""
       },
       {
         "id": 1622,
@@ -11399,7 +11558,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "黒い 髪が きれいです。",
         "exampleSentenceReading": "くろい かみが きれいです。",
-        "exampleSentenceMeaning": "Mái tóc đen thật đẹp."
+        "exampleSentenceMeaning": "Mái tóc đen thật đẹp.",
+        "dictionaryForm": ""
       },
       {
         "id": 1623,
@@ -11411,7 +11571,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "朝 顔を 洗います。",
         "exampleSentenceReading": "あさ かおを あらいます。",
-        "exampleSentenceMeaning": "Buổi sáng tôi rửa mặt."
+        "exampleSentenceMeaning": "Buổi sáng tôi rửa mặt.",
+        "dictionaryForm": ""
       },
       {
         "id": 1624,
@@ -11423,7 +11584,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "目が 大きいです。",
         "exampleSentenceReading": "めが おおきいです。",
-        "exampleSentenceMeaning": "Đôi mắt to tròn."
+        "exampleSentenceMeaning": "Đôi mắt to tròn.",
+        "dictionaryForm": ""
       },
       {
         "id": 1625,
@@ -11435,7 +11597,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "耳が 痛いです。",
         "exampleSentenceReading": "みみが いたいです。",
-        "exampleSentenceMeaning": "Tôi bị đau tai."
+        "exampleSentenceMeaning": "Tôi bị đau tai.",
+        "dictionaryForm": ""
       },
       {
         "id": 1626,
@@ -11447,7 +11610,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "鼻が 高いです。",
         "exampleSentenceReading": "はなが たかいです。",
-        "exampleSentenceMeaning": "Mũi cao."
+        "exampleSentenceMeaning": "Mũi cao.",
+        "dictionaryForm": ""
       },
       {
         "id": 1627,
@@ -11459,7 +11623,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "口を 開けてください。",
         "exampleSentenceReading": "くちを あけてください。",
-        "exampleSentenceMeaning": "Xin hãy mở miệng ra."
+        "exampleSentenceMeaning": "Xin hãy mở miệng ra.",
+        "dictionaryForm": ""
       },
       {
         "id": 1628,
@@ -11471,7 +11636,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "毎朝 歯を 磨きます。",
         "exampleSentenceReading": "まいあさ はを みがきます。",
-        "exampleSentenceMeaning": "Mỗi sáng tôi đánh răng."
+        "exampleSentenceMeaning": "Mỗi sáng tôi đánh răng.",
+        "dictionaryForm": ""
       },
       {
         "id": 1629,
@@ -11483,7 +11649,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "おなかが 痛いです。",
         "exampleSentenceReading": "おなかが いたいです。",
-        "exampleSentenceMeaning": "Tôi bị đau bụng."
+        "exampleSentenceMeaning": "Tôi bị đau bụng.",
+        "dictionaryForm": ""
       },
       {
         "id": 1630,
@@ -11495,7 +11662,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "足が 速いです。",
         "exampleSentenceReading": "あしが はやいです。",
-        "exampleSentenceMeaning": "Chạy rất nhanh."
+        "exampleSentenceMeaning": "Chạy rất nhanh.",
+        "dictionaryForm": ""
       },
       {
         "id": 1631,
@@ -11507,7 +11675,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "背が 高いです。",
         "exampleSentenceReading": "せが たかいです。",
-        "exampleSentenceMeaning": "Dáng người cao ráo."
+        "exampleSentenceMeaning": "Dáng người cao ráo.",
+        "dictionaryForm": ""
       },
       {
         "id": 1632,
@@ -11519,7 +11688,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "シャワーを 浴びます。",
         "exampleSentenceReading": "しゃわーを あびます。",
-        "exampleSentenceMeaning": "Tắm vòi sen."
+        "exampleSentenceMeaning": "Tắm vòi sen.",
+        "dictionaryForm": ""
       },
       {
         "id": 1633,
@@ -11531,7 +11701,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "緑が 多い 町です。",
         "exampleSentenceReading": "みどりが おおい まちです。",
-        "exampleSentenceMeaning": "Thành phố có nhiều cây xanh."
+        "exampleSentenceMeaning": "Thành phố có nhiều cây xanh.",
+        "dictionaryForm": ""
       },
       {
         "id": 1634,
@@ -11543,7 +11714,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "古い お寺を 参拝します。",
         "exampleSentenceReading": "ふるい おてらを さんぱいします。",
-        "exampleSentenceMeaning": "Đi viếng ngôi chùa cổ."
+        "exampleSentenceMeaning": "Đi viếng ngôi chùa cổ.",
+        "dictionaryForm": ""
       },
       {
         "id": 1635,
@@ -11555,7 +11727,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "正月に 神社へ 行きます。",
         "exampleSentenceReading": "しょうがつに じんじゃへ いきます。",
-        "exampleSentenceMeaning": "Tết đi lễ đền Thần đạo."
+        "exampleSentenceMeaning": "Tết đi lễ đền Thần đạo.",
+        "dictionaryForm": ""
       },
       {
         "id": 1636,
@@ -11567,7 +11740,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "大学まで どうやって 行きますか。",
         "exampleSentenceReading": "だいがくまで どうやって いきますか。",
-        "exampleSentenceMeaning": "Đi đến trường bằng cách nào thế?"
+        "exampleSentenceMeaning": "Đi đến trường bằng cách nào thế?",
+        "dictionaryForm": ""
       },
       {
         "id": 1637,
@@ -11579,7 +11753,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "どの傘が あなたのですか。",
         "exampleSentenceReading": "どのかさが あなたのですか。",
-        "exampleSentenceMeaning": "Cái ô nào là của bạn?"
+        "exampleSentenceMeaning": "Cái ô nào là của bạn?",
+        "dictionaryForm": ""
       },
       {
         "id": 1638,
@@ -11588,10 +11763,11 @@ object DataFixtures {
         "romaji": "yamemasu",
         "meaning": "Bỏ / Thôi (việc)",
         "hanViet": "",
-        "type": "Động từ",
+        "type": "Động từ nhóm 2",
         "exampleSentence": "会社を やめます。",
         "exampleSentenceReading": "かいしゃを やめます。",
-        "exampleSentenceMeaning": "Nghỉ việc công ty."
+        "exampleSentenceMeaning": "Nghỉ việc công ty.",
+        "dictionaryForm": "やめる"
       }
     ],
     "grammarPoints": [
@@ -11666,7 +11842,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "漢字を 覚えます。",
         "exampleSentenceReading": "かんじを おぼえます。",
-        "exampleSentenceMeaning": "Tôi học thuộc chữ Hán."
+        "exampleSentenceMeaning": "Tôi học thuộc chữ Hán.",
+        "dictionaryForm": "覚える (おぼえる)"
       },
       {
         "id": 1702,
@@ -11678,7 +11855,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "傘を 忘れました。",
         "exampleSentenceReading": "かさを わすれました。",
-        "exampleSentenceMeaning": "Tôi bỏ quên ô rồi."
+        "exampleSentenceMeaning": "Tôi bỏ quên ô rồi.",
+        "dictionaryForm": "忘れる (わすれる)"
       },
       {
         "id": 1703,
@@ -11690,7 +11868,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "財布を なくしました。",
         "exampleSentenceReading": "さいふを なくしました。",
-        "exampleSentenceMeaning": "Tôi làm mất ví tiền."
+        "exampleSentenceMeaning": "Tôi làm mất ví tiền.",
+        "dictionaryForm": "なくす"
       },
       {
         "id": 1704,
@@ -11702,7 +11881,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "現金で 払います。",
         "exampleSentenceReading": "げんきんで はらいます。",
-        "exampleSentenceMeaning": "Tôi trả bằng tiền mặt."
+        "exampleSentenceMeaning": "Tôi trả bằng tiền mặt.",
+        "dictionaryForm": "払う (はらう)"
       },
       {
         "id": 1705,
@@ -11714,7 +11894,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "本を 返します。",
         "exampleSentenceReading": "ほんを かえします。",
-        "exampleSentenceMeaning": "Tôi trả lại sách."
+        "exampleSentenceMeaning": "Tôi trả lại sách.",
+        "dictionaryForm": "返す (かえす)"
       },
       {
         "id": 1706,
@@ -11726,7 +11907,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "友達と 出かけます。",
         "exampleSentenceReading": "ともだちと でかけます。",
-        "exampleSentenceMeaning": "Tôi đi ra ngoài với bạn."
+        "exampleSentenceMeaning": "Tôi đi ra ngoài với bạn.",
+        "dictionaryForm": "出かける (でかける)"
       },
       {
         "id": 1707,
@@ -11738,7 +11920,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "靴を 脱いでください。",
         "exampleSentenceReading": "くつを ぬいでください。",
-        "exampleSentenceMeaning": "Xin hãy cởi giày ra."
+        "exampleSentenceMeaning": "Xin hãy cởi giày ra.",
+        "dictionaryForm": "脱ぐ (ぬぐ)"
       },
       {
         "id": 1708,
@@ -11750,7 +11933,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "傘を 持って行きます。",
         "exampleSentenceReading": "かさを もっていきます。",
-        "exampleSentenceMeaning": "Tôi mang theo ô."
+        "exampleSentenceMeaning": "Tôi mang theo ô.",
+        "dictionaryForm": "持って行く (もっていく)"
       },
       {
         "id": 1709,
@@ -11762,7 +11946,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "パスポートを 持って来てください。",
         "exampleSentenceReading": "ぱすぽーとを もってきてください。",
-        "exampleSentenceMeaning": "Xin hãy mang hộ chiếu đến."
+        "exampleSentenceMeaning": "Xin hãy mang hộ chiếu đến.",
+        "dictionaryForm": "持って来る (もってくる)"
       },
       {
         "id": 1710,
@@ -11774,7 +11959,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "心配しないでください。",
         "exampleSentenceReading": "しんぱいしないでください。",
-        "exampleSentenceMeaning": "Xin đừng lo lắng."
+        "exampleSentenceMeaning": "Xin đừng lo lắng.",
+        "dictionaryForm": "心配する (しんぱいする)"
       },
       {
         "id": 1711,
@@ -11786,7 +11972,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "今日は 残業します。",
         "exampleSentenceReading": "きょうは ざんぎょうします。",
-        "exampleSentenceMeaning": "Hôm nay tôi làm thêm giờ."
+        "exampleSentenceMeaning": "Hôm nay tôi làm thêm giờ.",
+        "dictionaryForm": "残業する (ざんぎょうする)"
       },
       {
         "id": 1712,
@@ -11798,7 +11985,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "来週 大阪へ 出張します。",
         "exampleSentenceReading": "らいしゅう おおさかへ しゅっちょうします。",
-        "exampleSentenceMeaning": "Tuần sau tôi đi công tác Osaka."
+        "exampleSentenceMeaning": "Tuần sau tôi đi công tác Osaka.",
+        "dictionaryForm": "出張する (しゅっちょうする)"
       },
       {
         "id": 1713,
@@ -11810,7 +11998,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "大切な 約束です。",
         "exampleSentenceReading": "たいせつな やくそくです。",
-        "exampleSentenceMeaning": "Một cuộc hẹn quan trọng."
+        "exampleSentenceMeaning": "Một cuộc hẹn quan trọng.",
+        "dictionaryForm": ""
       },
       {
         "id": 1714,
@@ -11822,7 +12011,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "大丈夫ですか。はい、大丈夫です。",
         "exampleSentenceReading": "だいじょうぶですか。はい、だいじょうぶです。",
-        "exampleSentenceMeaning": "Bạn có sao không? Tôi không sao."
+        "exampleSentenceMeaning": "Bạn có sao không? Tôi không sao.",
+        "dictionaryForm": ""
       },
       {
         "id": 1715,
@@ -11834,7 +12024,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "ここは 危ないです。",
         "exampleSentenceReading": "ここは あぶないです。",
-        "exampleSentenceMeaning": "Chỗ này rất nguy hiểm."
+        "exampleSentenceMeaning": "Chỗ này rất nguy hiểm.",
+        "dictionaryForm": ""
       },
       {
         "id": 1716,
@@ -11846,7 +12037,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ここは 禁煙です。",
         "exampleSentenceReading": "ここは きんえんです。",
-        "exampleSentenceMeaning": "Ở đây cấm hút thuốc."
+        "exampleSentenceMeaning": "Ở đây cấm hút thuốc.",
+        "dictionaryForm": ""
       },
       {
         "id": 1717,
@@ -11858,7 +12050,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "健康保険証を 見せてください。",
         "exampleSentenceReading": "けんこうほけんしょうを みせてください。",
-        "exampleSentenceMeaning": "Xin hãy xuất trình thẻ BHYT."
+        "exampleSentenceMeaning": "Xin hãy xuất trình thẻ BHYT.",
+        "dictionaryForm": ""
       },
       {
         "id": 1718,
@@ -11870,7 +12063,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "熱が あります。",
         "exampleSentenceReading": "ねつが あります。",
-        "exampleSentenceMeaning": "Tôi bị sốt rồi."
+        "exampleSentenceMeaning": "Tôi bị sốt rồi.",
+        "dictionaryForm": ""
       },
       {
         "id": 1719,
@@ -11882,7 +12076,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "病気で 休みます。",
         "exampleSentenceReading": "びょうきで やすみます。",
-        "exampleSentenceMeaning": "Nghỉ học vì bị ốm."
+        "exampleSentenceMeaning": "Nghỉ học vì bị ốm.",
+        "dictionaryForm": ""
       },
       {
         "id": 1720,
@@ -11894,7 +12089,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "食後に 薬を 飲みます。",
         "exampleSentenceReading": "しょくごに くすりを のみます。",
-        "exampleSentenceMeaning": "Uống thuốc sau bữa ăn."
+        "exampleSentenceMeaning": "Uống thuốc sau bữa ăn.",
+        "dictionaryForm": ""
       },
       {
         "id": 1721,
@@ -11906,7 +12102,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "おふろに 入ります。",
         "exampleSentenceReading": "おふろに はいります。",
-        "exampleSentenceMeaning": "Tôi đi ngâm bồn tắm."
+        "exampleSentenceMeaning": "Tôi đi ngâm bồn tắm.",
+        "dictionaryForm": ""
       },
       {
         "id": 1722,
@@ -11918,7 +12115,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "寒いから 上着を 着ます。",
         "exampleSentenceReading": "さむいから うわぎを きます。",
-        "exampleSentenceMeaning": "Vì trời lạnh nên tôi mặc áo khoác."
+        "exampleSentenceMeaning": "Vì trời lạnh nên tôi mặc áo khoác.",
+        "dictionaryForm": ""
       },
       {
         "id": 1723,
@@ -11930,7 +12128,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "下着を 洗濯します。",
         "exampleSentenceReading": "したぎを せんたくします。",
-        "exampleSentenceMeaning": "Giặt đồ lót."
+        "exampleSentenceMeaning": "Giặt đồ lót.",
+        "dictionaryForm": ""
       },
       {
         "id": 1724,
@@ -11942,7 +12141,8 @@ object DataFixtures {
         "type": "Trợ từ",
         "exampleSentence": "5時までに レポートを 出します。",
         "exampleSentenceReading": "ごじまでに れぽーとを だします。",
-        "exampleSentenceMeaning": "Nộp báo cáo trước 5 giờ."
+        "exampleSentenceMeaning": "Nộp báo cáo trước 5 giờ.",
+        "dictionaryForm": ""
       },
       {
         "id": 1725,
@@ -11954,7 +12154,8 @@ object DataFixtures {
         "type": "Liên từ",
         "exampleSentence": "雨です。ですから、傘を 持ちます。",
         "exampleSentenceReading": "あめです。ですから、かさを もちます。",
-        "exampleSentenceMeaning": "Trời mưa, do đó tôi mang ô."
+        "exampleSentenceMeaning": "Trời mưa, do đó tôi mang ô.",
+        "dictionaryForm": ""
       },
       {
         "id": 1726,
@@ -11966,7 +12167,8 @@ object DataFixtures {
         "type": "Giao tiếp",
         "exampleSentence": "顔色が 悪いです。どうしましたか。",
         "exampleSentenceReading": "かおいろが わるいです。どうしましたか。",
-        "exampleSentenceMeaning": "Sắc mặt kém quá, bạn bị sao thế?"
+        "exampleSentenceMeaning": "Sắc mặt kém quá, bạn bị sao thế?",
+        "dictionaryForm": ""
       },
       {
         "id": 1727,
@@ -11978,7 +12180,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "のどが 痛いです。",
         "exampleSentenceReading": "のどが いたいです。",
-        "exampleSentenceMeaning": "Tôi bị đau họng."
+        "exampleSentenceMeaning": "Tôi bị đau họng.",
+        "dictionaryForm": ""
       },
       {
         "id": 1728,
@@ -11990,7 +12193,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "頭が 痛いです。",
         "exampleSentenceReading": "あたまが いたいです。",
-        "exampleSentenceMeaning": "Tôi bị đau đầu."
+        "exampleSentenceMeaning": "Tôi bị đau đầu.",
+        "dictionaryForm": ""
       },
       {
         "id": 1729,
@@ -12002,7 +12206,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "風邪を ひきました。",
         "exampleSentenceReading": "かぜを ひきました。",
-        "exampleSentenceMeaning": "Tôi bị cảm cúm rồi."
+        "exampleSentenceMeaning": "Tôi bị cảm cúm rồi.",
+        "dictionaryForm": ""
       },
       {
         "id": 1730,
@@ -12014,7 +12219,8 @@ object DataFixtures {
         "type": "Chào hỏi",
         "exampleSentence": "無理を しないで、お大事に。",
         "exampleSentenceReading": "むりを しないで、おだいじに。",
-        "exampleSentenceMeaning": "Đừng gắng sức, chúc bạn mau khỏi nhé."
+        "exampleSentenceMeaning": "Đừng gắng sức, chúc bạn mau khỏi nhé.",
+        "dictionaryForm": ""
       },
       {
         "id": 1731,
@@ -12023,10 +12229,11 @@ object DataFixtures {
         "romaji": "kusuri o nomimasu",
         "meaning": "Uống thuốc",
         "hanViet": "Dược",
-        "type": "Động từ",
+        "type": "Động từ nhóm 1",
         "exampleSentence": "風邪の 薬を 飲みます。",
         "exampleSentenceReading": "かぜの くすりを のみます。",
-        "exampleSentenceMeaning": "Uống thuốc cảm cúm."
+        "exampleSentenceMeaning": "Uống thuốc cảm cúm.",
+        "dictionaryForm": "薬を飲む (くすりをのむ)"
       }
     ],
     "grammarPoints": [
@@ -12101,7 +12308,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "日本語を 話すことが できます。",
         "exampleSentenceReading": "にほんごを はなすことが できます。",
-        "exampleSentenceMeaning": "Tôi có thể nói tiếng Nhật."
+        "exampleSentenceMeaning": "Tôi có thể nói tiếng Nhật.",
+        "dictionaryForm": "できる"
       },
       {
         "id": 1802,
@@ -12113,7 +12321,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "食事の 前に 手を 洗います。",
         "exampleSentenceReading": "しょくじの まえに てを あらいます。",
-        "exampleSentenceMeaning": "Rửa tay trước khi ăn."
+        "exampleSentenceMeaning": "Rửa tay trước khi ăn.",
+        "dictionaryForm": "洗う (あらう)"
       },
       {
         "id": 1803,
@@ -12125,7 +12334,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "ピアノを 弾くことが できます。",
         "exampleSentenceReading": "ぴあのを ひくことが できます。",
-        "exampleSentenceMeaning": "Tôi biết chơi đàn piano."
+        "exampleSentenceMeaning": "Tôi biết chơi đàn piano.",
+        "dictionaryForm": "弾く (ひく)"
       },
       {
         "id": 1804,
@@ -12137,7 +12347,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "カラオケで 歌います。",
         "exampleSentenceReading": "からおけで うたいます。",
-        "exampleSentenceMeaning": "Tôi hát ở quán karaoke."
+        "exampleSentenceMeaning": "Tôi hát ở quán karaoke.",
+        "dictionaryForm": "歌う (うたう)"
       },
       {
         "id": 1805,
@@ -12149,7 +12360,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "切手を 集めています。",
         "exampleSentenceReading": "きってを あつめています。",
-        "exampleSentenceMeaning": "Tôi đang sưu tầm tem."
+        "exampleSentenceMeaning": "Tôi đang sưu tầm tem.",
+        "dictionaryForm": "集める (あつめる)"
       },
       {
         "id": 1806,
@@ -12161,7 +12373,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "ごみを 捨てます。",
         "exampleSentenceReading": "ごみを すてます。",
-        "exampleSentenceMeaning": "Vứt rác."
+        "exampleSentenceMeaning": "Vứt rác.",
+        "dictionaryForm": "捨てる (すてる)"
       },
       {
         "id": 1807,
@@ -12173,7 +12386,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "お金を 換えます。",
         "exampleSentenceReading": "おかねを かえます。",
-        "exampleSentenceMeaning": "Tôi đổi tiền."
+        "exampleSentenceMeaning": "Tôi đổi tiền.",
+        "dictionaryForm": "換える (かえる)"
       },
       {
         "id": 1808,
@@ -12185,7 +12399,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "車を 運転することが できます。",
         "exampleSentenceReading": "くるまを うんてんすることが できます。",
-        "exampleSentenceMeaning": "Tôi có thể lái xe ô tô."
+        "exampleSentenceMeaning": "Tôi có thể lái xe ô tô.",
+        "dictionaryForm": "運転する (うんてんする)"
       },
       {
         "id": 1809,
@@ -12197,7 +12412,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "ホテルを 予約します。",
         "exampleSentenceReading": "ほてるを よやくします。",
-        "exampleSentenceMeaning": "Tôi đặt trước khách sạn."
+        "exampleSentenceMeaning": "Tôi đặt trước khách sạn.",
+        "dictionaryForm": "予約する (よやくする)"
       },
       {
         "id": 1810,
@@ -12209,7 +12425,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ピアノの 音が きれいです。",
         "exampleSentenceReading": "ぴあのの おとが きれいです。",
-        "exampleSentenceMeaning": "Âm thanh đàn piano thật hay."
+        "exampleSentenceMeaning": "Âm thanh đàn piano thật hay.",
+        "dictionaryForm": ""
       },
       {
         "id": 1811,
@@ -12221,7 +12438,8 @@ object DataFixtures {
         "type": "Hậu tố",
         "exampleSentence": "50メートル 泳ぎます。",
         "exampleSentenceReading": "ごじゅうめーとる およぎます。",
-        "exampleSentenceMeaning": "Bơi được 50 mét."
+        "exampleSentenceMeaning": "Bơi được 50 mét.",
+        "dictionaryForm": ""
       },
       {
         "id": 1812,
@@ -12233,7 +12451,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "現金で 払います。",
         "exampleSentenceReading": "げんきんで はらいます。",
-        "exampleSentenceMeaning": "Tôi trả bằng tiền mặt."
+        "exampleSentenceMeaning": "Tôi trả bằng tiền mặt.",
+        "dictionaryForm": ""
       },
       {
         "id": 1813,
@@ -12245,7 +12464,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "趣味は 読書です。",
         "exampleSentenceReading": "しゅみは どくしょです。",
-        "exampleSentenceMeaning": "Sở thích của tôi là đọc sách."
+        "exampleSentenceMeaning": "Sở thích của tôi là đọc sách.",
+        "dictionaryForm": ""
       },
       {
         "id": 1814,
@@ -12257,7 +12477,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "毎日 日記を 書きます。",
         "exampleSentenceReading": "まいにち にっきを かきます。",
-        "exampleSentenceMeaning": "Mỗi ngày tôi viết nhật ký."
+        "exampleSentenceMeaning": "Mỗi ngày tôi viết nhật ký.",
+        "dictionaryForm": ""
       },
       {
         "id": 1815,
@@ -12269,7 +12490,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "教会で お祈りを します。",
         "exampleSentenceReading": "きょうかいで おいのりを します。",
-        "exampleSentenceMeaning": "Tôi cầu nguyện ở nhà thờ."
+        "exampleSentenceMeaning": "Tôi cầu nguyện ở nhà thờ.",
+        "dictionaryForm": ""
       },
       {
         "id": 1816,
@@ -12281,7 +12503,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "課長に 相談します。",
         "exampleSentenceReading": "かちょうに そうだんします。",
-        "exampleSentenceMeaning": "Tôi trao đổi với trưởng phòng."
+        "exampleSentenceMeaning": "Tôi trao đổi với trưởng phòng.",
+        "dictionaryForm": ""
       },
       {
         "id": 1817,
@@ -12293,7 +12516,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "部長は 出張中です。",
         "exampleSentenceReading": "ぶちょうは しゅっちょうちゅうです。",
-        "exampleSentenceMeaning": "Trưởng ban đang đi công tác."
+        "exampleSentenceMeaning": "Trưởng ban đang đi công tác.",
+        "dictionaryForm": ""
       },
       {
         "id": 1818,
@@ -12305,7 +12529,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "社長の 話を 聞きます。",
         "exampleSentenceReading": "しゃちょうの はなしを ききます。",
-        "exampleSentenceMeaning": "Lắng nghe lời phát biểu của giám đốc."
+        "exampleSentenceMeaning": "Lắng nghe lời phát biểu của giám đốc.",
+        "dictionaryForm": ""
       },
       {
         "id": 1819,
@@ -12317,7 +12542,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "動物が 好きです。",
         "exampleSentenceReading": "どうぶつが すきです。",
-        "exampleSentenceMeaning": "Tôi thích động vật."
+        "exampleSentenceMeaning": "Tôi thích động vật.",
+        "dictionaryForm": ""
       },
       {
         "id": 1820,
@@ -12329,7 +12555,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "馬に 乗ったことが あります。",
         "exampleSentenceReading": "うまに のったことが あります。",
-        "exampleSentenceMeaning": "Tôi từng cưỡi ngựa rồi."
+        "exampleSentenceMeaning": "Tôi từng cưỡi ngựa rồi.",
+        "dictionaryForm": ""
       },
       {
         "id": 1821,
@@ -12341,7 +12568,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "インターネットで 調べます。",
         "exampleSentenceReading": "いんたーねっとで しらべます。",
-        "exampleSentenceMeaning": "Tìm kiếm trên mạng Internet."
+        "exampleSentenceMeaning": "Tìm kiếm trên mạng Internet.",
+        "dictionaryForm": ""
       },
       {
         "id": 1822,
@@ -12353,7 +12581,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "日本の 料理、特に 寿司が 好きです。",
         "exampleSentenceReading": "にほんの りょうり、とくに すしが すきです。",
-        "exampleSentenceMeaning": "Đồ ăn Nhật, đặc biệt tôi thích sushi."
+        "exampleSentenceMeaning": "Đồ ăn Nhật, đặc biệt tôi thích sushi.",
+        "dictionaryForm": ""
       },
       {
         "id": 1823,
@@ -12365,7 +12594,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "バスが なかなか 来ません。",
         "exampleSentenceReading": "ばすが なかなか きません。",
-        "exampleSentenceMeaning": "Xe buýt mãi mà không thấy tới."
+        "exampleSentenceMeaning": "Xe buýt mãi mà không thấy tới.",
+        "dictionaryForm": ""
       },
       {
         "id": 1824,
@@ -12377,7 +12607,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "ぜひ ベトナムへ 来てください。",
         "exampleSentenceReading": "ぜひ べとなむへ きてください。",
-        "exampleSentenceMeaning": "Nhất định hãy đến Việt Nam chơi nhé."
+        "exampleSentenceMeaning": "Nhất định hãy đến Việt Nam chơi nhé.",
+        "dictionaryForm": ""
       }
     ],
     "grammarPoints": [
@@ -12452,7 +12683,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "富士山に 登ります。",
         "exampleSentenceReading": "ふじさんに のぼります。",
-        "exampleSentenceMeaning": "Tôi leo núi Phú Sĩ."
+        "exampleSentenceMeaning": "Tôi leo núi Phú Sĩ.",
+        "dictionaryForm": "登る (のぼる)"
       },
       {
         "id": 1902,
@@ -12464,7 +12696,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "旅館に 泊まりました。",
         "exampleSentenceReading": "りょかんに とまりました。",
-        "exampleSentenceMeaning": "Tôi đã trọ lại lữ quán kiểu Nhật."
+        "exampleSentenceMeaning": "Tôi đã trọ lại lữ quán kiểu Nhật.",
+        "dictionaryForm": "泊まる (とまる)"
       },
       {
         "id": 1903,
@@ -12476,7 +12709,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "部屋を 掃除します。",
         "exampleSentenceReading": "へやを そうじします。",
-        "exampleSentenceMeaning": "Tôi dọn dẹp phòng."
+        "exampleSentenceMeaning": "Tôi dọn dẹp phòng.",
+        "dictionaryForm": "掃除する (そうじする)"
       },
       {
         "id": 1904,
@@ -12488,7 +12722,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "休みに 服を 洗濯します。",
         "exampleSentenceReading": "やすみに ふくを せんたくします。",
-        "exampleSentenceMeaning": "Ngày nghỉ tôi giặt quần áo."
+        "exampleSentenceMeaning": "Ngày nghỉ tôi giặt quần áo.",
+        "dictionaryForm": "洗濯する (せんたくする)"
       },
       {
         "id": 1905,
@@ -12500,7 +12735,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "会話を 練習します。",
         "exampleSentenceReading": "かいわを れんしゅうします。",
-        "exampleSentenceMeaning": "Tôi luyện tập hội thoại."
+        "exampleSentenceMeaning": "Tôi luyện tập hội thoại.",
+        "dictionaryForm": "練習する (れんしゅうする)"
       },
       {
         "id": 1906,
@@ -12512,7 +12748,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "先生に なりたいです。",
         "exampleSentenceReading": "せんせいに なりたいです。",
-        "exampleSentenceMeaning": "Tôi muốn trở thành giáo viên."
+        "exampleSentenceMeaning": "Tôi muốn trở thành giáo viên.",
+        "dictionaryForm": "なる"
       },
       {
         "id": 1907,
@@ -12524,7 +12761,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "とても 眠いです。",
         "exampleSentenceReading": "とても ねむいです。",
-        "exampleSentenceMeaning": "Tôi rất buồn ngủ."
+        "exampleSentenceMeaning": "Tôi rất buồn ngủ.",
+        "dictionaryForm": ""
       },
       {
         "id": 1908,
@@ -12536,7 +12774,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "風が 強いです。",
         "exampleSentenceReading": "かぜが つよいです。",
-        "exampleSentenceMeaning": "Gió thổi mạnh."
+        "exampleSentenceMeaning": "Gió thổi mạnh.",
+        "dictionaryForm": ""
       },
       {
         "id": 1909,
@@ -12548,7 +12787,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "体が 弱いです。",
         "exampleSentenceReading": "からだが よわいです。",
-        "exampleSentenceMeaning": "Thể trạng tôi yếu."
+        "exampleSentenceMeaning": "Thể trạng tôi yếu.",
+        "dictionaryForm": ""
       },
       {
         "id": 1910,
@@ -12560,7 +12800,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "体の 調子は どうですか。",
         "exampleSentenceReading": "からだの ちょうしは どうですか。",
-        "exampleSentenceMeaning": "Tình trạng sức khỏe của bạn thế nào?"
+        "exampleSentenceMeaning": "Tình trạng sức khỏe của bạn thế nào?",
+        "dictionaryForm": ""
       },
       {
         "id": 1911,
@@ -12572,7 +12813,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "一度 日本へ 行きたいです。",
         "exampleSentenceReading": "いちど にほんへ いきたいです。",
-        "exampleSentenceMeaning": "Tôi muốn đến Nhật một lần."
+        "exampleSentenceMeaning": "Tôi muốn đến Nhật một lần.",
+        "dictionaryForm": ""
       },
       {
         "id": 1912,
@@ -12584,7 +12826,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "一度も 寿司を 食べたことが ありません。",
         "exampleSentenceReading": "いちども すしを たべたことが ありません。",
-        "exampleSentenceMeaning": "Tôi chưa từng ăn sushi lần nào."
+        "exampleSentenceMeaning": "Tôi chưa từng ăn sushi lần nào.",
+        "dictionaryForm": ""
       },
       {
         "id": 1913,
@@ -12596,7 +12839,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "だんだん 寒く なります。",
         "exampleSentenceReading": "だんだん さむく なります。",
-        "exampleSentenceMeaning": "Trời dần trở nên lạnh."
+        "exampleSentenceMeaning": "Trời dần trở nên lạnh.",
+        "dictionaryForm": ""
       },
       {
         "id": 1914,
@@ -12608,7 +12852,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "もうすぐ 正月ですね。",
         "exampleSentenceReading": "もうすぐ しょうがつですね。",
-        "exampleSentenceMeaning": "Sắp Tết rồi nhỉ."
+        "exampleSentenceMeaning": "Sắp Tết rồi nhỉ.",
+        "dictionaryForm": ""
       },
       {
         "id": 1915,
@@ -12620,7 +12865,8 @@ object DataFixtures {
         "type": "Chào hỏi",
         "exampleSentence": "おかげさまで、元気です。",
         "exampleSentenceReading": "おかげさまで、げんきです。",
-        "exampleSentenceMeaning": "Nhờ ơn bạn tôi vẫn khỏe mạnh."
+        "exampleSentenceMeaning": "Nhờ ơn bạn tôi vẫn khỏe mạnh.",
+        "dictionaryForm": ""
       },
       {
         "id": 1916,
@@ -12632,7 +12878,8 @@ object DataFixtures {
         "type": "Chào hỏi",
         "exampleSentence": "みんなで 乾杯しましょう！",
         "exampleSentenceReading": "みんなで かんぱいしましょう！",
-        "exampleSentenceMeaning": "Mọi người cùng nâng ly nào!"
+        "exampleSentenceMeaning": "Mọi người cùng nâng ly nào!",
+        "dictionaryForm": ""
       },
       {
         "id": 1917,
@@ -12644,7 +12891,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "実は、来月 帰国します。",
         "exampleSentenceReading": "じつは、らいげつ きこくします。",
-        "exampleSentenceMeaning": "Thực ra tháng sau tôi về nước."
+        "exampleSentenceMeaning": "Thực ra tháng sau tôi về nước.",
+        "dictionaryForm": ""
       },
       {
         "id": 1918,
@@ -12656,7 +12904,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ダイエットを しています。",
         "exampleSentenceReading": "だいえっとを しています。",
-        "exampleSentenceMeaning": "Tôi đang ăn kiêng giảm cân."
+        "exampleSentenceMeaning": "Tôi đang ăn kiêng giảm cân.",
+        "dictionaryForm": ""
       }
     ],
     "grammarPoints": [
@@ -12736,7 +12985,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "ビザが 要ります。",
         "exampleSentenceReading": "びざが いります。",
-        "exampleSentenceMeaning": "Cần phải có thị thực visa."
+        "exampleSentenceMeaning": "Cần phải có thị thực visa.",
+        "dictionaryForm": "要る (いる)"
       },
       {
         "id": 2002,
@@ -12748,7 +12998,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "辞書で 言葉を 調べます。",
         "exampleSentenceReading": "じしょで ことばを しらべます。",
-        "exampleSentenceMeaning": "Tôi tra từ vựng bằng từ điển."
+        "exampleSentenceMeaning": "Tôi tra từ vựng bằng từ điển.",
+        "dictionaryForm": "調べる (しらべる)"
       },
       {
         "id": 2003,
@@ -12760,7 +13011,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "作文を 直します。",
         "exampleSentenceReading": "さくぶんを なおします。",
-        "exampleSentenceMeaning": "Tôi sửa bài văn."
+        "exampleSentenceMeaning": "Tôi sửa bài văn.",
+        "dictionaryForm": "直す (なおす)"
       },
       {
         "id": 2004,
@@ -12772,7 +13024,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "車を 修理します。",
         "exampleSentenceReading": "くるまを しゅうりします。",
-        "exampleSentenceMeaning": "Tôi sửa xe ô tô."
+        "exampleSentenceMeaning": "Tôi sửa xe ô tô.",
+        "dictionaryForm": "修理する (しゅうりする)"
       },
       {
         "id": 2005,
@@ -12784,7 +13037,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "友達に 電話します。",
         "exampleSentenceReading": "ともだちに でんわします。",
-        "exampleSentenceMeaning": "Tôi gọi điện cho bạn."
+        "exampleSentenceMeaning": "Tôi gọi điện cho bạn.",
+        "dictionaryForm": "電話する (でんわする)"
       },
       {
         "id": 2006,
@@ -12796,7 +13050,8 @@ object DataFixtures {
         "type": "Đại từ",
         "exampleSentence": "僕も 行くよ。",
         "exampleSentenceReading": "ぼくも いくよ。",
-        "exampleSentenceMeaning": "Tớ cũng đi nữa đấy."
+        "exampleSentenceMeaning": "Tớ cũng đi nữa đấy.",
+        "dictionaryForm": ""
       },
       {
         "id": 2007,
@@ -12808,7 +13063,8 @@ object DataFixtures {
         "type": "Đại từ",
         "exampleSentence": "君は どう思う？",
         "exampleSentenceReading": "きみは どうおもう？",
-        "exampleSentenceMeaning": "Cậu nghĩ thế nào?"
+        "exampleSentenceMeaning": "Cậu nghĩ thế nào?",
+        "dictionaryForm": ""
       },
       {
         "id": 2008,
@@ -12820,7 +13076,8 @@ object DataFixtures {
         "type": "Thán từ",
         "exampleSentence": "うん、分かった。",
         "exampleSentenceReading": "うん、わかった。",
-        "exampleSentenceMeaning": "Ừ, tớ hiểu rồi."
+        "exampleSentenceMeaning": "Ừ, tớ hiểu rồi.",
+        "dictionaryForm": ""
       },
       {
         "id": 2009,
@@ -12832,7 +13089,8 @@ object DataFixtures {
         "type": "Thán từ",
         "exampleSentence": "ううん、行かない。",
         "exampleSentenceReading": "ううん、いかない。",
-        "exampleSentenceMeaning": "Không, tớ không đi đâu."
+        "exampleSentenceMeaning": "Không, tớ không đi đâu.",
+        "dictionaryForm": ""
       },
       {
         "id": 2010,
@@ -12844,7 +13102,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "父は サラリーマンです。",
         "exampleSentenceReading": "ちちは さらりーまんです。",
-        "exampleSentenceMeaning": "Bố tôi là nhân viên văn phòng ăn lương."
+        "exampleSentenceMeaning": "Bố tôi là nhân viên văn phòng ăn lương.",
+        "dictionaryForm": ""
       },
       {
         "id": 2011,
@@ -12856,7 +13115,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "新しい 言葉を 覚えます。",
         "exampleSentenceReading": "あたらしい ことばを おぼえます。",
-        "exampleSentenceMeaning": "Học thuộc từ mới."
+        "exampleSentenceMeaning": "Học thuộc từ mới.",
+        "dictionaryForm": ""
       },
       {
         "id": 2012,
@@ -12868,7 +13128,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "東京は 物価が 高いです。",
         "exampleSentenceReading": "とうきょうは ぶっかが たかいです。",
-        "exampleSentenceMeaning": "Giá cả ở Tokyo đắt đỏ."
+        "exampleSentenceMeaning": "Giá cả ở Tokyo đắt đỏ.",
+        "dictionaryForm": ""
       },
       {
         "id": 2013,
@@ -12880,7 +13141,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "きれいな 着物を 着ました。",
         "exampleSentenceReading": "きれいな きものを きました。",
-        "exampleSentenceMeaning": "Tôi đã mặc bộ Kimono đẹp."
+        "exampleSentenceMeaning": "Tôi đã mặc bộ Kimono đẹp.",
+        "dictionaryForm": ""
       },
       {
         "id": 2014,
@@ -12892,7 +13154,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "ビザを 申請します。",
         "exampleSentenceReading": "びざを しんせいします。",
-        "exampleSentenceMeaning": "Tôi xin cấp visa."
+        "exampleSentenceMeaning": "Tôi xin cấp visa.",
+        "dictionaryForm": ""
       },
       {
         "id": 2015,
@@ -12904,7 +13167,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "初めは 難しかったです。",
         "exampleSentenceReading": "はじめは むずかしかったです。",
-        "exampleSentenceMeaning": "Lúc đầu thì rất khó."
+        "exampleSentenceMeaning": "Lúc đầu thì rất khó.",
+        "dictionaryForm": ""
       },
       {
         "id": 2016,
@@ -12916,7 +13180,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "映画の 終わりが おもしろいです。",
         "exampleSentenceReading": "えいがの おわりが おもしろいです。",
-        "exampleSentenceMeaning": "Phần kết của bộ phim rất hay."
+        "exampleSentenceMeaning": "Phần kết của bộ phim rất hay.",
+        "dictionaryForm": ""
       },
       {
         "id": 2017,
@@ -12928,7 +13193,8 @@ object DataFixtures {
         "type": "Đại từ",
         "exampleSentence": "こっちへ おいで。",
         "exampleSentenceReading": "こっちへ おいで。",
-        "exampleSentenceMeaning": "Lại phía này đi."
+        "exampleSentenceMeaning": "Lại phía này đi.",
+        "dictionaryForm": ""
       },
       {
         "id": 2018,
@@ -12940,7 +13206,8 @@ object DataFixtures {
         "type": "Đại từ",
         "exampleSentence": "そっちは 危ないよ。",
         "exampleSentenceReading": "そっちは あぶないよ。",
-        "exampleSentenceMeaning": "Phía đó nguy hiểm đấy."
+        "exampleSentenceMeaning": "Phía đó nguy hiểm đấy.",
+        "dictionaryForm": ""
       },
       {
         "id": 2019,
@@ -12952,7 +13219,8 @@ object DataFixtures {
         "type": "Đại từ",
         "exampleSentence": "あっちへ 行こう。",
         "exampleSentenceReading": "あっちへ いこう。",
-        "exampleSentenceMeaning": "Cùng sang đằng kia đi."
+        "exampleSentenceMeaning": "Cùng sang đằng kia đi.",
+        "dictionaryForm": ""
       },
       {
         "id": 2020,
@@ -12964,7 +13232,8 @@ object DataFixtures {
         "type": "Nghi vấn từ",
         "exampleSentence": "どっちが 好き？",
         "exampleSentenceReading": "どっちが すき？",
-        "exampleSentenceMeaning": "Cậu thích cái nào hơn?"
+        "exampleSentenceMeaning": "Cậu thích cái nào hơn?",
+        "dictionaryForm": ""
       },
       {
         "id": 2021,
@@ -12976,19 +13245,8 @@ object DataFixtures {
         "type": "Thán từ",
         "exampleSentence": "うん、行くよ。",
         "exampleSentenceReading": "うん、いくよ。",
-        "exampleSentenceMeaning": "Ừ, đi chứ."
-      },
-      {
-        "id": 2022,
-        "word": "サラリーマン",
-        "reading": "さらりーまん",
-        "romaji": "sarariiman",
-        "meaning": "Người làm công ăn lương",
-        "hanViet": "",
-        "type": "Danh từ",
-        "exampleSentence": "彼は サラリーマンだ。",
-        "exampleSentenceReading": "かれは さらりーまんだ。",
-        "exampleSentenceMeaning": "Anh ấy là nhân viên làm công."
+        "exampleSentenceMeaning": "Ừ, đi chứ.",
+        "dictionaryForm": ""
       }
     ],
     "grammarPoints": [
@@ -13034,7 +13292,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "明日は 雨が 降ると 思います。",
         "exampleSentenceReading": "あしたは あめが ふると おもいます。",
-        "exampleSentenceMeaning": "Tôi nghĩ ngày mai trời sẽ mưa."
+        "exampleSentenceMeaning": "Tôi nghĩ ngày mai trời sẽ mưa.",
+        "dictionaryForm": "思う (おもう)"
       },
       {
         "id": 2102,
@@ -13046,7 +13305,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "先生は テストがあると 言いました。",
         "exampleSentenceReading": "せんせいは てすとがあると いいました。",
-        "exampleSentenceMeaning": "Thầy giáo nói là có bài kiểm tra."
+        "exampleSentenceMeaning": "Thầy giáo nói là có bài kiểm tra.",
+        "dictionaryForm": "言う (いう)"
       },
       {
         "id": 2103,
@@ -13058,7 +13318,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "日本チームが 勝ちました。",
         "exampleSentenceReading": "にほんちーむが かちました。",
-        "exampleSentenceMeaning": "Đội tuyển Nhật Bản đã thắng."
+        "exampleSentenceMeaning": "Đội tuyển Nhật Bản đã thắng.",
+        "dictionaryForm": "勝つ (かつ)"
       },
       {
         "id": 2104,
@@ -13070,7 +13331,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "試合に 負けました。",
         "exampleSentenceReading": "しあいに まけました。",
-        "exampleSentenceMeaning": "Đã thua trong trận đấu."
+        "exampleSentenceMeaning": "Đã thua trong trận đấu.",
+        "dictionaryForm": "負ける (まける)"
       },
       {
         "id": 2105,
@@ -13082,7 +13344,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "この本は とても 役に立ちます。",
         "exampleSentenceReading": "このほんは とても やくにたちます。",
-        "exampleSentenceMeaning": "Quyển sách này rất hữu ích."
+        "exampleSentenceMeaning": "Quyển sách này rất hữu ích.",
+        "dictionaryForm": "役に立つ (やくにたつ)"
       },
       {
         "id": 2106,
@@ -13094,7 +13357,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "機械が 動きます。",
         "exampleSentenceReading": "きかいが うごきます。",
-        "exampleSentenceMeaning": "Máy móc đang vận hành."
+        "exampleSentenceMeaning": "Máy móc đang vận hành.",
+        "dictionaryForm": "動く (うごく)"
       },
       {
         "id": 2107,
@@ -13106,7 +13370,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "会社を やめます。",
         "exampleSentenceReading": "かいしゃを やめます。",
-        "exampleSentenceMeaning": "Tôi thôi việc ở công ty."
+        "exampleSentenceMeaning": "Tôi thôi việc ở công ty.",
+        "dictionaryForm": "やめる"
       },
       {
         "id": 2108,
@@ -13118,7 +13383,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "車に 気をつけてください。",
         "exampleSentenceReading": "くるまに きをつけてください。",
-        "exampleSentenceMeaning": "Hãy cẩn thận xe ô tô."
+        "exampleSentenceMeaning": "Hãy cẩn thận xe ô tô.",
+        "dictionaryForm": "気をつける (きをつける)"
       },
       {
         "id": 2109,
@@ -13130,7 +13396,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "日本へ 留学します。",
         "exampleSentenceReading": "にほんへ りゅうがくします。",
-        "exampleSentenceMeaning": "Tôi đi du học Nhật Bản."
+        "exampleSentenceMeaning": "Tôi đi du học Nhật Bản.",
+        "dictionaryForm": "留学する (りゅうがくする)"
       },
       {
         "id": 2110,
@@ -13142,7 +13409,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "時間を むだに しないでください。",
         "exampleSentenceReading": "じかんを むだに しないでください。",
-        "exampleSentenceMeaning": "Xin đừng lãng phí thời gian."
+        "exampleSentenceMeaning": "Xin đừng lãng phí thời gian.",
+        "dictionaryForm": ""
       },
       {
         "id": 2111,
@@ -13154,7 +13422,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "ここは 交通が 不便です。",
         "exampleSentenceReading": "ここは こうつうが ふべんです。",
-        "exampleSentenceMeaning": "Giao thông ở đây bất tiện."
+        "exampleSentenceMeaning": "Giao thông ở đây bất tiện.",
+        "dictionaryForm": ""
       },
       {
         "id": 2112,
@@ -13166,7 +13435,8 @@ object DataFixtures {
         "type": "Tính từ -na",
         "exampleSentence": "同じ 服を 買いました。",
         "exampleSentenceReading": "おなじ ふくを かいました。",
-        "exampleSentenceMeaning": "Tôi mua bộ đồ giống bạn."
+        "exampleSentenceMeaning": "Tôi mua bộ đồ giống bạn.",
+        "dictionaryForm": ""
       },
       {
         "id": 2113,
@@ -13178,7 +13448,8 @@ object DataFixtures {
         "type": "Tính từ -i",
         "exampleSentence": "日本語が とても 上手ですね。すごいです！",
         "exampleSentenceReading": "にほんごが とても じょうずですね。すごいです！",
-        "exampleSentenceMeaning": "Tiếng Nhật của bạn giỏi quá. Siêu thật!"
+        "exampleSentenceMeaning": "Tiếng Nhật của bạn giỏi quá. Siêu thật!",
+        "dictionaryForm": ""
       },
       {
         "id": 2114,
@@ -13190,7 +13461,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "日本の 首相が スピーチを します。",
         "exampleSentenceReading": "にほんの しゅしょうが すぴーちを します。",
-        "exampleSentenceMeaning": "Thủ tướng Nhật phát biểu."
+        "exampleSentenceMeaning": "Thủ tướng Nhật phát biểu.",
+        "dictionaryForm": ""
       },
       {
         "id": 2115,
@@ -13202,7 +13474,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "アメリカの 大統領です。",
         "exampleSentenceReading": "あめりかの だいとうりょうです。",
-        "exampleSentenceMeaning": "Là tổng thống Mỹ."
+        "exampleSentenceMeaning": "Là tổng thống Mỹ.",
+        "dictionaryForm": ""
       },
       {
         "id": 2116,
@@ -13214,7 +13487,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "政治の ニュースを 見ます。",
         "exampleSentenceReading": "せいじの にゅーすを みます。",
-        "exampleSentenceMeaning": "Tôi xem tin tức chính trị."
+        "exampleSentenceMeaning": "Tôi xem tin tức chính trị.",
+        "dictionaryForm": ""
       },
       {
         "id": 2117,
@@ -13226,7 +13500,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "毎晩 ニュースを 見ます。",
         "exampleSentenceReading": "まいばん にゅーすを みます。",
-        "exampleSentenceMeaning": "Mỗi tối tôi xem thời sự."
+        "exampleSentenceMeaning": "Mỗi tối tôi xem thời sự.",
+        "dictionaryForm": ""
       },
       {
         "id": 2118,
@@ -13238,7 +13513,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "スピーチを します。",
         "exampleSentenceReading": "すぴーちを します。",
-        "exampleSentenceMeaning": "Tôi đọc bài phát biểu."
+        "exampleSentenceMeaning": "Tôi đọc bài phát biểu.",
+        "dictionaryForm": ""
       },
       {
         "id": 2119,
@@ -13250,7 +13526,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "サッカーの 試合を 見ました。",
         "exampleSentenceReading": "さっかーの しあいを みました。",
-        "exampleSentenceMeaning": "Tôi đã xem trận bóng đá."
+        "exampleSentenceMeaning": "Tôi đã xem trận bóng đá.",
+        "dictionaryForm": ""
       },
       {
         "id": 2120,
@@ -13262,7 +13539,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "自分の 意見を 言います。",
         "exampleSentenceReading": "じぶんの いけんを いいます。",
-        "exampleSentenceMeaning": "Tôi nói ra ý kiến của mình."
+        "exampleSentenceMeaning": "Tôi nói ra ý kiến của mình.",
+        "dictionaryForm": ""
       },
       {
         "id": 2121,
@@ -13274,7 +13552,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "嘘を ついては いけません。",
         "exampleSentenceReading": "うそを ついては いけません。",
-        "exampleSentenceMeaning": "Không được nói dối."
+        "exampleSentenceMeaning": "Không được nói dối.",
+        "dictionaryForm": ""
       },
       {
         "id": 2122,
@@ -13286,7 +13565,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "東京は 交通が 便利です。",
         "exampleSentenceReading": "とうきょうは こうつうが べんりです。",
-        "exampleSentenceMeaning": "Giao thông Tokyo rất thuận tiện."
+        "exampleSentenceMeaning": "Giao thông Tokyo rất thuận tiện.",
+        "dictionaryForm": ""
       },
       {
         "id": 2123,
@@ -13298,7 +13578,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "朝の ラッシュは 大変です。",
         "exampleSentenceReading": "あさの らっしゅは たいへんです。",
-        "exampleSentenceMeaning": "Giờ cao điểm buổi sáng thật kinh khủng."
+        "exampleSentenceMeaning": "Giờ cao điểm buổi sáng thật kinh khủng.",
+        "dictionaryForm": ""
       },
       {
         "id": 2124,
@@ -13310,7 +13591,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "最近 とても 忙しいです。",
         "exampleSentenceReading": "さいきん とても いそがしいです。",
-        "exampleSentenceMeaning": "Dạo này tôi rất bận."
+        "exampleSentenceMeaning": "Dạo này tôi rất bận.",
+        "dictionaryForm": ""
       },
       {
         "id": 2125,
@@ -13322,7 +13604,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "たぶん 明日は 晴れでしょう。",
         "exampleSentenceReading": "たぶん あしたは はれでしょう。",
-        "exampleSentenceMeaning": "Có lẽ ngày mai trời sẽ nắng."
+        "exampleSentenceMeaning": "Có lẽ ngày mai trời sẽ nắng.",
+        "dictionaryForm": ""
       },
       {
         "id": 2126,
@@ -13334,7 +13617,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "きっと 合格しますよ。",
         "exampleSentenceReading": "きっと ごうかくしますよ。",
-        "exampleSentenceMeaning": "Chắc chắn bạn sẽ đỗ thôi."
+        "exampleSentenceMeaning": "Chắc chắn bạn sẽ đỗ thôi.",
+        "dictionaryForm": ""
       },
       {
         "id": 2127,
@@ -13346,7 +13630,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "本当に ありがとうございます。",
         "exampleSentenceReading": "ほんとうに ありがとうございます。",
-        "exampleSentenceMeaning": "Thật sự cảm ơn bạn rất nhiều."
+        "exampleSentenceMeaning": "Thật sự cảm ơn bạn rất nhiều.",
+        "dictionaryForm": ""
       }
     ],
     "grammarPoints": [
@@ -13404,7 +13689,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "シャツを 着ます。",
         "exampleSentenceReading": "しゃつを きます。",
-        "exampleSentenceMeaning": "Tôi mặc áo sơ mi."
+        "exampleSentenceMeaning": "Tôi mặc áo sơ mi.",
+        "dictionaryForm": "着る (きる)"
       },
       {
         "id": 2202,
@@ -13416,7 +13702,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "靴を 履きます。",
         "exampleSentenceReading": "くつを はきます。",
-        "exampleSentenceMeaning": "Tôi xỏ giày."
+        "exampleSentenceMeaning": "Tôi xỏ giày.",
+        "dictionaryForm": "履く (はく)"
       },
       {
         "id": 2203,
@@ -13428,7 +13715,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "帽子を かぶります。",
         "exampleSentenceReading": "ぼうしを かぶります。",
-        "exampleSentenceMeaning": "Tôi đội mũ."
+        "exampleSentenceMeaning": "Tôi đội mũ.",
+        "dictionaryForm": "かぶる"
       },
       {
         "id": 2204,
@@ -13440,7 +13728,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "眼鏡を かけます。",
         "exampleSentenceReading": "めがねを かけます。",
-        "exampleSentenceMeaning": "Tôi đeo kính mắt."
+        "exampleSentenceMeaning": "Tôi đeo kính mắt.",
+        "dictionaryForm": "かける"
       },
       {
         "id": 2205,
@@ -13452,7 +13741,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "ネクタイを します。",
         "exampleSentenceReading": "ねくたいを します。",
-        "exampleSentenceMeaning": "Tôi thắt cà vạt."
+        "exampleSentenceMeaning": "Tôi thắt cà vạt.",
+        "dictionaryForm": "する"
       },
       {
         "id": 2206,
@@ -13464,7 +13754,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "1998年に 生まれました。",
         "exampleSentenceReading": "1998ねんに うまれました。",
-        "exampleSentenceMeaning": "Tôi sinh năm 1998."
+        "exampleSentenceMeaning": "Tôi sinh năm 1998.",
+        "dictionaryForm": "生まれる (うまれる)"
       },
       {
         "id": 2207,
@@ -13476,7 +13767,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "冬は コートを 着ます。",
         "exampleSentenceReading": "ふゆは こーとを きます。",
-        "exampleSentenceMeaning": "Mùa đông tôi mặc áo khoác dài."
+        "exampleSentenceMeaning": "Mùa đông tôi mặc áo khoác dài.",
+        "dictionaryForm": ""
       },
       {
         "id": 2208,
@@ -13488,7 +13780,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "面接で スーツを 着ます。",
         "exampleSentenceReading": "めんせつで すーつを きます。",
-        "exampleSentenceMeaning": "Tôi mặc vest đi phỏng vấn."
+        "exampleSentenceMeaning": "Tôi mặc vest đi phỏng vấn.",
+        "dictionaryForm": ""
       },
       {
         "id": 2209,
@@ -13500,7 +13793,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "暖かい セーターを 買いました。",
         "exampleSentenceReading": "あたたかい せーたーを かいました。",
-        "exampleSentenceMeaning": "Tôi mua áo len ấm áp."
+        "exampleSentenceMeaning": "Tôi mua áo len ấm áp.",
+        "dictionaryForm": ""
       },
       {
         "id": 2210,
@@ -13512,7 +13806,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "かわいい 帽子ですね。",
         "exampleSentenceReading": "かわいい ぼうしですね。",
-        "exampleSentenceMeaning": "Chiếc mũ xinh xắn ghê."
+        "exampleSentenceMeaning": "Chiếc mũ xinh xắn ghê.",
+        "dictionaryForm": ""
       },
       {
         "id": 2211,
@@ -13524,7 +13819,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "眼鏡を 探しています。",
         "exampleSentenceReading": "めがねを さがしています。",
-        "exampleSentenceMeaning": "Tôi đang tìm kính mắt."
+        "exampleSentenceMeaning": "Tôi đang tìm kính mắt.",
+        "dictionaryForm": ""
       },
       {
         "id": 2212,
@@ -13536,7 +13832,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "誕生日ケーキを 作ります。",
         "exampleSentenceReading": "たんじょうびけーきを つくります。",
-        "exampleSentenceMeaning": "Tôi làm bánh kem sinh nhật."
+        "exampleSentenceMeaning": "Tôi làm bánh kem sinh nhật.",
+        "dictionaryForm": ""
       },
       {
         "id": 2213,
@@ -13548,7 +13845,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "毎日 お弁当を 作ります。",
         "exampleSentenceReading": "まいにち おべんとうを つくります。",
-        "exampleSentenceMeaning": "Mỗi ngày tôi đều làm cơm hộp."
+        "exampleSentenceMeaning": "Mỗi ngày tôi đều làm cơm hộp.",
+        "dictionaryForm": ""
       },
       {
         "id": 2214,
@@ -13560,7 +13858,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "明日の 都合は どうですか。",
         "exampleSentenceReading": "あしたの つごうは どうですか。",
-        "exampleSentenceMeaning": "Thời gian ngày mai của bạn có tiện không?"
+        "exampleSentenceMeaning": "Thời gian ngày mai của bạn có tiện không?",
+        "dictionaryForm": ""
       },
       {
         "id": 2215,
@@ -13572,7 +13871,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "あの喫茶店へ よく 行きます。",
         "exampleSentenceReading": "あのきっさてんへ よく いきます。",
-        "exampleSentenceMeaning": "Tôi hay ghé quán cà phê kia."
+        "exampleSentenceMeaning": "Tôi hay ghé quán cà phê kia.",
+        "dictionaryForm": ""
       },
       {
         "id": 2216,
@@ -13584,7 +13884,8 @@ object DataFixtures {
         "type": "Thán từ",
         "exampleSentence": "えーと、何時でしたっけ。",
         "exampleSentenceReading": "えーと、なんじでしたっけ。",
-        "exampleSentenceMeaning": "Ừm... lúc mấy giờ nhỉ."
+        "exampleSentenceMeaning": "Ừm... lúc mấy giờ nhỉ.",
+        "dictionaryForm": ""
       },
       {
         "id": 2217,
@@ -13596,7 +13897,8 @@ object DataFixtures {
         "type": "Chào hỏi",
         "exampleSentence": "お誕生日 おめでとうございます！",
         "exampleSentenceReading": "おたんじょうび おめでとうございます！",
-        "exampleSentenceMeaning": "Chúc mừng sinh nhật bạn!"
+        "exampleSentenceMeaning": "Chúc mừng sinh nhật bạn!",
+        "dictionaryForm": ""
       },
       {
         "id": 2218,
@@ -13608,7 +13910,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "家賃は 1か月 6万円です。",
         "exampleSentenceReading": "やちんは いっかげつ ろくまんえんです。",
-        "exampleSentenceMeaning": "Tiền thuê nhà 1 tháng là 6 vạn Yên."
+        "exampleSentenceMeaning": "Tiền thuê nhà 1 tháng là 6 vạn Yên.",
+        "dictionaryForm": ""
       },
       {
         "id": 2219,
@@ -13620,7 +13923,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "和室で 布団を 敷きます。",
         "exampleSentenceReading": "わしつで ふとんを しきます。",
-        "exampleSentenceMeaning": "Trải đệm nằm trong phòng kiểu Nhật."
+        "exampleSentenceMeaning": "Trải đệm nằm trong phòng kiểu Nhật.",
+        "dictionaryForm": ""
       },
       {
         "id": 2220,
@@ -13632,7 +13936,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "押し入れに 布団を 入れます。",
         "exampleSentenceReading": "おしいれに ふとんを いれます。",
-        "exampleSentenceMeaning": "Cất đệm vào tủ âm tường."
+        "exampleSentenceMeaning": "Cất đệm vào tủ âm tường.",
+        "dictionaryForm": ""
       },
       {
         "id": 2221,
@@ -13644,43 +13949,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "暖かい 布団で 寝ます。",
         "exampleSentenceReading": "あたたかい ふとんで ねます。",
-        "exampleSentenceMeaning": "Ngủ trong chăn đệm ấm áp."
-      },
-      {
-        "id": 2222,
-        "word": "コート",
-        "reading": "こーと",
-        "romaji": "kooto",
-        "meaning": "Áo khoác",
-        "hanViet": "",
-        "type": "Danh từ",
-        "exampleSentence": "暖かい コートを 着ます。",
-        "exampleSentenceReading": "あたたかい こーとを きます。",
-        "exampleSentenceMeaning": "Mặc áo khoác ấm."
-      },
-      {
-        "id": 2223,
-        "word": "スーツ",
-        "reading": "すーつ",
-        "romaji": "suutsu",
-        "meaning": "Bộ com-lê",
-        "hanViet": "",
-        "type": "Danh từ",
-        "exampleSentence": "スーツを 買いました。",
-        "exampleSentenceReading": "すーつを かいました。",
-        "exampleSentenceMeaning": "Đã mua bộ com-lê."
-      },
-      {
-        "id": 2224,
-        "word": "セーター",
-        "reading": "せーたー",
-        "romaji": "seetaa",
-        "meaning": "Áo len",
-        "hanViet": "",
-        "type": "Danh từ",
-        "exampleSentence": "母が 編んだ セーターです。",
-        "exampleSentenceReading": "ははが あんだ せーたーです。",
-        "exampleSentenceMeaning": "Chiếc áo len do mẹ đan."
+        "exampleSentenceMeaning": "Ngủ trong chăn đệm ấm áp.",
+        "dictionaryForm": ""
       }
     ],
     "grammarPoints": [
@@ -13719,7 +13989,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "先生に 聞いてください。",
         "exampleSentenceReading": "せんせいに きいてください。",
-        "exampleSentenceMeaning": "Xin hãy hỏi thầy giáo."
+        "exampleSentenceMeaning": "Xin hãy hỏi thầy giáo.",
+        "dictionaryForm": "聞く (きく)"
       },
       {
         "id": 2302,
@@ -13731,7 +14002,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "つまみを 右へ 回します。",
         "exampleSentenceReading": "つまみを みぎへ まわします。",
-        "exampleSentenceMeaning": "Vặn núm sang phải."
+        "exampleSentenceMeaning": "Vặn núm sang phải.",
+        "dictionaryForm": "回す (まわす)"
       },
       {
         "id": 2303,
@@ -13743,7 +14015,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "ドアを 引いてください。",
         "exampleSentenceReading": "どあを ひいてください。",
-        "exampleSentenceMeaning": "Xin hãy kéo cửa ra."
+        "exampleSentenceMeaning": "Xin hãy kéo cửa ra.",
+        "dictionaryForm": "引く (ひく)"
       },
       {
         "id": 2304,
@@ -13755,7 +14028,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "時間を 変えます。",
         "exampleSentenceReading": "じかんを かえます。",
-        "exampleSentenceMeaning": "Tôi đổi giờ hẹn."
+        "exampleSentenceMeaning": "Tôi đổi giờ hẹn.",
+        "dictionaryForm": "変える (かえる)"
       },
       {
         "id": 2305,
@@ -13767,7 +14041,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "機械に 触らないでください。",
         "exampleSentenceReading": "きかいに さわらないでください。",
-        "exampleSentenceMeaning": "Xin đừng chạm vào máy móc."
+        "exampleSentenceMeaning": "Xin đừng chạm vào máy móc.",
+        "dictionaryForm": "触る (さわる)"
       },
       {
         "id": 2306,
@@ -13776,10 +14051,11 @@ object DataFixtures {
         "romaji": "demasu",
         "meaning": "Chảy ra (tiền thừa, nước [が])",
         "hanViet": "Xuất",
-        "type": "Động từ nhóm 1",
+        "type": "Động từ nhóm 2",
         "exampleSentence": "おつりが 出ます。",
         "exampleSentenceReading": "おつりが でます。",
-        "exampleSentenceMeaning": "Tiền thối tiền thừa chạy ra."
+        "exampleSentenceMeaning": "Tiền thối tiền thừa chạy ra.",
+        "dictionaryForm": "出る (でる)"
       },
       {
         "id": 2307,
@@ -13791,7 +14067,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "時計が 動きません。",
         "exampleSentenceReading": "とけいが うごきません。",
-        "exampleSentenceMeaning": "Đồng hồ không chạy."
+        "exampleSentenceMeaning": "Đồng hồ không chạy.",
+        "dictionaryForm": "動く (うごく)"
       },
       {
         "id": 2308,
@@ -13803,7 +14080,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "道を 歩きます。",
         "exampleSentenceReading": "みちを あるきます。",
-        "exampleSentenceMeaning": "Tôi đi bộ trên đường phố."
+        "exampleSentenceMeaning": "Tôi đi bộ trên đường phố.",
+        "dictionaryForm": "歩く (あるく)"
       },
       {
         "id": 2309,
@@ -13815,7 +14093,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "橋を 渡ります。",
         "exampleSentenceReading": "はしを わたりまします。",
-        "exampleSentenceMeaning": "Tôi băng qua cầu."
+        "exampleSentenceMeaning": "Tôi băng qua cầu.",
+        "dictionaryForm": "渡る (わたる)"
       },
       {
         "id": 2310,
@@ -13827,7 +14106,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "車に 気をつけて 渡ります。",
         "exampleSentenceReading": "くるまに きをつけて わたります。",
-        "exampleSentenceMeaning": "Cẩn thận xe cộ khi qua đường."
+        "exampleSentenceMeaning": "Cẩn thận xe cộ khi qua đường.",
+        "dictionaryForm": "気をつける (きをつける)"
       },
       {
         "id": 2311,
@@ -13839,7 +14119,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "来月 引っ越しします。",
         "exampleSentenceReading": "らいげつ ひっこしします。",
-        "exampleSentenceMeaning": "Tháng sau tôi chuyển nhà."
+        "exampleSentenceMeaning": "Tháng sau tôi chuyển nhà.",
+        "dictionaryForm": "引っ越しする (ひっこしする)"
       },
       {
         "id": 2312,
@@ -13851,7 +14132,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "電気屋で 洗濯機を 買います。",
         "exampleSentenceReading": "でんきやで せんたくきを かいます。",
-        "exampleSentenceMeaning": "Mua máy giặt ở tiệm điện máy."
+        "exampleSentenceMeaning": "Mua máy giặt ở tiệm điện máy.",
+        "dictionaryForm": ""
       },
       {
         "id": 2313,
@@ -13863,7 +14145,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "テレビの 音を 大きくします。",
         "exampleSentenceReading": "てれびの おとを おおきくします。",
-        "exampleSentenceMeaning": "Mở to âm thanh tivi."
+        "exampleSentenceMeaning": "Mở to âm thanh tivi.",
+        "dictionaryForm": ""
       },
       {
         "id": 2314,
@@ -13875,7 +14158,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "この機械の 使い方を 教えてください。",
         "exampleSentenceReading": "このきかいの つかいかたを おしえてください。",
-        "exampleSentenceMeaning": "Chỉ cho tôi cách dùng máy này với."
+        "exampleSentenceMeaning": "Chỉ cho tôi cách dùng máy này với.",
+        "dictionaryForm": ""
       },
       {
         "id": 2315,
@@ -13887,7 +14171,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "音の つまみを 回します。",
         "exampleSentenceReading": "おとの つまみを まわします。",
-        "exampleSentenceMeaning": "Vặn núm chỉnh âm lượng."
+        "exampleSentenceMeaning": "Vặn núm chỉnh âm lượng.",
+        "dictionaryForm": ""
       },
       {
         "id": 2316,
@@ -13899,7 +14184,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "エレベーターが 故障しました。",
         "exampleSentenceReading": "えれべーたーが こしょうしました。",
-        "exampleSentenceMeaning": "Thang máy đã bị hỏng."
+        "exampleSentenceMeaning": "Thang máy đã bị hỏng.",
+        "dictionaryForm": ""
       },
       {
         "id": 2317,
@@ -13911,7 +14197,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "道を まっすぐ 行きます。",
         "exampleSentenceReading": "みちを まっすぐ いきます。",
-        "exampleSentenceMeaning": "Đi thẳng theo con đường này."
+        "exampleSentenceMeaning": "Đi thẳng theo con đường này.",
+        "dictionaryForm": ""
       },
       {
         "id": 2318,
@@ -13923,7 +14210,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "次の 交差点を 右へ 曲がります。",
         "exampleSentenceReading": "つぎの こうさてんを みぎへ まがります。",
-        "exampleSentenceMeaning": "Rẽ phải ở ngã tư tiếp theo."
+        "exampleSentenceMeaning": "Rẽ phải ở ngã tư tiếp theo.",
+        "dictionaryForm": ""
       },
       {
         "id": 2319,
@@ -13935,7 +14223,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "信号が 赤に なりました。",
         "exampleSentenceReading": "しんごうが あかに なりました。",
-        "exampleSentenceMeaning": "Đèn tín hiệu đã chuyển sang đỏ."
+        "exampleSentenceMeaning": "Đèn tín hiệu đã chuyển sang đỏ.",
+        "dictionaryForm": ""
       },
       {
         "id": 2320,
@@ -13947,7 +14236,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "角を 左へ 曲がります。",
         "exampleSentenceReading": "かどを ひだりへ まがります。",
-        "exampleSentenceMeaning": "Rẽ trái ở khúc quanh."
+        "exampleSentenceMeaning": "Rẽ trái ở khúc quanh.",
+        "dictionaryForm": ""
       },
       {
         "id": 2321,
@@ -13959,7 +14249,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "大きな 橋を 渡ります。",
         "exampleSentenceReading": "おおきな はしを わたりまします。",
-        "exampleSentenceMeaning": "Băng qua cây cầu lớn."
+        "exampleSentenceMeaning": "Băng qua cây cầu lớn.",
+        "dictionaryForm": ""
       },
       {
         "id": 2322,
@@ -13971,7 +14262,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "駐車場は どこですか。",
         "exampleSentenceReading": "ちゅうしゃじょうは どこですか。",
-        "exampleSentenceMeaning": "Bãi đỗ xe ở đâu thế?"
+        "exampleSentenceMeaning": "Bãi đỗ xe ở đâu thế?",
+        "dictionaryForm": ""
       },
       {
         "id": 2323,
@@ -13983,7 +14275,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "高い 建物が 並んでいます。",
         "exampleSentenceReading": "たかい たてものが ならんでいます。",
-        "exampleSentenceMeaning": "Những tòa nhà cao tầng san sát nhau."
+        "exampleSentenceMeaning": "Những tòa nhà cao tầng san sát nhau.",
+        "dictionaryForm": ""
       },
       {
         "id": 2324,
@@ -13992,10 +14285,11 @@ object DataFixtures {
         "romaji": "magarimasu",
         "meaning": "Rẽ (phải, trái)",
         "hanViet": "Khúc",
-        "type": "Động từ",
+        "type": "Động từ nhóm 1",
         "exampleSentence": "右へ 曲がります。",
         "exampleSentenceReading": "みぎへ まがります。",
-        "exampleSentenceMeaning": "Rẽ sang phải."
+        "exampleSentenceMeaning": "Rẽ sang phải.",
+        "dictionaryForm": "曲がる (まがる)"
       }
     ],
     "grammarPoints": [
@@ -14051,7 +14345,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "佐藤さんが 花を くれました。",
         "exampleSentenceReading": "さとうさんが はなを くれました。",
-        "exampleSentenceMeaning": "Chị Sato đã tặng hoa cho tôi."
+        "exampleSentenceMeaning": "Chị Sato đã tặng hoa cho tôi.",
+        "dictionaryForm": "くれる"
       },
       {
         "id": 2402,
@@ -14063,7 +14358,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "時計を 直してくれました。",
         "exampleSentenceReading": "とけいを なおしてくれました。",
-        "exampleSentenceMeaning": "Anh ấy sửa đồng hồ giúp tôi."
+        "exampleSentenceMeaning": "Anh ấy sửa đồng hồ giúp tôi.",
+        "dictionaryForm": "直す (なおす)"
       },
       {
         "id": 2403,
@@ -14075,7 +14371,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "子どもを 公園へ 連れて行きます。",
         "exampleSentenceReading": "こどもを こうえんへ つれていきます。",
-        "exampleSentenceMeaning": "Tôi dắt con đi công viên."
+        "exampleSentenceMeaning": "Tôi dắt con đi công viên.",
+        "dictionaryForm": "連れて行く (つれていく)"
       },
       {
         "id": 2404,
@@ -14087,7 +14384,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "友達を うちへ 連れて来ました。",
         "exampleSentenceReading": "ともだちを うちへ つれてきました。",
-        "exampleSentenceMeaning": "Tôi dẫn bạn về nhà chơi."
+        "exampleSentenceMeaning": "Tôi dẫn bạn về nhà chơi.",
+        "dictionaryForm": "連れて来る (つれてくる)"
       },
       {
         "id": 2405,
@@ -14099,7 +14397,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "駅まで 車で 送ります。",
         "exampleSentenceReading": "えきまで くるまで おくります。",
-        "exampleSentenceMeaning": "Tôi lái xe chở tiễn bạn ra ga."
+        "exampleSentenceMeaning": "Tôi lái xe chở tiễn bạn ra ga.",
+        "dictionaryForm": "送る (おくる)"
       },
       {
         "id": 2406,
@@ -14111,7 +14410,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "友達を 先生に 紹介します。",
         "exampleSentenceReading": "ともだちを せんせいに しょうかいします。",
-        "exampleSentenceMeaning": "Tôi giới thiệu bạn với thầy giáo."
+        "exampleSentenceMeaning": "Tôi giới thiệu bạn với thầy giáo.",
+        "dictionaryForm": "紹介する (しょうかいする)"
       },
       {
         "id": 2407,
@@ -14123,7 +14423,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "町を 案内します。",
         "exampleSentenceReading": "まちを あんないします。",
-        "exampleSentenceMeaning": "Tôi hướng dẫn bạn tham quan thành phố."
+        "exampleSentenceMeaning": "Tôi hướng dẫn bạn tham quan thành phố.",
+        "dictionaryForm": "案内する (あんないする)"
       },
       {
         "id": 2408,
@@ -14135,7 +14436,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "使い方を 説明します。",
         "exampleSentenceReading": "つかいかたを せつめいします。",
-        "exampleSentenceMeaning": "Tôi giải thích cách sử dụng."
+        "exampleSentenceMeaning": "Tôi giải thích cách sử dụng.",
+        "dictionaryForm": "説明する (せつめいする)"
       },
       {
         "id": 2409,
@@ -14147,7 +14449,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "おじいさんは 毎朝 散歩します。",
         "exampleSentenceReading": "おじいさんは まいあさ さんぽします。",
-        "exampleSentenceMeaning": "Ông tôi mỗi sáng đều đi dạo."
+        "exampleSentenceMeaning": "Ông tôi mỗi sáng đều đi dạo.",
+        "dictionaryForm": ""
       },
       {
         "id": 2410,
@@ -14159,7 +14462,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "おばあさんは 親切です。",
         "exampleSentenceReading": "おばあさんは しんせつです。",
-        "exampleSentenceMeaning": "Bà tôi rất hiền từ."
+        "exampleSentenceMeaning": "Bà tôi rất hiền từ.",
+        "dictionaryForm": ""
       },
       {
         "id": 2411,
@@ -14171,7 +14475,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "旅行の 準備を します。",
         "exampleSentenceReading": "りょこうの じゅんびを します。",
-        "exampleSentenceMeaning": "Tôi chuẩn bị cho chuyến du lịch."
+        "exampleSentenceMeaning": "Tôi chuẩn bị cho chuyến du lịch.",
+        "dictionaryForm": ""
       },
       {
         "id": 2412,
@@ -14183,7 +14488,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "引っ越しの 手伝いを します。",
         "exampleSentenceReading": "ひっこしの てつだいを します。",
-        "exampleSentenceMeaning": "Tôi giúp đỡ việc chuyển nhà."
+        "exampleSentenceMeaning": "Tôi giúp đỡ việc chuyển nhà.",
+        "dictionaryForm": ""
       },
       {
         "id": 2413,
@@ -14195,7 +14501,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "おいしい お菓子を 買いました。",
         "exampleSentenceReading": "おいしい おかしを かいました。",
-        "exampleSentenceMeaning": "Tôi đã mua bánh kẹo ngon."
+        "exampleSentenceMeaning": "Tôi đã mua bánh kẹo ngon.",
+        "dictionaryForm": ""
       },
       {
         "id": 2414,
@@ -14207,7 +14514,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "夏休みに ホームステイを します。",
         "exampleSentenceReading": "なつやすみに ほーむすていを します。",
-        "exampleSentenceMeaning": "Kỳ nghỉ hè tôi ở homestay."
+        "exampleSentenceMeaning": "Kỳ nghỉ hè tôi ở homestay.",
+        "dictionaryForm": ""
       },
       {
         "id": 2415,
@@ -14219,7 +14527,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "宿題を 全部 終わりました。",
         "exampleSentenceReading": "しゅくだいを ぜんぶ おわりました。",
-        "exampleSentenceMeaning": "Tôi đã làm xong toàn bộ bài tập."
+        "exampleSentenceMeaning": "Tôi đã làm xong toàn bộ bài tập.",
+        "dictionaryForm": ""
       },
       {
         "id": 2416,
@@ -14231,7 +14540,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "自分で 料理を 作ります。",
         "exampleSentenceReading": "じぶんで りょうりを つくります。",
-        "exampleSentenceMeaning": "Tôi tự mình nấu ăn."
+        "exampleSentenceMeaning": "Tôi tự mình nấu ăn.",
+        "dictionaryForm": ""
       }
     ],
     "grammarPoints": [
@@ -14289,7 +14599,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "よく 考えてください。",
         "exampleSentenceReading": "よく かんがえてください。",
-        "exampleSentenceMeaning": "Hãy suy nghĩ cho kỹ nhé."
+        "exampleSentenceMeaning": "Hãy suy nghĩ cho kỹ nhé.",
+        "dictionaryForm": "考える (かんがえる)"
       },
       {
         "id": 2502,
@@ -14301,7 +14612,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "7時に 駅に 着きます。",
         "exampleSentenceReading": "しちじに えきに つきます。",
-        "exampleSentenceMeaning": "Tôi đến ga lúc 7 giờ."
+        "exampleSentenceMeaning": "Tôi đến ga lúc 7 giờ.",
+        "dictionaryForm": "着く (つく)"
       },
       {
         "id": 2503,
@@ -14313,7 +14625,8 @@ object DataFixtures {
         "type": "Động từ nhóm 3",
         "exampleSentence": "来年 日本へ 留学します。",
         "exampleSentenceReading": "らいねん にほんへ りゅうがくします。",
-        "exampleSentenceMeaning": "Năm sau tôi đi du học Nhật."
+        "exampleSentenceMeaning": "Năm sau tôi đi du học Nhật.",
+        "dictionaryForm": "留学する (りゅうがくする)"
       },
       {
         "id": 2504,
@@ -14325,7 +14638,8 @@ object DataFixtures {
         "type": "Động từ nhóm 1",
         "exampleSentence": "年を 取ったら、田舎に 住みたいです。",
         "exampleSentenceReading": "としを とったら、いなかにつみたいです。",
-        "exampleSentenceMeaning": "Khi về già, tôi muốn sống ở quê."
+        "exampleSentenceMeaning": "Khi về già, tôi muốn sống ở quê.",
+        "dictionaryForm": "年を取る (としをとる)"
       },
       {
         "id": 2505,
@@ -14337,7 +14651,8 @@ object DataFixtures {
         "type": "Động từ nhóm 2",
         "exampleSentence": "時間が 足りません。",
         "exampleSentenceReading": "じかんが たりません。",
-        "exampleSentenceMeaning": "Không đủ thời gian."
+        "exampleSentenceMeaning": "Không đủ thời gian.",
+        "dictionaryForm": "足りる (たりる)"
       },
       {
         "id": 2506,
@@ -14349,7 +14664,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "わたしの 田舎は 静かです。",
         "exampleSentenceReading": "わたしの いなかは しずかです。",
-        "exampleSentenceMeaning": "Quê tôi rất yên bình."
+        "exampleSentenceMeaning": "Quê tôi rất yên bình.",
+        "dictionaryForm": ""
       },
       {
         "id": 2507,
@@ -14361,7 +14677,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "留学の チャンスが あります。",
         "exampleSentenceReading": "りゅうがくの ちゃんすが あります。",
-        "exampleSentenceMeaning": "Có cơ hội đi du học."
+        "exampleSentenceMeaning": "Có cơ hội đi du học.",
+        "dictionaryForm": ""
       },
       {
         "id": 2508,
@@ -14373,7 +14690,8 @@ object DataFixtures {
         "type": "Số từ",
         "exampleSentence": "宝くじで 1億円 当たりました。",
         "exampleSentenceReading": "たからくじで いちおくえん あたりました。",
-        "exampleSentenceMeaning": "Trúng xổ số 100 triệu Yên."
+        "exampleSentenceMeaning": "Trúng xổ số 100 triệu Yên.",
+        "dictionaryForm": ""
       },
       {
         "id": 2509,
@@ -14385,7 +14703,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "もし 雨が 降ったら、行きません。",
         "exampleSentenceReading": "もし あめが ふったら、いきません。",
-        "exampleSentenceMeaning": "Nếu trời mưa thì tôi sẽ không đi."
+        "exampleSentenceMeaning": "Nếu trời mưa thì tôi sẽ không đi.",
+        "dictionaryForm": ""
       },
       {
         "id": 2510,
@@ -14397,7 +14716,8 @@ object DataFixtures {
         "type": "Phó từ",
         "exampleSentence": "いくら 考えても、わかりません。",
         "exampleSentenceReading": "いくら かんがえても、わかりません。",
-        "exampleSentenceMeaning": "Dù suy nghĩ bao nhiêu cũng không hiểu."
+        "exampleSentenceMeaning": "Dù suy nghĩ bao nhiêu cũng không hiểu.",
+        "dictionaryForm": ""
       },
       {
         "id": 2511,
@@ -14409,7 +14729,8 @@ object DataFixtures {
         "type": "Danh từ",
         "exampleSentence": "東京へ 転勤に なりました。",
         "exampleSentenceReading": "とうきょうへ てんきんに なりました。",
-        "exampleSentenceMeaning": "Tôi được điều chuyển công tác lên Tokyo."
+        "exampleSentenceMeaning": "Tôi được điều chuyển công tác lên Tokyo.",
+        "dictionaryForm": ""
       },
       {
         "id": 2512,
@@ -14421,7 +14742,8 @@ object DataFixtures {
         "type": "Giao tiếp",
         "exampleSentence": "仕事の あと、一杯 飲みましょう。",
         "exampleSentenceReading": "しごとの あと、いっぱい のみましょう。",
-        "exampleSentenceMeaning": "Sau giờ làm cùng làm một ly nhé."
+        "exampleSentenceMeaning": "Sau giờ làm cùng làm một ly nhé.",
+        "dictionaryForm": ""
       },
       {
         "id": 2513,
@@ -14433,7 +14755,8 @@ object DataFixtures {
         "type": "Chào hỏi",
         "exampleSentence": "今まで どうも お世話になりました。",
         "exampleSentenceReading": "いままで どうも おせわになりました。",
-        "exampleSentenceMeaning": "Thời gian qua thật lòng cảm ơn vì đã giúp đỡ tôi."
+        "exampleSentenceMeaning": "Thời gian qua thật lòng cảm ơn vì đã giúp đỡ tôi.",
+        "dictionaryForm": ""
       },
       {
         "id": 2514,
@@ -14445,7 +14768,8 @@ object DataFixtures {
         "type": "Chào hỏi",
         "exampleSentence": "試験、頑張ってください！",
         "exampleSentenceReading": "しけん、がんばってください！",
-        "exampleSentenceMeaning": "Kỳ thi hãy cố gắng lên nhé!"
+        "exampleSentenceMeaning": "Kỳ thi hãy cố gắng lên nhé!",
+        "dictionaryForm": ""
       },
       {
         "id": 2515,
@@ -14457,19 +14781,8 @@ object DataFixtures {
         "type": "Chào hỏi",
         "exampleSentence": "お体に 気をつけて、どうぞお元気で。",
         "exampleSentenceReading": "おからだに きをつけて、どうぞおげんきで。",
-        "exampleSentenceMeaning": "Giữ gìn sức khỏe, chúc bạn luôn bình an nhé."
-      },
-      {
-        "id": 2516,
-        "word": "チャンス",
-        "reading": "ちゃんす",
-        "romaji": "chansu",
-        "meaning": "Cơ hội",
-        "hanViet": "",
-        "type": "Danh từ",
-        "exampleSentence": "チャンスが あったら、行きたいです。",
-        "exampleSentenceReading": "ちゃんすが あったら、いきたいです。",
-        "exampleSentenceMeaning": "Nếu có cơ hội tôi muốn đi."
+        "exampleSentenceMeaning": "Giữ gìn sức khỏe, chúc bạn luôn bình an nhé.",
+        "dictionaryForm": ""
       }
     ],
     "grammarPoints": [
