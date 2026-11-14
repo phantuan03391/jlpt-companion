@@ -8,6 +8,8 @@ if [ -z "$JAVA_HOME" ]; then
     fi
 fi
 
+export NODE_OPTIONS="--max-old-space-size=4096"
+
 echo "🚀 [1/2] Building Web application..."
 ./gradlew :webApp:jsBrowserDistribution
 
