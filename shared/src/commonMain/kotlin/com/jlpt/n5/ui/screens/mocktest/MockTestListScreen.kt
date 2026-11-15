@@ -1,14 +1,19 @@
 package com.jlpt.n5.ui.screens.mocktest
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Headphones
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -27,8 +32,20 @@ fun MockTestListScreen(
     listState: LazyListState = rememberLazyListState(),
     onStartExam: (String) -> Unit
 ) {
-    val tests = viewModel.tests
+    val allTests = viewModel.tests
     val history = viewModel.history
+    var selectedFilter by remember { mutableStateOf(0) } // 0: All, 1: Full 3-skill, 2: Listening only
+
+    val fullTestsCount = remember(allTests) { allTests.count { !it.id.startsWith("test_listening") } }
+    val listeningTestsCount = remember(allTests) { allTests.count { it.id.startsWith("test_listening") } }
+
+    val filteredTests = remember(allTests, selectedFilter) {
+        when (selectedFilter) {
+            1 -> allTests.filter { !it.id.startsWith("test_listening") }
+            2 -> allTests.filter { it.id.startsWith("test_listening") }
+            else -> allTests
+        }
+    }
 
     Column(
         modifier = Modifier
@@ -43,12 +60,48 @@ fun MockTestListScreen(
             color = MaterialTheme.colors.textPrimary
         )
         Text(
-            text = "Bộ đề thi chuẩn cấu trúc đề thi chính thức N5 (45 phút, 180 điểm)",
+            text = "Bộ đề thi đầy đủ 3 kỹ năng (Từ vựng • Ngữ pháp - Đọc hiểu • 🎧 Nghe hiểu Choukai)",
             fontSize = 13.sp,
             color = MaterialTheme.colors.textSecondary
         )
 
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(12.dp))
+
+        // Filter Chips
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .horizontalScroll(rememberScrollState()),
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            val filters = listOf(
+                "Tất cả (${allTests.size})",
+                "Đề tổng hợp 3 kỹ năng ($fullTestsCount)",
+                "🎧 Đề chuyên Nghe ($listeningTestsCount)"
+            )
+            filters.forEachIndexed { index, label ->
+                val isSelected = selectedFilter == index
+                Box(
+                    modifier = Modifier
+                        .clip(RoundedCornerShape(20.dp))
+                        .background(
+                            if (isSelected) MaterialTheme.colors.toriiAccent
+                            else MaterialTheme.colors.surfaceContainer
+                        )
+                        .clickable { selectedFilter = index }
+                        .padding(horizontal = 14.dp, vertical = 8.dp)
+                ) {
+                    Text(
+                        text = label,
+                        fontSize = 12.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = if (isSelected) Color.White else MaterialTheme.colors.textSecondary
+                    )
+                }
+            }
+        }
+
+        Spacer(modifier = Modifier.height(14.dp))
 
         // History Summary if any
         if (history.isNotEmpty()) {
@@ -76,7 +129,7 @@ fun MockTestListScreen(
                         horizontalArrangement = Arrangement.SpaceBetween,
                         verticalAlignment = Alignment.CenterVertically
                     ) {
-                        Column {
+                        Column(modifier = Modifier.weight(1f)) {
                             Text(
                                 text = res.testTitle,
                                 fontSize = 13.sp,
@@ -89,6 +142,8 @@ fun MockTestListScreen(
                                 color = MaterialTheme.colors.textMuted
                             )
                         }
+
+                        Spacer(modifier = Modifier.width(8.dp))
 
                         Box(
                             modifier = Modifier
@@ -107,11 +162,11 @@ fun MockTestListScreen(
                 }
             }
 
-            Spacer(modifier = Modifier.height(12.dp))
+            Spacer(modifier = Modifier.height(8.dp))
         }
 
         Text(
-            text = "Danh sách đề thi",
+            text = "Danh sách đề thi (${filteredTests.size})",
             fontSize = 15.sp,
             fontWeight = FontWeight.Bold,
             color = MaterialTheme.colors.textPrimary
@@ -125,11 +180,22 @@ fun MockTestListScreen(
             contentPadding = PaddingValues(bottom = 24.dp)
         ) {
             items(
-                items = tests,
+                items = filteredTests,
                 key = { it.id }
             ) { test ->
+                val vocabCount = test.questions.count { it.section.contains("文字") }
+                val grammarCount = test.questions.count { it.section.contains("文法") }
+                val listeningCount = test.questions.count { it.audioScript.isNotEmpty() || it.section.contains("聴解") }
+                val isListeningOnly = test.id.startsWith("test_listening")
+
                 Card(
-                    modifier = Modifier.fillMaxWidth(),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .border(
+                            width = if (isListeningOnly) 1.5.dp else 0.dp,
+                            color = if (isListeningOnly) MaterialTheme.colors.toriiAccent.copy(alpha = 0.35f) else Color.Transparent,
+                            shape = RoundedCornerShape(16.dp)
+                        ),
                     shape = RoundedCornerShape(16.dp),
                     backgroundColor = MaterialTheme.colors.cardBackground,
                     elevation = 1.dp
@@ -138,14 +204,17 @@ fun MockTestListScreen(
                         Row(
                             modifier = Modifier.fillMaxWidth(),
                             horizontalArrangement = Arrangement.SpaceBetween,
-                            verticalAlignment = Alignment.CenterVertically
+                            verticalAlignment = Alignment.Top
                         ) {
                             Text(
                                 text = test.title,
                                 fontSize = 16.sp,
                                 fontWeight = FontWeight.Bold,
-                                color = MaterialTheme.colors.toriiAccent
+                                color = MaterialTheme.colors.toriiAccent,
+                                modifier = Modifier.weight(1f)
                             )
+
+                            Spacer(modifier = Modifier.width(8.dp))
 
                             JapaneseBadge(
                                 text = "${test.durationMinutes} PHÚT",
@@ -159,8 +228,42 @@ fun MockTestListScreen(
                         Text(
                             text = test.description,
                             fontSize = 13.sp,
-                            color = MaterialTheme.colors.textSecondary
+                            color = MaterialTheme.colors.textSecondary,
+                            lineHeight = 18.sp
                         )
+
+                        Spacer(modifier = Modifier.height(10.dp))
+
+                        // Section Breakdown Pills
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .horizontalScroll(rememberScrollState()),
+                            horizontalArrangement = Arrangement.spacedBy(6.dp),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            if (vocabCount > 0) {
+                                JapaneseBadge(
+                                    text = "Từ vựng・Kanji: $vocabCount câu",
+                                    backgroundColor = MaterialTheme.colors.surfaceContainer,
+                                    textColor = MaterialTheme.colors.textSecondary
+                                )
+                            }
+                            if (grammarCount > 0) {
+                                JapaneseBadge(
+                                    text = "Ngữ pháp・Đọc: $grammarCount câu",
+                                    backgroundColor = MaterialTheme.colors.surfaceContainer,
+                                    textColor = MaterialTheme.colors.textSecondary
+                                )
+                            }
+                            if (listeningCount > 0) {
+                                JapaneseBadge(
+                                    text = "🎧 Nghe hiểu: $listeningCount câu",
+                                    backgroundColor = MaterialTheme.colors.toriiBg,
+                                    textColor = MaterialTheme.colors.toriiAccent
+                                )
+                            }
+                        }
 
                         Spacer(modifier = Modifier.height(12.dp))
 
@@ -170,8 +273,9 @@ fun MockTestListScreen(
                             verticalAlignment = Alignment.CenterVertically
                         ) {
                             Text(
-                                text = "${test.questions.size} câu hỏi • Điểm đỗ: ${test.passScore}/180",
+                                text = "Tổng: ${test.questions.size} câu • Điểm đỗ: ${test.passScore}/180",
                                 fontSize = 12.sp,
+                                fontWeight = FontWeight.Medium,
                                 color = MaterialTheme.colors.textMuted
                             )
 
@@ -181,8 +285,17 @@ fun MockTestListScreen(
                                 colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.toriiAccent),
                                 contentPadding = PaddingValues(horizontal = 16.dp, vertical = 6.dp)
                             ) {
+                                if (isListeningOnly) {
+                                    Icon(
+                                        imageVector = Icons.Filled.Headphones,
+                                        contentDescription = null,
+                                        tint = Color.White,
+                                        modifier = Modifier.size(15.dp)
+                                    )
+                                    Spacer(modifier = Modifier.width(6.dp))
+                                }
                                 Text(
-                                    text = "Bắt đầu thi",
+                                    text = if (isListeningOnly) "Thi Nghe" else "Bắt đầu thi",
                                     fontSize = 13.sp,
                                     fontWeight = FontWeight.Bold,
                                     color = Color.White

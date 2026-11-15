@@ -1,6 +1,7 @@
 package com.jlpt.n5.ui.screens.mocktest
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -9,6 +10,7 @@ import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -18,6 +20,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.jlpt.n5.data.JLPTRepository
+import com.jlpt.n5.tts.LocalTTS
 import com.jlpt.n5.ui.theme.*
 
 @Composable
@@ -32,6 +35,13 @@ fun MockTestResultScreen(
     onBackToList: () -> Unit
 ) {
     val test = remember(testId) { JLPTRepository.getMockTest(testId) }
+    val tts = LocalTTS.current
+
+    DisposableEffect(Unit) {
+        onDispose {
+            tts.stop()
+        }
+    }
 
     LazyColumn(
         modifier = Modifier
@@ -95,10 +105,64 @@ fun MockTestResultScreen(
             }
         }
 
+        // Section Breakdown Card
+        if (test != null) {
+            item {
+                val sections = remember(test.questions, userAnswers) {
+                    test.questions.groupBy { it.section }.map { (secName, qs) ->
+                        val secCorrect = qs.count { userAnswers[it.id] == it.correctIndex }
+                        Triple(secName, secCorrect, qs.size)
+                    }
+                }
+
+                Card(
+                    modifier = Modifier.fillMaxWidth(),
+                    shape = RoundedCornerShape(14.dp),
+                    backgroundColor = MaterialTheme.colors.cardBackground,
+                    elevation = 1.dp
+                ) {
+                    Column(modifier = Modifier.padding(14.dp)) {
+                        Text(
+                            text = "Kết quả theo từng phần thi",
+                            fontSize = 14.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colors.textPrimary
+                        )
+                        Spacer(modifier = Modifier.height(8.dp))
+                        sections.forEach { (secName, secCorrect, secTotal) ->
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(vertical = 4.dp),
+                                horizontalArrangement = Arrangement.SpaceBetween,
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Text(
+                                    text = secName,
+                                    fontSize = 13.sp,
+                                    color = MaterialTheme.colors.textSecondary,
+                                    modifier = Modifier.weight(1f)
+                                )
+                                Text(
+                                    text = "Đúng $secCorrect/$secTotal câu",
+                                    fontSize = 13.sp,
+                                    fontWeight = FontWeight.Bold,
+                                    color = if (secCorrect * 2 >= secTotal) MaterialTheme.colors.matchaAccent else MaterialTheme.colors.toriiAccent
+                                )
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         // Action Return Button
         item {
             Button(
-                onClick = onBackToList,
+                onClick = {
+                    tts.stop()
+                    onBackToList()
+                },
                 modifier = Modifier.fillMaxWidth(),
                 shape = RoundedCornerShape(12.dp),
                 colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.toriiAccent)
@@ -138,8 +202,11 @@ fun MockTestResultScreen(
                                 text = "Câu ${q.id}: ${q.category}",
                                 fontSize = 12.sp,
                                 fontWeight = FontWeight.Bold,
-                                color = MaterialTheme.colors.toriiAccent
+                                color = MaterialTheme.colors.toriiAccent,
+                                modifier = Modifier.weight(1f)
                             )
+
+                            Spacer(modifier = Modifier.width(8.dp))
 
                             Box(
                                 modifier = Modifier
@@ -162,7 +229,8 @@ fun MockTestResultScreen(
                             text = q.question,
                             fontSize = 14.sp,
                             fontWeight = FontWeight.SemiBold,
-                            color = MaterialTheme.colors.textPrimary
+                            color = MaterialTheme.colors.textPrimary,
+                            lineHeight = 20.sp
                         )
 
                         Spacer(modifier = Modifier.height(8.dp))
@@ -205,6 +273,71 @@ fun MockTestResultScreen(
                                         contentDescription = "Bạn chọn sai",
                                         tint = MaterialTheme.colors.toriiAccent,
                                         modifier = Modifier.size(16.dp)
+                                    )
+                                }
+                            }
+                        }
+
+                        // Audio Script Transcript Box for Listening Questions
+                        if (q.audioScript.isNotEmpty()) {
+                            Spacer(modifier = Modifier.height(8.dp))
+                            Box(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .background(MaterialTheme.colors.toriiBg, RoundedCornerShape(8.dp))
+                                    .padding(10.dp)
+                            ) {
+                                Column {
+                                    Row(
+                                        modifier = Modifier.fillMaxWidth(),
+                                        horizontalArrangement = Arrangement.SpaceBetween,
+                                        verticalAlignment = Alignment.CenterVertically
+                                    ) {
+                                        Row(verticalAlignment = Alignment.CenterVertically) {
+                                            Icon(
+                                                imageVector = Icons.Filled.Headphones,
+                                                contentDescription = null,
+                                                tint = MaterialTheme.colors.toriiAccent,
+                                                modifier = Modifier.size(15.dp)
+                                            )
+                                            Spacer(modifier = Modifier.width(4.dp))
+                                            Text(
+                                                text = "Lời thoại bài nghe (スクリプト):",
+                                                fontSize = 12.sp,
+                                                fontWeight = FontWeight.Bold,
+                                                color = MaterialTheme.colors.toriiAccent
+                                            )
+                                        }
+
+                                        Row(
+                                            modifier = Modifier
+                                                .clip(RoundedCornerShape(6.dp))
+                                                .background(MaterialTheme.colors.toriiAccent)
+                                                .clickable { tts.speak(q.audioScript) }
+                                                .padding(horizontal = 8.dp, vertical = 4.dp),
+                                            verticalAlignment = Alignment.CenterVertically
+                                        ) {
+                                            Icon(
+                                                imageVector = Icons.Filled.VolumeUp,
+                                                contentDescription = "Nghe lại",
+                                                tint = Color.White,
+                                                modifier = Modifier.size(13.dp)
+                                            )
+                                            Spacer(modifier = Modifier.width(4.dp))
+                                            Text(
+                                                text = "Nghe lại",
+                                                fontSize = 11.sp,
+                                                fontWeight = FontWeight.Bold,
+                                                color = Color.White
+                                            )
+                                        }
+                                    }
+                                    Spacer(modifier = Modifier.height(4.dp))
+                                    Text(
+                                        text = q.audioScript,
+                                        fontSize = 12.sp,
+                                        color = MaterialTheme.colors.textPrimary,
+                                        lineHeight = 18.sp
                                     )
                                 }
                             }

@@ -80,7 +80,8 @@ data class TestQuestion(
     val question: String,
     val options: List<String>,
     val correctIndex: Int,
-    val explanation: String
+    val explanation: String,
+    val audioScript: String = ""
 )
 
 enum class FlashcardType {
