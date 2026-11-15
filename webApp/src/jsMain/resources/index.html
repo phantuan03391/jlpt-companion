@@ -39,22 +39,21 @@
     <script src="webApp.js"></script>
     <script>
         // Touch-to-Wheel Adapter for iOS WebKit (Safari, Cốc Cốc iOS, Chrome iOS) & Mobile Browsers
-        // Attached to `window` and dynamically queries `#ComposeTarget` because ComposeWindow
-        // clones and replaces the <canvas> node in the DOM on every window resize event.
+        // - Attached to `window` + dynamic `#ComposeTarget` lookup to survive ComposeWindow resize canvas cloning
+        // - Scales scroll deltas by `window.devicePixelRatio` for true 1:1 finger tracking on Retina (2x/3x) screens
+        // - Uses a 90ms sliding-window velocity tracker & frame-time (dt) independent iOS UIScrollView decay
         (function() {
             var touchStartX = 0;
             var touchStartY = 0;
             var lastTouchX = 0;
             var lastTouchY = 0;
-            var lastTouchTime = 0;
-            var velocityY = 0;
-            var velocityX = 0;
+            var lastMoveTime = 0;
             var isMoved = false;
             var hadTouchMove = false;
-            var activeTouchId = null;
             var justStoppedMomentum = false;
             var momentumAnimId = null;
-            var SLOP = 6; // movement threshold (px) to distinguish tap from scroll
+            var samples = []; // { x, y, t } ring buffer for jitter-free velocity tracking
+            var SLOP = 5;     // movement threshold (CSS px) to distinguish tap from scroll
 
             function getActiveCanvas() {
                 return document.getElementById('ComposeTarget') || document.querySelector('canvas');
@@ -67,6 +66,15 @@
                     return true;
                 }
                 return false;
+            }
+
+            function recordSample(x, y, t) {
+                samples.push({ x: x, y: y, t: t });
+                // Keep only samples within the last 90ms
+                var cutoff = t - 90;
+                while (samples.length > 2 && samples[0].t < cutoff) {
+                    samples.shift();
+                }
             }
 
             function dispatchMouse(type, clientX, clientY) {
@@ -97,17 +105,20 @@
                 var canvas = getActiveCanvas();
                 if (!canvas) return;
 
+                var dpr = window.devicePixelRatio || 1;
                 var rect = canvas.getBoundingClientRect();
                 var offsetX = clientX - rect.left;
                 var offsetY = clientY - rect.top;
 
+                // Multiply delta by devicePixelRatio because Compose Web's SkiaLayer scales
+                // canvas coordinates by devicePixelRatio but leaves WheelEvent delta unscaled.
                 var wheelEv = new WheelEvent('wheel', {
                     clientX: clientX,
                     clientY: clientY,
                     screenX: clientX,
                     screenY: clientY,
-                    deltaX: deltaX,
-                    deltaY: deltaY,
+                    deltaX: deltaX * dpr,
+                    deltaY: deltaY * dpr,
                     deltaMode: 0,
                     bubbles: true,
                     cancelable: true,
@@ -125,16 +136,16 @@
                 justStoppedMomentum = stopMomentum();
 
                 var touch = e.touches[0];
-                activeTouchId = touch.identifier;
+                var now = performance.now();
                 touchStartX = touch.clientX;
                 touchStartY = touch.clientY;
                 lastTouchX = touch.clientX;
                 lastTouchY = touch.clientY;
-                lastTouchTime = performance.now();
-                velocityY = 0;
-                velocityX = 0;
+                lastMoveTime = now;
                 isMoved = false;
                 hadTouchMove = false;
+                samples.length = 0;
+                recordSample(touch.clientX, touch.clientY, now);
             }, { passive: false, capture: true });
 
             window.addEventListener('touchmove', function(e) {
@@ -142,10 +153,6 @@
                 hadTouchMove = true;
                 var touch = e.touches[0];
                 var now = performance.now();
-                var dt = Math.max(1, now - lastTouchTime);
-
-                var totalDistX = Math.abs(touch.clientX - touchStartX);
-                var totalDistY = Math.abs(touch.clientY - touchStartY);
 
                 // Always prevent default on touchmove in iOS WKWebView (Cốc Cốc / Chrome / Safari)
                 // so native pull-to-refresh / rubber-banding does not hijack the touch stream
@@ -153,26 +160,28 @@
                     e.preventDefault();
                 }
 
+                var totalDistX = Math.abs(touch.clientX - touchStartX);
+                var totalDistY = Math.abs(touch.clientY - touchStartY);
+
                 if (!isMoved && (totalDistX > SLOP || totalDistY > SLOP)) {
                     isMoved = true;
+                    // Reset anchor to current position to avoid an initial jump when crossing SLOP
+                    lastTouchX = touch.clientX;
+                    lastTouchY = touch.clientY;
                 }
 
                 if (isMoved) {
                     var deltaX = lastTouchX - touch.clientX;
                     var deltaY = lastTouchY - touch.clientY;
-
-                    // Smooth velocity calculation (EMA filter)
-                    var instVy = deltaY / dt;
-                    velocityY = velocityY * 0.35 + instVy * 0.65;
-                    var instVx = deltaX / dt;
-                    velocityX = velocityX * 0.35 + instVx * 0.65;
-
-                    dispatchWheel(touch.clientX, touch.clientY, deltaX, deltaY);
+                    if (deltaX !== 0 || deltaY !== 0) {
+                        dispatchWheel(touch.clientX, touch.clientY, deltaX, deltaY);
+                    }
+                    recordSample(touch.clientX, touch.clientY, now);
                 }
 
                 lastTouchX = touch.clientX;
                 lastTouchY = touch.clientY;
-                lastTouchTime = now;
+                lastMoveTime = now;
             }, { passive: false, capture: true });
 
             window.addEventListener('touchend', function(e) {
@@ -193,7 +202,6 @@
                     dispatchMouse('mousedown', tapTouch.clientX, tapTouch.clientY);
                     dispatchMouse('mouseup', tapTouch.clientX, tapTouch.clientY);
                     hadTouchMove = false;
-                    activeTouchId = null;
                     return;
                 }
 
@@ -201,38 +209,72 @@
                     // Suppress synthetic mouse click at the end of a scroll drag
                     if (e.cancelable) e.preventDefault();
 
+                    var now = performance.now();
                     var touch = e.changedTouches[0];
                     var endX = touch.clientX;
                     var endY = touch.clientY;
+                    recordSample(endX, endY, now);
 
-                    // Natural iOS momentum flick deceleration
-                    var currentVy = velocityY * 16.0;
-                    var currentVx = velocityX * 16.0;
-                    currentVy = Math.max(-120, Math.min(120, currentVy));
-                    currentVx = Math.max(-120, Math.min(120, currentVx));
+                    // Only fling if the finger was still moving within the last 70ms before release
+                    if (now - lastMoveTime <= 70 && samples.length >= 2) {
+                        var first = samples[0];
+                        var last = samples[samples.length - 1];
+                        var dt = last.t - first.t;
 
-                    if (Math.abs(currentVy) > 1.0 || Math.abs(currentVx) > 1.0) {
-                        function momentumStep() {
-                            if (Math.abs(currentVy) < 0.4 && Math.abs(currentVx) < 0.4) {
-                                stopMomentum();
-                                return;
+                        if (dt >= 8) {
+                            // Velocity in CSS px per millisecond
+                            var vx = (first.x - last.x) / dt;
+                            var vy = (first.y - last.y) / dt;
+
+                            // Clamp max flick velocity (~4.5 CSS px/ms = 4500 px/s)
+                            var maxV = 4.5;
+                            vx = Math.max(-maxV, Math.min(maxV, vx));
+                            vy = Math.max(-maxV, Math.min(maxV, vy));
+
+                            // Lock to dominant axis if mostly vertical or horizontal
+                            if (Math.abs(vy) > Math.abs(vx) * 1.5) {
+                                vx = 0;
+                            } else if (Math.abs(vx) > Math.abs(vy) * 1.5) {
+                                vy = 0;
                             }
-                            dispatchWheel(endX, endY, currentVx, currentVy);
-                            currentVy *= 0.94; // standard iOS deceleration friction
-                            currentVx *= 0.94;
-                            momentumAnimId = requestAnimationFrame(momentumStep);
+
+                            if (Math.abs(vy) > 0.08 || Math.abs(vx) > 0.08) {
+                                var lastFrameTime = now;
+                                function momentumStep(frameTime) {
+                                    var frameDt = Math.min(34, Math.max(1, frameTime - lastFrameTime));
+                                    lastFrameTime = frameTime;
+
+                                    // iOS UIScrollView normal deceleration rate (0.9968 per ms)
+                                    var decay = Math.pow(0.9968, frameDt);
+                                    vx *= decay;
+                                    vy *= decay;
+
+                                    var stepX = vx * frameDt;
+                                    var stepY = vy * frameDt;
+
+                                    if (Math.abs(stepY) < 0.15 && Math.abs(stepX) < 0.15) {
+                                        stopMomentum();
+                                        return;
+                                    }
+
+                                    dispatchWheel(endX, endY, stepX, stepY);
+                                    momentumAnimId = requestAnimationFrame(momentumStep);
+                                }
+                                momentumAnimId = requestAnimationFrame(momentumStep);
+                            }
                         }
-                        momentumAnimId = requestAnimationFrame(momentumStep);
                     }
                 }
                 isMoved = false;
-                activeTouchId = null;
+                hadTouchMove = false;
+                samples.length = 0;
             }, { passive: false, capture: true });
 
             window.addEventListener('touchcancel', function() {
                 stopMomentum();
                 isMoved = false;
-                activeTouchId = null;
+                hadTouchMove = false;
+                samples.length = 0;
             }, { passive: false, capture: true });
         })();
     </script>
