@@ -49,6 +49,7 @@
             var lastTouchY = 0;
             var lastMoveTime = 0;
             var isMoved = false;
+            var gestureAxis = null; // 'y' or 'x' axis lock to prevent horizontal children from consuming vertical scrolls
             var hadTouchMove = false;
             var justStoppedMomentum = false;
             var momentumAnimId = null;
@@ -143,6 +144,7 @@
                 lastTouchY = touch.clientY;
                 lastMoveTime = now;
                 isMoved = false;
+                gestureAxis = null;
                 hadTouchMove = false;
                 samples.length = 0;
                 recordSample(touch.clientX, touch.clientY, now);
@@ -165,6 +167,8 @@
 
                 if (!isMoved && (totalDistX > SLOP || totalDistY > SLOP)) {
                     isMoved = true;
+                    // Lock axis immediately so horizontal rows/chips never consume vertical page scrolls
+                    gestureAxis = (totalDistY >= totalDistX * 0.75) ? 'y' : 'x';
                     // Reset anchor to current position to avoid an initial jump when crossing SLOP
                     lastTouchX = touch.clientX;
                     lastTouchY = touch.clientY;
@@ -173,6 +177,11 @@
                 if (isMoved) {
                     var deltaX = lastTouchX - touch.clientX;
                     var deltaY = lastTouchY - touch.clientY;
+                    if (gestureAxis === 'y') {
+                        deltaX = 0;
+                    } else if (gestureAxis === 'x') {
+                        deltaY = 0;
+                    }
                     if (deltaX !== 0 || deltaY !== 0) {
                         dispatchWheel(touch.clientX, touch.clientY, deltaX, deltaY);
                     }
@@ -231,10 +240,10 @@
                             vx = Math.max(-maxV, Math.min(maxV, vx));
                             vy = Math.max(-maxV, Math.min(maxV, vy));
 
-                            // Lock to dominant axis if mostly vertical or horizontal
-                            if (Math.abs(vy) > Math.abs(vx) * 1.5) {
+                            // Lock to gesture axis determined during touchmove
+                            if (gestureAxis === 'y' || Math.abs(vy) > Math.abs(vx) * 1.2) {
                                 vx = 0;
-                            } else if (Math.abs(vx) > Math.abs(vy) * 1.5) {
+                            } else if (gestureAxis === 'x' || Math.abs(vx) > Math.abs(vy) * 1.2) {
                                 vy = 0;
                             }
 
@@ -266,6 +275,7 @@
                     }
                 }
                 isMoved = false;
+                gestureAxis = null;
                 hadTouchMove = false;
                 samples.length = 0;
             }, { passive: false, capture: true });
@@ -273,6 +283,7 @@
             window.addEventListener('touchcancel', function() {
                 stopMomentum();
                 isMoved = false;
+                gestureAxis = null;
                 hadTouchMove = false;
                 samples.length = 0;
             }, { passive: false, capture: true });

@@ -3,15 +3,13 @@ package com.jlpt.n5.ui.screens.mocktest
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
@@ -28,6 +26,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.jlpt.n5.tts.LocalTTS
@@ -46,7 +45,7 @@ fun MockTestExamScreen(
     var showSubmitConfirm by remember { mutableStateOf(false) }
     val tts = LocalTTS.current
     val questionRowState = rememberLazyListState()
-    val contentScrollState = rememberScrollState()
+    val contentListState = rememberLazyListState()
 
     LaunchedEffect(testId) {
         viewModel.startExam(testId)
@@ -61,7 +60,7 @@ fun MockTestExamScreen(
     // Stop TTS & scroll question content to top when changing questions
     LaunchedEffect(examState.currentQuestionIndex) {
         tts.stop()
-        contentScrollState.scrollTo(0)
+        contentListState.scrollToItem(0)
         if (examState.currentQuestionIndex >= 0) {
             questionRowState.animateScrollToItem(examState.currentQuestionIndex)
         }
@@ -220,28 +219,31 @@ fun MockTestExamScreen(
                     Row(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .horizontalScroll(rememberScrollState())
                             .padding(horizontal = 16.dp, vertical = 4.dp),
-                        horizontalArrangement = Arrangement.spacedBy(8.dp)
+                        horizontalArrangement = Arrangement.spacedBy(6.dp)
                     ) {
                         sectionStartIndices.forEachIndexed { secIdx, (label, startIdx) ->
                             val nextStartIdx = sectionStartIndices.getOrNull(secIdx + 1)?.second ?: test.questions.size
                             val isActiveSection = currentQuestionIndex in startIdx until nextStartIdx
                             Box(
                                 modifier = Modifier
+                                    .weight(1f)
                                     .clip(RoundedCornerShape(10.dp))
                                     .background(
                                         if (isActiveSection) MaterialTheme.colors.toriiAccent
                                         else MaterialTheme.colors.surfaceContainer
                                     )
                                     .clickable { viewModel.jumpToQuestion(startIdx) }
-                                    .padding(horizontal = 10.dp, vertical = 5.dp)
+                                    .padding(horizontal = 6.dp, vertical = 6.dp),
+                                contentAlignment = Alignment.Center
                             ) {
                                 Text(
                                     text = label,
                                     fontSize = 11.sp,
                                     fontWeight = FontWeight.Bold,
-                                    color = if (isActiveSection) Color.White else MaterialTheme.colors.textSecondary
+                                    color = if (isActiveSection) Color.White else MaterialTheme.colors.textSecondary,
+                                    textAlign = TextAlign.Center,
+                                    maxLines = 1
                                 )
                             }
                         }
@@ -302,173 +304,173 @@ fun MockTestExamScreen(
         }
 
         if (currentQ != null) {
-            // Scrollable Question & Options Content
-            Column(
+            // Scrollable Question & Options Content using LazyColumn for reliable iOS touch scrolling
+            LazyColumn(
+                state = contentListState,
                 modifier = Modifier
                     .weight(1f)
-                    .fillMaxWidth()
-                    .verticalScroll(contentScrollState)
-                    .padding(16.dp)
+                    .fillMaxWidth(),
+                contentPadding = PaddingValues(16.dp),
+                verticalArrangement = Arrangement.spacedBy(10.dp)
             ) {
                 // Section & Category
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceBetween,
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    JapaneseBadge(
-                        text = currentQ.section,
-                        backgroundColor = MaterialTheme.colors.surfaceContainer,
-                        textColor = MaterialTheme.colors.toriiAccent
-                    )
-                    Text(
-                        text = currentQ.category,
-                        fontSize = 12.sp,
-                        fontWeight = FontWeight.Medium,
-                        color = MaterialTheme.colors.textMuted
-                    )
+                item {
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        JapaneseBadge(
+                            text = currentQ.section,
+                            backgroundColor = MaterialTheme.colors.surfaceContainer,
+                            textColor = MaterialTheme.colors.toriiAccent
+                        )
+                        Text(
+                            text = currentQ.category,
+                            fontSize = 12.sp,
+                            fontWeight = FontWeight.Medium,
+                            color = MaterialTheme.colors.textMuted
+                        )
+                    }
                 }
-
-                Spacer(modifier = Modifier.height(12.dp))
 
                 // Listening Audio Player Card (when question has audioScript)
                 if (currentQ.audioScript.isNotEmpty()) {
-                    Card(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .border(
-                                width = 1.5.dp,
-                                color = MaterialTheme.colors.toriiAccent.copy(alpha = 0.4f),
-                                shape = RoundedCornerShape(16.dp)
-                            ),
-                        shape = RoundedCornerShape(16.dp),
-                        backgroundColor = MaterialTheme.colors.toriiBg,
-                        elevation = 0.dp
-                    ) {
-                        Column(
+                    item {
+                        Card(
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .padding(14.dp)
+                                .border(
+                                    width = 1.5.dp,
+                                    color = MaterialTheme.colors.toriiAccent.copy(alpha = 0.4f),
+                                    shape = RoundedCornerShape(16.dp)
+                                ),
+                            shape = RoundedCornerShape(16.dp),
+                            backgroundColor = MaterialTheme.colors.toriiBg,
+                            elevation = 0.dp
                         ) {
-                            Row(
-                                verticalAlignment = Alignment.CenterVertically,
-                                horizontalArrangement = Arrangement.SpaceBetween,
-                                modifier = Modifier.fillMaxWidth()
+                            Column(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(14.dp)
                             ) {
-                                Row(verticalAlignment = Alignment.CenterVertically) {
-                                    Box(
-                                        modifier = Modifier
-                                            .size(36.dp)
-                                            .clip(CircleShape)
-                                            .background(MaterialTheme.colors.toriiAccent),
-                                        contentAlignment = Alignment.Center
+                                Row(
+                                    verticalAlignment = Alignment.CenterVertically,
+                                    horizontalArrangement = Arrangement.SpaceBetween,
+                                    modifier = Modifier.fillMaxWidth()
+                                ) {
+                                    Row(verticalAlignment = Alignment.CenterVertically) {
+                                        Box(
+                                            modifier = Modifier
+                                                .size(36.dp)
+                                                .clip(CircleShape)
+                                                .background(MaterialTheme.colors.toriiAccent),
+                                            contentAlignment = Alignment.Center
+                                        ) {
+                                            Icon(
+                                                imageVector = Icons.Filled.Headphones,
+                                                contentDescription = "Phần thi nghe",
+                                                tint = Color.White,
+                                                modifier = Modifier.size(20.dp)
+                                            )
+                                        }
+                                        Spacer(modifier = Modifier.width(10.dp))
+                                        Column {
+                                            Text(
+                                                text = "Phần thi Nghe hiểu (聴解 - Choukai)",
+                                                fontSize = 14.sp,
+                                                fontWeight = FontWeight.Bold,
+                                                color = MaterialTheme.colors.toriiAccent
+                                            )
+                                            Text(
+                                                text = "Bấm nút bên dưới để nghe đoạn hội thoại tiếng Nhật",
+                                                fontSize = 11.sp,
+                                                color = MaterialTheme.colors.textSecondary
+                                            )
+                                        }
+                                    }
+                                }
+
+                                Spacer(modifier = Modifier.height(12.dp))
+
+                                Row(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    horizontalArrangement = Arrangement.spacedBy(10.dp)
+                                ) {
+                                    Button(
+                                        onClick = { tts.speak(currentQ.audioScript) },
+                                        modifier = Modifier.weight(1f),
+                                        shape = RoundedCornerShape(10.dp),
+                                        colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.toriiAccent)
                                     ) {
                                         Icon(
-                                            imageVector = Icons.Filled.Headphones,
-                                            contentDescription = "Phần thi nghe",
+                                            imageVector = Icons.Filled.VolumeUp,
+                                            contentDescription = "Phát âm thanh",
                                             tint = Color.White,
-                                            modifier = Modifier.size(20.dp)
+                                            modifier = Modifier.size(18.dp)
                                         )
-                                    }
-                                    Spacer(modifier = Modifier.width(10.dp))
-                                    Column {
+                                        Spacer(modifier = Modifier.width(6.dp))
                                         Text(
-                                            text = "Phần thi Nghe hiểu (聴解 - Choukai)",
-                                            fontSize = 14.sp,
+                                            text = "Phát / Nghe lại bài nghe",
+                                            fontSize = 13.sp,
                                             fontWeight = FontWeight.Bold,
-                                            color = MaterialTheme.colors.toriiAccent
-                                        )
-                                        Text(
-                                            text = "Bấm nút bên dưới để nghe đoạn hội thoại tiếng Nhật",
-                                            fontSize = 11.sp,
-                                            color = MaterialTheme.colors.textSecondary
+                                            color = Color.White
                                         )
                                     }
-                                }
-                            }
 
-                            Spacer(modifier = Modifier.height(12.dp))
-
-                            Row(
-                                modifier = Modifier.fillMaxWidth(),
-                                horizontalArrangement = Arrangement.spacedBy(10.dp)
-                            ) {
-                                Button(
-                                    onClick = { tts.speak(currentQ.audioScript) },
-                                    modifier = Modifier.weight(1f),
-                                    shape = RoundedCornerShape(10.dp),
-                                    colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.toriiAccent)
-                                ) {
-                                    Icon(
-                                        imageVector = Icons.Filled.VolumeUp,
-                                        contentDescription = "Phát âm thanh",
-                                        tint = Color.White,
-                                        modifier = Modifier.size(18.dp)
-                                    )
-                                    Spacer(modifier = Modifier.width(6.dp))
-                                    Text(
-                                        text = "Phát / Nghe lại bài nghe",
-                                        fontSize = 13.sp,
-                                        fontWeight = FontWeight.Bold,
-                                        color = Color.White
-                                    )
-                                }
-
-                                OutlinedButton(
-                                    onClick = { tts.stop() },
-                                    shape = RoundedCornerShape(10.dp),
-                                    colors = ButtonDefaults.outlinedButtonColors(
-                                        backgroundColor = MaterialTheme.colors.cardBackground
-                                    )
-                                ) {
-                                    Icon(
-                                        imageVector = Icons.Filled.Stop,
-                                        contentDescription = "Dừng",
-                                        tint = MaterialTheme.colors.textPrimary,
-                                        modifier = Modifier.size(16.dp)
-                                    )
-                                    Spacer(modifier = Modifier.width(4.dp))
-                                    Text(
-                                        text = "Dừng",
-                                        fontSize = 12.sp,
-                                        fontWeight = FontWeight.SemiBold,
-                                        color = MaterialTheme.colors.textPrimary
-                                    )
+                                    OutlinedButton(
+                                        onClick = { tts.stop() },
+                                        shape = RoundedCornerShape(10.dp),
+                                        colors = ButtonDefaults.outlinedButtonColors(
+                                            backgroundColor = MaterialTheme.colors.cardBackground
+                                        )
+                                    ) {
+                                        Icon(
+                                            imageVector = Icons.Filled.Stop,
+                                            contentDescription = "Dừng",
+                                            tint = MaterialTheme.colors.textPrimary,
+                                            modifier = Modifier.size(16.dp)
+                                        )
+                                        Spacer(modifier = Modifier.width(4.dp))
+                                        Text(
+                                            text = "Dừng",
+                                            fontSize = 12.sp,
+                                            fontWeight = FontWeight.SemiBold,
+                                            color = MaterialTheme.colors.textPrimary
+                                        )
+                                    }
                                 }
                             }
                         }
                     }
-
-                    Spacer(modifier = Modifier.height(12.dp))
                 }
 
                 // Question Box
-                Card(
-                    modifier = Modifier.fillMaxWidth(),
-                    shape = RoundedCornerShape(16.dp),
-                    backgroundColor = MaterialTheme.colors.cardBackground,
-                    elevation = 1.dp
-                ) {
-                    Text(
-                        text = currentQ.question,
-                        fontSize = 16.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = MaterialTheme.colors.textPrimary,
-                        modifier = Modifier.padding(16.dp),
-                        lineHeight = 24.sp
-                    )
+                item {
+                    Card(
+                        modifier = Modifier.fillMaxWidth(),
+                        shape = RoundedCornerShape(16.dp),
+                        backgroundColor = MaterialTheme.colors.cardBackground,
+                        elevation = 1.dp
+                    ) {
+                        Text(
+                            text = currentQ.question,
+                            fontSize = 16.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colors.textPrimary,
+                            modifier = Modifier.padding(16.dp),
+                            lineHeight = 24.sp
+                        )
+                    }
                 }
 
-                Spacer(modifier = Modifier.height(14.dp))
-
                 // Options
-                currentQ.options.forEachIndexed { optIndex, optionText ->
+                itemsIndexed(currentQ.options) { optIndex, optionText ->
                     val isSelected = userAnswers[currentQ.id] == optIndex
 
                     Card(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(vertical = 4.dp)
                             .clip(RoundedCornerShape(12.dp))
                             .border(
                                 width = if (isSelected) 2.dp else 1.dp,
