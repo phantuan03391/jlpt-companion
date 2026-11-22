@@ -52,7 +52,7 @@ fun KanjiExplorerScreen(
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Column {
+            Column(modifier = Modifier.weight(1f)) {
                 Text(
                     text = "104 Hán Tự Kanji N5",
                     fontSize = 22.sp,
@@ -65,6 +65,8 @@ fun KanjiExplorerScreen(
                     color = MaterialTheme.colors.textSecondary
                 )
             }
+
+            Spacer(modifier = Modifier.width(12.dp))
 
             Button(
                 onClick = {
@@ -87,7 +89,9 @@ fun KanjiExplorerScreen(
                         "Ôn thẻ",
                         fontSize = 12.sp,
                         fontWeight = FontWeight.Bold,
-                        color = androidx.compose.ui.graphics.Color.White
+                        color = androidx.compose.ui.graphics.Color.White,
+                        maxLines = 1,
+                        softWrap = false
                     )
                 }
             }

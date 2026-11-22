@@ -96,7 +96,7 @@ fun App(fontFamily: FontFamily? = null) {
                                 ) {
                                     BottomNavigationItem(
                                         icon = { Icon(Icons.Default.Home, contentDescription = "Trang chủ", modifier = Modifier.size(22.dp)) },
-                                        label = { Text("Trang chủ", fontSize = 10.sp, fontWeight = FontWeight.Bold) },
+                                        label = { Text("Trang chủ", fontSize = 10.sp, fontWeight = FontWeight.Bold, maxLines = 1, softWrap = false) },
                                         selected = currentTab == AppTab.HOME,
                                         selectedContentColor = MaterialTheme.colors.toriiAccent,
                                         unselectedContentColor = MaterialTheme.colors.textMuted,
@@ -105,7 +105,7 @@ fun App(fontFamily: FontFamily? = null) {
 
                                     BottomNavigationItem(
                                         icon = { Icon(Icons.Default.List, contentDescription = "25 Bài Minna", modifier = Modifier.size(22.dp)) },
-                                        label = { Text("25 Bài Minna", fontSize = 10.sp, fontWeight = FontWeight.Bold) },
+                                        label = { Text("25 Bài Minna", fontSize = 10.sp, fontWeight = FontWeight.Bold, maxLines = 1, softWrap = false) },
                                         selected = currentTab == AppTab.LESSONS,
                                         selectedContentColor = MaterialTheme.colors.toriiAccent,
                                         unselectedContentColor = MaterialTheme.colors.textMuted,
@@ -114,7 +114,7 @@ fun App(fontFamily: FontFamily? = null) {
 
                                     BottomNavigationItem(
                                         icon = { Icon(Icons.Default.Star, contentDescription = "Flashcards", modifier = Modifier.size(22.dp)) },
-                                        label = { Text("Flashcards", fontSize = 10.sp, fontWeight = FontWeight.Bold) },
+                                        label = { Text("Flashcards", fontSize = 10.sp, fontWeight = FontWeight.Bold, maxLines = 1, softWrap = false) },
                                         selected = currentTab == AppTab.FLASHCARDS,
                                         selectedContentColor = MaterialTheme.colors.toriiAccent,
                                         unselectedContentColor = MaterialTheme.colors.textMuted,
@@ -127,7 +127,7 @@ fun App(fontFamily: FontFamily? = null) {
 
                                     BottomNavigationItem(
                                         icon = { Icon(Icons.Default.Edit, contentDescription = "Kanji N5", modifier = Modifier.size(22.dp)) },
-                                        label = { Text("Kanji N5", fontSize = 10.sp, fontWeight = FontWeight.Bold) },
+                                        label = { Text("Kanji N5", fontSize = 10.sp, fontWeight = FontWeight.Bold, maxLines = 1, softWrap = false) },
                                         selected = currentTab == AppTab.KANJI,
                                         selectedContentColor = MaterialTheme.colors.toriiAccent,
                                         unselectedContentColor = MaterialTheme.colors.textMuted,
@@ -136,7 +136,7 @@ fun App(fontFamily: FontFamily? = null) {
 
                                     BottomNavigationItem(
                                         icon = { Icon(Icons.Default.Check, contentDescription = "Thi thử", modifier = Modifier.size(22.dp)) },
-                                        label = { Text("Thi thử", fontSize = 10.sp, fontWeight = FontWeight.Bold) },
+                                        label = { Text("Thi thử", fontSize = 10.sp, fontWeight = FontWeight.Bold, maxLines = 1, softWrap = false) },
                                         selected = currentTab == AppTab.MOCK_TESTS,
                                         selectedContentColor = MaterialTheme.colors.toriiAccent,
                                         unselectedContentColor = MaterialTheme.colors.textMuted,

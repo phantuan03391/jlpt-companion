@@ -29,21 +29,25 @@ fun HomeHeaderSection(
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Column {
+        Column(modifier = Modifier.weight(1f)) {
             Text(
                 text = "JLPT N5 ZEN MASTER",
                 fontSize = 12.sp,
                 fontWeight = FontWeight.Bold,
                 color = MaterialTheme.colors.toriiAccent,
-                letterSpacing = 1.sp
+                letterSpacing = 1.sp,
+                maxLines = 1
             )
             Text(
                 text = "こんにちは！ Chào bạn",
-                fontSize = 22.sp,
+                fontSize = 20.sp,
                 fontWeight = FontWeight.ExtraBold,
-                color = MaterialTheme.colors.textPrimary
+                color = MaterialTheme.colors.textPrimary,
+                maxLines = 1
             )
         }
+
+        Spacer(modifier = Modifier.width(8.dp))
 
         Row(verticalAlignment = Alignment.CenterVertically) {
             // Dark / Light Theme Toggle Button
@@ -83,7 +87,9 @@ fun HomeHeaderSection(
                         text = "$streakDays ngày",
                         fontSize = 12.sp,
                         fontWeight = FontWeight.Bold,
-                        color = OchreAmber
+                        color = OchreAmber,
+                        maxLines = 1,
+                        softWrap = false
                     )
                 }
             }

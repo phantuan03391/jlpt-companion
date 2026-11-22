@@ -47,7 +47,7 @@ fun HomeReadinessCard(
                     horizontalArrangement = Arrangement.SpaceBetween,
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    Column {
+                    Column(modifier = Modifier.weight(1f)) {
                         Text(
                             text = "Độ sẵn sàng cho kì thi N5",
                             color = Color.White.copy(alpha = 0.9f),
@@ -61,6 +61,8 @@ fun HomeReadinessCard(
                         )
                     }
 
+                    Spacer(modifier = Modifier.width(8.dp))
+
                     Box(
                         modifier = Modifier
                             .clip(RoundedCornerShape(12.dp))
@@ -71,7 +73,9 @@ fun HomeReadinessCard(
                             text = "Mục tiêu: Đỗ N5",
                             color = Color.White,
                             fontSize = 12.sp,
-                            fontWeight = FontWeight.SemiBold
+                            fontWeight = FontWeight.SemiBold,
+                            maxLines = 1,
+                            softWrap = false
                         )
                     }
                 }

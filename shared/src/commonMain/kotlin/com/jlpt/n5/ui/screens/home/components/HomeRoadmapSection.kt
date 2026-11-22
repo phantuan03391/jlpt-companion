@@ -30,16 +30,21 @@ fun HomeRoadmapHeader(
     ) {
         Text(
             text = "Lộ trình Minna no Nihongo (Bài 1 - 25)",
-            fontSize = 18.sp,
+            fontSize = 16.sp,
             fontWeight = FontWeight.Bold,
-            color = MaterialTheme.colors.textPrimary
+            color = MaterialTheme.colors.textPrimary,
+            modifier = Modifier.weight(1f)
         )
+
+        Spacer(modifier = Modifier.width(8.dp))
 
         Text(
             text = "Xem tất cả",
             fontSize = 13.sp,
             fontWeight = FontWeight.SemiBold,
             color = MaterialTheme.colors.toriiAccent,
+            maxLines = 1,
+            softWrap = false,
             modifier = Modifier.clickable { onViewAll() }
         )
     }

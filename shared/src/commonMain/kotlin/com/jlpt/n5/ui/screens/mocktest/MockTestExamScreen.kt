@@ -313,23 +313,27 @@ fun MockTestExamScreen(
                 contentPadding = PaddingValues(16.dp),
                 verticalArrangement = Arrangement.spacedBy(10.dp)
             ) {
-                // Section & Category
+                // Section & Category (stacked cleanly for narrow mobile screens)
                 item {
-                    Row(
+                    Column(
                         modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.SpaceBetween,
-                        verticalAlignment = Alignment.CenterVertically
+                        verticalArrangement = Arrangement.spacedBy(6.dp)
                     ) {
-                        JapaneseBadge(
-                            text = currentQ.section,
-                            backgroundColor = MaterialTheme.colors.surfaceContainer,
-                            textColor = MaterialTheme.colors.toriiAccent
-                        )
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.Start
+                        ) {
+                            JapaneseBadge(
+                                text = currentQ.section,
+                                backgroundColor = MaterialTheme.colors.surfaceContainer,
+                                textColor = MaterialTheme.colors.toriiAccent
+                            )
+                        }
                         Text(
                             text = currentQ.category,
-                            fontSize = 12.sp,
-                            fontWeight = FontWeight.Medium,
-                            color = MaterialTheme.colors.textMuted
+                            fontSize = 13.sp,
+                            fontWeight = FontWeight.SemiBold,
+                            color = MaterialTheme.colors.textSecondary
                         )
                     }
                 }

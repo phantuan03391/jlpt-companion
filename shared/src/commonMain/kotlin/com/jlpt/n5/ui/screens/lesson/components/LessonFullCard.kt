@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.jlpt.n5.model.Lesson
@@ -41,7 +42,10 @@ fun LessonFullCard(
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Row(verticalAlignment = Alignment.CenterVertically) {
+                Row(
+                    modifier = Modifier.weight(1f),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
                     Box(
                         modifier = Modifier
                             .size(36.dp)
@@ -63,11 +67,14 @@ fun LessonFullCard(
                         text = lesson.japaneseTitle,
                         fontSize = 14.sp,
                         fontWeight = FontWeight.Bold,
-                        color = MaterialTheme.colors.toriiAccent
+                        color = MaterialTheme.colors.toriiAccent,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
                     )
                 }
 
                 if (isCompleted) {
+                    Spacer(modifier = Modifier.width(8.dp))
                     JapaneseBadge(
                         text = "ĐÃ HOÀN THÀNH",
                         backgroundColor = MaterialTheme.colors.matchaBg,
@@ -106,13 +113,18 @@ fun LessonFullCard(
                 Text(
                     text = "${lesson.vocabularies.size} từ • ${lesson.grammarPoints.size} ngữ pháp",
                     fontSize = 12.sp,
-                    color = MaterialTheme.colors.textMuted
+                    color = MaterialTheme.colors.textMuted,
+                    modifier = Modifier.weight(1f),
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
                 )
 
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                Spacer(modifier = Modifier.width(8.dp))
+
+                Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                     TextButton(
                         onClick = onOpenFlashcards,
-                        contentPadding = PaddingValues(horizontal = 10.dp, vertical = 4.dp)
+                        contentPadding = PaddingValues(horizontal = 8.dp, vertical = 4.dp)
                     ) {
                         Row(verticalAlignment = Alignment.CenterVertically) {
                             Icon(
@@ -126,7 +138,9 @@ fun LessonFullCard(
                                 text = "Flashcard",
                                 fontSize = 12.sp,
                                 color = MaterialTheme.colors.toriiAccent,
-                                fontWeight = FontWeight.SemiBold
+                                fontWeight = FontWeight.SemiBold,
+                                maxLines = 1,
+                                softWrap = false
                             )
                         }
                     }
@@ -135,13 +149,15 @@ fun LessonFullCard(
                         onClick = onOpenDetail,
                         shape = RoundedCornerShape(8.dp),
                         colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.toriiAccent),
-                        contentPadding = PaddingValues(horizontal = 14.dp, vertical = 4.dp)
+                        contentPadding = PaddingValues(horizontal = 12.dp, vertical = 4.dp)
                     ) {
                         Text(
                             text = "Học bài",
                             fontSize = 12.sp,
                             color = Color.White,
-                            fontWeight = FontWeight.Bold
+                            fontWeight = FontWeight.Bold,
+                            maxLines = 1,
+                            softWrap = false
                         )
                     }
                 }
