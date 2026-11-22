@@ -8557,7 +8557,7 @@ object DataFixtures {
         "hanViet": "",
         "type": "Danh từ",
         "exampleSentence": "手紙を ポストに 入れます。",
-        "exampleSentenceReading": "てがみを ぽすとに入れます。",
+        "exampleSentenceReading": "てがみを ぽすとに いれます。",
         "exampleSentenceMeaning": "Bỏ thư vào hòm thư.",
         "dictionaryForm": ""
       },
